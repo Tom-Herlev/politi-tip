@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T17:52:40Z",
-  "generated_at_copenhagen": "2026-11-19T18:52:40+01:00",
+  "generated_at": "2026-11-19T18:04:21Z",
+  "generated_at_copenhagen": "2026-11-19T19:04:21+01:00",
   "newest_rss": "2026-11-19T17:14:58Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -101,7 +101,7 @@
       "short": "Nordsjælland",
       "handle": "NSJPoliti",
       "default_on": true,
-      "count": 20
+      "count": 21
     },
     {
       "id": "midtvestsjaelland",
@@ -125,7 +125,7 @@
       "short": "Fyn",
       "handle": "FynsPoliti",
       "default_on": false,
-      "count": 18
+      "count": 17
     },
     {
       "id": "sydsonderjylland",
@@ -183,18 +183,18 @@
     "without_coordinates": 35,
     "by_type": {
       "brand": 37,
+      "andet": 49,
       "faerdsel": 107,
       "politi": 67,
-      "andet": 49,
       "redning": 4
     },
     "by_category": {
       "brand": 20,
       "politi": 173,
-      "trafik": 63,
-      "strom": 8
+      "strom": 8,
+      "trafik": 63
     },
-    "elapsed_seconds": 16.2
+    "elapsed_seconds": 19.5
   },
   "sources_status": {
     "politiupdate": {
@@ -260,6 +260,34 @@
     }
   ],
   "incidents": [
+    {
+      "id": "odin-c42f694c2e65cf12",
+      "category": "brand",
+      "type": "brand",
+      "title": "Brandalarm – Hovedbrandstationen",
+      "text": "Beredskab: Hovedstadens Beredskab. Station: Hovedbrandstationen. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brandalarm.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-19T17:33:27Z",
+      "updated_at": "2026-11-19T17:33:27Z",
+      "lat": 55.674664,
+      "lon": 12.571536,
+      "location_text": "Hovedbrandstationen (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "koebenhavn",
+      "district_name": "Københavns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Hovedbrandstationen",
+      "beredskab": "Hovedstadens Beredskab",
+      "first_message": "Brandalarm",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
     {
       "id": "odin-861a781712693bf6",
       "category": "brand",
@@ -425,6 +453,36 @@
       "beredskab": "Nordjyllands Beredskab",
       "first_message": "Eftersyn",
       "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
+      "id": "gpd-194306",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Skævinge",
+      "text": "25 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-19T18:02:36Z",
+      "updated_at": "2026-11-19T17:03:01Z",
+      "lat": 55.913793,
+      "lon": 12.172908,
+      "location_text": "Skævinge",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "nordsjaelland",
+      "district_name": "Nordsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 25,
+      "utility": "Radius Elnet A/S",
+      "utility_phone": "(+45) 70 20 58 00",
+      "utility_web": "www.radiuselnet.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-19T20:01:00",
+      "ongoing": true
     },
     {
       "id": "vd-6ff2f985fbe2c2ce",
@@ -1235,36 +1293,6 @@
       "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
-      "id": "gpd-194305",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Skovlunde",
-      "text": "15 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-19T15:12:21Z",
-      "updated_at": "2026-11-19T14:13:01Z",
-      "lat": 55.712098,
-      "lon": 12.407179,
-      "location_text": "Skovlunde",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 15,
-      "utility": "Radius Elnet A/S",
-      "utility_phone": "(+45) 70 20 58 00",
-      "utility_web": "www.radiuselnet.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-19T20:11:00",
-      "ongoing": true
-    },
-    {
       "id": "pu-15300524",
       "source": "politiupdate",
       "source_label": "POLITI UPDATE",
@@ -1510,34 +1538,6 @@
       "station": "Glostrup",
       "beredskab": "Hovedstadens Beredskab",
       "first_message": "Bygn.brand-Villa/Rækkehus",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "odin-f6a8c7907521d3af",
-      "category": "brand",
-      "type": "brand",
-      "title": "Skraldespand i det fri-Brand – Åsum - Odense",
-      "text": "Beredskab: Beredskab Fyn. Station: Åsum - Odense. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Skraldespand i det fri-Brand.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-19T13:03:05Z",
-      "updated_at": "2026-11-19T13:03:05Z",
-      "lat": 55.40013,
-      "lon": 10.417761,
-      "location_text": "Åsum - Odense (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "fyn",
-      "district_name": "Fyns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Åsum - Odense",
-      "beredskab": "Beredskab Fyn",
-      "first_message": "Skraldespand i det fri-Brand",
       "attribution": "Kilde: www.odin.dk/112puls"
     },
     {

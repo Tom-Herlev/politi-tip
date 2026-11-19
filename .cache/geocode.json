@@ -2800,5 +2800,12 @@
     "label": "Frederiksberg brandstation, Jernbanestien, Frederiksberg, Frederiksberg Kommune, Region Hovedstaden, 1861, Danmark",
     "source": "nominatim",
     "query": "Frederiksberg brandstation"
+  },
+  "d2d4f9497ccb9ebec9fa837245fa2063ae28ad6e": {
+    "lat": 55.674664,
+    "lon": 12.571536,
+    "label": "Hovedbrandstationen, Bag Rådhuset, Vestervold, Kødbyen, København, Københavns Kommune, Region Hovedstaden, 1553, Danmark",
+    "source": "nominatim",
+    "query": "Hovedbrandstationen brandstation"
   }
 }
