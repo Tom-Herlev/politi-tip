@@ -402,14 +402,32 @@ input, select, textarea {
   align-items: center;
   gap: 0.3rem;
   border-radius: 999px;
-  padding: 0.2rem 0.6rem;
+  padding: 0.35rem 0.75rem;
+  min-height: 44px;
+  font: inherit;
   font-size: 0.8rem;
   font-weight: 600;
   border: 1px solid var(--line);
   background: #fff;
+  color: var(--tag-color, var(--brand));
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.map-toolbar .tag:hover,
+.map-toolbar .tag:focus-visible {
+  border-color: var(--tag-color, var(--brand));
+  outline: none;
+}
+.map-toolbar .tag.active {
+  background: var(--tag-color, var(--brand));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--tag-color, var(--brand));
 }
 .map-toolbar .dot {
   width: 0.65rem; height: 0.65rem; border-radius: 50%;
   background: currentColor;
+  flex: 0 0 auto;
 }
+.map-toolbar .tag.active .dot { background: #fff; }
 #map { flex: 1 1 0; height: auto; min-height: 200px; }

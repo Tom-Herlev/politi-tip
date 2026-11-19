@@ -71,6 +71,7 @@
     nearRadiusKm: 25,
     hemsLive: null,
     hemsCors: null,
+    focusCategory: null,
   };
 
   const els = {
@@ -253,47 +254,36 @@
     return Number.isNaN(t) ? Infinity : Date.now() - t;
   }
 
-  function visibleItems() {
+  function inSelectedArea(item, districts) {
+    if (item.nationwide || (categoryOf(item) === "vejr" && item.district == null)) return true;
+    if (item.district && districts.has(item.district)) return true;
+    if (item.lat != null && item.lon != null) {
+      return [...districts].some((id) => inDistrict(item.lat, item.lon, id));
+    }
+    if (item.district && !districts.has(item.district)) return false;
+    return true;
+  }
+
+  // Tid, område, rutine og «Nær mig» — uden kategorifilter.
+  // Tællere og listen bygges begge herfra, så tallene matcher listen.
+  function itemsMatchingBaseFilters() {
     const districts = new Set(state.districts);
     const cutoff = state.timeHours * 3600 * 1000;
     return allItems()
       .filter((item) => {
         if (item.routine && !state.showRoutine) return false;
         const cat = categoryOf(item);
-        if (!state.categories.has(cat)) return false;
-        if (item.nationwide || cat === "vejr" && item.district == null) {
-          // vis landsdækkende varsler, når en kategori er slået til
-        } else if (item.district && districts.has(item.district)) {
-          // ok
-        } else if (item.lat != null && item.lon != null) {
-          const hit = [...districts].some((id) => inDistrict(item.lat, item.lon, id));
-          if (!hit) return false;
-        } else if (item.district && !districts.has(item.district)) {
-          return false;
-        }
-        if (cat !== "helikopter") {
-          if (itemAgeMs(item) > cutoff) return false;
-        }
-        if (state.near && item.lat != null && item.lon != null) {
+        if (!inSelectedArea(item, districts)) return false;
+        if (cat !== "helikopter" && itemAgeMs(item) > cutoff) return false;
+        if (state.near) {
+          if (item.lat == null || item.lon == null) return false;
           const km = haversineKm(state.near.lat, state.near.lon, item.lat, item.lon);
           item._distanceKm = km;
           if (km > state.nearRadiusKm) return false;
-        } else if (state.near && (item.lat == null || item.lon == null)) {
-          return false;
-        } else if (state.near) {
-          item._distanceKm = null;
-        } else if (state.near === null) {
+        } else {
           item._distanceKm = null;
         }
         return true;
-      })
-      .map((item) => {
-        if (state.near && item.lat != null && item.lon != null && item._distanceKm == null) {
-          item._distanceKm = haversineKm(state.near.lat, state.near.lon, item.lat, item.lon);
-        } else if (!state.near) {
-          item._distanceKm = null;
-        }
-        return item;
       })
       .sort((a, b) => {
         if (state.near && a._distanceKm != null && b._distanceKm != null) {
@@ -304,25 +294,20 @@
   }
 
   function categoryCounts() {
-    const districts = new Set(state.districts);
-    const cutoff = state.timeHours * 3600 * 1000;
     const counts = Object.fromEntries(CATEGORIES.map((c) => [c.id, 0]));
-    for (const item of allItems()) {
-      if (item.routine && !state.showRoutine) continue;
+    for (const item of itemsMatchingBaseFilters()) {
       const cat = categoryOf(item);
-      if (!counts.hasOwnProperty(cat)) continue;
-      const inArea = item.nationwide
-        || (item.district && districts.has(item.district))
-        || (item.lat != null && [...districts].some((id) => inDistrict(item.lat, item.lon, id)));
-      if (!inArea && !(item.district == null && item.lat == null)) continue;
-      if (cat !== "helikopter" && itemAgeMs(item) > cutoff) continue;
-      if (state.near && item.lat != null) {
-        const km = haversineKm(state.near.lat, state.near.lon, item.lat, item.lon);
-        if (km > state.nearRadiusKm) continue;
-      }
-      counts[cat] += 1;
+      if (counts.hasOwnProperty(cat)) counts[cat] += 1;
     }
     return counts;
+  }
+
+  function visibleItems() {
+    return itemsMatchingBaseFilters().filter((item) => {
+      const cat = categoryOf(item);
+      if (state.focusCategory) return cat === state.focusCategory;
+      return state.categories.has(cat);
+    });
   }
 
   function sourceLink(item) {
@@ -403,11 +388,19 @@
       </label>
     `).join("");
     if (els.mapToolbar) {
-      els.mapToolbar.innerHTML = CATEGORIES.filter((t) => t.id !== "tip" || counts[t.id]).map((t) => `
-        <span class="tag" style="color:${CAT_COLOR[t.id]}">
-          <span class="dot"></span>${escapeHtml(t.label)} ${counts[t.id] || 0}
-        </span>
-      `).join("");
+      const focus = state.focusCategory;
+      const allActive = !focus;
+      const tags = [
+        `<button type="button" class="tag alle${allActive ? " active" : ""}" data-focus-cat="" aria-pressed="${allActive ? "true" : "false"}" style="--tag-color:#1c3a5f">Alle</button>`
+      ];
+      for (const cat of CATEGORIES) {
+        if (cat.id === "tip" && !counts[cat.id]) continue;
+        const on = focus === cat.id;
+        tags.push(`<button type="button" class="tag${on ? " active" : ""}" data-focus-cat="${cat.id}" aria-pressed="${on ? "true" : "false"}" style="--tag-color:${CAT_COLOR[cat.id]}">
+          <span class="dot"></span>${escapeHtml(cat.label)} ${counts[cat.id] || 0}
+        </button>`);
+      }
+      els.mapToolbar.innerHTML = tags.join("");
     }
     els.showRoutine.checked = state.showRoutine;
     els.nearRadius.value = String(state.nearRadiusKm);
@@ -424,8 +417,15 @@
   function render(opts) {
     const fitMap = !opts || opts.fitMap !== false;
     const items = visibleItems();
-    els.listCount.textContent = items.length === 1 ? "1 hændelse" : `${items.length} hændelser`;
+    const focusLabel = state.focusCategory ? (CAT_LABEL[state.focusCategory] || state.focusCategory) : "";
+    els.listCount.textContent = (items.length === 1 ? "1 hændelse" : `${items.length} hændelser`)
+      + (focusLabel ? " · " + focusLabel : "");
     els.empty.hidden = items.length !== 0;
+    if (!items.length && els.empty) {
+      els.empty.textContent = focusLabel
+        ? `Ingen ${focusLabel.toLowerCase()}-hændelser i de valgte filtre.`
+        : "Ingen hændelser i de valgte filtre. Prøv et længere tidsrum, flere kategorier eller flere politikredse.";
+    }
     els.list.innerHTML = items.map((item) => {
       const cat = categoryOf(item);
       const typ = item.source === "tip" ? "tip" : item.type;
@@ -540,9 +540,21 @@
       if (!input) return;
       if (input.checked) state.categories.add(input.dataset.category);
       else state.categories.delete(input.dataset.category);
+      state.focusCategory = null;
       savePrefs();
       renderFilters();
       render();
+    });
+    els.mapToolbar.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-focus-cat]");
+      if (!btn) return;
+      const id = btn.dataset.focusCat || "";
+      if (!id || id === state.focusCategory) state.focusCategory = null;
+      else state.focusCategory = id;
+      renderFilters();
+      render({ fitMap: true });
+      const panel = document.getElementById("list-panel");
+      if (panel) panel.scrollIntoView({ behavior: "smooth", block: "start" });
     });
     els.timeFilters.addEventListener("change", (e) => {
       const input = e.target.closest("input[data-hours]");
