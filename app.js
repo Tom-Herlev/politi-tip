@@ -315,7 +315,7 @@
         || (item.district && districts.has(item.district))
         || (item.lat != null && [...districts].some((id) => inDistrict(item.lat, item.lon, id)));
       if (!inArea && !(item.district == null && item.lat == null)) continue;
-      if (!item.ongoing && cat !== "helikopter" && itemAgeMs(item) > cutoff) continue;
+      if (cat !== "helikopter" && itemAgeMs(item) > cutoff) continue;
       if (state.near && item.lat != null) {
         const km = haversineKm(state.near.lat, state.near.lon, item.lat, item.lon);
         if (km > state.nearRadiusKm) continue;
