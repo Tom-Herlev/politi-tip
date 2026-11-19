@@ -3,7 +3,7 @@
   "items": [
     {
       "id": "15300147",
-      "title": "Fire anholdte ved politiaktion i dag",
+      "title": "Store mængder narkotika beslaglagt",
       "body_html": "<p>Vi er til stede på en adresse på Hærvejen uden for Kliplev, hvor vi er i gang med en politiforretning. Der er ikke fare for borgere i området. <br />Vi melder mere ud senere. </p>",
       "body": "Vi er til stede på en adresse på Hærvejen uden for Kliplev, hvor vi er i gang med en politiforretning. Der er ikke fare for borgere i området. \nVi melder mere ud senere.",
       "published_at": "2026-11-19T13:00:05.481Z",
@@ -13,14 +13,34 @@
     },
     {
       "id": "15300637",
-      "title": "Fire anholdte ved politiaktion i dag",
+      "title": "Store mængder narkotika beslaglagt",
       "body_html": "<p>Vi er til stede på to adresser på Hærvejen uden for Kliplev. Det sker i forbindelse med en politiaktion i dag, hvor fire personer er blevet anholdt og sigtet for handel med narkotika. <br />Alle fire forventes fremstillet i grundlovsforhør i morgen. Nærmere tidspunkt følger. <br />Vi forventer at være på adresserne i nogle timer endnu i forbindelse med undersøgelser på stederne. </p>",
       "body": "Vi er til stede på to adresser på Hærvejen uden for Kliplev. Det sker i forbindelse med en politiaktion i dag, hvor fire personer er blevet anholdt og sigtet for handel med narkotika. \nAlle fire forventes fremstillet i grundlovsforhør i morgen. Nærmere tidspunkt følger. \nVi forventer at være på adresserne i nogle timer endnu i forbindelse med undersøgelser på stederne.",
       "published_at": "2026-11-19T14:29:48.659Z",
       "publisher_id": "90686",
       "publisher_name": "Syd- og Sønderjyllands Politi",
       "url": "https://via.ritzau.dk/pressemeddelelse/15300637?lang=da"
+    },
+    {
+      "id": "15301031",
+      "title": "Store mængder narkotika beslaglagt",
+      "body_html": "<p>Vi er nu færdige på de to adresser på Hærvejen uden for Kliplev. <br />Dagens aktion skete på baggrund af en målrettet efterforskning mod den organiserede narkohandel. Under aktionen er der beslaglagt et skydevåben, store mængder narkotika samt genstande, der formodentlig er anvendt til at producere narkotika. De sikrede beviser vil indgå i den videre efterforskning. <br />- fortsættes -</p>",
+      "body": "Vi er nu færdige på de to adresser på Hærvejen uden for Kliplev. \nDagens aktion skete på baggrund af en målrettet efterforskning mod den organiserede narkohandel. Under aktionen er der beslaglagt et skydevåben, store mængder narkotika samt genstande, der formodentlig er anvendt til at producere narkotika. De sikrede beviser vil indgå i den videre efterforskning. \n- fortsættes -",
+      "published_at": "2026-11-19T19:44:30.256Z",
+      "publisher_id": "90686",
+      "publisher_name": "Syd- og Sønderjyllands Politi",
+      "url": "https://via.ritzau.dk/pressemeddelelse/15301031?lang=da"
+    },
+    {
+      "id": "15301033",
+      "title": "Store mængder narkotika beslaglagt",
+      "body_html": "<p> - fortsat - <br />De fire anholdte ved dagens aktion fremstilles i grundlovsforhør fredag fra klokken 9.00 ved Retten i Esbjerg. Der er tale om tre mænd på henholdsvis 34, 34 og 43 år samt en kvinde på 32 år. <br />Anklagemyndigheden anmoder om lukkede døre. </p>",
+      "body": "- fortsat - \nDe fire anholdte ved dagens aktion fremstilles i grundlovsforhør fredag fra klokken 9.00 ved Retten i Esbjerg. Der er tale om tre mænd på henholdsvis 34, 34 og 43 år samt en kvinde på 32 år. \nAnklagemyndigheden anmoder om lukkede døre.",
+      "published_at": "2026-11-19T19:46:52.433Z",
+      "publisher_id": "90686",
+      "publisher_name": "Syd- og Sønderjyllands Politi",
+      "url": "https://via.ritzau.dk/pressemeddelelse/15301033?lang=da"
     }
   ],
-  "fetched_at": "2026-11-19T15:52:51.201632+00:00"
+  "fetched_at": "2026-11-19T20:34:16.085190+00:00"
 }

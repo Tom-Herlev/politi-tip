@@ -2821,5 +2821,20 @@
     "label": "FALCK Ballerup, Ring 4, Lautrupgård, Ballerup, Ballerup Kommune, Region Hovedstaden, 2750, Danmark",
     "source": "nominatim",
     "query": "Ballerup brandstation"
+  },
+  "a6a3e1bdd688e2e9995f3e7e940ecbc9aa3724c8": {
+    "lat": 55.735351,
+    "lon": 12.493668,
+    "label": "Falck Gladsaxe, Isbanevej, Buddinge, Gladsaxe Kommune, Region Hovedstaden, 2860, Danmark",
+    "source": "nominatim",
+    "query": "Gladsaxe brandstation"
+  },
+  "d59f5553dc8764bc1c9796d878919c1257647d3c": null,
+  "48e823f5dacf416de6326ee8be463a7edcf984c1": {
+    "lat": 55.328808,
+    "lon": 11.942063,
+    "label": "Midt- og Sydsjællands Brand & Redning - St. Haslev, Lysholm Alle, Hestehave, Haslev, Faxe Kommune, Region Sjælland, 4690, Danmark",
+    "source": "nominatim",
+    "query": "brandstation St. Faxe"
   }
 }
