@@ -1,32 +1,34 @@
 #!/usr/bin/env python3
-"""Hent officielle POLITI UPDATE-meddelelser, klassificér, geokod og skriv data.json.
+"""Hent offentlige hændelser og skriv data.json til Politi Tip.
 
-Kør fra /workspace/politi-tip:
+Kør fra mappen:
 
     python3 refresh.py
 
-Et rutinekald hvert 10–15. minut skal gøre præcis det: køre scriptet i denne
-mappe, så data.json overskrives. Appen læser filen ved indlæsning (og via
-et diskret 'Opdater'-klik). Facebook og Instagram skrames ikke.
-
-Officielle politikonti på X er lukkede/beskyttede (november 2026) og kan
-derfor ikke hentes. Den officielle erstatning er POLITI UPDATE-RSS.
+Kilder: POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark
+(strømafbrud), DMI-varsler (plus MeteoAlarm som reserve) og adsb.lol for
+de danske akutlægehelikoptere. Facebook og Instagram skrames ikke.
 """
 
 from __future__ import annotations
 
 import base64
 import hashlib
+import html
+import http.client
 import json
 import math
 import re
+import socket
+import ssl
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 from pathlib import Path
 from typing import Any
@@ -315,10 +317,38 @@ def log(msg: str) -> None:
     print(msg, flush=True)
 
 
-def http_get(url: str, timeout: int = 30) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read()
+def http_get(url: str, timeout: int = 30, force_ip: str | None = None) -> bytes:
+    if not force_ip:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"})
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.read()
+    parsed = urllib.parse.urlparse(url)
+    host = parsed.hostname or ""
+    port = parsed.port or (443 if parsed.scheme == "https" else 80)
+    path = parsed.path or "/"
+    if parsed.query:
+        path += "?" + parsed.query
+    if parsed.scheme == "https":
+        raw = socket.create_connection((force_ip, port), timeout=timeout)
+        ctx = ssl.create_default_context()
+        sock = ctx.wrap_socket(raw, server_hostname=host)
+        conn = http.client.HTTPSConnection(host, port=port, timeout=timeout)
+        conn.sock = sock
+    else:
+        conn = http.client.HTTPConnection(force_ip, port=port, timeout=timeout)
+    try:
+        conn.request("GET", path, headers={
+            "Host": host,
+            "User-Agent": USER_AGENT,
+            "Accept": "*/*",
+        })
+        resp = conn.getresponse()
+        data = resp.read()
+        if resp.status >= 400:
+            raise OSError(f"HTTP {resp.status} {resp.reason} for {url}")
+        return data
+    finally:
+        conn.close()
 
 
 def http_get_retries(url: str, retries: int = 3, timeout: int = 30) -> bytes:
@@ -848,11 +878,929 @@ def build_incident(thread: dict[str, Any], district_id: str, rss_fallback: dict[
     return inc
 
 
+def district_for_point(lat: float, lon: float) -> str | None:
+    hits = []
+    for did, box in BBOX.items():
+        south, west, north, east = box
+        if south <= lat <= north and west <= lon <= east:
+            hits.append(did)
+    if not hits:
+        # lidt slæk, hvis punktet ligger lige uden for boksen
+        hits = [did for did in BBOX if in_district(lat, lon, did)]
+    if not hits:
+        return None
+
+    def area(did: str) -> float:
+        south, west, north, east = BBOX[did]
+        return (north - south) * (east - west)
+
+    return min(hits, key=area)
+
+
+def as_cph_iso(dt: datetime | None) -> str | None:
+    if dt is None:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=ZoneInfo("Europe/Copenhagen"))
+    return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def parse_dk_datetime(value: str | None) -> datetime | None:
+    if not value:
+        return None
+    text = html.unescape(value).strip()
+    m = re.match(
+        r"(\d{1,2})[.\-/](\d{1,2})[.\-/](\d{4})(?:\s*(?:kl\.?)?\s*(\d{1,2})[:.](\d{2})(?::(\d{2}))?)?",
+        text,
+        re.IGNORECASE,
+    )
+    if m:
+        day, month, year = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        hour = int(m.group(4) or 0)
+        minute = int(m.group(5) or 0)
+        second = int(m.group(6) or 0)
+        try:
+            return datetime(year, month, day, hour, minute, second, tzinfo=ZoneInfo("Europe/Copenhagen"))
+        except ValueError:
+            return None
+    try:
+        dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=ZoneInfo("Europe/Copenhagen"))
+        return dt
+    except ValueError:
+        return None
+
+
+def geocode_anywhere(query: str) -> dict[str, Any] | None:
+    """Geokod et sted i Danmark uden at kræve en politikreds."""
+    key = hashlib.sha1(f"v4|dk|{query.casefold()}".encode()).hexdigest()
+    if key in _geo_cache:
+        return _geo_cache[key]
+    result = None
+    try:
+        result = geocode_nominatim(query, None)
+    except Exception as exc:  # noqa: BLE001
+        log(f"  geocode_anywhere nominatim {query!r}: {exc}")
+    if not result:
+        try:
+            result = geocode_adressevaelger(query, "")
+        except Exception as exc:  # noqa: BLE001
+            log(f"  geocode_anywhere adressevælger {query!r}: {exc}")
+    _geo_cache[key] = result
+    return result
+
+
+def _base_incident(
+    *,
+    ident: str,
+    category: str,
+    typ: str,
+    title: str,
+    text: str,
+    source: str,
+    source_label: str,
+    source_url: str,
+    published_at: str | None,
+    updated_at: str | None = None,
+    lat: float | None = None,
+    lon: float | None = None,
+    location_text: str | None = None,
+    radius_m: float | None = None,
+    approximate: bool = False,
+    district: str | None = None,
+    extra: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    if district is None and lat is not None and lon is not None:
+        district = district_for_point(lat, lon)
+    district_name = DISTRICT_BY_ID[district]["name"] if district and district in DISTRICT_BY_ID else None
+    inc: dict[str, Any] = {
+        "id": ident,
+        "category": category,
+        "type": typ,
+        "title": title,
+        "text": text,
+        "source": source,
+        "source_label": source_label,
+        "source_url": source_url,
+        "url": source_url,
+        "published_at": published_at,
+        "updated_at": updated_at or published_at,
+        "lat": lat,
+        "lon": lon,
+        "location_text": location_text,
+        "geometry": "circle" if radius_m else "point",
+        "radius_m": radius_m,
+        "approximate": approximate,
+        "district": district,
+        "district_name": district_name,
+        "official": True,
+        "nationwide": district is None,
+    }
+    if extra:
+        inc.update(extra)
+    return inc
+
+
+# --- ODIN 112-puls (Beredskabsstyrelsen) ---
+
+ODIN_RSS = "http://www.odin.dk/RSS/RSS.aspx?beredskabsID=0000"
+ODIN_PAGE = "http://www.odin.dk/112puls/"
+ODIN_IP = "5.56.147.39"
+ODIN_ROUTINE = re.compile(
+    r"\b(isl-forespørgsel|forespørgsel|eftersyn|isl-eftersyn|springtæppe|"
+    r"prøve|øvelse|ovelse|rutin|kontrol|afprøvning|service)\b",
+    re.IGNORECASE,
+)
+
+
+def http_get_odin(url: str, timeout: int = 30) -> bytes:
+    try:
+        return http_get(url, timeout=timeout)
+    except Exception as exc:  # noqa: BLE001
+        log(f"  ODIN via DNS fejlede ({exc}); prøver {ODIN_IP}")
+        return http_get(url, timeout=timeout, force_ip=ODIN_IP)
+
+
+def is_odin_routine(melding: str) -> bool:
+    return bool(ODIN_ROUTINE.search(melding or ""))
+
+
+def fetch_odin() -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    status: dict[str, Any] = {
+        "ok": False,
+        "count": 0,
+        "endpoint": ODIN_RSS,
+        "error": None,
+    }
+    try:
+        raw = http_get_odin(ODIN_RSS, timeout=25)
+        root = ET.fromstring(raw)
+    except Exception as exc:  # noqa: BLE001
+        status["error"] = str(exc)
+        log(f"  ODIN fejlede: {exc}")
+        return [], status
+
+    items: list[dict[str, Any]] = []
+    for item in root.findall("./channel/item"):
+        beredskab = html.unescape((item.findtext("title") or "").strip())
+        desc = html.unescape((item.findtext("description") or "").strip())
+        pub = (item.findtext("pubDate") or "").strip()
+        comments = (item.findtext("comments") or "").strip()
+        melding, station = "", ""
+        m = re.search(r"Førstemelding:\s*(.*?)\s+Station:\s*(.*)$", desc, re.IGNORECASE | re.DOTALL)
+        if m:
+            melding = re.sub(r"\s+", " ", m.group(1)).strip()
+            station = re.sub(r"\s+", " ", m.group(2)).strip()
+        else:
+            melding = desc
+        published = None
+        try:
+            published = as_cph_iso(parsedate_to_datetime(pub))
+        except Exception:
+            published = as_cph_iso(parse_dk_datetime(comments)) or iso_to_z(pub)
+        routine = is_odin_routine(melding)
+        geo = None
+        queries = []
+        if station:
+            queries = [
+                f"{station} brandstation",
+                f"brandstation {station}",
+                f"{station} beredskab",
+                station,
+            ]
+            if beredskab:
+                queries.insert(2, f"{station}, {beredskab}")
+        for q in queries:
+            geo = geocode_anywhere(q)
+            if geo:
+                break
+        title = melding or "Udrykning"
+        if station:
+            title = f"{melding} – {station}" if melding else station
+        ident = "odin-" + hashlib.sha1(
+            f"{beredskab}|{station}|{melding}|{published or pub}".encode()
+        ).hexdigest()[:16]
+        text_parts = []
+        if beredskab:
+            text_parts.append(f"Beredskab: {beredskab}.")
+        if station:
+            text_parts.append(
+                f"Station: {station}. ODIN angiver kun brandstationen, ikke en præcis adresse."
+            )
+        if melding:
+            text_parts.append(f"Første melding: {melding}.")
+        inc = _base_incident(
+            ident=ident,
+            category="brand",
+            typ="redning" if re.search(r"redning|assistance|fuh|trafik", melding, re.I) and not re.search(r"brand", melding, re.I) else "brand",
+            title=title,
+            text=" ".join(text_parts),
+            source="odin",
+            source_label="ODIN 112-puls",
+            source_url=ODIN_PAGE,
+            published_at=published,
+            lat=geo["lat"] if geo else None,
+            lon=geo["lon"] if geo else None,
+            location_text=(f"{station} (omtrentligt område omkring stationen)" if station else beredskab),
+            radius_m=2000 if geo else None,
+            approximate=True,
+            extra={
+                "routine": routine,
+                "station": station,
+                "beredskab": beredskab,
+                "first_message": melding,
+                "attribution": "Kilde: www.odin.dk/112puls",
+            },
+        )
+        items.append(inc)
+    status["ok"] = True
+    status["count"] = len(items)
+    log(f"  ODIN: {len(items)} alarmer")
+    return items, status
+
+
+# --- Vejdirektoratet ---
+
+VD_EVENTS = "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json"
+VD_CRITICAL = "https://storage.googleapis.com/trafikkort-data/geojson/critical-announcements.json"
+VD_PAGE = "https://trafikkort.vejdirektoratet.dk/"
+
+VD_INCLUDE_LAYERS = {
+    "current-queue.point",
+    "current-roadblocks.point",
+    "current-blocking-events.point",
+}
+VD_INCLUDE_TYPES = {
+    "org.vd.trafficmap.datexii.v32.datamodel.Accident",
+    "org.vd.trafficmap.datexii.v32.datamodel.AbnormalTraffic",
+    "org.vd.trafficmap.datexii.v32.datamodel.RoadOrCarriagewayOrLaneManagement",
+    "org.vd.trafficmap.datexii.v32.datamodel.VehicleObstruction",
+}
+VD_KEYWORDS = (
+    "uheld", "spærret", "spærring", "tabt gods", "havari", "havareret",
+    "kø,", "kø ", "kø.", "køen", "ulykke", "påkørsel", "blokering",
+)
+
+
+def vd_subtype(layer: str, typ: str, text: str) -> str:
+    low = text.lower()
+    if "tabt gods" in low:
+        return "tabt gods"
+    if "queue" in layer or "kø" in low or typ.endswith("AbnormalTraffic"):
+        return "kø"
+    if "roadblock" in layer or "blocking" in layer or "spær" in low:
+        return "spærring"
+    if typ.endswith("Accident") or "uheld" in low or "ulykke" in low:
+        return "uheld"
+    if "havari" in low:
+        return "havari"
+    return "trafik"
+
+
+def _iter_vd_features(payload: Any) -> list[tuple[str, dict[str, Any]]]:
+    out: list[tuple[str, dict[str, Any]]] = []
+    if isinstance(payload, list):
+        for coll in payload:
+            if not isinstance(coll, dict):
+                continue
+            layer = coll.get("layerName") or ""
+            for feat in coll.get("features") or []:
+                out.append((layer, feat))
+    elif isinstance(payload, dict):
+        layer = payload.get("layerName") or ""
+        for feat in payload.get("features") or []:
+            out.append((layer, feat))
+    return out
+
+
+def fetch_vejdirektoratet() -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    status: dict[str, Any] = {"ok": False, "count": 0, "endpoint": VD_EVENTS, "error": None}
+    try:
+        raw = http_get_retries(VD_EVENTS, timeout=25)
+        payload = json.loads(raw.decode("utf-8"))
+    except Exception as exc:  # noqa: BLE001
+        status["error"] = str(exc)
+        log(f"  Vejdirektoratet fejlede: {exc}")
+        return [], status
+
+    items: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for layer, feat in _iter_vd_features(payload):
+        props = feat.get("properties") or {}
+        if str(props.get("suspended", "false")).lower() == "true":
+            continue
+        typ = props.get("TrafficMan2_Type") or ""
+        header = html.unescape(strip_html(props.get("header") or props.get("title") or "Trafikmelding"))
+        desc = html.unescape(strip_html(props.get("description") or ""))
+        blob = f"{header} {desc} {layer} {typ}".lower()
+        include = layer in VD_INCLUDE_LAYERS or typ in VD_INCLUDE_TYPES or any(k in blob for k in VD_KEYWORDS)
+        if not include:
+            continue
+        geom = feat.get("geometry") or {}
+        coords = geom.get("coordinates") or []
+        lon = lat = None
+        if geom.get("type") == "Point" and len(coords) >= 2:
+            lon, lat = float(coords[0]), float(coords[1])
+        fid = str(props.get("featureId") or header)
+        if fid in seen:
+            continue
+        seen.add(fid)
+        begin = parse_dk_datetime(props.get("beginPeriod"))
+        end = parse_dk_datetime(props.get("endPeriod"))
+        inserted = props.get("lastModifiedString") or props.get("dateInsertedInListString")
+        updated = as_cph_iso(parse_dk_datetime(inserted) if inserted and "T" not in str(inserted) else None)
+        if not updated and inserted:
+            updated = iso_to_z(str(inserted))
+        published = as_cph_iso(begin) or updated
+        subtype = vd_subtype(layer, typ, f"{header} {desc}")
+        title = header
+        reopening = None
+        if props.get("endPeriod"):
+            reopening = html.unescape(str(props["endPeriod"]))
+        inc = _base_incident(
+            ident="vd-" + hashlib.sha1(fid.encode()).hexdigest()[:16],
+            category="trafik",
+            typ="faerdsel",
+            title=title,
+            text=desc,
+            source="vejdirektoratet",
+            source_label="Vejdirektoratet",
+            source_url=VD_PAGE,
+            published_at=published,
+            updated_at=updated or published,
+            lat=round(lat, 6) if lat is not None else None,
+            lon=round(lon, 6) if lon is not None else None,
+            location_text=header,
+            extra={
+                "subtype": subtype,
+                "reopening": reopening,
+                "reopening_at": as_cph_iso(end),
+                "ongoing": True,
+                "layer": layer,
+            },
+        )
+        items.append(inc)
+    status["ok"] = True
+    status["count"] = len(items)
+    log(f"  Vejdirektoratet: {len(items)} hændelser")
+    return items, status
+
+
+# --- Strømafbrud, Green Power Denmark ---
+
+GPD_INCIDENTS = "https://api.elnet.greenpowerdenmark.dk/api/incidents"
+GPD_PAGE = "https://elnet.dk/"
+
+
+def fetch_outages() -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    status: dict[str, Any] = {"ok": False, "count": 0, "endpoint": GPD_INCIDENTS, "error": None}
+    try:
+        raw = http_get_retries(GPD_INCIDENTS, timeout=30)
+        payload = json.loads(raw.decode("utf-8"))
+        if not isinstance(payload, list):
+            raise ValueError("uventet svarformat")
+    except Exception as exc:  # noqa: BLE001
+        status["error"] = str(exc)
+        log(f"  Strømafbrud fejlede: {exc}")
+        return [], status
+
+    now = datetime.now(ZoneInfo("Europe/Copenhagen"))
+    items: list[dict[str, Any]] = []
+    for rec in payload:
+        start = parse_dk_datetime(rec.get("startDate"))
+        end = parse_dk_datetime(rec.get("endDate"))
+        exp = parse_dk_datetime(rec.get("expectedDowntime"))
+        typ = rec.get("incidentType") or ""
+        lat, lon = rec.get("centerLat"), rec.get("centerLng")
+        if lat is None or lon is None:
+            continue
+        if end and end < now:
+            continue
+        if start and start > now:
+            # planlagte fremtidige arbejder vises ikke som aktuelle afbrud
+            continue
+        if start:
+            age_h = (now - start.astimezone(now.tzinfo)).total_seconds() / 3600
+        else:
+            created = parse_dk_datetime(rec.get("created"))
+            age_h = (now - created.astimezone(now.tzinfo)).total_seconds() / 3600 if created else 9999
+        # expectedDowntime opdateres ofte ikke, når strømmen er tilbage;
+        # vis derfor kun nylige uvarslede, og varslede/planlagte der stadig er i vinduet.
+        typ_l = typ
+        still_expected = exp is not None and exp >= now
+        if typ_l == "Uvarslet":
+            if age_h > 18:
+                continue
+        elif typ_l in {"Varslet", "Planlagt"}:
+            if not still_expected and age_h > 4:
+                continue
+            if age_h > 48:
+                continue
+        else:
+            if age_h > 12 and not still_expected:
+                continue
+        customers = rec.get("effectedCustomers") or rec.get("poweroutagesCount") or 0
+        radius = rec.get("radius") or 100
+        try:
+            radius = float(radius)
+        except (TypeError, ValueError):
+            radius = 100
+        radius = max(100, min(radius, 25000))
+        title = rec.get("title") or "Strømafbrud"
+        utility = rec.get("supplierName") or "Netselskab"
+        comment = (rec.get("comment") or rec.get("cause") or "").strip()
+        text = f"{customers} kunder berørt. Elselskab: {utility}."
+        if typ:
+            text += f" Type: {typ}."
+        if comment:
+            short = re.sub(r"\s+", " ", comment)
+            text += " " + short[:400]
+        expected = rec.get("expectedDowntime")
+        inc = _base_incident(
+            ident=f"gpd-{rec.get('id')}",
+            category="strom",
+            typ="andet",
+            title=title,
+            text=text,
+            source="elnet",
+            source_label="Green Power Denmark / Elnet",
+            source_url=GPD_PAGE,
+            published_at=as_cph_iso(start) or as_cph_iso(parse_dk_datetime(rec.get("created"))),
+            updated_at=as_cph_iso(parse_dk_datetime(rec.get("created"))) or as_cph_iso(start),
+            lat=round(float(lat), 6),
+            lon=round(float(lon), 6),
+            location_text=title.replace("Afbrud i ", "").replace("Afbrud ", ""),
+            radius_m=radius,
+            approximate=True,
+            extra={
+                "customers": int(customers) if customers is not None else None,
+                "utility": utility,
+                "utility_phone": rec.get("supplierPhone"),
+                "utility_web": rec.get("supplierWeb"),
+                "outage_type": typ,
+                "expected_back": expected,
+                "ongoing": True,
+            },
+        )
+        items.append(inc)
+    status["ok"] = True
+    status["count"] = len(items)
+    log(f"  Strømafbrud: {len(items)} aktuelle")
+    return items, status
+
+
+# --- DMI-varsler (+ MeteoAlarm som reserve) ---
+
+DMI_OVERVIEW = "https://www.dmi.dk/dmidk_byvejrWS/rest/json/Danmark/DK/WarningOverview"
+DMI_AREAS = "https://www.dmi.dk/dmidk_byvejrWS/rest/json/Danmark/DK/WarningAreas"
+DMI_VARSEL = "https://www.dmi.dk/dmidk_byvejrWS/rest/json/Danmark/DK/varsel"
+DMI_PAGE = "https://www.dmi.dk/varsler"
+METEOALARM = "https://feeds.meteoalarm.org/api/v1/warnings/feeds-denmark"
+
+# Omtrentlige midterpunkter for MeteoAlarm EMMA-områder i Danmark
+EMMA_CENTROIDS = {
+    "DK001": (55.67, 12.48),  # København / hovedstaden
+    "DK002": (55.12, 14.92),  # Bornholm
+    "DK003": (55.70, 11.90),  # Nordsjælland
+    "DK004": (55.40, 11.70),  # Sjælland
+    "DK005": (54.85, 11.50),  # Lolland-Falster
+    "DK006": (55.35, 10.40),  # Fyn
+    "DK007": (55.40, 9.30),   # Sydjylland
+    "DK008": (56.20, 9.50),   # Midtjylland
+    "DK801": (57.05, 9.90),   # Nordjylland / Vendsyssel
+    "DK802": (56.80, 8.70),
+    "DK803": (56.40, 8.60),
+    "DK804": (56.15, 8.20),
+    "DK805": (55.70, 8.50),
+    "DK806": (55.50, 8.80),
+    "DK807": (55.25, 9.40),
+    "DK808": (55.90, 9.80),
+    "DK809": (56.15, 10.20),
+    "DK810": (56.45, 10.00),
+    "DK811": (56.70, 10.00),
+    "DK812": (55.55, 10.00),
+    "DK813": (54.95, 10.60),
+    "DK814": (55.20, 11.20),
+    "DK815": (55.00, 12.00),
+    "DK816": (55.60, 12.10),
+    "DK817": (55.75, 12.30),
+    "DK818": (55.95, 12.40),
+    "DK819": (56.00, 12.00),
+    "DK820": (54.70, 11.70),
+}
+
+
+def _walk_warnings(node: Any) -> list[dict[str, Any]]:
+    out: list[dict[str, Any]] = []
+    if isinstance(node, list):
+        for item in node:
+            out.extend(_walk_warnings(item))
+        return out
+    if not isinstance(node, dict):
+        return out
+    keys = {k.lower() for k in node}
+    interesting = keys & {
+        "text", "title", "headline", "category", "type", "areaname", "area",
+        "validfrom", "validto", "from", "to", "warningtype", "description",
+    }
+    if interesting and ("text" in keys or "title" in keys or "headline" in keys or "description" in keys):
+        out.append(node)
+    for k, v in node.items():
+        if k.lower() in {"warningactual", "warnings", "warning5days", "sections", "areas", "items"}:
+            out.extend(_walk_warnings(v))
+        elif isinstance(v, (list, dict)) and k.lower() not in {"icons", "widget"}:
+            # nested, but avoid double-adding the current node children if already added
+            if not interesting:
+                out.extend(_walk_warnings(v))
+    return out
+
+
+def _warning_coords(rec: dict[str, Any]) -> tuple[float | None, float | None, float | None]:
+    for key in ("lat", "latitude", "centerLat", "center_lat"):
+        if rec.get(key) is not None and rec.get("lon") or rec.get("lng") or rec.get("longitude") or rec.get("centerLng"):
+            lat = rec.get(key)
+            lon = rec.get("lon") or rec.get("lng") or rec.get("longitude") or rec.get("centerLng")
+            try:
+                return float(lat), float(lon), None
+            except (TypeError, ValueError):
+                pass
+    # polygons?
+    for key in ("polygon", "polygons", "geometry", "coordinates", "area"):
+        val = rec.get(key)
+        pts = []
+        if isinstance(val, list):
+            def collect(a):
+                if isinstance(a, (list, tuple)) and len(a) >= 2 and isinstance(a[0], (int, float)):
+                    # lon,lat or lat,lon – DMI often lat,lon. Heuristic: DK lon is 8-15, lat 54-58
+                    x, y = float(a[0]), float(a[1])
+                    if 54 <= x <= 58 and 7 <= y <= 16:
+                        pts.append((x, y))
+                    elif 54 <= y <= 58 and 7 <= x <= 16:
+                        pts.append((y, x))
+                elif isinstance(a, (list, tuple)):
+                    for b in a:
+                        collect(b)
+            collect(val)
+        if pts:
+            lat = sum(p[0] for p in pts) / len(pts)
+            lon = sum(p[1] for p in pts) / len(pts)
+            return lat, lon, 40000
+    return None, None, None
+
+
+def fetch_dmi_warnings() -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    status: dict[str, Any] = {
+        "ok": False,
+        "count": 0,
+        "endpoint": DMI_AREAS,
+        "error": None,
+        "fallback": None,
+    }
+    items: list[dict[str, Any]] = []
+    overview = areas = varsel = None
+    try:
+        overview = json.loads(http_get_retries(DMI_OVERVIEW, timeout=20).decode("utf-8"))
+        areas = json.loads(http_get_retries(DMI_AREAS, timeout=20).decode("utf-8"))
+        varsel = json.loads(http_get_retries(DMI_VARSEL, timeout=20).decode("utf-8"))
+        status["ok"] = True
+    except Exception as exc:  # noqa: BLE001
+        status["error"] = str(exc)
+        log(f"  DMI-varsler fejlede: {exc}")
+
+    recs: list[dict[str, Any]] = []
+    if isinstance(overview, dict) and overview.get("warnings"):
+        recs.extend(_walk_warnings(overview["warnings"]))
+        max_cat = overview.get("maxCategory")
+        if overview.get("text") and max_cat not in (None, 0, "0"):
+            recs.append({"text": overview.get("text"), "category": max_cat, "title": "DMI-varsel"})
+    if isinstance(areas, dict):
+        recs.extend(_walk_warnings(areas.get("warningActual") or []))
+    if isinstance(varsel, dict):
+        if varsel.get("headline") or (varsel.get("sections")):
+            recs.extend(_walk_warnings(varsel))
+
+    seen_txt: set[str] = set()
+    for rec in recs:
+        if not isinstance(rec, dict):
+            continue
+        title = rec.get("title") or rec.get("headline") or rec.get("type") or rec.get("warningType") or "DMI-varsel"
+        text = rec.get("text") or rec.get("description") or rec.get("comment") or ""
+        if isinstance(text, list):
+            text = " ".join(str(x) for x in text)
+        title = str(title).strip()
+        text = str(text).strip()
+        if not title and not text:
+            continue
+        key = f"{title}|{text[:120]}"
+        if key in seen_txt:
+            continue
+        seen_txt.add(key)
+        cat = rec.get("category") or rec.get("maxCategory")
+        area_name = rec.get("areaName") or rec.get("area") or rec.get("name")
+        if isinstance(area_name, dict):
+            area_name = area_name.get("name") or area_name.get("areaDesc")
+        lat, lon, rad = _warning_coords(rec)
+        if lat is None:
+            # landsdækkende eller uden geometri
+            lat, lon, rad = 56.0, 10.4, 180000
+            nationwide = True
+        else:
+            nationwide = False
+        start = parse_dk_datetime(str(rec.get("validFrom") or rec.get("from") or rec.get("onset") or ""))
+        end = parse_dk_datetime(str(rec.get("validTo") or rec.get("to") or rec.get("expires") or ""))
+        loc = str(area_name) if area_name else "Danmark"
+        inc = _base_incident(
+            ident="dmi-" + hashlib.sha1(key.encode()).hexdigest()[:16],
+            category="vejr",
+            typ="andet",
+            title=str(title),
+            text=text or str(title),
+            source="dmi",
+            source_label="DMI",
+            source_url=DMI_PAGE,
+            published_at=as_cph_iso(start),
+            updated_at=as_cph_iso(end) or as_cph_iso(start),
+            lat=round(lat, 6),
+            lon=round(lon, 6),
+            location_text=loc,
+            radius_m=rad or 50000,
+            approximate=True,
+            extra={
+                "warning_category": cat,
+                "valid_to": as_cph_iso(end),
+                "ongoing": True,
+                "nationwide": nationwide,
+            },
+        )
+        inc["nationwide"] = nationwide
+        if nationwide:
+            inc["district"] = None
+            inc["district_name"] = None
+        items.append(inc)
+
+    # MeteoAlarm som reserve, når DMI ikke har aktive varsler
+    if not items:
+        try:
+            malarm = json.loads(http_get_retries(METEOALARM, timeout=20).decode("utf-8"))
+            warnings = malarm.get("warnings") or malarm.get("data") or []
+            real = 0
+            for wrap in warnings:
+                alert = wrap.get("alert") if isinstance(wrap, dict) else None
+                if not alert:
+                    continue
+                ident = str(alert.get("identifier") or "")
+                if "NOWARNING" in ident.upper():
+                    continue
+                infos = alert.get("info") or []
+                info = None
+                for cand in infos:
+                    lang = (cand.get("language") or "").lower()
+                    if lang.startswith("da"):
+                        info = cand
+                        break
+                info = info or (infos[0] if infos else {})
+                level = ""
+                for p in info.get("parameter") or []:
+                    if p.get("valueName") == "awareness_level":
+                        level = p.get("value") or ""
+                desc = (info.get("description") or "")
+                if "ingen aktive" in desc.lower():
+                    continue
+                if "green" in level.lower() and "minor" in level.lower() and "ingen" in desc.lower():
+                    continue
+                event = info.get("event") or "DMI-varsel"
+                areaspec = []
+                emma = []
+                for area in info.get("area") or []:
+                    areaspec.append(area.get("areaDesc") or "")
+                    for g in area.get("geocode") or []:
+                        if g.get("valueName") == "EMMA_ID":
+                            emma.append(g.get("value"))
+                loc = ", ".join(a for a in areaspec if a and a.lower() != "all areas") or "Danmark"
+                if emma and emma[0] in EMMA_CENTROIDS and loc != "Danmark":
+                    lat, lon = EMMA_CENTROIDS[emma[0]]
+                    rad = 40000
+                    nationwide = False
+                elif len(emma) >= 8 or loc == "Danmark":
+                    lat, lon, rad = 56.0, 10.4, 180000
+                    nationwide = True
+                else:
+                    pts = [EMMA_CENTROIDS[e] for e in emma if e in EMMA_CENTROIDS]
+                    if pts:
+                        lat = sum(p[0] for p in pts) / len(pts)
+                        lon = sum(p[1] for p in pts) / len(pts)
+                        rad = 50000
+                        nationwide = False
+                    else:
+                        lat, lon, rad = 56.0, 10.4, 180000
+                        nationwide = True
+                onset = parse_dk_datetime(info.get("onset")) or parse_dk_datetime(alert.get("sent"))
+                expires = parse_dk_datetime(info.get("expires"))
+                inc = _base_incident(
+                    ident="meteo-" + hashlib.sha1((ident or event + desc[:80]).encode()).hexdigest()[:16],
+                    category="vejr",
+                    typ="andet",
+                    title=event,
+                    text=desc,
+                    source="dmi",
+                    source_label="DMI / MeteoAlarm",
+                    source_url=info.get("web") or DMI_PAGE,
+                    published_at=as_cph_iso(onset),
+                    updated_at=as_cph_iso(expires) or as_cph_iso(onset),
+                    lat=round(lat, 6),
+                    lon=round(lon, 6),
+                    location_text=loc,
+                    radius_m=rad,
+                    approximate=True,
+                    extra={
+                        "warning_category": level,
+                        "valid_to": as_cph_iso(expires),
+                        "ongoing": True,
+                        "nationwide": nationwide,
+                    },
+                )
+                inc["nationwide"] = nationwide
+                if nationwide:
+                    inc["district"] = None
+                    inc["district_name"] = None
+                items.append(inc)
+                real += 1
+            status["fallback"] = METEOALARM
+            status["ok"] = True
+            log(f"  MeteoAlarm: {real} aktive varsler (DMI havde ingen)")
+        except Exception as exc:  # noqa: BLE001
+            log(f"  MeteoAlarm fejlede: {exc}")
+            if not status["ok"]:
+                status["error"] = (status.get("error") or "") + f"; MeteoAlarm: {exc}"
+
+    status["count"] = len(items)
+    if status["ok"]:
+        log(f"  DMI-varsler: {len(items)}")
+    return items, status
+
+
+# --- Akutlægehelikoptere via adsb.lol ---
+
+ADSB_POINT = "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250"
+ADSB_REG = "https://api.adsb.lol/v2/reg/{reg}"
+ADSB_PAGE = "https://adsb.lol/"
+
+# Fire baser + en reservehelikopter (H135/H145, Norsk Luftambulanse).
+# Registreringer roterer; vi slår op på kendte LN-OU*/LN-OT* og viser dem,
+# der er i dansk luftrum.
+HEMS_REGS = [
+    "LN-OUD", "LN-OUE", "LN-OUF", "LN-OUG", "LN-OUH",
+    "LN-OUI", "LN-OUJ", "LN-OUK", "LN-OUL", "LN-OUM",
+    "LN-OTQ", "LN-OTP", "LN-OTO", "LN-OTR",
+]
+HEMS_TYPES = {"EC35", "EC45", "H135", "H145", "E135", "E145"}
+HEMS_BASES = [
+    {"name": "Skive", "lat": 56.5503, "lon": 9.1728},
+    {"name": "Billund", "lat": 55.7403, "lon": 9.1518},
+    {"name": "Ringsted", "lat": 55.4258, "lon": 11.8067},
+    {"name": "Saltum", "lat": 57.2725, "lon": 9.6958},
+]
+DK_BOX = (54.45, 7.7, 57.9, 15.4)  # south, west, north, east
+
+
+def _in_denmark(lat: float, lon: float) -> bool:
+    s, w, n, e = DK_BOX
+    return s <= lat <= n and w <= lon <= e
+
+
+def _is_hems_ac(ac: dict[str, Any]) -> bool:
+    reg = (ac.get("r") or "").replace(" ", "").upper()
+    typ = (ac.get("t") or "").upper()
+    flight = (ac.get("flight") or "").strip().upper()
+    if typ in HEMS_TYPES and (reg.startswith("LN-OU") or reg.startswith("LN-OT") or flight.startswith("DOC") or flight.startswith("NLA")):
+        return True
+    if reg in {r.replace(" ", "").upper() for r in HEMS_REGS} or reg in HEMS_REGS:
+        return True
+    return False
+
+
+def fetch_hems() -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]]:
+    status: dict[str, Any] = {"ok": False, "count": 0, "endpoint": ADSB_POINT, "error": None, "cors": False}
+    aircraft: list[dict[str, Any]] = []
+    try:
+        raw = http_get_retries(ADSB_POINT, timeout=20)
+        payload = json.loads(raw.decode("utf-8"))
+        aircraft = payload.get("ac") or []
+        status["ok"] = True
+    except Exception as exc:  # noqa: BLE001
+        status["error"] = str(exc)
+        log(f"  adsb.lol fejlede: {exc}")
+        return [], [], status
+
+    items: list[dict[str, Any]] = []
+    fleet: list[dict[str, Any]] = []
+    seen_regs: set[str] = set()
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    for ac in aircraft:
+        if not _is_hems_ac(ac):
+            continue
+        lat, lon = ac.get("lat"), ac.get("lon")
+        if lat is None or lon is None:
+            continue
+        if not _in_denmark(float(lat), float(lon)):
+            continue
+        reg = (ac.get("r") or "").strip() or (ac.get("hex") or "ukendt")
+        if reg in seen_regs:
+            continue
+        seen_regs.add(reg)
+        typ = ac.get("t") or ""
+        flight = (ac.get("flight") or "").strip()
+        alt = ac.get("alt_baro") or ac.get("alt_geom")
+        airborne = alt not in (None, "ground", 0, "0")
+        track = ac.get("track") or ac.get("true_heading") or ac.get("mag_heading")
+        speed = ac.get("gs")
+        title = f"Akutlægehelikopter {reg}"
+        if flight:
+            title += f" ({flight})"
+        bits = []
+        if airborne:
+            bits.append("I luften.")
+        else:
+            bits.append("På jorden / lav højde.")
+        if typ:
+            bits.append(f"Type: {typ}.")
+        if alt not in (None, "ground"):
+            bits.append(f"Højde: {alt} ft.")
+        if speed:
+            bits.append(f"Fart: {speed} kt.")
+        if track is not None:
+            bits.append(f"Kurs: {track}°.")
+        inc = _base_incident(
+            ident=f"hems-{reg}",
+            category="helikopter",
+            typ="redning",
+            title=title,
+            text=" ".join(bits),
+            source="adsb",
+            source_label="adsb.lol",
+            source_url=ADSB_PAGE,
+            published_at=now,
+            updated_at=now,
+            lat=round(float(lat), 6),
+            lon=round(float(lon), 6),
+            location_text="Live position" if airborne else "Seneste position",
+            extra={
+                "registration": reg,
+                "callsign": flight or None,
+                "aircraft_type": typ,
+                "track": track,
+                "altitude_ft": alt if alt != "ground" else 0,
+                "speed_kt": speed,
+                "airborne": bool(airborne),
+                "hex": ac.get("hex"),
+                "ongoing": True,
+            },
+        )
+        items.append(inc)
+        fleet.append({
+            "registration": reg,
+            "callsign": flight or None,
+            "lat": inc["lat"],
+            "lon": inc["lon"],
+            "track": track,
+            "altitude_ft": inc["altitude_ft"],
+            "speed_kt": speed,
+            "airborne": bool(airborne),
+            "type": typ,
+            "updated_at": now,
+        })
+    status["count"] = len(items)
+    log(f"  Akutlægehelikoptere i luften over DK: {len(items)}")
+    return items, fleet, status
+
+
+def annotate_police(incidents: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    for inc in incidents:
+        inc.setdefault("category", "politi")
+        inc.setdefault("source_url", inc.get("url") or "https://politiupdate.dk")
+        inc.setdefault("geometry", "point")
+        inc.setdefault("approximate", False)
+        inc.setdefault("routine", False)
+        inc.setdefault("nationwide", False)
+        if not inc.get("source_label"):
+            inc["source_label"] = "POLITI UPDATE"
+    return incidents
+
+
+
 def main() -> None:
     started = datetime.now(timezone.utc)
     CACHE.mkdir(parents=True, exist_ok=True)
     ARTICLE_CACHE.mkdir(parents=True, exist_ok=True)
     load_geo_cache()
+
+    existing: dict[str, Any] = {}
+    if DATA_PATH.exists():
+        try:
+            existing = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+        except Exception as exc:  # noqa: BLE001
+            log(f"Kunne ikke læse eksisterende data.json ({exc})")
 
     log("Henter RSS fra 12 politikredse…")
     all_rss: list[dict[str, Any]] = []
@@ -864,74 +1812,103 @@ def main() -> None:
         except Exception as exc:  # noqa: BLE001
             log(f"  FEJL {d['name']}: {exc}")
 
-    # Unikke tråde – vi henter den officielle side og får hele historikken
     by_thread: dict[str, dict[str, Any]] = {}
     for it in all_rss:
         tid = it["thread_id"]
         prev = by_thread.get(tid)
         if not prev or (it.get("published_at") or "") > (prev.get("published_at") or ""):
             by_thread[tid] = it
-    log(f"Unikke hændelser: {len(by_thread)} (fra {len(all_rss)} RSS-poster)")
+    log(f"Unikke politihændelser: {len(by_thread)} (fra {len(all_rss)} RSS-poster)")
 
     newest_rss = max((it.get("published_at") or "") for it in all_rss) if all_rss else ""
     feeds_ok = sum(1 for d in DISTRICTS if any(it["district"] == d["id"] for it in all_rss))
-    if DATA_PATH.exists() and newest_rss and feeds_ok == len(DISTRICTS):
-        try:
-            existing = json.loads(DATA_PATH.read_text(encoding="utf-8"))
-            prev = existing.get("newest_rss") or ""
-            if not prev:
-                inc = existing.get("incidents") or []
-                prev = max((i.get("updated_at") or i.get("published_at") or "") for i in inc) if inc else (existing.get("generated_at") or "")
-            if prev and newest_rss <= prev:
-                elapsed = round((datetime.now(timezone.utc) - started).total_seconds(), 1)
-                log(f"Ingen nye meddelelser (nyeste RSS {newest_rss} ≤ {prev}). data.json er uændret. {elapsed}s")
-                return
-        except Exception as exc:  # noqa: BLE001
-            log(f"Kunne ikke sammenligne med eksisterende data.json ({exc}) — kører fuld opdatering.")
+    reuse_police = False
+    if existing and newest_rss and feeds_ok == len(DISTRICTS):
+        prev = existing.get("newest_rss") or ""
+        if not prev:
+            inc = [i for i in (existing.get("incidents") or []) if i.get("source") == "politiupdate"]
+            prev = max((i.get("updated_at") or i.get("published_at") or "") for i in inc) if inc else ""
+        if prev and newest_rss <= prev:
+            reuse_police = True
+            log(f"Ingen nye POLITI UPDATE-meddelelser (nyeste RSS {newest_rss} ≤ {prev}). Genbruger politidata.")
 
-    threads: dict[str, dict[str, Any]] = {}
-    log("Henter fuld tekst for hver hændelse…")
-    with ThreadPoolExecutor(max_workers=5) as pool:
-        futs = {
-            pool.submit(fetch_thread, tid, (by_thread[tid].get("published_at") or "")): tid
-            for tid in by_thread
-        }
-        for i, fut in enumerate(as_completed(futs), 1):
-            tid = futs[fut]
-            try:
-                threads[tid] = fut.result() or {"thread_id": tid, "items": []}
-            except Exception as exc:  # noqa: BLE001
-                log(f"  tråd {tid} fejlede: {exc}")
-                threads[tid] = {"thread_id": tid, "items": []}
-            if i % 15 == 0 or i == len(futs):
-                log(f"  {i}/{len(futs)}")
+    if reuse_police:
+        police = annotate_police(
+            [i for i in (existing.get("incidents") or []) if i.get("source") == "politiupdate"]
+        )
+    else:
+        threads: dict[str, dict[str, Any]] = {}
+        log("Henter fuld tekst for hver politihændelse…")
+        with ThreadPoolExecutor(max_workers=5) as pool:
+            futs = {
+                pool.submit(fetch_thread, tid, (by_thread[tid].get("published_at") or "")): tid
+                for tid in by_thread
+            }
+            for i, fut in enumerate(as_completed(futs), 1):
+                tid = futs[fut]
+                try:
+                    threads[tid] = fut.result() or {"thread_id": tid, "items": []}
+                except Exception as exc:  # noqa: BLE001
+                    log(f"  tråd {tid} fejlede: {exc}")
+                    threads[tid] = {"thread_id": tid, "items": []}
+                if i % 15 == 0 or i == len(futs):
+                    log(f"  {i}/{len(futs)}")
+        log("Klassificerer og geokoder politi…")
+        police = []
+        for tid, rss in by_thread.items():
+            inc = build_incident(threads.get(tid) or {}, rss["district"], rss)
+            police.append(inc)
+        police = annotate_police(police)
 
-    log("Klassificerer og geokoder…")
-    incidents: list[dict[str, Any]] = []
-    for tid, rss in by_thread.items():
-        inc = build_incident(threads.get(tid) or {}, rss["district"], rss)
-        incidents.append(inc)
+    log("Henter ODIN, trafik, strømafbrud, varsler og helikoptere…")
+    odin, st_odin = fetch_odin()
+    trafik, st_vd = fetch_vejdirektoratet()
+    strom, st_gpd = fetch_outages()
+    vejr, st_dmi = fetch_dmi_warnings()
+    hems, fleet, st_hems = fetch_hems()
 
-    incidents.sort(key=lambda x: x.get("updated_at") or x.get("published_at") or "", reverse=True)
     save_geo_cache()
+
+    incidents = police + odin + trafik + strom + vejr + hems
+    incidents.sort(key=lambda x: x.get("updated_at") or x.get("published_at") or "", reverse=True)
 
     pinned = sum(1 for i in incidents if i.get("lat") is not None)
     by_dist: dict[str, int] = {}
     by_type: dict[str, int] = {}
+    by_cat: dict[str, int] = {}
     for i in incidents:
-        by_dist[i["district"]] = by_dist.get(i["district"], 0) + 1
-        by_type[i["type"]] = by_type.get(i["type"], 0) + 1
+        if i.get("district"):
+            by_dist[i["district"]] = by_dist.get(i["district"], 0) + 1
+        by_type[i.get("type") or "andet"] = by_type.get(i.get("type") or "andet", 0) + 1
+        by_cat[i.get("category") or "andet"] = by_cat.get(i.get("category") or "andet", 0) + 1
+
+    sources_status = {
+        "politiupdate": {
+            "ok": feeds_ok > 0,
+            "count": len(police),
+            "endpoint": "https://via.ritzau.dk/rss/short-messages/latest?publisherId={id}",
+            "reused": reuse_police,
+        },
+        "odin": st_odin,
+        "vejdirektoratet": st_vd,
+        "elnet": st_gpd,
+        "dmi": st_dmi,
+        "adsb": st_hems,
+    }
 
     payload = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "generated_at_copenhagen": datetime.now(ZoneInfo("Europe/Copenhagen")).isoformat(timespec="seconds"),
         "newest_rss": newest_rss,
-        "source": "POLITI UPDATE (via.ritzau.dk RSS + artikelsider)",
+        "source": (
+            "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, "
+            "DMI/MeteoAlarm, adsb.lol"
+        ),
         "note": (
             "De 12 politikredses officielle X-konti er ikke længere aktive "
-            "og er sat til beskyttet. Operative meddelelser hentes derfor "
-            "fra POLITI UPDATE, som politiet selv henviser til. "
-            "Facebook og Instagram skrames ikke."
+            "og er sat til beskyttet. Operative politimeddelelser hentes fra "
+            "POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun "
+            "station, ikke præcis adresse). Facebook og Instagram skrames ikke."
         ),
         "handles": [
             {
@@ -959,18 +1936,23 @@ def main() -> None:
             "with_coordinates": pinned,
             "without_coordinates": len(incidents) - pinned,
             "by_type": by_type,
+            "by_category": by_cat,
             "elapsed_seconds": round((datetime.now(timezone.utc) - started).total_seconds(), 1),
         },
+        "sources_status": sources_status,
+        "hems": fleet,
+        "hems_bases": HEMS_BASES,
         "incidents": incidents,
     }
     DATA_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     log(
-        f"Skrev {DATA_PATH} — {len(incidents)} hændelser, {pinned} med kortnål, "
+        f"Skrev {DATA_PATH} — {len(incidents)} hændelser, {pinned} med position, "
         f"{payload['stats']['elapsed_seconds']}s"
     )
-    for d in DISTRICTS:
-        log(f"  {d['name']}: {by_dist.get(d['id'], 0)}")
-    log(f"Typer: {by_type}")
+    log(f"Kategorier: {by_cat}")
+    for key, st in sources_status.items():
+        log(f"  kilde {key}: ok={st.get('ok')} n={st.get('count')} err={st.get('error')}")
+
 
 
 if __name__ == "__main__":

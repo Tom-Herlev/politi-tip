@@ -2,7 +2,8 @@ name: Opdater data og udgiv
 
 # Hvert 5. minut er GitHubs nedre grænse for planlagte kørsler.
 # GitHub kan forsinke cron på den gratis plan; appen henter selv data.json
-# hvert 2. minut, mens den er åben.
+# hvert 2. minut, mens den er åben. Akutlægehelikoptere forsøges også hentet
+# direkte i browseren (hyppigere), når adsb.lol tillader det.
 on:
   schedule:
     - cron: "*/5 * * * *"
@@ -20,7 +21,7 @@ concurrency:
 jobs:
   refresh-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 12
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

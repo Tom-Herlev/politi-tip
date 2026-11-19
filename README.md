@@ -1,8 +1,19 @@
 # Politi Tip
 
-En installérbar webapp (PWA), der samler offentlige operative meddelelser fra de 12 danske politikredse på et kort og i en liste. Du kan hakke de kredse af, du er interesseret i, og selv tilføje uofficielle tips (fx et link eller en tekst fra en Facebook- eller Instagram-gruppe).
+En installérbar webapp (PWA) til tablet og telefon, der samler offentlige operative hændelser på et kort og i en liste. Du kan hakke de politikredse af, du er interesseret i, filtrere på kategori og tidsrum, se afstand med «Nær mig», og selv tilføje uofficielle tips.
 
-Når appen er lagt på GitHub Pages, opdaterer den sig selv: nye hændelser hentes typisk hvert 5. minut, og den åbne app tjekker efter nyt hvert 2. minut og når du vender tilbage til den.
+Når appen er lagt på GitHub Pages, opdaterer den sig selv: nye hændelser hentes typisk hvert 5. minut, og den åbne app tjekker efter nyt hvert 2. minut og når du vender tilbage til den. Akutlægehelikoptere forsøges desuden hentet direkte i browseren hvert 20. sekund (hvis adsb.lol tillader det; ellers følger de datafeedet).
+
+## Kilder
+
+- **POLITI UPDATE** – de 12 politikredses officielle meddelelser (RSS fra via.ritzau.dk).
+- **ODIN 112-puls** (Beredskabsstyrelsen) – `http://www.odin.dk/RSS/RSS.aspx?beredskabsID=0000`. ODIN angiver kun brandstationen, ikke en adresse. Udrykninger vises derfor som et omtrentligt område omkring stationen. Hver hændelse er kildeangivet med link til [www.odin.dk/112puls](http://www.odin.dk/112puls/), som krævet. Rutineopgaver (eftersyn, forespørgsler, prøver) er skjult som standard.
+- **Vejdirektoratet** – offentlige trafikmeldinger fra `https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json` (uheld, spærringer, kø, tabt gods, havari), inkl. forventet åbningstid når den findes.
+- **Green Power Denmark / Elnet** – aktuelle strømafbrud fra `https://api.elnet.greenpowerdenmark.dk/api/incidents`, vist som et område med antal berørte kunder og elselskab.
+- **DMI-varsler** – `https://www.dmi.dk/dmidk_byvejrWS/rest/json/Danmark/DK/WarningAreas` (samme API som dmi.dk). Hvis DMI ikke har aktive varsler, bruges [MeteoAlarm](https://feeds.meteoalarm.org/api/v1/warnings/feeds-denmark) som reserve.
+- **Akutlægehelikoptere** – live position og kurs via [adsb.lol](https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250), når en af de danske H135/H145 (Norsk Luftambulanse) er i luften over Danmark. Der er fire baser (Skive, Billund, Ringsted, Saltum) og en reservehelikopter.
+
+Appen skraber ikke Facebook eller Instagram.
 
 ## Læg appen online (GitHub Pages)
 
@@ -30,7 +41,7 @@ Du skal bruge en **GitHub-konto**. Derefter, på en computer hvor du er logget i
 
    `https://DIT-BRUGERNAVN.github.io/politi-tip/`
 
-GitHub Actions kører `refresh.py` hvert 5. minut (det er den korteste cron, GitHub tillader). Hvis der ikke er nye meddelelser, stopper scriptet hurtigt og committer ingenting. Er der nyt, opdateres `data.json` og siden udgives igen. På den gratis plan kan GitHub forsinke de planlagte kørsler lidt; derfor tjekker appen også selv.
+GitHub Actions kører `refresh.py` hvert 5. minut (det er den korteste cron, GitHub tillader). Er der ingen nye politimeddelelser, genbruges de, mens de øvrige kilder stadig opdateres. På den gratis plan kan GitHub forsinke de planlagte kørsler lidt; derfor tjekker appen også selv.
 
 ## Installer appen på tabletten
 
@@ -42,7 +53,9 @@ Del → **Føj til hjemmeskærm** → tilføj. Appen åbner bagefter som et selv
 **Android (Chrome)**  
 Menu (tre prikker) → **Tilføj til startskærm** / **Installer app**.
 
-Når appen er åben, vises tidspunktet for sidste dataopdatering (dansk tid) og hvornår appen sidst tjekkede. Den henter `data.json` igen hvert 2. minut og når du vender tilbage til appen.
+Når appen er åben, vises tidspunktet for sidste dataopdatering (dansk tid) og hvornår appen sidst tjekkede. Den henter `data.json` igen hvert 2. minut og når du vender tilbage til appen. Du kan bruge den offline med de senest hentede hændelser.
+
+Nødnumrene 112, 114, Giftlinjen og lægevagten pr. region ligger øverst og kan trykkes direkte.
 
 ## Kør lokalt
 
@@ -54,42 +67,11 @@ python3 -m http.server 8080
 
 Åbn [http://127.0.0.1:8080](http://127.0.0.1:8080). Åbn ikke filen som `file://` — så kan `data.json` og service workeren ikke indlæses.
 
-## Sådan opdateres data
-
-`refresh.py` (køres af GitHub Actions hvert 5. minut, eller manuelt):
-
-1. Henter de 12 officielle POLITI UPDATE-RSS-feeds.
-2. Stopper med det samme, hvis intet er nyere end sidste `data.json`.
-3. Ellers samler det opdateringer af samme sag, henter fuld tekst (genbruger `.cache/`), klassificerer, geokoder og skriver `data.json`.
-
-Geokodning bruger [Adressevælgeren](https://adressevaelger.dk) (Klimadatastyrelsens erstatning for DAWA, som lukkede 1. oktober 2026) med den officielle fælles token `adressevaelger123`, og Nominatim som reserve. Cachen i `.cache/` er lagt i lageret og gemmes også mellem Actions-kørsler, så opdateringerne forbliver korte.
-
-**CORS:** POLITI UPDATE-feedet (`via.ritzau.dk/rss/...`) sender ikke `Access-Control-Allow-Origin`. En ren klientløsning, der læste RSS direkte i tabletten, er derfor ikke mulig med det nuværende API. Data skal stadig hentes af `refresh.py` og udgives som `data.json`.
-
-## Hvorfor POLITI UPDATE og ikke X?
-
-I januar 2026 gik politiet over til [POLITI UPDATE](https://politiupdate.dk). De 12 politikredses X-konti er verificeret og er **ikke længere aktive** – de er sat til beskyttet og henviser selv til POLITI UPDATE.
-
-| Politikreds | Handle |
-|---|---|
-| Københavns Politi | @KobenhavnPoliti |
-| Københavns Vestegns Politi | @VestegnsPoliti |
-| Nordsjællands Politi | @NSJPoliti |
-| Midt- og Vestsjællands Politi | @MVSJPoliti |
-| Sydsjællands og Lolland-Falsters Politi | @SSJ_LFPoliti |
-| Fyns Politi | @FynsPoliti |
-| Syd- og Sønderjyllands Politi | @SjylPoliti |
-| Sydøstjyllands Politi | @SydOjylPoliti |
-| Midt- og Vestjyllands Politi | **@MVJPoliti** (ikke det parodiske @MidtVestPoliti) |
-| Østjyllands Politi | @OjylPoliti |
-| Nordjyllands Politi | @NjylPoliti |
-| Bornholms Politi | **@BornholmsPoliti** (ikke @BornholmPoliti, som ikke findes) |
-
-Appen skraber ikke Facebook eller Instagram.
-
 ## Begrænsninger
 
-- Geokodning er et bedste bud ud fra fritekst. Nogle meddelelser har intet sted og får ingen nål.
+- ODIN giver kun brandstationen. Kortet viser et omtrentligt område, ikke en præcis nål.
+- Geokodning af politimeddelelser er et bedste bud ud fra fritekst. Nogle meddelelser har intet sted og får ingen nål.
+- adsb.lol sender (november 2026) ikke CORS-headers, så live-opdatering af helikoptere i browseren kan fejle; så vises seneste position fra datafeedet (opdateres typisk hvert 5. minut).
 - Dette er ikke en officiel polititjeneste og erstatter ikke 112 eller 114.
 - Nogle officielle meddelelser nævner efterlysninger med navn eller alder. Appen viser den offentlige tekst og linker til kilden.
 - På iPad kræves Safari for «Føj til hjemmeskærm». Chrome på iOS kan ikke installere PWA’er på samme måde.

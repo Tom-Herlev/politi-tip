@@ -1,7 +1,7 @@
 /* Service worker for Politi Tip.
    App-skallen caches, data.json hentes altid fra nettet først. */
-const SHELL_CACHE = "polititip-shell-v1";
-const DATA_CACHE = "polititip-data-v1";
+const SHELL_CACHE = "polititip-shell-v2";
+const DATA_CACHE = "polititip-data-v2";
 
 const SHELL_ASSETS = [
   "./",

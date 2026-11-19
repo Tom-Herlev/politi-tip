@@ -2637,5 +2637,132 @@
     "label": "Tureby, Turebyvej, Nyhuse, Sonnerup, Tureby, Køge Kommune, Region Sjælland, 4682, Danmark",
     "source": "nominatim",
     "query": "Tureby"
+  },
+  "dd543930a95711f40d3ce34ef940a34be452ceec": {
+    "lat": 55.469608,
+    "lon": 12.178939,
+    "label": "Københavnsvej 1, 4600 Køge",
+    "source": "adressevaelger",
+    "query": "København Svinninge"
+  },
+  "fe2c0113cd6f9c7e3e60f17093ad236fea5f981d": {
+    "lat": 55.73223,
+    "lon": 9.303426,
+    "label": "Hærvejen, Nørup, Ny Nørup, Vejle Kommune, Region Syddanmark, 7321, Danmark",
+    "source": "nominatim",
+    "query": "Hærvejen"
+  },
+  "1c2531cf3d058ae28cca1f17ebd2b387a828366b": {
+    "lat": 55.039152,
+    "lon": 9.353713,
+    "label": "Sønderjyske Motorvej, Årslev, Rødekro, Aabenraa Kommune, Region Syddanmark, 6230, Danmark",
+    "source": "nominatim",
+    "query": "E 45 Rødekro Rødekro"
+  },
+  "f260b4d9e05cc254d83acb2421dbf64ae7734c1a": {
+    "lat": 55.049977,
+    "lon": 9.415802,
+    "label": "Løgumklostervej 9, 6200 Aabenraa",
+    "source": "adressevaelger",
+    "query": "Løgumkloster brandstation"
+  },
+  "2c07146640731eaded82f2f1afee94ad6c45494a": {
+    "lat": 56.309193,
+    "lon": 10.318594,
+    "label": "Station Hornslet, Falcksvej, Hornslet, Syddjurs Kommune, Region Midtjylland, 8543, Danmark",
+    "source": "nominatim",
+    "query": "Hornslet brandstation"
+  },
+  "293be5ac9358cbbd757932b27d4b13911f7ca7d8": {
+    "lat": 55.704779,
+    "lon": 12.585411,
+    "label": "Silkeborg Plads 2, 2100 København Ø",
+    "source": "adressevaelger",
+    "query": "Silkeborg brandstation"
+  },
+  "dbc868b3cbb13e766cb80c9762fdf160bad83fa4": {
+    "lat": 55.604819,
+    "lon": 8.803479,
+    "label": "Agerbæk Brandstation, Storegade, Agerbæklund, Agerbæk, Varde Kommune, Region Syddanmark, 6753, Danmark",
+    "source": "nominatim",
+    "query": "Agerbæk brandstation"
+  },
+  "255addb88394fcd52e089e16d339078b32d9d765": {
+    "lat": 55.328342,
+    "lon": 8.769847,
+    "label": "Sydvestjysk Brandvæsen, Brandmands Smøgen, Ribe, Esbjerg Kommune, Region Syddanmark, 6760, Danmark",
+    "source": "nominatim",
+    "query": "Ribe brandstation"
+  },
+  "2e3052dc6001a368127594adb69a8cd35fdf95ca": {
+    "lat": 55.664859,
+    "lon": 12.39186,
+    "label": "Hovedstadens Beredskab, Glostrup, Ved Brandstationen, Glostrup, Glostrup Kommune, Region Hovedstaden, 2600, Danmark",
+    "source": "nominatim",
+    "query": "Glostrup brandstation"
+  },
+  "cc7f2ccb23912f1990df7a829f457ecf732e52a0": null,
+  "9c4d40291d51c2de431454eea15075ab69e07846": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Tomsgården"
+  },
+  "b9224f8ead15763c5f2e0fadd9f013332d581d1a": {
+    "lat": 57.441083,
+    "lon": 10.496177,
+    "label": "Frederikshavn Brandvæsen, H.C. Ørsteds Vej, Flade, Frederikshavn, Frederikshavn Kommune, Region Nordjylland, 9900, Danmark",
+    "source": "nominatim",
+    "query": "Frederikshavn brandstation"
+  },
+  "b3860b452fd0e800d776d60e0ad3ea1027fd67a0": {
+    "lat": 57.042935,
+    "lon": 9.929156,
+    "label": "Beredskabscenter Aalborg, Thomas Boss Gade, Kanalbyen, Havnefronten, Eternitten, Aalborg, Aalborg Kommune, Region Nordjylland, 9000, Danmark",
+    "source": "nominatim",
+    "query": "Aalborg brandstation"
+  },
+  "e5ff05b32db412dde91f13bde15072a9bd8ddf83": {
+    "lat": 55.40013,
+    "lon": 10.417761,
+    "label": "Åsumvej 1, 5000 Odense C",
+    "source": "adressevaelger",
+    "query": "Åsum - Odense brandstation"
+  },
+  "88eaf81ada42d836cd7e89e9f98ec1b30b958c91": {
+    "lat": 55.621661,
+    "lon": 9.303935,
+    "label": "Station Egtved, Nydamsvej, Egtved, Vejle Kommune, Region Syddanmark, 6040, Danmark",
+    "source": "nominatim",
+    "query": "Egtved brandstation"
+  },
+  "ec2a870269068aee4803b89ea395292007f43c23": {
+    "lat": 55.704278,
+    "lon": 11.716084,
+    "label": "Holbæk Brandstation, Valdemar Sejrsvej, Lyset, Tveje Merløse, Holbæk, Holbæk Kommune, Region Sjælland, 4300, Danmark",
+    "source": "nominatim",
+    "query": "Holbæk brandstation"
+  },
+  "8f4201dc9c06e049d070d4454c64713c95d66a9e": {
+    "lat": 56.136562,
+    "lon": 8.968077,
+    "label": "Herninglund P Plads 18, 7400 Herning",
+    "source": "adressevaelger",
+    "query": "Herning brandstation"
+  },
+  "67fde36bffaaf96c1ecde7969bc4371339a15645": {
+    "lat": 55.657183,
+    "lon": 12.538031,
+    "label": "Vesterbro Brandstation, Enghavevej, Frederiksholm, Carlsberg Byen, København, Københavns Kommune, Region Hovedstaden, 1765, Danmark",
+    "source": "nominatim",
+    "query": "Vesterbro brandstation"
+  },
+  "dc578382418623d8c26728dddf6e7b0b63f04197": {
+    "lat": 55.631588,
+    "lon": 12.621963,
+    "label": "Tårnby Brandstation, Amager Landevej, Tårnbylund, Kastrup, Tårnby Kommune, Region Hovedstaden, 2770, Danmark",
+    "source": "nominatim",
+    "query": "Tårnby brandstation"
   }
 }

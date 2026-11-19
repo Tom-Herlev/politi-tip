@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Politi Tip – hændelseskort</title>
-  <meta name="description" content="Offentlige meddelelser fra POLITI UPDATE og dine egne tips, samlet på kort og i liste." />
+  <meta name="description" content="Offentlige hændelser fra politi, beredskab, trafik, strømafbrud, DMI og akutlægehelikoptere, samlet på kort og i liste." />
   <meta name="theme-color" content="#1c3a5f" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -25,7 +25,7 @@
       <span class="mark" aria-hidden="true"></span>
       <div>
         <h1>Politi Tip</h1>
-        <p>Politi, brand og redning – hele landet, filtreret til dine områder</p>
+        <p>Politi, brand, trafik, strøm og vejr – hele landet, filtreret til dine områder</p>
       </div>
     </div>
     <div class="top-meta">
@@ -38,6 +38,22 @@
     Dette er ikke en officiel polititjeneste. Ved fare for liv eller førlighed skal du ringe <strong>112</strong>.
     Tips til politiet gives på <strong>114</strong> eller via tip-funktionen på politi.dk – ikke her.
   </div>
+
+  <nav class="emergency" aria-label="Nødnumre">
+    <a class="em-btn alarm" href="tel:112">112 Alarm</a>
+    <a class="em-btn" href="tel:114">114 Politi</a>
+    <a class="em-btn" href="tel:82121212">Giftlinjen 82 12 12 12</a>
+    <details class="em-more">
+      <summary>Lægevagt</summary>
+      <ul>
+        <li><a href="tel:1813">Hovedstaden 1813</a></li>
+        <li><a href="tel:1818">Sjælland 1818</a></li>
+        <li><a href="tel:70110707">Syddanmark 70 11 07 07</a></li>
+        <li><a href="tel:70113131">Midtjylland 70 11 31 31</a></li>
+        <li><a href="tel:70150300">Nordjylland 70 15 03 00</a></li>
+      </ul>
+    </details>
+  </nav>
 
   <div class="app">
     <aside id="sidebar" class="sidebar">
@@ -54,8 +70,40 @@
       </section>
 
       <section>
-        <h2>Type</h2>
-        <div id="type-filters" class="chips"></div>
+        <h2>Kategori</h2>
+        <div id="category-filters" class="chips"></div>
+      </section>
+
+      <section>
+        <h2>Tidsrum</h2>
+        <div id="time-filters" class="chips time-chips"></div>
+        <p class="hint">Igangværende hændelser vises også, selv om de startede tidligere.</p>
+      </section>
+
+      <section>
+        <h2>Nær mig</h2>
+        <p class="hint">Bruger kun din position på denne enhed. Den sendes ikke videre.</p>
+        <button type="button" id="near-me" class="btn secondary">Brug min position</button>
+        <div id="near-controls" class="near-controls" hidden>
+          <label>
+            Radius
+            <select id="near-radius">
+              <option value="10">10 km</option>
+              <option value="25" selected>25 km</option>
+              <option value="50">50 km</option>
+              <option value="100">100 km</option>
+            </select>
+          </label>
+          <button type="button" id="near-off" class="linkish">Slå fra</button>
+        </div>
+        <p id="near-status" class="status" hidden></p>
+      </section>
+
+      <section>
+        <label class="check-line">
+          <input type="checkbox" id="show-routine" />
+          <span>Vis rutineopgaver fra beredskabet (eftersyn, forespørgsler, prøver)</span>
+        </label>
       </section>
 
       <section class="tip-card">
@@ -94,6 +142,7 @@
 
     <main class="main">
       <section class="map-wrap">
+        <div id="map-toolbar" class="map-toolbar" aria-label="Antal pr. kategori"></div>
         <div id="map" role="application" aria-label="Kort over hændelser"></div>
       </section>
       <section class="list-wrap">
@@ -102,17 +151,26 @@
           <p id="list-count">0 hændelser</p>
         </div>
         <ol id="list" class="list"></ol>
-        <p id="empty" class="empty" hidden>Ingen hændelser i de valgte områder. Prøv at sætte hak ved flere politikredse.</p>
+        <p id="empty" class="empty" hidden>Ingen hændelser i de valgte filtre. Prøv et længere tidsrum, flere kategorier eller flere politikredse.</p>
       </section>
     </main>
   </div>
 
   <footer class="footer">
     <p>
-      Kilder: offentlige meddelelser fra <a href="https://politiupdate.dk" rel="noopener">POLITI UPDATE</a>
-      (politikredsenes officielle kanal efter at X-kontiene blev lukket).
+      Kilder: <a href="https://politiupdate.dk" rel="noopener">POLITI UPDATE</a>,
+      <a href="http://www.odin.dk/112puls/" rel="noopener">ODIN 112-puls</a> (Beredskabsstyrelsen),
+      <a href="https://trafikkort.vejdirektoratet.dk/" rel="noopener">Vejdirektoratet</a>,
+      <a href="https://elnet.dk/" rel="noopener">Green Power Denmark / Elnet</a>,
+      <a href="https://www.dmi.dk/varsler" rel="noopener">DMI</a>
+      og <a href="https://feeds.meteoalarm.org/" rel="noopener">MeteoAlarm</a>,
+      <a href="https://adsb.lol/" rel="noopener">adsb.lol</a> (akutlægehelikoptere).
       Kort: <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>.
       Geokodning: Klimadatastyrelsens Adressevælger og OpenStreetMap Nominatim.
+    </p>
+    <p>
+      ODIN angiver kun brandstationen, ikke en præcis adresse. Udrykninger vises derfor som et omtrentligt område.
+      Hver ODIN-hændelse er kildeangivet med link til www.odin.dk/112puls, som krævet.
     </p>
   </footer>
 
