@@ -2814,5 +2814,12 @@
     "label": "Østerbro Brandstation, Næstvedgade, Marmormolen, Østervold, Østerbro, København, Københavns Kommune, Region Hovedstaden, 2150, Danmark",
     "source": "nominatim",
     "query": "Østerbro brandstation"
+  },
+  "2d76d3f3228f5d06fca1e6764d1e0f6b7af69059": {
+    "lat": 55.731131,
+    "lon": 12.373031,
+    "label": "FALCK Ballerup, Ring 4, Lautrupgård, Ballerup, Ballerup Kommune, Region Hovedstaden, 2750, Danmark",
+    "source": "nominatim",
+    "query": "Ballerup brandstation"
   }
 }
