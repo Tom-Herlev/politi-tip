@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T17:44:26Z",
-  "generated_at_copenhagen": "2026-11-19T18:44:26+01:00",
+  "generated_at": "2026-11-19T17:52:40Z",
+  "generated_at_copenhagen": "2026-11-19T18:52:40+01:00",
   "newest_rss": "2026-11-19T17:14:58Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 32
+      "count": 33
     },
     {
       "id": "vestegnen",
@@ -179,14 +179,14 @@
   "stats": {
     "rss_items": 300,
     "incidents": 264,
-    "with_coordinates": 228,
-    "without_coordinates": 36,
+    "with_coordinates": 229,
+    "without_coordinates": 35,
     "by_type": {
-      "brand": 36,
+      "brand": 37,
       "faerdsel": 107,
       "politi": 67,
       "andet": 49,
-      "redning": 5
+      "redning": 4
     },
     "by_category": {
       "brand": 20,
@@ -194,7 +194,7 @@
       "trafik": 63,
       "strom": 8
     },
-    "elapsed_seconds": 12.1
+    "elapsed_seconds": 16.2
   },
   "sources_status": {
     "politiupdate": {
@@ -314,6 +314,34 @@
       "station": "St. Roskilde",
       "beredskab": "Roskilde Brandvæsen",
       "first_message": "Bygn.brand-Industribygning",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
+      "id": "odin-461f29afcbdf6d3d",
+      "category": "brand",
+      "type": "brand",
+      "title": "Brandalarm – Frederiksberg",
+      "text": "Beredskab: Hovedstadens Beredskab. Station: Frederiksberg. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brandalarm.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-19T17:19:41Z",
+      "updated_at": "2026-11-19T17:19:41Z",
+      "lat": 55.679956,
+      "lon": 12.529901,
+      "location_text": "Frederiksberg (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "koebenhavn",
+      "district_name": "Københavns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Frederiksberg",
+      "beredskab": "Hovedstadens Beredskab",
+      "first_message": "Brandalarm",
       "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
@@ -1597,34 +1625,6 @@
       "outage_type": "Uvarslet",
       "expected_back": "2026-11-19T14:00:00",
       "ongoing": true
-    },
-    {
-      "id": "odin-4d2e9d22987139c9",
-      "category": "brand",
-      "type": "redning",
-      "title": "FUH Fastklemte LASTBIL/BUS",
-      "text": "Beredskab: Beredskab 4K. Første melding: FUH Fastklemte LASTBIL/BUS.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-19T12:40:46Z",
-      "updated_at": "2026-11-19T12:40:46Z",
-      "lat": null,
-      "lon": null,
-      "location_text": "Beredskab 4K",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": true,
-      "district": null,
-      "district_name": null,
-      "official": true,
-      "nationwide": true,
-      "routine": false,
-      "station": "",
-      "beredskab": "Beredskab 4K",
-      "first_message": "FUH Fastklemte LASTBIL/BUS",
-      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "vd-eee3a93f38a2b7a2",

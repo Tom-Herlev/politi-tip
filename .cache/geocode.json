@@ -2793,5 +2793,12 @@
     "label": "Station Aarhus Syd, Søren Nymarks Vej, Holme Industriby, Rosenhøj, Tranbjerg, Aarhus Kommune, Region Midtjylland, 8260, Danmark",
     "source": "nominatim",
     "query": "Aarhus Syd brandstation"
+  },
+  "ec1a1005a4edfec3cd7d32f7bbfd483ae60f4e41": {
+    "lat": 55.679956,
+    "lon": 12.529901,
+    "label": "Frederiksberg brandstation, Jernbanestien, Frederiksberg, Frederiksberg Kommune, Region Hovedstaden, 1861, Danmark",
+    "source": "nominatim",
+    "query": "Frederiksberg brandstation"
   }
 }
