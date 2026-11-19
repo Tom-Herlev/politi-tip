@@ -2836,5 +2836,19 @@
     "label": "Midt- og Sydsjællands Brand & Redning - St. Haslev, Lysholm Alle, Hestehave, Haslev, Faxe Kommune, Region Sjælland, 4690, Danmark",
     "source": "nominatim",
     "query": "brandstation St. Faxe"
+  },
+  "9a398e8fbe251df59cd72baeed47f88545a36a8b": {
+    "lat": 55.67543,
+    "lon": 12.592625,
+    "label": "Christianshavns Kanal 2, 1406 København K",
+    "source": "adressevaelger",
+    "query": "Christianshavn brandstation"
+  },
+  "6a3b9c05384db21132698346d77860ad37b093c2": {
+    "lat": 56.212786,
+    "lon": 10.157545,
+    "label": "Station Aarhus Nord, Klokhøjen, Lisbjerg Erhvervspark, Skejby, Lisbjerg, Aarhus Kommune, Region Midtjylland, 8200, Danmark",
+    "source": "nominatim",
+    "query": "Aarhus Nord brandstation"
   }
 }
