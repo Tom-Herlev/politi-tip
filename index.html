@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Politi Tip – hændelseskort</title>
+  <meta name="description" content="Offentlige meddelelser fra POLITI UPDATE og dine egne tips, samlet på kort og i liste." />
+  <meta name="theme-color" content="#1c3a5f" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Politi Tip" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <div>
+        <h1>Politi Tip</h1>
+        <p>Politi, brand og redning – hele landet, filtreret til dine områder</p>
+      </div>
+    </div>
+    <div class="top-meta">
+      <p id="updated" class="updated">Indlæser …</p>
+      <button type="button" id="toggle-filters" class="btn ghost" aria-expanded="false" aria-controls="sidebar">Områder og tip</button>
+    </div>
+  </header>
+
+  <div class="disclaimer" role="note">
+    Dette er ikke en officiel polititjeneste. Ved fare for liv eller førlighed skal du ringe <strong>112</strong>.
+    Tips til politiet gives på <strong>114</strong> eller via tip-funktionen på politi.dk – ikke her.
+  </div>
+
+  <div class="app">
+    <aside id="sidebar" class="sidebar">
+      <section>
+        <div class="section-head">
+          <h2>Politikredse</h2>
+          <div class="inline-actions">
+            <button type="button" id="select-mine" class="linkish">Mine områder</button>
+            <button type="button" id="select-all" class="linkish">Hele landet</button>
+          </div>
+        </div>
+        <p class="hint">Standard er Storkøbenhavn, Vestegnen og Nordsjælland. Hak flere af, hvis du bevæger dig udenfor.</p>
+        <div id="district-filters" class="checks"></div>
+      </section>
+
+      <section>
+        <h2>Type</h2>
+        <div id="type-filters" class="chips"></div>
+      </section>
+
+      <section class="tip-card">
+        <h2>Tilføj tip</h2>
+        <p class="hint">Har du set et opslag i en Facebook- eller Instagram-gruppe, kan du selv indsætte linket eller teksten. Appen skraber ikke de sociale medier.</p>
+        <form id="tip-form">
+          <label>
+            Tekst eller link
+            <textarea id="tip-text" required rows="3" placeholder="Fx: Brand i et hus på Vestergade i Roskilde. Eller et link."></textarea>
+          </label>
+          <label>
+            Adresse eller sted (valgfrit)
+            <input id="tip-address" type="text" placeholder="Vestergade, Roskilde" autocomplete="street-address" />
+          </label>
+          <div class="row">
+            <label>
+              Politikreds
+              <select id="tip-district"></select>
+            </label>
+            <label>
+              Type
+              <select id="tip-type">
+                <option value="andet">Andet</option>
+                <option value="brand">Brand</option>
+                <option value="faerdsel">Færdsel</option>
+                <option value="redning">Redning</option>
+                <option value="politi">Politi</option>
+              </select>
+            </label>
+          </div>
+          <button type="submit" class="btn primary">Tilføj som uofficielt tip</button>
+          <p id="tip-status" class="status" hidden></p>
+        </form>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section class="map-wrap">
+        <div id="map" role="application" aria-label="Kort over hændelser"></div>
+      </section>
+      <section class="list-wrap">
+        <div class="list-head">
+          <h2>Liste</h2>
+          <p id="list-count">0 hændelser</p>
+        </div>
+        <ol id="list" class="list"></ol>
+        <p id="empty" class="empty" hidden>Ingen hændelser i de valgte områder. Prøv at sætte hak ved flere politikredse.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>
+      Kilder: offentlige meddelelser fra <a href="https://politiupdate.dk" rel="noopener">POLITI UPDATE</a>
+      (politikredsenes officielle kanal efter at X-kontiene blev lukket).
+      Kort: <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>.
+      Geokodning: Klimadatastyrelsens Adressevælger og OpenStreetMap Nominatim.
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("./sw.js");
+      });
+    }
+  </script>
+</body>
+</html>

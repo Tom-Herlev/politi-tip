@@ -1,0 +1,76 @@
+name: Opdater data og udgiv
+
+# Hvert 5. minut er GitHubs nedre grænse for planlagte kørsler.
+# GitHub kan forsinke cron på den gratis plan; appen henter selv data.json
+# hvert 2. minut, mens den er åben.
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: polititip-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Genbrug geokode- og artikelcache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: polititip-cache-${{ github.run_id }}
+          restore-keys: |
+            polititip-cache-
+
+      - name: Hent nye hændelser
+        run: python3 refresh.py
+
+      - name: Gem data.json og cache, hvis der er nyt
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json .cache
+          if git diff --staged --quiet; then
+            echo "Ingen ændringer at committe."
+          else
+            git commit -m "Opdater hændelsesdata"
+            git push
+          fi
+
+      - name: Forbered statiske filer til GitHub Pages
+        run: |
+          mkdir -p _site
+          cp index.html styles.css app.js data.json manifest.json sw.js _site/
+          touch _site/.nojekyll
+          cp -r icons _site/icons
+
+      - name: Konfigurer Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages-artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Udgiv til GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

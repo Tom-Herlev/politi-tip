@@ -1,0 +1,2641 @@
+{
+  "255fea54c2ba793f05988df1b1e7351de3e40c06": {
+    "lat": 55.07022,
+    "lon": 14.918243,
+    "label": "Vesterbro 2, Aakirkeby, 3720 Aakirkeby",
+    "source": "adressevaelger",
+    "query": "Vesterbro Ny Skole"
+  },
+  "da45eb8935b97aab1d9c57f46b21eb4d36bd13ac": {
+    "lat": 55.661524,
+    "lon": 12.537449,
+    "label": "Vestre Fængsel, Vigerslev Allé, Den Gule By, Carlsberg Byen, København, Københavns Kommune, Region Hovedstaden, 1765, Danmark",
+    "source": "nominatim",
+    "query": "Vestre Fængsel"
+  },
+  "4712a38551fc4e04a14819001642a3e48efa27c7": null,
+  "3345759532d2faa7c052b76c09325466aab9c297": {
+    "lat": 55.680314,
+    "lon": 12.566578,
+    "label": "Nørre Voldgade 1, 1358 København K",
+    "source": "adressevaelger",
+    "query": "Nørre Voldgade"
+  },
+  "f87c478f2620c149da9437d5fb268c3f31313aa4": {
+    "lat": 55.683087,
+    "lon": 12.583001,
+    "label": "Indre By, København, Københavns Kommune, Region Hovedstaden, 1110, Danmark",
+    "source": "nominatim",
+    "query": "Indre By"
+  },
+  "6bf2466ccd3fd7f9e90c34aa80d8ec43aa18cf3d": {
+    "lat": 57.057086,
+    "lon": 9.922604,
+    "label": "Havnegade 3, 9400 Nørresundby",
+    "source": "adressevaelger",
+    "query": "Havnegade Nationalbanken"
+  },
+  "6ace9666a33c286a7803c6767bda09813f5faa0c": null,
+  "a12b9fbe8ff3b8a76beb9fad1c3393fc7afdf9f1": null,
+  "c83bf9fb476007417685614f368ceb083de393ab": null,
+  "ea4ce7e74de93692e3da39a71c47e2e8b9b62282": {
+    "lat": 55.682779,
+    "lon": 12.573382,
+    "label": "Frederiksborggade 1, 1360 København K",
+    "source": "adressevaelger",
+    "query": "Frederiksborggade"
+  },
+  "1656caa3eb65a36d139d79062ede9c9517d9e1a5": {
+    "lat": 55.700819,
+    "lon": 12.53756,
+    "label": "Frederikssundsvej 1, 2400 København NV",
+    "source": "adressevaelger",
+    "query": "Frederikssundsvej"
+  },
+  "a2bf511e8b136b7a0d9154ba722bed4315449c46": {
+    "lat": 55.629187,
+    "lon": 12.596021,
+    "label": "Øresundsmotorvejen, Tårnbylund, Tårnby, Tårnby Kommune, Region Hovedstaden, 2770, Danmark",
+    "source": "nominatim",
+    "query": "Øresundsmotorvejen"
+  },
+  "afbbf4d8d3963a5c13cff71a9ffe5ffeb80439c5": {
+    "lat": 55.663775,
+    "lon": 12.513592,
+    "label": "Valby, Toftebakkevej, Valby Maskinfabrik, Valby, København, Københavns Kommune, Region Hovedstaden, 2500, Danmark",
+    "source": "nominatim",
+    "query": "Valby"
+  },
+  "d341b3ee93917a486241f01f61a865f4c9313838": null,
+  "56fd0a2b8b7d42ec1818a1d504112f7ef6fd9e2f": null,
+  "a7844d4f929c9aec23b2ac89c6d642ca43705032": {
+    "lat": 55.378426,
+    "lon": 9.131806,
+    "label": "Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Danmark"
+  },
+  "956f5cda2f4f275cd6056a3edd03d40876a6a98d": null,
+  "c166adbe57c4c5c0d0af701776f01f84f09479cc": {
+    "lat": 55.825662,
+    "lon": 9.552892,
+    "label": "Københavnervej 2, 7171 Uldum",
+    "source": "adressevaelger",
+    "query": "København"
+  },
+  "0ec0081142c083f33d536b1497af6232ce68558e": {
+    "lat": 55.630243,
+    "lon": 12.577077,
+    "label": "Espresso House Fields, Arne Jacobsens Allé, Våren, Ørestad, København, Københavns Kommune, Region Hovedstaden, 1561, Danmark",
+    "source": "nominatim",
+    "query": "Fields"
+  },
+  "9665f66ae3cb148ad63752daab3f0428b34a8f30": {
+    "lat": 55.702704,
+    "lon": 12.572264,
+    "label": "Parken, Øster Allé, Indre Østerbro, Østervold, Østerbro, København, Københavns Kommune, Region Hovedstaden, 2100, Danmark",
+    "source": "nominatim",
+    "query": "Parken"
+  },
+  "971d27c3c5ae11f9cacf8148786a64757f902266": {
+    "lat": 55.723064,
+    "lon": 12.402713,
+    "label": "Skovlunde, Annavej, Sømose Hegn, Skovlunde, Ballerup, Ballerup Kommune, Region Hovedstaden, 2740, Danmark",
+    "source": "nominatim",
+    "query": "Skovlunde"
+  },
+  "bd26a325a4c0f640c721d71a4cd6e50a2503b661": {
+    "lat": 55.606233,
+    "lon": 12.387404,
+    "label": "Arken, Stenstien, Ishøj, Ishøj Kommune, Region Hovedstaden, 2665, Danmark",
+    "source": "nominatim",
+    "query": "Arken"
+  },
+  "b6d8b469cc72ae4eaff27092438d826e90ef9459": {
+    "lat": 55.7293,
+    "lon": 12.396177,
+    "label": "Lautrupvej 1, 2750 Ballerup",
+    "source": "adressevaelger",
+    "query": "Lautrupvej Ballerup"
+  },
+  "5c8b74fb4206209e31da34f4d92a6cb4180e60b1": {
+    "lat": 55.613379,
+    "lon": 12.357895,
+    "label": "Ishøj, Centerstien, Ishøj, Ishøj Kommune, Region Hovedstaden, 2635, Danmark",
+    "source": "nominatim",
+    "query": "Ishøj"
+  },
+  "3b1eb0987f15d11f2822874313ab1abba200a809": null,
+  "8779dbe70e022aed2a38380f7cb9db708f704c36": {
+    "lat": 55.652977,
+    "lon": 12.353399,
+    "label": "Albertslundvej 85A, 2625 Vallensbæk",
+    "source": "adressevaelger",
+    "query": "Albertslund"
+  },
+  "142962eae6eed817605092b308de91283620fbf0": null,
+  "29f53077ee39bfefc392efb6739f411e0305b439": {
+    "lat": 55.733753,
+    "lon": 12.429449,
+    "label": "Herlev Kommune, Region Hovedstaden, 2730, Danmark",
+    "source": "nominatim",
+    "query": "Herlev"
+  },
+  "ebacf134a2a832431e28cae508e44da026364249": {
+    "lat": 55.644171,
+    "lon": 12.477209,
+    "label": "Hvidovre, Hvidovre Kommune, Region Hovedstaden, 2650, Danmark",
+    "source": "nominatim",
+    "query": "Hvidovre"
+  },
+  "93cd0caf7a1d951b410d160a23d5b0539c8235b3": {
+    "lat": 55.656584,
+    "lon": 12.241748,
+    "label": "Høje-Taastrup Kommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Høje-Taastrup"
+  },
+  "12539d02c3436fb8c4636c9674063b896d229964": {
+    "lat": 55.709158,
+    "lon": 12.450217,
+    "label": "Motorring 3, Islev, Rødovre Kommune, Region Hovedstaden, 2610, Danmark",
+    "source": "nominatim",
+    "query": "Motorring 3"
+  },
+  "da7f8dd6dd7332c35b01a0625c253cc81d1b658a": null,
+  "17dfddde195da6b14c818fd46fe4a759c2753313": null,
+  "151c7102ec0667960b30b5bd0cfba596da579949": {
+    "lat": 55.095159,
+    "lon": 14.729141,
+    "label": "Sandemandsvej 1, Rønne, 3700 Rønne",
+    "source": "adressevaelger",
+    "query": "Sammen med brandvæsnet er vi til stede på Tonsbakken Skovlunde"
+  },
+  "8b0348bccba42eefa90239e2025babeb725de6a1": {
+    "lat": 55.896343,
+    "lon": 12.366855,
+    "label": "Københavnsvej 42, 3450 Allerød",
+    "source": "adressevaelger",
+    "query": "Københavns Vestegns Politi"
+  },
+  "2d858bdd4770ffdce17d95254461cad2638bd699": {
+    "lat": 55.665035,
+    "lon": 12.441929,
+    "label": "Brøndbyøster Station, Banestien, Brøndbyøster, Brøndby Kommune, Glostrup, Region Hovedstaden, 2610, Danmark",
+    "source": "nominatim",
+    "query": "Brøndbyøster Station"
+  },
+  "57cc4ab70ccdedc4e991c1fd9c0e0e1fc751f719": {
+    "lat": 55.646208,
+    "lon": 12.415494,
+    "label": "Brøndby Stadion, Brøndbyvester, Brøndby Kommune, Glostrup, Region Hovedstaden, 2605, Danmark",
+    "source": "nominatim",
+    "query": "Brøndby Stadion"
+  },
+  "33adc45b094bab3e34c403a554725f694bb30b6f": {
+    "lat": 55.771865,
+    "lon": 12.505141,
+    "label": "Kongens Lyngby, Lyngby-Taarbæk Kommune, Region Hovedstaden, 2800, Danmark",
+    "source": "nominatim",
+    "query": "Lyngby"
+  },
+  "6e092e37e433958a35a8178b4af6f466349a1239": null,
+  "c23ce509d62c4ae93cb887f7f3964f7fb35233b4": null,
+  "5e2b2c12b2dcb569708aa0a4999652ecb7ff4e15": {
+    "lat": 55.378426,
+    "lon": 9.131806,
+    "label": "Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Danmark"
+  },
+  "bbe657cf1eea59fd1246c7adaac586db2bbe7e22": {
+    "lat": 55.896343,
+    "lon": 12.366855,
+    "label": "Københavnsvej 42, 3450 Allerød",
+    "source": "adressevaelger",
+    "query": "Københavns Lufthavn"
+  },
+  "740092e5b22efc9566a9c00e176b0285506f8966": {
+    "lat": 56.034874,
+    "lon": 12.613007,
+    "label": "Helsingør, Helsingør Kommune, Region Hovedstaden, 3000, Danmark",
+    "source": "nominatim",
+    "query": "Helsingør"
+  },
+  "94bdd4ca34d20d75948e3c1df3cc51e6a0a5943e": {
+    "lat": 55.814507,
+    "lon": 12.37881,
+    "label": "Farum Bytorv 1, 3520 Farum",
+    "source": "adressevaelger",
+    "query": "Farum Bytorv Farum"
+  },
+  "de07ad3e117d4a3f1c415a71f9a64fec379755eb": {
+    "lat": 56.032885,
+    "lon": 12.613179,
+    "label": "Helsingør, Jernbanevej, Helsingør, Helsingør Kommune, Region Hovedstaden, 3000, Danmark",
+    "source": "nominatim",
+    "query": "Helsingør Station"
+  },
+  "b6c0e439e6f9ceb5031fc20ab4a0bc1d0354ec42": {
+    "lat": 55.997671,
+    "lon": 12.333207,
+    "label": "Gribskov, Gadevang, Hillerød Kommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Gribskov"
+  },
+  "3e24462f5d07a7e29718d4fb13db0ce1b0f62399": {
+    "lat": 55.994219,
+    "lon": 12.516955,
+    "label": "Helsingørmotorvejen, Mørdrup, Kvistgård, Helsingør Kommune, Region Hovedstaden, 3490, Danmark",
+    "source": "nominatim",
+    "query": "Helsingørmotorvejen"
+  },
+  "e757c9d07375f0712927d518326d98000d550ac4": {
+    "lat": 55.928944,
+    "lon": 12.298536,
+    "label": "Bilka, Nordstensvej, Trollesbro, Teglgårdslund, Hillerød, Hillerød Kommune, Region Hovedstaden, 3400, Danmark",
+    "source": "nominatim",
+    "query": "Bilka Hillerød"
+  },
+  "858a3eed3dea6541f30e941490530d9eb42f529b": null,
+  "ded0405ab9e87fb03273a993b1cedfbd354ee8d2": null,
+  "35c2bfda9f5d2562925e8ba7fbd60cb6664f9210": {
+    "lat": 55.850581,
+    "lon": 11.991652,
+    "label": "Jægerspris, Frederikssund Kommune, Region Hovedstaden, 3630, Danmark",
+    "source": "nominatim",
+    "query": "Jægerspris"
+  },
+  "c2fc3d4b7e7db1b3b71b32f8ba73411500b5a4d0": {
+    "lat": 55.776909,
+    "lon": 12.507918,
+    "label": "Carlshøjvej 1, 2800 Kongens Lyngby",
+    "source": "adressevaelger",
+    "query": "Carlshøjvej Kongens Lyngby"
+  },
+  "600a5057061b95350cd80974c96f411ad10f2679": {
+    "lat": 55.799138,
+    "lon": 12.534191,
+    "label": "Helsingørmotorvejen 81, 2800 Kongens Lyngby",
+    "source": "adressevaelger",
+    "query": "Helsingør Politigård"
+  },
+  "0165ccba0b42586fbcf63d7707cdc4ceeff9211a": {
+    "lat": 55.651401,
+    "lon": 11.502119,
+    "label": "Mørkøv, Holbæk Kommune, Region Sjælland, 4440, Danmark",
+    "source": "nominatim",
+    "query": "Mørkøv"
+  },
+  "075b3f390fd3dd038c6527f15add31b947447dc4": {
+    "lat": 55.643348,
+    "lon": 12.081925,
+    "label": "Roskilde, Roskilde Kommune, Region Sjælland, 4000, Danmark",
+    "source": "nominatim",
+    "query": "Roskilde"
+  },
+  "bb1fd4855b27a091e99a7fb03a76bfa0bbef2b91": {
+    "lat": 55.887,
+    "lon": 11.146533,
+    "label": "Sejerø, Sejerby, Kalundborg Kommune, Region Sjælland, 4592, Danmark",
+    "source": "nominatim",
+    "query": "Sejerø"
+  },
+  "f4c33f7e7d3f814c4dbda8a1157fb79effb35471": {
+    "lat": 55.907649,
+    "lon": 11.667863,
+    "label": "Annebergparken 1, 4500 Nykøbing Sj",
+    "source": "adressevaelger",
+    "query": "Annebergparken"
+  },
+  "3d9485cda656770507537ebe22b20cf387e73c22": {
+    "lat": 55.456501,
+    "lon": 12.181896,
+    "label": "Køge, Køge Kommune, Region Sjælland, 4600, Danmark",
+    "source": "nominatim",
+    "query": "Køge"
+  },
+  "75736f82028a32ba136c74524817760e06553604": null,
+  "aa6b93bd4094f361385f6f5791092dc5a83e83e1": null,
+  "e5c4aa8f7883f4f0da59341738609bdefd9e5029": {
+    "lat": 55.583375,
+    "lon": 12.299929,
+    "label": "Greve Strand, Greve Kommune, Region Sjælland, 2670, Danmark",
+    "source": "nominatim",
+    "query": "Greve"
+  },
+  "26b6c0ae19fc5ecd51ca46e7b3890483a0a34a97": null,
+  "fac7765ca056e771f24e1c0b08593f05f38314ca": null,
+  "bb16551d28272807dccfb906aba3a88d033a6670": {
+    "lat": 56.269951,
+    "lon": 10.053357,
+    "label": "Motorvejen, Hinnerup, Favrskov Kommune, Region Midtjylland, 8382, Danmark",
+    "source": "nominatim",
+    "query": "motorvejen"
+  },
+  "6fe72c67a2bc24c26d14c708f3e2b0bf3b569dcd": {
+    "lat": 56.431649,
+    "lon": 10.359199,
+    "label": "Grevelsbakkevej 1, Gl Estrup, 8963 Auning",
+    "source": "adressevaelger",
+    "query": "Greve og Solrød"
+  },
+  "c45f23d5ee3d870f30a0df2c0e82eb2ecae1d3fb": {
+    "lat": 55.446817,
+    "lon": 11.797522,
+    "label": "Ringsted, Ringsted Kommune, Region Sjælland, 4100, Danmark",
+    "source": "nominatim",
+    "query": "Ringsted"
+  },
+  "ea7379d8a200940c86c9e2f01c84695ffe7ab1b9": {
+    "lat": 55.637258,
+    "lon": 9.40646,
+    "label": "Firehusevej 1, Rugsted, 7100 Vejle",
+    "source": "adressevaelger",
+    "query": "Fire bortvist fra rasteplads Karlslunde"
+  },
+  "8bb7e4b883a9eb4b1680425af35fbe2e47845e17": {
+    "lat": 56.410652,
+    "lon": 10.866238,
+    "label": "Vores Sti 3, Haveforening De Gamle Haver, 8500 Grenaa",
+    "source": "adressevaelger",
+    "query": "Vores sædvanlige uddrag af døgnrapporten"
+  },
+  "db6ab10d1fb3378e8dcf01a7e71c31e2a8f3e67b": {
+    "lat": 55.437505,
+    "lon": 12.1199,
+    "label": "Sydmotorvejen, Åshøje, Lellinge, Køge Kommune, Region Sjælland, 4681, Danmark",
+    "source": "nominatim",
+    "query": "Sydmotorvejen"
+  },
+  "df934be4de5f33d70edfb0c7b206fbf6840291c6": {
+    "lat": 55.44072,
+    "lon": 11.793938,
+    "label": "Rønnedevej 2A, 4100 Ringsted",
+    "source": "adressevaelger",
+    "query": "Rønnedevej"
+  },
+  "28857370301e781fa69221eeb7803be6480a0aae": {
+    "lat": 55.339592,
+    "lon": 10.995426,
+    "label": "Storebæltsforbindelsen, Danmark",
+    "source": "nominatim",
+    "query": "Storebæltsforbindelsen"
+  },
+  "e06f017ff43be30f4e8a51da2f905fe224df5136": {
+    "lat": 55.32175,
+    "lon": 11.202068,
+    "label": "Næstved Landevej 1, 4220 Korsør",
+    "source": "adressevaelger",
+    "query": "Næstved landevej Fuglebjerg"
+  },
+  "e05b12d80169459ff3cf486801901f83b3a775e5": {
+    "lat": 55.232825,
+    "lon": 11.76741,
+    "label": "Næstved, Næstved Kommune, Region Sjælland, 4700, Danmark",
+    "source": "nominatim",
+    "query": "Næstved"
+  },
+  "90f66974c08fd923a6e7233f1f985b072e531676": {
+    "lat": 56.269951,
+    "lon": 10.053357,
+    "label": "Motorvejen, Hinnerup, Favrskov Kommune, Region Midtjylland, 8382, Danmark",
+    "source": "nominatim",
+    "query": "Motorvejen"
+  },
+  "5f76245bcc588e0bfe40092fd4327c26c74251f7": null,
+  "cca4fed6ebb6788d418144f3860861e09d05bcd0": null,
+  "84b05414bc2e0ed49cf6dd20b0f1721a977c19bf": {
+    "lat": 54.774243,
+    "lon": 11.867554,
+    "label": "Stubbekøbingvej 1B, 4800 Nykøbing F",
+    "source": "adressevaelger",
+    "query": "Stubbekøbingvej er helt afspærret ved Systofte bygade"
+  },
+  "dd8d9a866ea50aab1a794d370aeaf1d19f01ed91": {
+    "lat": 55.334085,
+    "lon": 11.137047,
+    "label": "By og Overfartsmuseet, Søbatteriet, Korsør, Slagelse Kommune, Region Sjælland, 4220, Danmark",
+    "source": "nominatim",
+    "query": "Korsør og Slagelse"
+  },
+  "a601c5361504e8a536a0cca0a44e3c42d840ba4b": {
+    "lat": 55.40612,
+    "lon": 11.352541,
+    "label": "Slagelse, Slagelse Kommune, Region Sjælland, 4200, Danmark",
+    "source": "nominatim",
+    "query": "Slagelse"
+  },
+  "a0e0fe3faa28f81f9618a1a9753582bc73a2623b": {
+    "lat": 54.897018,
+    "lon": 11.87625,
+    "label": "Nørre Alslev, Guldborgsund Kommune, Region Sjælland, 4840, Danmark",
+    "source": "nominatim",
+    "query": "Nørre-Alslev"
+  },
+  "db668c9006f6a07c5f44add1d37880f8834cf323": {
+    "lat": 55.097087,
+    "lon": 10.242825,
+    "label": "Faaborg, Faaborg-Midtfyn Kommune, Region Syddanmark, 5600, Danmark",
+    "source": "nominatim",
+    "query": "Faaborg"
+  },
+  "2e181f5d85211264f990925b21a34a92c32594e4": {
+    "lat": 55.324657,
+    "lon": 10.347142,
+    "label": "Fyn, Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Fyn"
+  },
+  "30743fe9a625712f7304a011ebfcb58464651947": {
+    "lat": 54.940829,
+    "lon": 10.711636,
+    "label": "Skudehavnen 1, 5900 Rudkøbing",
+    "source": "adressevaelger",
+    "query": "Skud afgivet i Egeparken Vollsmosebydelen"
+  },
+  "fe10e0707b6677def00102937a170b122009da55": {
+    "lat": 55.309828,
+    "lon": 10.79766,
+    "label": "Nyborg, Nyborg Kommune, Region Syddanmark, 5800, Danmark",
+    "source": "nominatim",
+    "query": "Nyborg"
+  },
+  "15a2636521c0141ed66fdd7c50325261c2a6d37c": {
+    "lat": 55.514088,
+    "lon": 10.23792,
+    "label": "Nordfyns Kommune, Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Nordfyns"
+  },
+  "71c5004110a0faf0da13e52525f41effedd5a996": {
+    "lat": 55.536919,
+    "lon": 9.776362,
+    "label": "Strib, Middelfart Kommune, Region Syddanmark, 5500, Danmark",
+    "source": "nominatim",
+    "query": "Strib"
+  },
+  "c3d69a37537f4a1827108e919d5b064806fde92f": {
+    "lat": 54.991393,
+    "lon": 9.984634,
+    "label": "Fynshav Bådelaug 2, Fynshav, 6440 Augustenborg",
+    "source": "adressevaelger",
+    "query": "Fyns Politi efterforsker drabssag i Nedergade Odense"
+  },
+  "729073aa8b9ee9c322e4b2c3e74cb0e6ff7fa680": {
+    "lat": 57.249143,
+    "lon": 10.331514,
+    "label": "Frederikshavnmotorvejen, Spændbakken, Brønderslev Kommune, Region Nordjylland, 9352, Danmark",
+    "source": "nominatim",
+    "query": "E 45"
+  },
+  "9c76eba22ceed26f5abc18ec36398a011f6dfc59": {
+    "lat": 55.250071,
+    "lon": 9.499787,
+    "label": "Haderslev, Haderslev Kommune, Region Syddanmark, 6100, Danmark",
+    "source": "nominatim",
+    "query": "Haderslev"
+  },
+  "6f5e8d76e64a271b08d450c9396c9370b0167991": {
+    "lat": 54.908919,
+    "lon": 9.7898,
+    "label": "Sønderborg, Sønderborg Kommune, Region Syddanmark, 6400, Danmark",
+    "source": "nominatim",
+    "query": "Sønderborg"
+  },
+  "14368d1149b1343ec5b7fe276023c9481921d1ab": {
+    "lat": 55.246427,
+    "lon": 9.308242,
+    "label": "Vojens, Haderslev Kommune, Region Syddanmark, 6500, Danmark",
+    "source": "nominatim",
+    "query": "Vojens"
+  },
+  "4e09d3a06d34ae6dfa0b345ee3aed4205c2ea946": {
+    "lat": 55.044623,
+    "lon": 9.420967,
+    "label": "Aabenraa, Aabenraa Kommune, Region Syddanmark, 6200, Danmark",
+    "source": "nominatim",
+    "query": "Aabenraa"
+  },
+  "c3145591a43ef00b1dcc41fea5249a8bce57c5a4": {
+    "lat": 56.726324,
+    "lon": 10.098994,
+    "label": "Ringvejen, Hedeparken, Hadsund, Mariagerfjord Kommune, Region Nordjylland, Danmark",
+    "source": "nominatim",
+    "query": "Ringvejen"
+  },
+  "b05e64aca8b7dfd0c96217ae5e3e104e99aaa04b": null,
+  "3bd313c92ebb65910f27935cafa77ef2aa192676": null,
+  "7fb387141afaaecd313e1cba08980e0c39576dd9": {
+    "lat": 54.919007,
+    "lon": 9.818284,
+    "label": "Fynsgade 1, 6400 Sønderborg",
+    "source": "adressevaelger",
+    "query": "Fynsgade Esbjerg"
+  },
+  "8e4501cbc04fc530873b96f90b2a1b6547c7709b": {
+    "lat": 55.466489,
+    "lon": 8.452075,
+    "label": "Esbjerg, Esbjerg Kommune, Region Syddanmark, 6700, Danmark",
+    "source": "nominatim",
+    "query": "Esbjerg"
+  },
+  "deb956e9dbf8cedda893fd77e3972fa42f99e0b0": {
+    "lat": 54.930278,
+    "lon": 9.604932,
+    "label": "Sønderborg Landevej 1, 6300 Gråsten",
+    "source": "adressevaelger",
+    "query": "Sønderborg Lufthavn Als"
+  },
+  "1e7c40f73efea97d75fe136ccb48f0f9d9eeb3de": {
+    "lat": 55.472067,
+    "lon": 8.431339,
+    "label": "Adgangsvejen, Strandby, Esbjerg, Esbjerg Kommune, Region Syddanmark, 6700, Danmark",
+    "source": "nominatim",
+    "query": "Adgangsvejen"
+  },
+  "4b8a016547cc9108e6ee1488e65cea8078cc961d": {
+    "lat": 55.845552,
+    "lon": 9.240154,
+    "label": "Give, Vejle Kommune, Region Syddanmark, 7323, Danmark",
+    "source": "nominatim",
+    "query": "Give"
+  },
+  "2fd9ae4e4d6c3878b7e211b26124b621b18d661e": {
+    "lat": 55.869252,
+    "lon": 9.838108,
+    "label": "Kaptajn Andersens Gade, Vestermark, Horsens, Horsens Kommune, Region Midtjylland, 8700, Danmark",
+    "source": "nominatim",
+    "query": "Kpt"
+  },
+  "cecb69ec9b5549c3542923d4dc2fd41bfc5faae4": {
+    "lat": 55.589876,
+    "lon": 9.662878,
+    "label": "Bredstrup Bygade 1, Bredstrup, 7000 Fredericia",
+    "source": "adressevaelger",
+    "query": "Brædstrup i nærheden af krydset Silkeborgvej"
+  },
+  "35db83d100ad42ae430290108793011647313bd7": null,
+  "6c5f001d733875909f61ae1d61bf01c26f5d2417": {
+    "lat": 56.269951,
+    "lon": 10.053357,
+    "label": "Motorvejen, Hinnerup, Favrskov Kommune, Region Midtjylland, 8382, Danmark",
+    "source": "nominatim",
+    "query": "Motorvejen"
+  },
+  "da478978d9156fb47f405e10c6a08df23a76655e": {
+    "lat": 55.565268,
+    "lon": 9.756217,
+    "label": "Fredericia, Fredericia Kommune, Region Syddanmark, 7000, Danmark",
+    "source": "nominatim",
+    "query": "Fredericia"
+  },
+  "155cc870bfb0c1be210e63c489034fd02c85a324": {
+    "lat": 55.36751,
+    "lon": 9.601058,
+    "label": "Hejlsminde, Kolding Kommune, Region Syddanmark, 6094, Danmark",
+    "source": "nominatim",
+    "query": "Hejlsminde"
+  },
+  "d297d335cdedb8fff16436be17876dd09327aabb": null,
+  "6605e5234ddb6c70a661649cf70a294899dd26d6": null,
+  "5bdb95005835a9775a0d1d4a79523ab91fffe761": null,
+  "99eb0e8190e957e4886d31c48f78486ec137274f": {
+    "lat": 55.749917,
+    "lon": 8.925995,
+    "label": "Tingparken 1, 7200 Grindsted",
+    "source": "adressevaelger",
+    "query": "Tingparken"
+  },
+  "c8a7a6b304f39b3c12c50b95188a2511007d6d0a": null,
+  "00a860bcf2ec49f78df34460f03473b54477bf91": null,
+  "22ea189cc0a72caa744a289012ed1d23b802a494": null,
+  "1096740663175ff99517b8e66ec1801b44cd3d4f": {
+    "lat": 55.475144,
+    "lon": 9.426968,
+    "label": "Sønderjyske Motorvej 7, 6000 Kolding",
+    "source": "adressevaelger",
+    "query": "Sønderjyske Motorvej M"
+  },
+  "5104082baaa6809a264f27edcb985aceb6e350a8": null,
+  "a3fb49a783324b1e8e3a542a9158f5a7a9571966": null,
+  "bd342f998c0339ac27cae0f8894e1f2f3602ea3e": {
+    "lat": 55.711329,
+    "lon": 9.536341,
+    "label": "Nørretorv, Lille Grundet, Vejle, Vejle Kommune, Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Nørretorv"
+  },
+  "de4bdbfb9d65e65d8705a8c059c5b4a479e819a6": {
+    "lat": 56.137976,
+    "lon": 8.974662,
+    "label": "Herning, Herning Kommune, Region Midtjylland, 7400, Danmark",
+    "source": "nominatim",
+    "query": "Herning"
+  },
+  "3cec6bc03015b94c29193754ae4fae57049a762a": null,
+  "980f35210f9315cd498bb16f3e20611707cccbfb": null,
+  "39ad2c0483ca953bd82b395999eff43862682738": {
+    "lat": 56.477809,
+    "lon": 9.416248,
+    "label": "Aalborgvej 129, 8800 Viborg",
+    "source": "adressevaelger",
+    "query": "Aalborgvej"
+  },
+  "3a5a225040c887ae85cf06c508941409da2e2a5f": {
+    "lat": 55.734769,
+    "lon": 9.128475,
+    "label": "Tyskland, Travbyen, Billund, Billund Kommune, Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Tyskland"
+  },
+  "83ad167cc5b1c18433e0af9e7cc6f7a0b54dee22": {
+    "lat": 56.750696,
+    "lon": 8.418164,
+    "label": "Hurup, Thisted Kommune, Region Nordjylland, 7760, Danmark",
+    "source": "nominatim",
+    "query": "Hurup"
+  },
+  "c39b6a241c0c7d29dfc7a82093d76ab81c997e86": {
+    "lat": 56.548746,
+    "lon": 8.624776,
+    "label": "Venø, Venø By, Struer Kommune, Region Midtjylland, Danmark",
+    "source": "nominatim",
+    "query": "Venø"
+  },
+  "b20c5321913714f307be680238451c58df0917dc": null,
+  "d95d70dc0663e4bc1ada14c1a790c12559053129": {
+    "lat": 56.089903,
+    "lon": 8.638879,
+    "label": "Midtgårdsvej 1, 6920 Videbæk",
+    "source": "adressevaelger",
+    "query": "Midt og Vestjylland"
+  },
+  "199c6c13db2e640fa0663779f5f42258bdc50fd2": {
+    "lat": 56.122143,
+    "lon": 10.090615,
+    "label": "Aarhus Syd Motorvejen, Kunnerup, Kolt, Ormslev, Aarhus Kommune, Region Midtjylland, 8361, Danmark",
+    "source": "nominatim",
+    "query": "Aarhus Syd Motorvejen"
+  },
+  "ad5b56f8dabbb189b6c4906a678a155f63e58f7d": {
+    "lat": 56.122019,
+    "lon": 10.159695,
+    "label": "Viby J, Sønderhøj, Lundshøj, Alderslyst, Viby J., Aarhus, Aarhus Kommune, Region Midtjylland, 8260, Danmark",
+    "source": "nominatim",
+    "query": "Viby J"
+  },
+  "a6155b0b1029e0b66f2ac6b384415fed61102432": null,
+  "0f66c1f475b5009557840d52136df1f2726819f5": {
+    "lat": 56.301265,
+    "lon": 9.788786,
+    "label": "Thorsø, Favrskov Kommune, Region Midtjylland, 8881, Danmark",
+    "source": "nominatim",
+    "query": "Thorsø"
+  },
+  "f52171b1f6b238efe3a008331e9a622c3732bf69": {
+    "lat": 56.726324,
+    "lon": 10.098994,
+    "label": "Ringvejen, Hedeparken, Hadsund, Mariagerfjord Kommune, Region Nordjylland, Danmark",
+    "source": "nominatim",
+    "query": "Ringvejen"
+  },
+  "f75dbb8c1d52729f08f2e82d574eea26cdc0d664": null,
+  "53d621cce6c17ef44b44a2a2d1706da5edba9a6a": {
+    "lat": 56.170743,
+    "lon": 10.156417,
+    "label": "Åby Ringvej 100, Hasle, 8210 Aarhus V",
+    "source": "adressevaelger",
+    "query": "Åby Ringvej Ringvejen"
+  },
+  "ffdc248d5d014266a16e6b9ce97c71f36491bb58": {
+    "lat": 55.906326,
+    "lon": 9.710806,
+    "label": "Enner Mark Fængsel, Frodesdalsvej, Molger, Horsens, Horsens Kommune, Region Midtjylland, 8762, Danmark",
+    "source": "nominatim",
+    "query": "Østjylland"
+  },
+  "0d9abac62de67cc6b1ab4ce2df8a1813ad3f8e88": {
+    "lat": 56.236107,
+    "lon": 10.098652,
+    "label": "Omega, Søften, Favrskov Kommune, Region Midtjylland, 8382, Danmark",
+    "source": "nominatim",
+    "query": "Omega"
+  },
+  "723c60a60e1a4c7e2047cf74f10566cd362029ae": {
+    "lat": 55.550939,
+    "lon": 12.024827,
+    "label": "Viby, Roskilde Kommune, Region Sjælland, 4130, Danmark",
+    "source": "nominatim",
+    "query": "Viby"
+  },
+  "0b84f5a9c9caac11504caae536ef620995d75072": {
+    "lat": 57.018669,
+    "lon": 9.9567,
+    "label": "Pendlerpladsen E45, Universitetskorridoren, Lejbjerg, Vejgaard, Aalborg, Aalborg Kommune, Region Nordjylland, 9210, Danmark",
+    "source": "nominatim",
+    "query": "E45"
+  },
+  "67d789d4aebca8728c3117a1b67a691d21091111": {
+    "lat": 57.271977,
+    "lon": 10.993205,
+    "label": "Læsø, Region Nordjylland, 9940, Danmark",
+    "source": "nominatim",
+    "query": "Læsø"
+  },
+  "c70b2b4f6b5114c468e8ffee25958bd1a7621e92": {
+    "lat": 57.369188,
+    "lon": 10.108822,
+    "label": "Vendsyssel, Region Nordjylland, Danmark",
+    "source": "nominatim",
+    "query": "Vendsyssel"
+  },
+  "8b3861029c1833d7f2eb3236cb68ca348ab0d373": {
+    "lat": 57.048754,
+    "lon": 9.925596,
+    "label": "Nyhavnsgade 2, 9000 Aalborg",
+    "source": "adressevaelger",
+    "query": "Nyhavnsgade Aalborg"
+  },
+  "0f25132b506c37d628f95882426777a538fa200f": {
+    "lat": 57.72597,
+    "lon": 10.58446,
+    "label": "Skagen, Frederikshavn Kommune, Region Nordjylland, 9990, Danmark",
+    "source": "nominatim",
+    "query": "Skagen"
+  },
+  "f1a8a54402e1db3c63e9cc7d119f96f938f5ff9f": {
+    "lat": 57.10956,
+    "lon": 10.022829,
+    "label": "Vodskov, Aalborg Kommune, Region Nordjylland, 9310, Danmark",
+    "source": "nominatim",
+    "query": "E45 Vodskov"
+  },
+  "e1b783a9fed81b37c1ea96e13e004ad012c9ffd6": {
+    "lat": 56.534962,
+    "lon": 8.936033,
+    "label": "Rønbjerg, Skive Kommune, Region Midtjylland, Danmark",
+    "source": "nominatim",
+    "query": "Rønbjerg"
+  },
+  "7e47b93024d770e50c077edcc420c07f03697d4a": {
+    "lat": 55.136677,
+    "lon": 14.72495,
+    "label": "Aabyvej 1, Nyker, 3700 Rønne",
+    "source": "adressevaelger",
+    "query": "Aabyvej"
+  },
+  "107ffab1817ad2ab1efcf7420e575c73d494c2b8": null,
+  "30c5036661fdb8f6a4f400126307f9a4da74f0a0": null,
+  "cbe6aa355e003deefaa7df70f58c7fc4189f0c92": {
+    "lat": 57.46188,
+    "lon": 9.791636,
+    "label": "Aggersundvej 1, Lønstrup, 9800 Hjørring",
+    "source": "adressevaelger",
+    "query": "Aggersundvej"
+  },
+  "8458b138dc5da144d239938e6cb88a989a377f67": {
+    "lat": 56.719352,
+    "lon": 10.115111,
+    "label": "Hadsund, Mariagerfjord Kommune, Region Nordjylland, Danmark",
+    "source": "nominatim",
+    "query": "Hadsund"
+  },
+  "b34b02b33621992155f87eb4b16130853bf19c7a": {
+    "lat": 57.195294,
+    "lon": 9.951413,
+    "label": "Tylstrup, Aalborg Kommune, Region Nordjylland, 9382, Danmark",
+    "source": "nominatim",
+    "query": "Tylstrup"
+  },
+  "daa9220086472786c3eb7d1bf7c1d6b7280d7b24": {
+    "lat": 57.349431,
+    "lon": 10.457851,
+    "label": "Frederikshavnmotorvejen 122, 9300 Sæby",
+    "source": "adressevaelger",
+    "query": "Frederikshavn"
+  },
+  "a9caa88078ec30de0b356cf55d4df0fb5950d863": {
+    "lat": 56.269951,
+    "lon": 10.053357,
+    "label": "Motorvejen, Hinnerup, Favrskov Kommune, Region Midtjylland, 8382, Danmark",
+    "source": "nominatim",
+    "query": "motorvejen"
+  },
+  "151d1330284443703fa48be9cf3dcd38fb80b22f": {
+    "lat": 55.027254,
+    "lon": 14.972531,
+    "label": "Søndre Landevej, Ved Kirken, Pedersker, Bornholms Regionskommune, Region Hovedstaden, 3720, Danmark",
+    "source": "nominatim",
+    "query": "Søndre Landevej Pedersker"
+  },
+  "b9f65081a21c1bfa21db6f9b43aa070702aeb445": {
+    "lat": 55.09978,
+    "lon": 14.70826,
+    "label": "Åkirkebyvej 1, Rønne, 3700 Rønne",
+    "source": "adressevaelger",
+    "query": "Åkirkebyvej Rønne"
+  },
+  "fa745a64af587d1f40f168cb9dc49c49f01a9a5e": {
+    "lat": 55.093877,
+    "lon": 14.692717,
+    "label": "Rønne Havn, Rønne, Bornholms Regionskommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Rønne Havn"
+  },
+  "7e2aca758f8cc71b5b61845dd39004922d22cba7": {
+    "lat": 55.655218,
+    "lon": 11.67095,
+    "label": "Krydset 1, Kvanløse, 4300 Holbæk",
+    "source": "adressevaelger",
+    "query": "Krydset mellem Borgmester Nielsens Vej og Byledsgade Rønne"
+  },
+  "5a8929107928b4ed1f53876624268e014af5876d": {
+    "lat": 55.564323,
+    "lon": 10.084192,
+    "label": "Strandvej 15, 5400 Bogense",
+    "source": "adressevaelger",
+    "query": "Strandvej Nexø"
+  },
+  "c0dd1672a98527a55d9961dcb25bd3b2e9f498ad": {
+    "lat": 55.065014,
+    "lon": 15.130727,
+    "label": "Nexø, Bornholms Regionskommune, Region Hovedstaden, 3730, Danmark",
+    "source": "nominatim",
+    "query": "Nexø"
+  },
+  "e0396fa099b785e2675a23eaa29c5a009294f0b1": {
+    "lat": 55.099451,
+    "lon": 14.706091,
+    "label": "Rønne, Bornholms Regionskommune, Region Hovedstaden, 3700, Danmark",
+    "source": "nominatim",
+    "query": "Rønne"
+  },
+  "2e8d2a52ceb2ab068e4bc1da67e663b2e06e191f": {
+    "lat": 55.152211,
+    "lon": 14.890848,
+    "label": "Stavsdalvej 76, Østerlars, 3700 Rønne",
+    "source": "adressevaelger",
+    "query": "Stavsdalvej"
+  },
+  "56f512bfe0665bbe7b6ae7b1412c596c4c5e633f": null,
+  "52d1b997867f62d43f0992e40c2adde086447dae": null,
+  "cce2591d9b720a42129f9678d5ebcc517bac5405": {
+    "lat": 55.275975,
+    "lon": 14.801825,
+    "label": "Pilegade 1, Allinge, 3770 Allinge",
+    "source": "adressevaelger",
+    "query": "Pilegade"
+  },
+  "f27f455d489b2be6519fb420132408808f2e28a3": null,
+  "d95dd2bd5b5cc232b6a5236119cba45b1d9c1d85": {
+    "lat": 55.274612,
+    "lon": 14.799119,
+    "label": "Allinge, Grønnedal, Allinge-Sandvig, Bornholms Regionskommune, Region Hovedstaden, 3770, Danmark",
+    "source": "nominatim",
+    "query": "Allinge"
+  },
+  "9ca0f796e966ef11ba6755e1d2e8f5d5ccf5f097": null,
+  "0ace4a2c70feea9168bff42970285973ea93cacf": {
+    "lat": 55.062945,
+    "lon": 9.377636,
+    "label": "Sygehus Sønderjylland, Aabenraa, Kresten Philipsens Vej, Høje Kolstrup, Aabenraa, Aabenraa Kommune, Region Syddanmark, 6230, Danmark",
+    "source": "nominatim",
+    "query": "Sønderjylland"
+  },
+  "ef063cdf20f9afc15b35cf4f448c787a985a2bef": {
+    "lat": 55.665641,
+    "lon": 12.540336,
+    "label": "Vesterbro Ny Skole, Ny Carlsberg Vej, Humleby, Den Gule By, Carlsberg Byen, København, Københavns Kommune, Region Hovedstaden, 1761, Danmark",
+    "source": "nominatim",
+    "query": "Vesterbro Ny Skole København"
+  },
+  "6b836d594e44807b6eb120bdfb055a057840eb69": {
+    "lat": 55.661524,
+    "lon": 12.537449,
+    "label": "Vestre Fængsel, Vigerslev Allé, Den Gule By, Carlsberg Byen, København, Københavns Kommune, Region Hovedstaden, 1765, Danmark",
+    "source": "nominatim",
+    "query": "Vestre Fængsel"
+  },
+  "75914eb9ce09e7a2a99d71ea3ab71dbf90681336": null,
+  "2d1d0e2b7842c319bf5aaa8dd0ca9efc65eecdf9": {
+    "lat": 55.680314,
+    "lon": 12.566578,
+    "label": "Nørre Voldgade 1, 1358 København K",
+    "source": "adressevaelger",
+    "query": "Nørre Voldgade"
+  },
+  "02379b2cbe8e1c7bed5ecc4a53afba1202852a01": {
+    "lat": 55.683087,
+    "lon": 12.583001,
+    "label": "Indre By, København, Københavns Kommune, Region Hovedstaden, 1110, Danmark",
+    "source": "nominatim",
+    "query": "Indre By"
+  },
+  "d0c676c3671b28423025f6907f907bafef6c7266": null,
+  "18ac5d3820f346484feb3a525c6f83a7f6792226": {
+    "lat": 55.676735,
+    "lon": 12.589396,
+    "label": "Havnegade, Gammelholm, Christianshavn, København, Københavns Kommune, Region Hovedstaden, 1058, Danmark",
+    "source": "nominatim",
+    "query": "Havnegade København"
+  },
+  "b26ffdb847d1119311507fa72e27ca775c5c35d1": {
+    "lat": 55.629063,
+    "lon": 12.596025,
+    "label": "Øresundsmotorvejen, Tårnbylund, Tårnby, Tårnby Kommune, Region Hovedstaden, 2770, Danmark",
+    "source": "nominatim",
+    "query": "Øresundsmotorvejen, Tårnby"
+  },
+  "4c4d5eb6f62261e3e4cbf9c291650710d528124d": null,
+  "9e211f4b2321fb6bb1c59c4b58042dab88bb8c01": null,
+  "ae4379102d0ceba3341de839c1ebccdb174386ff": {
+    "lat": 55.682779,
+    "lon": 12.573382,
+    "label": "Frederiksborggade 1, 1360 København K",
+    "source": "adressevaelger",
+    "query": "Frederiksborggade"
+  },
+  "419324a30b94e193d39cc6e3f322d3506affda05": {
+    "lat": 55.700819,
+    "lon": 12.53756,
+    "label": "Frederikssundsvej 1, 2400 København NV",
+    "source": "adressevaelger",
+    "query": "Frederikssundsvej"
+  },
+  "6ba7ce5fd729f07574d14d440680c90ad3012783": {
+    "lat": 55.628855,
+    "lon": 12.540299,
+    "label": "Øresundsmotorvejen, Ørestad, København, Københavns Kommune, Region Hovedstaden, 2450, Danmark",
+    "source": "nominatim",
+    "query": "Øresundsmotorvejen"
+  },
+  "0021e53f7e80e397b6c2cf78962a2b8058e9ef3e": {
+    "lat": 55.663775,
+    "lon": 12.513592,
+    "label": "Valby, Toftebakkevej, Valby Maskinfabrik, Valby, København, Københavns Kommune, Region Hovedstaden, 2500, Danmark",
+    "source": "nominatim",
+    "query": "Valby"
+  },
+  "1971af67f5a108441988917bcd0664662c3ec87a": null,
+  "62f31f97cefb430b5b369087f23da68016f8e21c": null,
+  "411cb90a004d84b0bcd6c8e7fa9b3cb38eee1ec4": null,
+  "6763f338934f6d869d066e81dff328993a42ea92": {
+    "lat": 55.686724,
+    "lon": 12.570072,
+    "label": "København, Københavns Kommune, Region Hovedstaden, 1357, Danmark",
+    "source": "nominatim",
+    "query": "København"
+  },
+  "f34ee2ec30b24a8c93db9a0f7c7ca8b02ff9512d": null,
+  "4c6b22e807dab67155a81a214e1d5a68ea7fb554": {
+    "lat": 55.630459,
+    "lon": 12.576942,
+    "label": "BR Fields Kbh, Arne Jacobsens Allé, Våren, Ørestad, København, Københavns Kommune, Region Hovedstaden, 1561, Danmark",
+    "source": "nominatim",
+    "query": "Fields"
+  },
+  "51807a591ec073f1b24d4e468667596cd53b374e": {
+    "lat": 55.702704,
+    "lon": 12.572264,
+    "label": "Parken, Øster Allé, Indre Østerbro, Østervold, Østerbro, København, Københavns Kommune, Region Hovedstaden, 2100, Danmark",
+    "source": "nominatim",
+    "query": "Parken"
+  },
+  "71718f91c3f102ab2d3e78ede952256b6346a6d5": {
+    "lat": 55.723064,
+    "lon": 12.402713,
+    "label": "Skovlunde, Annavej, Sømose Hegn, Skovlunde, Ballerup, Ballerup Kommune, Region Hovedstaden, 2740, Danmark",
+    "source": "nominatim",
+    "query": "Skovlunde"
+  },
+  "8dbd7482afb434ebd97f5e8f2ad310c440f41fec": {
+    "lat": 55.606233,
+    "lon": 12.387404,
+    "label": "Arken, Stenstien, Ishøj, Ishøj Kommune, Region Hovedstaden, 2665, Danmark",
+    "source": "nominatim",
+    "query": "Arken"
+  },
+  "780b20939eec75e07e1900cb6a32317f09faf815": {
+    "lat": 55.7293,
+    "lon": 12.396177,
+    "label": "Lautrupvej 1, 2750 Ballerup",
+    "source": "adressevaelger",
+    "query": "Lautrupvej Ballerup"
+  },
+  "05b3f8d257c80b75efc8dbf23c5070f3877efcb3": {
+    "lat": 55.613379,
+    "lon": 12.357895,
+    "label": "Ishøj, Centerstien, Ishøj, Ishøj Kommune, Region Hovedstaden, 2635, Danmark",
+    "source": "nominatim",
+    "query": "Ishøj"
+  },
+  "402ae68be6de86fdf496aee3efcc0c706b6909ef": null,
+  "9899773537ac0e1dd1cf0bf0dee4bc06a1d4d586": {
+    "lat": 55.652977,
+    "lon": 12.353399,
+    "label": "Albertslundvej 85A, 2625 Vallensbæk",
+    "source": "adressevaelger",
+    "query": "Albertslund"
+  },
+  "9728b4ab62a9a85c7317f2a9dc3fe55aaf621fd7": null,
+  "38fbf74ff44a7c76d5af97139ac6f491eb246b05": {
+    "lat": 55.733753,
+    "lon": 12.429449,
+    "label": "Herlev Kommune, Region Hovedstaden, 2730, Danmark",
+    "source": "nominatim",
+    "query": "Herlev"
+  },
+  "f8555612607a2a07653de43c7469885ffa8901c5": {
+    "lat": 55.644171,
+    "lon": 12.477209,
+    "label": "Hvidovre, Hvidovre Kommune, Region Hovedstaden, 2650, Danmark",
+    "source": "nominatim",
+    "query": "Hvidovre"
+  },
+  "21b65d1fd1dcf0ef56854b3938ea7e627901af3b": {
+    "lat": 55.656584,
+    "lon": 12.241748,
+    "label": "Høje-Taastrup Kommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Høje-Taastrup"
+  },
+  "584d5d41aa77496f466ab668e62537f6153e075c": {
+    "lat": 55.754353,
+    "lon": 12.492125,
+    "label": "Motorring 3, Buddinge, Gladsaxe Kommune, Region Hovedstaden, 2860, Danmark",
+    "source": "nominatim",
+    "query": "Motorring 3 Motorring"
+  },
+  "7b8afc867f7a4cd1bd0b56cc99735fa5526d14b6": null,
+  "d8f87aab537a7248cf954de9b05fcde4b478f18d": null,
+  "bd674c39e632c772b6765a2454b90aa2acc7db6d": null,
+  "c115267af56b18731c1bb01f94b4515822b8c86f": null,
+  "9a5f30fad2120f47cf051787727c18fb638911f8": {
+    "lat": 55.713494,
+    "lon": 12.422008,
+    "label": "Tonsbakken 1A, 2740 Skovlunde",
+    "source": "adressevaelger",
+    "query": "Tonsbakken"
+  },
+  "d2e447af18b520cb0db5d32a90a4f2aa329f450a": null,
+  "5347b2cc54d3fa7fdcf0890aef00aa36f6e99e74": null,
+  "24155958256c811b3197d1ac24f68f6640962f45": {
+    "lat": 55.644745,
+    "lon": 12.444697,
+    "label": "Brøndbyøstervej 188, 2650 Hvidovre",
+    "source": "adressevaelger",
+    "query": "Brøndbyøster Station Albertslund"
+  },
+  "f085eb3266e271e578ff7dd84a013ee8a995ba23": {
+    "lat": 55.648485,
+    "lon": 12.415743,
+    "label": "Brøndby Stadion, Brøndbyvester, Brøndby Kommune, Glostrup, Region Hovedstaden, 2605, Danmark",
+    "source": "nominatim",
+    "query": "Brøndby Stadion"
+  },
+  "045a7dbe941b1c6ac491d3018af3c692c123a777": {
+    "lat": 55.771865,
+    "lon": 12.505141,
+    "label": "Kongens Lyngby, Lyngby-Taarbæk Kommune, Region Hovedstaden, 2800, Danmark",
+    "source": "nominatim",
+    "query": "Lyngby"
+  },
+  "64acc2fa261efe089b8c10162929010fc8cd58be": null,
+  "5ba22a550eef961f5172709cb8ab84846a7ae26b": null,
+  "2c7a3f8241e1fefb53cea7f33d7eae609f47e868": null,
+  "6627ed2ca9e37e88dc604686ef142e2e63a4807a": null,
+  "6bc1143c96cd532c0d887e8848367dc6a9160759": {
+    "lat": 55.896343,
+    "lon": 12.366855,
+    "label": "Københavnsvej 42, 3450 Allerød",
+    "source": "adressevaelger",
+    "query": "Københavns Lufthavn Allerød"
+  },
+  "0a4e06ca4444d39a479d6e67b8b5edbe77e0ecd5": {
+    "lat": 56.034874,
+    "lon": 12.613007,
+    "label": "Helsingør, Helsingør Kommune, Region Hovedstaden, 3000, Danmark",
+    "source": "nominatim",
+    "query": "Helsingør"
+  },
+  "a668fdeeaa29d1abd359a2e79825fee785703da0": {
+    "lat": 55.814507,
+    "lon": 12.37881,
+    "label": "Farum Bytorv 1, 3520 Farum",
+    "source": "adressevaelger",
+    "query": "Farum Bytorv Farum"
+  },
+  "404a3da17a318a5fc5fef13749a4316d6e045c91": {
+    "lat": 55.799138,
+    "lon": 12.534191,
+    "label": "Helsingørmotorvejen 81, 2800 Kongens Lyngby",
+    "source": "adressevaelger",
+    "query": "Helsingør Station Allerød"
+  },
+  "69ba850d51780be270cef7b6922f922796571bf9": {
+    "lat": 55.997671,
+    "lon": 12.333207,
+    "label": "Gribskov, Gadevang, Hillerød Kommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Gribskov"
+  },
+  "801f066ecd892d4dd05b911a2aa9c2327d797fb5": {
+    "lat": 55.960405,
+    "lon": 12.483482,
+    "label": "Helsingørmotorvejen, Åvænget, Nivå, Fredensborg Kommune, Region Hovedstaden, 2990, Danmark",
+    "source": "nominatim",
+    "query": "Helsingørmotorvejen Nivå"
+  },
+  "14b5a7ea1d43d5990620c9a7579dd13930589074": {
+    "lat": 55.928944,
+    "lon": 12.298536,
+    "label": "Bilka, Nordstensvej, Trollesbro, Teglgårdslund, Hillerød, Hillerød Kommune, Region Hovedstaden, 3400, Danmark",
+    "source": "nominatim",
+    "query": "Bilka Hillerød"
+  },
+  "335731c5f0a9869d03502bf4931427d43a985430": null,
+  "cdf7cd03940d583078d60730009be0fdafd45f96": null,
+  "00cb65f39d2fb4fa1f364ac00a63d757f95de015": {
+    "lat": 55.850581,
+    "lon": 11.991652,
+    "label": "Jægerspris, Frederikssund Kommune, Region Hovedstaden, 3630, Danmark",
+    "source": "nominatim",
+    "query": "Jægerspris"
+  },
+  "4a6d16194e12eef6e1aad1f20e12c3e0f76a6ada": {
+    "lat": 55.776909,
+    "lon": 12.507918,
+    "label": "Carlshøjvej 1, 2800 Kongens Lyngby",
+    "source": "adressevaelger",
+    "query": "Carlshøjvej Kongens Lyngby"
+  },
+  "73cbe73b3ba646f8e09beca8ee9036c4d1679807": {
+    "lat": 55.799138,
+    "lon": 12.534191,
+    "label": "Helsingørmotorvejen 81, 2800 Kongens Lyngby",
+    "source": "adressevaelger",
+    "query": "Helsingør Politigård"
+  },
+  "ee6d681046889935b20f93b28cca75965bf5e47a": {
+    "lat": 55.651401,
+    "lon": 11.502119,
+    "label": "Mørkøv, Holbæk Kommune, Region Sjælland, 4440, Danmark",
+    "source": "nominatim",
+    "query": "Mørkøv"
+  },
+  "e54d654fb69f391165454848c8f108c1b92ad748": {
+    "lat": 55.643348,
+    "lon": 12.081925,
+    "label": "Roskilde, Roskilde Kommune, Region Sjælland, 4000, Danmark",
+    "source": "nominatim",
+    "query": "Roskilde"
+  },
+  "cbdd3cb9f54c157b04bf151879d2dfcef46b369a": {
+    "lat": 55.887,
+    "lon": 11.146533,
+    "label": "Sejerø, Sejerby, Kalundborg Kommune, Region Sjælland, 4592, Danmark",
+    "source": "nominatim",
+    "query": "Sejerø"
+  },
+  "9b38c9823132f4563da672e7c6ee8a1f94e37dba": {
+    "lat": 55.907649,
+    "lon": 11.667863,
+    "label": "Annebergparken 1, 4500 Nykøbing Sj",
+    "source": "adressevaelger",
+    "query": "Annebergparken"
+  },
+  "c0b0a20d48e913c2ca9f494ebce437ae050d0382": {
+    "lat": 55.456501,
+    "lon": 12.181896,
+    "label": "Køge, Køge Kommune, Region Sjælland, 4600, Danmark",
+    "source": "nominatim",
+    "query": "Køge"
+  },
+  "758cbf24d0c88e6e233a380dd91bcdb8fb8f2aad": null,
+  "57bc4a8121d4aca7c008861a06b3435b72f647d2": null,
+  "ea269bf3f356a109bb331fa73e93e76f1d978f94": {
+    "lat": 55.583375,
+    "lon": 12.299929,
+    "label": "Greve Strand, Greve Kommune, Region Sjælland, 2670, Danmark",
+    "source": "nominatim",
+    "query": "Greve"
+  },
+  "5d3527e0417ab74c10c8b29b4471666feb7903a0": null,
+  "cbb2fcc432164db38d2f2433b664e756a47f96ab": null,
+  "89556279844958d9927bb4ba1252fdd1679ab9c5": null,
+  "9325e57d2871112a12a8ed23a8293032f1215dcb": {
+    "lat": 55.517689,
+    "lon": 12.190394,
+    "label": "Køge Bugt Motorvejen, Villabyerne Solrød, Torøgel Huse, Jersie Strand, Solrød Strand, Solrød Kommune, Region Sjælland, 2680, Danmark",
+    "source": "nominatim",
+    "query": "motorvejen"
+  },
+  "2464414da02d7a9c29c23d0bb03e203416e41e73": null,
+  "150bd1c9320fa682c00d048788f98de55b69c75b": {
+    "lat": 55.446817,
+    "lon": 11.797522,
+    "label": "Ringsted, Ringsted Kommune, Region Sjælland, 4100, Danmark",
+    "source": "nominatim",
+    "query": "Ringsted"
+  },
+  "267168ac72fa1913c0a3bc01d771f9a9c8d91d36": null,
+  "8f38f646d924a9a98392e1bcc96688c9e454fb38": {
+    "lat": 55.580211,
+    "lon": 12.257042,
+    "label": "Køge Bugt Motorvejen, Karlslunde Strand, Karlslunde, Greve Kommune, Region Sjælland, 2690, Danmark",
+    "source": "nominatim",
+    "query": "Køge Bugt Motorvejen Karlslunde"
+  },
+  "2d048def05eb1e8278ce7a6c942d313632399229": null,
+  "a785f5689964cc81cff472489d6cace15e44a81a": {
+    "lat": 54.820761,
+    "lon": 11.702241,
+    "label": "Sydmotorvejen 454, 4990 Sakskøbing",
+    "source": "adressevaelger",
+    "query": "Sydmotorvejen Sydsjælland"
+  },
+  "ae0471249f5054c21aceb8df404e1a8f892af2d9": {
+    "lat": 55.44072,
+    "lon": 11.793938,
+    "label": "Rønnedevej 2A, 4100 Ringsted",
+    "source": "adressevaelger",
+    "query": "Rønnedevej"
+  },
+  "beac6a0dc36bb365681eff973dcc3a6bed46def8": {
+    "lat": 55.339592,
+    "lon": 10.995426,
+    "label": "Storebæltsforbindelsen, Danmark",
+    "source": "nominatim",
+    "query": "Storebæltsforbindelsen"
+  },
+  "a87e76d2e913fea380168dd6705bb5a71f6df649": {
+    "lat": 55.32175,
+    "lon": 11.202068,
+    "label": "Næstved Landevej 1, 4220 Korsør",
+    "source": "adressevaelger",
+    "query": "Næstved landevej Fuglebjerg"
+  },
+  "40e2d88fa9977e27cf0dda81724de007d073ea48": {
+    "lat": 55.232825,
+    "lon": 11.76741,
+    "label": "Næstved, Næstved Kommune, Region Sjælland, 4700, Danmark",
+    "source": "nominatim",
+    "query": "Næstved"
+  },
+  "4bb70d439a4a33d2360278c0d89de71b19c4b234": null,
+  "f042d83ea5eb4168c09e37647d78a2bb151839ac": {
+    "lat": 55.517943,
+    "lon": 12.190347,
+    "label": "Køge Bugt Motorvejen, Villabyerne Solrød, Torøgel Huse, Jersie Strand, Solrød Strand, Solrød Kommune, Region Sjælland, 2680, Danmark",
+    "source": "nominatim",
+    "query": "Motorvejen"
+  },
+  "d1a0c2cce11a9045bde1fdb04d018044f2dff977": null,
+  "bacb5cb1427657778140497d866ca5fbb56fe623": null,
+  "84b82c2579ab2dbd0b9521533425128039c3faa0": {
+    "lat": 54.774243,
+    "lon": 11.867554,
+    "label": "Stubbekøbingvej 1B, 4800 Nykøbing F",
+    "source": "adressevaelger",
+    "query": "Stubbekøbingvej er helt afspærret ved Systofte bygade"
+  },
+  "ff1a28c7025083ea4521c2f68d0066d017f82367": {
+    "lat": 55.334085,
+    "lon": 11.137047,
+    "label": "By og Overfartsmuseet, Søbatteriet, Korsør, Slagelse Kommune, Region Sjælland, 4220, Danmark",
+    "source": "nominatim",
+    "query": "Korsør og Slagelse"
+  },
+  "0d2f8954b7633092d14e5638a58c0b79a1e59a51": {
+    "lat": 55.40612,
+    "lon": 11.352541,
+    "label": "Slagelse, Slagelse Kommune, Region Sjælland, 4200, Danmark",
+    "source": "nominatim",
+    "query": "Slagelse"
+  },
+  "e19f4a493e1f88b92a93186c37f34d2109055cf5": {
+    "lat": 54.897018,
+    "lon": 11.87625,
+    "label": "Nørre Alslev, Guldborgsund Kommune, Region Sjælland, 4840, Danmark",
+    "source": "nominatim",
+    "query": "Nørre-Alslev"
+  },
+  "0a22fa85cbbc9d3db5125037b5ab4d517cfa1f4f": {
+    "lat": 55.097087,
+    "lon": 10.242825,
+    "label": "Faaborg, Faaborg-Midtfyn Kommune, Region Syddanmark, 5600, Danmark",
+    "source": "nominatim",
+    "query": "Faaborg"
+  },
+  "4aeeff1bfb6c457cc1640c7277931ec7d37c3376": {
+    "lat": 55.358224,
+    "lon": 10.583149,
+    "label": "Langeskov, Kerteminde Kommune, Region Syddanmark, 5550, Danmark",
+    "source": "nominatim",
+    "query": "Langeskov"
+  },
+  "5b275e35af17b9cb7c944fec1e5bc83db7b5b5e8": {
+    "lat": 54.940829,
+    "lon": 10.711636,
+    "label": "Skudehavnen 1, 5900 Rudkøbing",
+    "source": "adressevaelger",
+    "query": "Skud afgivet i Egeparken Vollsmosebydelen"
+  },
+  "f4b896636694fd49051c8c8eec80d6a3c01d9b64": {
+    "lat": 55.309828,
+    "lon": 10.79766,
+    "label": "Nyborg, Nyborg Kommune, Region Syddanmark, 5800, Danmark",
+    "source": "nominatim",
+    "query": "Nyborg"
+  },
+  "7830ace6accf185feb8809ae1a2895a8b928404c": {
+    "lat": 55.514088,
+    "lon": 10.23792,
+    "label": "Nordfyns Kommune, Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Nordfyns"
+  },
+  "ae5c7912ceaa27030375be1583112ccf7944434d": {
+    "lat": 55.536919,
+    "lon": 9.776362,
+    "label": "Strib, Middelfart Kommune, Region Syddanmark, 5500, Danmark",
+    "source": "nominatim",
+    "query": "Strib"
+  },
+  "e66c8ab1279262551da4d9ef7f05bb90101a7510": {
+    "lat": 54.991393,
+    "lon": 9.984634,
+    "label": "Fynshav Bådelaug 2, Fynshav, 6440 Augustenborg",
+    "source": "adressevaelger",
+    "query": "Fyns Politi efterforsker drabssag i Nedergade Odense"
+  },
+  "7d82f7d975a15f9976c212996211a86a98c726a0": {
+    "lat": 55.039152,
+    "lon": 9.353713,
+    "label": "Sønderjyske Motorvej, Årslev, Rødekro, Aabenraa Kommune, Region Syddanmark, 6230, Danmark",
+    "source": "nominatim",
+    "query": "E 45 Rødekro"
+  },
+  "c0e756b1b4dbc2efc7e266b7f667c1f7835536eb": {
+    "lat": 55.250071,
+    "lon": 9.499787,
+    "label": "Haderslev, Haderslev Kommune, Region Syddanmark, 6100, Danmark",
+    "source": "nominatim",
+    "query": "Haderslev"
+  },
+  "7700df378dd96695d84290c114c3cd14c05ff6e8": {
+    "lat": 54.908919,
+    "lon": 9.7898,
+    "label": "Sønderborg, Sønderborg Kommune, Region Syddanmark, 6400, Danmark",
+    "source": "nominatim",
+    "query": "Sønderborg"
+  },
+  "e00de919e79e33aec04e52a120b07089ccd39cd1": {
+    "lat": 55.246427,
+    "lon": 9.308242,
+    "label": "Vojens, Haderslev Kommune, Region Syddanmark, 6500, Danmark",
+    "source": "nominatim",
+    "query": "Vojens"
+  },
+  "184ce996c072268f8c1ec790fa057805bbe1f0b1": {
+    "lat": 55.044623,
+    "lon": 9.420967,
+    "label": "Aabenraa, Aabenraa Kommune, Region Syddanmark, 6200, Danmark",
+    "source": "nominatim",
+    "query": "Aabenraa"
+  },
+  "3e678a789a1e7b4511a98624d4e041e104422617": {
+    "lat": 55.75273,
+    "lon": 9.407397,
+    "label": "Ringvejen, Jelling, Vejle Kommune, Region Syddanmark, 7300, Danmark",
+    "source": "nominatim",
+    "query": "Ringvejen"
+  },
+  "23670d7d1348d01df4179c38aa12385b4dcd492a": null,
+  "e24d776b3a6372918ec94c94d0d1fc7261102394": null,
+  "b8bbef655a2530a09ec925a4fdced8a39143c42d": {
+    "lat": 54.919007,
+    "lon": 9.818284,
+    "label": "Fynsgade 1, 6400 Sønderborg",
+    "source": "adressevaelger",
+    "query": "Fynsgade Esbjerg"
+  },
+  "4af6193824991b2efebb51bedfbb842fa4eeb644": {
+    "lat": 55.466489,
+    "lon": 8.452075,
+    "label": "Esbjerg, Esbjerg Kommune, Region Syddanmark, 6700, Danmark",
+    "source": "nominatim",
+    "query": "Esbjerg"
+  },
+  "1b8c27dd87066a0a1cb5ed88eea899acd8e85df2": {
+    "lat": 54.930278,
+    "lon": 9.604932,
+    "label": "Sønderborg Landevej 1, 6300 Gråsten",
+    "source": "adressevaelger",
+    "query": "Sønderborg Lufthavn Als"
+  },
+  "c8f6d193f68f1857b7bd158a98e8a152e0593774": {
+    "lat": 55.466338,
+    "lon": 8.439151,
+    "label": "Adgangsvejen, Strandby, Esbjerg, Esbjerg Kommune, Region Syddanmark, 6700, Danmark",
+    "source": "nominatim",
+    "query": "Adgangsvejen"
+  },
+  "51591c199b0bc1f23ae85386e00f89f5fd9347d7": {
+    "lat": 55.845552,
+    "lon": 9.240154,
+    "label": "Give, Vejle Kommune, Region Syddanmark, 7323, Danmark",
+    "source": "nominatim",
+    "query": "Give"
+  },
+  "42626cbfaac292bc58774ad95631cd8f28023316": {
+    "lat": 55.869252,
+    "lon": 9.838108,
+    "label": "Kaptajn Andersens Gade, Vestermark, Horsens, Horsens Kommune, Region Midtjylland, 8700, Danmark",
+    "source": "nominatim",
+    "query": "Kpt"
+  },
+  "1223cc70f35d7a2528e18ac86fa978ba78ad3307": {
+    "lat": 55.589876,
+    "lon": 9.662878,
+    "label": "Bredstrup Bygade 1, Bredstrup, 7000 Fredericia",
+    "source": "adressevaelger",
+    "query": "Brædstrup i nærheden af krydset Silkeborgvej"
+  },
+  "0e7244be4098506a23febf9b3ee22a3a0932be0f": null,
+  "477cacd0b40d82a9740863007209b636cf69ad89": null,
+  "22407ed9006c8dec8637dbbdd0e15e2a8616c0fb": null,
+  "5b8d2a783e363cb8e0d09271a664e82784eaa58c": {
+    "lat": 55.707931,
+    "lon": 9.532942,
+    "label": "Vejle, Vejle Kommune, Region Syddanmark, 7100, Danmark",
+    "source": "nominatim",
+    "query": "Vejle"
+  },
+  "4f37714c625f920c4c4122b26c94239d930e41d4": {
+    "lat": 55.565268,
+    "lon": 9.756217,
+    "label": "Fredericia, Fredericia Kommune, Region Syddanmark, 7000, Danmark",
+    "source": "nominatim",
+    "query": "Fredericia"
+  },
+  "adabc48fcdfbfd28c284165c5eb3a6067acf2f9f": null,
+  "25b22a54d5df1df144f151f1b20229e52484221d": null,
+  "59db29be7c977076d7a0a88bc06bcfceaaf97a7a": null,
+  "72b311a7b6a259cbdc7e9e2095c75fa5f93e18eb": null,
+  "e8844777a2695a401ea50600a96033e2e569ba02": {
+    "lat": 55.796881,
+    "lon": 9.571392,
+    "label": "Tingparken, Lindved, Hedensted Kommune, Region Midtjylland, Danmark",
+    "source": "nominatim",
+    "query": "Tingparken"
+  },
+  "13a3b0428c28b459bce6893876645961efc39a72": null,
+  "643e947eb8fbee1953cc784d381200a30bdb8b98": null,
+  "03e45be0087da75a980f3287fbfb3e21615898ff": null,
+  "fa6adbd391ffcb01266b285f4e2a528aec64faa9": {
+    "lat": 55.475144,
+    "lon": 9.426968,
+    "label": "Sønderjyske Motorvej 7, 6000 Kolding",
+    "source": "adressevaelger",
+    "query": "Sønderjyske Motorvej M"
+  },
+  "4ebf6d314289cc7a51b61dbc373a64e2f75697bf": null,
+  "96590beb3da862ff4f12ac34c0c933188087ef83": null,
+  "8913dee870610eb19d0a90e5a54d76af36b9e1e3": {
+    "lat": 55.867854,
+    "lon": 9.844212,
+    "label": "Nørretorv 1, 8700 Horsens",
+    "source": "adressevaelger",
+    "query": "Nørretorv"
+  },
+  "299fd68906bc881c1f2e69ce1f47c3d83e2e7086": {
+    "lat": 56.137976,
+    "lon": 8.974662,
+    "label": "Herning, Herning Kommune, Region Midtjylland, 7400, Danmark",
+    "source": "nominatim",
+    "query": "Herning"
+  },
+  "0ee54c57ab47c3bc379bb20780ad6d9f3f5b481a": null,
+  "5979f6a82baa8757901295700fb2f38582bbc889": null,
+  "9736b38a4a7441e45b9b527a2c44b219ea765163": {
+    "lat": 56.477809,
+    "lon": 9.416248,
+    "label": "Aalborgvej 129, 8800 Viborg",
+    "source": "adressevaelger",
+    "query": "Aalborgvej"
+  },
+  "b022855b384e0a0bee8029ad782ca3526c7edc53": {
+    "lat": 55.734769,
+    "lon": 9.128475,
+    "label": "Tyskland, Travbyen, Billund, Billund Kommune, Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Tyskland"
+  },
+  "e7d1bae4b7f5c43e94e83000052ac82d5d805fc3": {
+    "lat": 56.750696,
+    "lon": 8.418164,
+    "label": "Hurup, Thisted Kommune, Region Nordjylland, 7760, Danmark",
+    "source": "nominatim",
+    "query": "Hurup"
+  },
+  "a56e8c749a5ed95534081c0ac90a954e8b68292c": {
+    "lat": 56.548746,
+    "lon": 8.624776,
+    "label": "Venø, Venø By, Struer Kommune, Region Midtjylland, Danmark",
+    "source": "nominatim",
+    "query": "Venø"
+  },
+  "e5151a6ba08d7a73e8032af97e27f497f74e40de": null,
+  "f43a90b1e50fb91edfac534a8e692c764bc6327a": {
+    "lat": 56.089903,
+    "lon": 8.638879,
+    "label": "Midtgårdsvej 1, 6920 Videbæk",
+    "source": "adressevaelger",
+    "query": "Midt og Vestjylland"
+  },
+  "a91cf4e8d98ed839414440140ac71dc2ae0833f7": {
+    "lat": 56.131442,
+    "lon": 10.139835,
+    "label": "Aarhus Syd Motorvejen, Høskov Mark, Alderslyst, Viby J., Aarhus, Aarhus Kommune, Region Midtjylland, 8260, Danmark",
+    "source": "nominatim",
+    "query": "Aarhus Syd Motorvejen Aarhus"
+  },
+  "9ca2d3a7a642aa5bcac0d8a5773072c8b1875a0a": {
+    "lat": 56.122019,
+    "lon": 10.159695,
+    "label": "Viby J, Sønderhøj, Lundshøj, Alderslyst, Viby J., Aarhus, Aarhus Kommune, Region Midtjylland, 8260, Danmark",
+    "source": "nominatim",
+    "query": "Viby J"
+  },
+  "7a23ad901498d187a51b8342d9f80b8c72c9102d": null,
+  "f46b24926613a0459c09b51d33338fb8752fbd31": null,
+  "014ef1486f3a08dabc1a1afed2dc8de5f108c563": {
+    "lat": 56.301265,
+    "lon": 9.788786,
+    "label": "Thorsø, Favrskov Kommune, Region Midtjylland, 8881, Danmark",
+    "source": "nominatim",
+    "query": "Thorsø"
+  },
+  "a8a7c70947bf2497ad8c191258c47a7bdb441a14": {
+    "lat": 56.181072,
+    "lon": 10.191938,
+    "label": "Hasle Ringvej, Christiansbjerg, Risvang, Skejby, Aarhus, Aarhus Kommune, Region Midtjylland, 8200, Danmark",
+    "source": "nominatim",
+    "query": "Ringvejen"
+  },
+  "d1340d1f2171258693bbbb848245d904726b64c8": {
+    "lat": 56.384224,
+    "lon": 10.502085,
+    "label": "Ryomgård, Syddjurs Kommune, Region Midtjylland, 8550, Danmark",
+    "source": "nominatim",
+    "query": "Ryomgård"
+  },
+  "7bd2f2e376fb6f5c10d01dc1cff64ad819155874": {
+    "lat": 56.170743,
+    "lon": 10.156417,
+    "label": "Åby Ringvej 100, Hasle, 8210 Aarhus V",
+    "source": "adressevaelger",
+    "query": "Åby Ringvej Ringvejen"
+  },
+  "121b96c6f28599ea729bff1086f2ffa650e2fc56": null,
+  "0f45edf7e4a9224d101c12aadbe5ae065dd82289": {
+    "lat": 56.236107,
+    "lon": 10.098652,
+    "label": "Omega, Søften, Favrskov Kommune, Region Midtjylland, 8382, Danmark",
+    "source": "nominatim",
+    "query": "Omega"
+  },
+  "5af3499c6c8fc445512000171ef50a0c107f756e": {
+    "lat": 56.129033,
+    "lon": 10.162433,
+    "label": "Viby J., Aarhus, Aarhus Kommune, Region Midtjylland, 8260, Danmark",
+    "source": "nominatim",
+    "query": "Viby"
+  },
+  "568d3b22c5aa83f5790c968dcbaaba4f388ba97a": {
+    "lat": 56.149628,
+    "lon": 10.213405,
+    "label": "Aarhus, Aarhus Kommune, Region Midtjylland, 8000, Danmark",
+    "source": "nominatim",
+    "query": "E45 Aarhus"
+  },
+  "5077676ec52cebed0407f22ae1978747f11aa963": {
+    "lat": 57.271977,
+    "lon": 10.993205,
+    "label": "Læsø, Region Nordjylland, 9940, Danmark",
+    "source": "nominatim",
+    "query": "Læsø"
+  },
+  "90e409b28c327126ab49e455764b047485acac46": {
+    "lat": 57.369188,
+    "lon": 10.108822,
+    "label": "Vendsyssel, Region Nordjylland, Danmark",
+    "source": "nominatim",
+    "query": "Vendsyssel"
+  },
+  "64ee216e1b0a33e891278751b0cd4549f0615f55": {
+    "lat": 57.048754,
+    "lon": 9.925596,
+    "label": "Nyhavnsgade 2, 9000 Aalborg",
+    "source": "adressevaelger",
+    "query": "Nyhavnsgade Aalborg"
+  },
+  "adfcc9c70117f4ad6219d470d6a9ebbd2ad46ffe": {
+    "lat": 57.72597,
+    "lon": 10.58446,
+    "label": "Skagen, Frederikshavn Kommune, Region Nordjylland, 9990, Danmark",
+    "source": "nominatim",
+    "query": "Skagen"
+  },
+  "39f83fe3c385f305b5a3986185a516f8d8021d9c": {
+    "lat": 57.110528,
+    "lon": 10.040865,
+    "label": "Gammel Vodskov, Mødholt, Vodskov, Aalborg Kommune, Region Nordjylland, 9310, Danmark",
+    "source": "nominatim",
+    "query": "E45 Vodskov Vodskov Nord"
+  },
+  "bce5af556aef0d95d5ea25fd87a4f1d83bfeb342": {
+    "lat": 56.534962,
+    "lon": 8.936033,
+    "label": "Rønbjerg, Skive Kommune, Region Midtjylland, Danmark",
+    "source": "nominatim",
+    "query": "Rønbjerg"
+  },
+  "c678c23e8176271558250c807eb057efbcf65dd4": {
+    "lat": 57.155529,
+    "lon": 9.804962,
+    "label": "Aabyvej, Kirkebakken, Biersted, Jammerbugt Kommune, Region Nordjylland, 9440, Danmark",
+    "source": "nominatim",
+    "query": "Aabyvej"
+  },
+  "ce09497126719a49969dad79d7d2e85b779c3b5b": null,
+  "a1bd560967a6d89badb68acee15e8f08a292bcd1": null,
+  "bdcf5baebff33e014f5cba4e0bd3319c054f5e1a": {
+    "lat": 57.46188,
+    "lon": 9.791636,
+    "label": "Aggersundvej 1, Lønstrup, 9800 Hjørring",
+    "source": "adressevaelger",
+    "query": "Aggersundvej"
+  },
+  "c734eaf010b5c7b1bbadd47acd37974686301bf0": {
+    "lat": 56.719352,
+    "lon": 10.115111,
+    "label": "Hadsund, Mariagerfjord Kommune, Region Nordjylland, Danmark",
+    "source": "nominatim",
+    "query": "Hadsund"
+  },
+  "baff3604bb5bf4f6fda73962ab719dd8bf63987b": {
+    "lat": 57.195294,
+    "lon": 9.951413,
+    "label": "Tylstrup, Aalborg Kommune, Region Nordjylland, 9382, Danmark",
+    "source": "nominatim",
+    "query": "Tylstrup"
+  },
+  "98b9aa2dc70a1bf24e990675d362e907a228894e": {
+    "lat": 57.349431,
+    "lon": 10.457851,
+    "label": "Frederikshavnmotorvejen 122, 9300 Sæby",
+    "source": "adressevaelger",
+    "query": "Frederikshavn Aalborg"
+  },
+  "55c98ddceb5e9f3305fc9c68a7ed9057e0aaa9c3": null,
+  "5f0fb424843e73dd884d4156fd1fb30dc77e2438": {
+    "lat": 55.019993,
+    "lon": 15.005465,
+    "label": "Søndre Landevej, Hullegård, Pedersker, Bornholms Regionskommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Søndre Landevej Pedersker"
+  },
+  "41094afc03584b125970219c490ef5c3ac0963a8": {
+    "lat": 55.09978,
+    "lon": 14.70826,
+    "label": "Åkirkebyvej 1, Rønne, 3700 Rønne",
+    "source": "adressevaelger",
+    "query": "Åkirkebyvej Rønne"
+  },
+  "7f27e16d3b2d59e77c1f298974f3d43edd325e8b": {
+    "lat": 55.093877,
+    "lon": 14.692717,
+    "label": "Rønne Havn, Rønne, Bornholms Regionskommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Rønne Havn Bornholm"
+  },
+  "2a8910e3e68c74d3aa666947fee6c0989f64ca57": null,
+  "d6915577ca0e8dd45bd895533f0dec51252812e1": null,
+  "b689bf57995e1e9414fdcbbc1715c8a0bf2ceb31": {
+    "lat": 55.099451,
+    "lon": 14.706091,
+    "label": "Rønne, Bornholms Regionskommune, Region Hovedstaden, 3700, Danmark",
+    "source": "nominatim",
+    "query": "Rønne"
+  },
+  "1a465db901072f4e63b00a7692293703f9c49c50": {
+    "lat": 55.066056,
+    "lon": 15.135223,
+    "label": "Nexø-Nordre Strandvej, Nordre Strandvej, Nexø, Bornholms Regionskommune, Region Hovedstaden, 3730, Danmark",
+    "source": "nominatim",
+    "query": "Strandvej Nexø"
+  },
+  "fedc20fc640a10ae7826d71d9c474a012a6cf2fc": {
+    "lat": 55.065014,
+    "lon": 15.130727,
+    "label": "Nexø, Bornholms Regionskommune, Region Hovedstaden, 3730, Danmark",
+    "source": "nominatim",
+    "query": "Nexø"
+  },
+  "798607948df98fdb732189c27f02696800aaf5c9": {
+    "lat": 55.152211,
+    "lon": 14.890848,
+    "label": "Stavsdalvej 76, Østerlars, 3700 Rønne",
+    "source": "adressevaelger",
+    "query": "Stavsdalvej"
+  },
+  "a802f44fec80445fbfd760ea6cb717aed52904e3": null,
+  "3f43cf2dfb4620f53163dc11d7832dad3819183a": null,
+  "0ad78412ba80b54cf2141db1f2306c63a20730c7": {
+    "lat": 55.275975,
+    "lon": 14.801825,
+    "label": "Pilegade 1, Allinge, 3770 Allinge",
+    "source": "adressevaelger",
+    "query": "Pilegade"
+  },
+  "fb9115e44cbed9eb028c628c3abfaa629a27b5aa": null,
+  "1f78e032b546df35ce24c32571ded395b5161a3d": {
+    "lat": 55.274612,
+    "lon": 14.799119,
+    "label": "Allinge, Grønnedal, Allinge-Sandvig, Bornholms Regionskommune, Region Hovedstaden, 3770, Danmark",
+    "source": "nominatim",
+    "query": "Allinge"
+  },
+  "05117b929c2a7ad5c4e4cfc7b9c57cef3bfe27f1": null,
+  "d0aec14286f0fe2a4a58fb43ddf04b704c4a4648": {
+    "lat": 55.665641,
+    "lon": 12.540336,
+    "label": "Vesterbro Ny Skole, Ny Carlsberg Vej, Humleby, Den Gule By, Carlsberg Byen, København, Københavns Kommune, Region Hovedstaden, 1761, Danmark",
+    "source": "nominatim",
+    "query": "Vesterbro Ny Skole København"
+  },
+  "3aed7c602f8df1c911477f5122b21f93d5ef91f9": {
+    "lat": 55.661524,
+    "lon": 12.537449,
+    "label": "Vestre Fængsel, Vigerslev Allé, Den Gule By, Carlsberg Byen, København, Københavns Kommune, Region Hovedstaden, 1765, Danmark",
+    "source": "nominatim",
+    "query": "Vestre Fængsel"
+  },
+  "6dc01c80f51c74e73072ced3da0fdf80a06f112e": null,
+  "9f086ba22f92b6647f51c618de9af2ffb4539da9": {
+    "lat": 55.680314,
+    "lon": 12.566578,
+    "label": "Nørre Voldgade 1, 1358 København K",
+    "source": "adressevaelger",
+    "query": "Nørre Voldgade"
+  },
+  "157ba1b554459ae098a126c0832902d09bd35f67": {
+    "lat": 55.683087,
+    "lon": 12.583001,
+    "label": "Indre By, København, Københavns Kommune, Region Hovedstaden, 1110, Danmark",
+    "source": "nominatim",
+    "query": "Indre By"
+  },
+  "0b685e7b839b31896ad50892efe82395d1c79156": null,
+  "b8827d2093168dce5c02bbd24cb674fc696e7396": {
+    "lat": 55.676735,
+    "lon": 12.589396,
+    "label": "Havnegade, Gammelholm, Christianshavn, København, Københavns Kommune, Region Hovedstaden, 1058, Danmark",
+    "source": "nominatim",
+    "query": "Havnegade København"
+  },
+  "d32fd28b600c98df942e02a13c0ace43c48e14b4": {
+    "lat": 55.629063,
+    "lon": 12.596025,
+    "label": "Øresundsmotorvejen, Tårnbylund, Tårnby, Tårnby Kommune, Region Hovedstaden, 2770, Danmark",
+    "source": "nominatim",
+    "query": "Øresundsmotorvejen, Tårnby"
+  },
+  "88349f0232ef7169a5a49d4957cea33cc8ac9869": {
+    "lat": 55.682779,
+    "lon": 12.573382,
+    "label": "Frederiksborggade 1, 1360 København K",
+    "source": "adressevaelger",
+    "query": "Frederiksborggade"
+  },
+  "779d2467f3ec3e68ba9030228e4817985fa984a4": {
+    "lat": 55.700819,
+    "lon": 12.53756,
+    "label": "Frederikssundsvej 1, 2400 København NV",
+    "source": "adressevaelger",
+    "query": "Frederikssundsvej"
+  },
+  "478357d8e393d51502d138db09daac48738e0425": {
+    "lat": 55.628855,
+    "lon": 12.540299,
+    "label": "Øresundsmotorvejen, Ørestad, København, Københavns Kommune, Region Hovedstaden, 2450, Danmark",
+    "source": "nominatim",
+    "query": "Øresundsmotorvejen"
+  },
+  "9e5b036bb16c7da92d9b2ce9cd0ee99e532c83cb": {
+    "lat": 55.663775,
+    "lon": 12.513592,
+    "label": "Valby, Toftebakkevej, Valby Maskinfabrik, Valby, København, Københavns Kommune, Region Hovedstaden, 2500, Danmark",
+    "source": "nominatim",
+    "query": "Valby"
+  },
+  "f203d31f53161c4e72fea101a9948eb910e1c2ba": null,
+  "c5ffcc0c2642f8edc5afc01a91ed34f093aab1f4": null,
+  "98814afcf639467d789848a680312a96ca7d530c": {
+    "lat": 55.686724,
+    "lon": 12.570072,
+    "label": "København, Københavns Kommune, Region Hovedstaden, 1357, Danmark",
+    "source": "nominatim",
+    "query": "København"
+  },
+  "40bbe2dc44ac28944375045cacc2bc77738f629f": {
+    "lat": 55.630459,
+    "lon": 12.576942,
+    "label": "BR Fields Kbh, Arne Jacobsens Allé, Våren, Ørestad, København, Københavns Kommune, Region Hovedstaden, 1561, Danmark",
+    "source": "nominatim",
+    "query": "Fields"
+  },
+  "1989e63443690d60be9618f66630ad06045fe4a6": {
+    "lat": 55.702704,
+    "lon": 12.572264,
+    "label": "Parken, Øster Allé, Indre Østerbro, Østervold, Østerbro, København, Københavns Kommune, Region Hovedstaden, 2100, Danmark",
+    "source": "nominatim",
+    "query": "Parken"
+  },
+  "1f63b81513a59d77e758727e761630eb2172919a": {
+    "lat": 55.723064,
+    "lon": 12.402713,
+    "label": "Skovlunde, Annavej, Sømose Hegn, Skovlunde, Ballerup, Ballerup Kommune, Region Hovedstaden, 2740, Danmark",
+    "source": "nominatim",
+    "query": "Skovlunde"
+  },
+  "d362801406b0d20f80c9fc5f5148373839b1bcfd": {
+    "lat": 55.606233,
+    "lon": 12.387404,
+    "label": "Arken, Stenstien, Ishøj, Ishøj Kommune, Region Hovedstaden, 2665, Danmark",
+    "source": "nominatim",
+    "query": "Arken"
+  },
+  "55271fe67cf9f53a672ad455650abcdfe605282b": {
+    "lat": 55.7293,
+    "lon": 12.396177,
+    "label": "Lautrupvej 1, 2750 Ballerup",
+    "source": "adressevaelger",
+    "query": "Lautrupvej Ballerup"
+  },
+  "fce3ca12f617120dadd464ef9f29634298cef226": {
+    "lat": 55.613379,
+    "lon": 12.357895,
+    "label": "Ishøj, Centerstien, Ishøj, Ishøj Kommune, Region Hovedstaden, 2635, Danmark",
+    "source": "nominatim",
+    "query": "Ishøj"
+  },
+  "bcd72b624618a0a3b6e90ea4b9187179d6dbf671": null,
+  "4eb5b69db3d45e6742d07da67f4df1ab0e0a7ef9": {
+    "lat": 55.652977,
+    "lon": 12.353399,
+    "label": "Albertslundvej 85A, 2625 Vallensbæk",
+    "source": "adressevaelger",
+    "query": "Albertslund"
+  },
+  "abba869f02c7960902f20d8b8c58989cb1b2c6e9": null,
+  "53d1e5ac1baaa083261d95876b6b9d755c6e08f5": {
+    "lat": 55.733753,
+    "lon": 12.429449,
+    "label": "Herlev Kommune, Region Hovedstaden, 2730, Danmark",
+    "source": "nominatim",
+    "query": "Herlev"
+  },
+  "28238956a0ca83a60a6e4d91a9b61c0309c00a54": {
+    "lat": 55.644171,
+    "lon": 12.477209,
+    "label": "Hvidovre, Hvidovre Kommune, Region Hovedstaden, 2650, Danmark",
+    "source": "nominatim",
+    "query": "Hvidovre"
+  },
+  "95ead316231895f3b6b2271ccff44852e3e9941a": {
+    "lat": 55.656584,
+    "lon": 12.241748,
+    "label": "Høje-Taastrup Kommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Høje-Taastrup"
+  },
+  "20947916249b4e5dee8cce3e5dc42bd3ddea4bd4": {
+    "lat": 55.754353,
+    "lon": 12.492125,
+    "label": "Motorring 3, Buddinge, Gladsaxe Kommune, Region Hovedstaden, 2860, Danmark",
+    "source": "nominatim",
+    "query": "Motorring 3 Motorring"
+  },
+  "a270af5775e2ff1c7b0d5ddd2835f8e90af5e277": null,
+  "55b4f7cfefb589bc7b9878d3cf9cdede845c84e6": null,
+  "baacdcb8c4f402861d8030d580512318eb0897fd": {
+    "lat": 55.713494,
+    "lon": 12.422008,
+    "label": "Tonsbakken 1A, 2740 Skovlunde",
+    "source": "adressevaelger",
+    "query": "Tonsbakken Skovlunde"
+  },
+  "8a3943db5111876d620497e072f81beda4d7a2fb": null,
+  "03290350cac37d43e507201e2f10e8f7cb25441a": null,
+  "0db4c8cb7366809128b042fb929b0e38b019c7d3": {
+    "lat": 55.644745,
+    "lon": 12.444697,
+    "label": "Brøndbyøstervej 188, 2650 Hvidovre",
+    "source": "adressevaelger",
+    "query": "Brøndbyøster Station Albertslund"
+  },
+  "5d81982699e0a54317d0bb4501be8e1ce7f39dbf": {
+    "lat": 55.648485,
+    "lon": 12.415743,
+    "label": "Brøndby Stadion, Brøndbyvester, Brøndby Kommune, Glostrup, Region Hovedstaden, 2605, Danmark",
+    "source": "nominatim",
+    "query": "Brøndby Stadion"
+  },
+  "91df89170fdab6e873cdbfee98d470a5d1557b35": {
+    "lat": 55.771865,
+    "lon": 12.505141,
+    "label": "Kongens Lyngby, Lyngby-Taarbæk Kommune, Region Hovedstaden, 2800, Danmark",
+    "source": "nominatim",
+    "query": "Lyngby"
+  },
+  "b11c1457ec855192461513532609a52990476712": null,
+  "50fc42c9521adbd25efc1169c24f754e41cf9491": {
+    "lat": 55.896343,
+    "lon": 12.366855,
+    "label": "Københavnsvej 42, 3450 Allerød",
+    "source": "adressevaelger",
+    "query": "Københavns Lufthavn Allerød"
+  },
+  "8d4004f56446476ad32765c80fd1e819e5f00c50": {
+    "lat": 56.034874,
+    "lon": 12.613007,
+    "label": "Helsingør, Helsingør Kommune, Region Hovedstaden, 3000, Danmark",
+    "source": "nominatim",
+    "query": "Helsingør"
+  },
+  "c46d78c13e6506ad699f0669934d16266f70b8bf": {
+    "lat": 55.814507,
+    "lon": 12.37881,
+    "label": "Farum Bytorv 1, 3520 Farum",
+    "source": "adressevaelger",
+    "query": "Farum Bytorv Farum"
+  },
+  "6f055714c9e179a2d1f469199c4c25097c6f29a9": {
+    "lat": 55.799138,
+    "lon": 12.534191,
+    "label": "Helsingørmotorvejen 81, 2800 Kongens Lyngby",
+    "source": "adressevaelger",
+    "query": "Helsingør Station Allerød"
+  },
+  "1f0b674c7bd44c1d35ec5ffea63d815ea982a434": {
+    "lat": 55.997671,
+    "lon": 12.333207,
+    "label": "Gribskov, Gadevang, Hillerød Kommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Gribskov"
+  },
+  "66755fc4a639136de19a1b668986f14b5194e0e0": {
+    "lat": 55.960405,
+    "lon": 12.483482,
+    "label": "Helsingørmotorvejen, Åvænget, Nivå, Fredensborg Kommune, Region Hovedstaden, 2990, Danmark",
+    "source": "nominatim",
+    "query": "Helsingørmotorvejen Nivå"
+  },
+  "4bf71e46e3c6ffd9d4eae90636a165b6f5e6bd63": {
+    "lat": 55.928944,
+    "lon": 12.298536,
+    "label": "Bilka, Nordstensvej, Trollesbro, Teglgårdslund, Hillerød, Hillerød Kommune, Region Hovedstaden, 3400, Danmark",
+    "source": "nominatim",
+    "query": "Bilka Hillerød"
+  },
+  "92bab256088a211c01d23e2480ebcaa5eba74610": null,
+  "d564696f6c26f206f66731b98521fb4692603a62": null,
+  "9e3b54fdc46c479e825e2e6554c47e0c45be973b": {
+    "lat": 55.850581,
+    "lon": 11.991652,
+    "label": "Jægerspris, Frederikssund Kommune, Region Hovedstaden, 3630, Danmark",
+    "source": "nominatim",
+    "query": "Jægerspris"
+  },
+  "926076af76ad54cc153d8fe662caadffa834e6af": {
+    "lat": 55.776909,
+    "lon": 12.507918,
+    "label": "Carlshøjvej 1, 2800 Kongens Lyngby",
+    "source": "adressevaelger",
+    "query": "Carlshøjvej Kongens Lyngby"
+  },
+  "b7b05dc7c586f2d0a6d7d79eff33f56eaa65acdd": {
+    "lat": 55.799138,
+    "lon": 12.534191,
+    "label": "Helsingørmotorvejen 81, 2800 Kongens Lyngby",
+    "source": "adressevaelger",
+    "query": "Helsingør Politigård"
+  },
+  "215410507002d9600ea7651fb99361670a8a8102": {
+    "lat": 55.651401,
+    "lon": 11.502119,
+    "label": "Mørkøv, Holbæk Kommune, Region Sjælland, 4440, Danmark",
+    "source": "nominatim",
+    "query": "Mørkøv"
+  },
+  "ad8b8b10b714568863e4233deb8e2e8876c89684": {
+    "lat": 55.643348,
+    "lon": 12.081925,
+    "label": "Roskilde, Roskilde Kommune, Region Sjælland, 4000, Danmark",
+    "source": "nominatim",
+    "query": "Roskilde"
+  },
+  "086a3a41edd95615d1b366d6b9345b0ce1f61c0f": {
+    "lat": 55.887,
+    "lon": 11.146533,
+    "label": "Sejerø, Sejerby, Kalundborg Kommune, Region Sjælland, 4592, Danmark",
+    "source": "nominatim",
+    "query": "Sejerø"
+  },
+  "327a0a3a55aa14784feae8ff5730ce28b2a67856": {
+    "lat": 55.907649,
+    "lon": 11.667863,
+    "label": "Annebergparken 1, 4500 Nykøbing Sj",
+    "source": "adressevaelger",
+    "query": "Annebergparken"
+  },
+  "c983a6b124ef7d0a126f54a3151268472f4e4d6e": {
+    "lat": 55.456501,
+    "lon": 12.181896,
+    "label": "Køge, Køge Kommune, Region Sjælland, 4600, Danmark",
+    "source": "nominatim",
+    "query": "Køge"
+  },
+  "09b86a45aad703c35ac7a149f22788def1c41d70": null,
+  "dc11bbdd7f72482f7e32c34d204cd103182fa438": null,
+  "7c60525da7f64a90053fb5bda69ec21f82f91a57": {
+    "lat": 55.583375,
+    "lon": 12.299929,
+    "label": "Greve Strand, Greve Kommune, Region Sjælland, 2670, Danmark",
+    "source": "nominatim",
+    "query": "Greve"
+  },
+  "733ef45b86673e3ac465c03d8b3197add36005a0": null,
+  "f512daeea7748bc2502af930efe3ce599e539bd0": null,
+  "03ccf80a7528936c5bfaea22db3449a736b9970a": null,
+  "ae3295ef4b36c359275103ad65c5f76436958806": {
+    "lat": 55.517689,
+    "lon": 12.190394,
+    "label": "Køge Bugt Motorvejen, Villabyerne Solrød, Torøgel Huse, Jersie Strand, Solrød Strand, Solrød Kommune, Region Sjælland, 2680, Danmark",
+    "source": "nominatim",
+    "query": "motorvejen"
+  },
+  "5c280873f386aa2648913df7aff25e6365410153": null,
+  "55f5dd5743a29d762ad8b576cfbb736e7cfd7c16": {
+    "lat": 55.446817,
+    "lon": 11.797522,
+    "label": "Ringsted, Ringsted Kommune, Region Sjælland, 4100, Danmark",
+    "source": "nominatim",
+    "query": "Ringsted"
+  },
+  "652c0400f9d39253da3b1803d42df2a1c6bb2eae": null,
+  "527a9a587f35bd7497c837641554e8ca8ea7bb66": {
+    "lat": 55.580211,
+    "lon": 12.257042,
+    "label": "Køge Bugt Motorvejen, Karlslunde Strand, Karlslunde, Greve Kommune, Region Sjælland, 2690, Danmark",
+    "source": "nominatim",
+    "query": "Køge Bugt Motorvejen Karlslunde"
+  },
+  "9c1f83bc79dadd1ae81f383dec091101cbff187e": null,
+  "ec6044282931872fad413d320d9f696d6c22e141": {
+    "lat": 54.820761,
+    "lon": 11.702241,
+    "label": "Sydmotorvejen 454, 4990 Sakskøbing",
+    "source": "adressevaelger",
+    "query": "Sydmotorvejen Sydsjælland"
+  },
+  "04168368d7c7f5b5b61616395e2954cdd6dd314e": {
+    "lat": 55.44072,
+    "lon": 11.793938,
+    "label": "Rønnedevej 2A, 4100 Ringsted",
+    "source": "adressevaelger",
+    "query": "Rønnedevej"
+  },
+  "527f16788facf8934ee5cbe5854332215e03fd17": {
+    "lat": 55.339592,
+    "lon": 10.995426,
+    "label": "Storebæltsforbindelsen, Danmark",
+    "source": "nominatim",
+    "query": "Storebæltsforbindelsen"
+  },
+  "bc0b4fe1f30689c1c1cc41f41fcbe1c43ae5b464": {
+    "lat": 55.32175,
+    "lon": 11.202068,
+    "label": "Næstved Landevej 1, 4220 Korsør",
+    "source": "adressevaelger",
+    "query": "Næstved landevej Fuglebjerg"
+  },
+  "72e7dab85df730a7dbaef156a4944cba67543ae1": {
+    "lat": 55.232825,
+    "lon": 11.76741,
+    "label": "Næstved, Næstved Kommune, Region Sjælland, 4700, Danmark",
+    "source": "nominatim",
+    "query": "Næstved"
+  },
+  "c43a4f5336daaa0a4cc0fe4f2751325f3020cd7a": null,
+  "d09ae441b4df2c37289b56d1143367ec56663b2f": {
+    "lat": 55.517943,
+    "lon": 12.190347,
+    "label": "Køge Bugt Motorvejen, Villabyerne Solrød, Torøgel Huse, Jersie Strand, Solrød Strand, Solrød Kommune, Region Sjælland, 2680, Danmark",
+    "source": "nominatim",
+    "query": "Motorvejen"
+  },
+  "ab9f4328c29747963874ec9bc9139f329f60872c": {
+    "lat": 54.780808,
+    "lon": 11.92965,
+    "label": "Systofte Bygade 2, Systofte, 4800 Nykøbing F",
+    "source": "adressevaelger",
+    "query": "Systofte Bygade Systofte"
+  },
+  "c6e29ee6681a9e1a6960ebc874a654c76e72594c": {
+    "lat": 55.334085,
+    "lon": 11.137047,
+    "label": "By og Overfartsmuseet, Søbatteriet, Korsør, Slagelse Kommune, Region Sjælland, 4220, Danmark",
+    "source": "nominatim",
+    "query": "Korsør og Slagelse"
+  },
+  "c6413bbe1451a7b8854f1e790dbcbab6dbadcc91": {
+    "lat": 55.40612,
+    "lon": 11.352541,
+    "label": "Slagelse, Slagelse Kommune, Region Sjælland, 4200, Danmark",
+    "source": "nominatim",
+    "query": "Slagelse"
+  },
+  "20f193d8f0ac227ad917c6aae6e036c3a36606d5": {
+    "lat": 54.897018,
+    "lon": 11.87625,
+    "label": "Nørre Alslev, Guldborgsund Kommune, Region Sjælland, 4840, Danmark",
+    "source": "nominatim",
+    "query": "Nørre-Alslev"
+  },
+  "b76a30648862c030cf41d45bef1b16a8df92865a": {
+    "lat": 55.097087,
+    "lon": 10.242825,
+    "label": "Faaborg, Faaborg-Midtfyn Kommune, Region Syddanmark, 5600, Danmark",
+    "source": "nominatim",
+    "query": "Faaborg"
+  },
+  "7c91cc09b23fb223f4470584786f70c49cd6bc71": {
+    "lat": 55.358224,
+    "lon": 10.583149,
+    "label": "Langeskov, Kerteminde Kommune, Region Syddanmark, 5550, Danmark",
+    "source": "nominatim",
+    "query": "Langeskov"
+  },
+  "7f897613aab3d471856133b3d2a7bb80e8a97977": {
+    "lat": 54.940829,
+    "lon": 10.711636,
+    "label": "Skudehavnen 1, 5900 Rudkøbing",
+    "source": "adressevaelger",
+    "query": "Skud afgivet i Egeparken Vollsmosebydelen"
+  },
+  "52f40ff340127e4ef730dca0ea330246aad09d31": {
+    "lat": 55.309828,
+    "lon": 10.79766,
+    "label": "Nyborg, Nyborg Kommune, Region Syddanmark, 5800, Danmark",
+    "source": "nominatim",
+    "query": "Nyborg"
+  },
+  "2ff8cb67704ff63a3d082a05ec50756d6e78c69c": {
+    "lat": 55.514088,
+    "lon": 10.23792,
+    "label": "Nordfyns Kommune, Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Nordfyns"
+  },
+  "159a5b42ec1dcca193c4c09e63ef760937196953": {
+    "lat": 55.536919,
+    "lon": 9.776362,
+    "label": "Strib, Middelfart Kommune, Region Syddanmark, 5500, Danmark",
+    "source": "nominatim",
+    "query": "Strib"
+  },
+  "f56f8886c151c863622f6f2db3b607e43805089a": {
+    "lat": 55.397083,
+    "lon": 10.391659,
+    "label": "Nedergade 1, 5000 Odense C",
+    "source": "adressevaelger",
+    "query": "Nedergade Odense"
+  },
+  "f47a6abf621478ea2575165516fd2243f678af85": {
+    "lat": 55.039152,
+    "lon": 9.353713,
+    "label": "Sønderjyske Motorvej, Årslev, Rødekro, Aabenraa Kommune, Region Syddanmark, 6230, Danmark",
+    "source": "nominatim",
+    "query": "E 45 Rødekro"
+  },
+  "f6ff47cc780127b7c6c67430afdb64a1ffb3f46e": {
+    "lat": 55.250071,
+    "lon": 9.499787,
+    "label": "Haderslev, Haderslev Kommune, Region Syddanmark, 6100, Danmark",
+    "source": "nominatim",
+    "query": "Haderslev"
+  },
+  "65eb4354bf955ad006a297271f7e8db85ce92bae": {
+    "lat": 54.908919,
+    "lon": 9.7898,
+    "label": "Sønderborg, Sønderborg Kommune, Region Syddanmark, 6400, Danmark",
+    "source": "nominatim",
+    "query": "Sønderborg"
+  },
+  "be868505548bbbfc8c62909da4bf2f9ea3a7a31a": {
+    "lat": 55.246427,
+    "lon": 9.308242,
+    "label": "Vojens, Haderslev Kommune, Region Syddanmark, 6500, Danmark",
+    "source": "nominatim",
+    "query": "Vojens"
+  },
+  "0f98650717467ee1d4000c81aa7c630841873928": {
+    "lat": 55.044623,
+    "lon": 9.420967,
+    "label": "Aabenraa, Aabenraa Kommune, Region Syddanmark, 6200, Danmark",
+    "source": "nominatim",
+    "query": "Aabenraa"
+  },
+  "5b7f39d2fc0f2328201ad26bf476311289fccc6b": {
+    "lat": 55.75273,
+    "lon": 9.407397,
+    "label": "Ringvejen, Jelling, Vejle Kommune, Region Syddanmark, 7300, Danmark",
+    "source": "nominatim",
+    "query": "Ringvejen"
+  },
+  "6e6e8b5fe3a9207c8a5cde343e0cf8be1ef2e22b": null,
+  "6f146aac62a6f40c907e0fffb606b4df724b272b": null,
+  "ee067923272931c05231891204f039dc35cf861d": {
+    "lat": 54.919007,
+    "lon": 9.818284,
+    "label": "Fynsgade 1, 6400 Sønderborg",
+    "source": "adressevaelger",
+    "query": "Fynsgade Esbjerg"
+  },
+  "616034bf1789bed191cf6f8de15a6d620b22780e": {
+    "lat": 55.466489,
+    "lon": 8.452075,
+    "label": "Esbjerg, Esbjerg Kommune, Region Syddanmark, 6700, Danmark",
+    "source": "nominatim",
+    "query": "Esbjerg"
+  },
+  "b847957c3f0a0319b7ee0bcc618a03e9a8cfac9e": {
+    "lat": 54.930278,
+    "lon": 9.604932,
+    "label": "Sønderborg Landevej 1, 6300 Gråsten",
+    "source": "adressevaelger",
+    "query": "Sønderborg Lufthavn Als"
+  },
+  "51da87990118fbeb214d65cbe4c95f77b07a713b": {
+    "lat": 55.466338,
+    "lon": 8.439151,
+    "label": "Adgangsvejen, Strandby, Esbjerg, Esbjerg Kommune, Region Syddanmark, 6700, Danmark",
+    "source": "nominatim",
+    "query": "Adgangsvejen"
+  },
+  "8dd79f15a665571640f540039ea28dd439c523fe": {
+    "lat": 55.845552,
+    "lon": 9.240154,
+    "label": "Give, Vejle Kommune, Region Syddanmark, 7323, Danmark",
+    "source": "nominatim",
+    "query": "Give"
+  },
+  "8c9c229d3c6bf5a36823ef45187941fa2d91d27a": {
+    "lat": 55.869252,
+    "lon": 9.838108,
+    "label": "Kaptajn Andersens Gade, Vestermark, Horsens, Horsens Kommune, Region Midtjylland, 8700, Danmark",
+    "source": "nominatim",
+    "query": "Kpt"
+  },
+  "26ad6d3450baf83d4727919398ff491b6d9dce47": {
+    "lat": 56.021692,
+    "lon": 9.641747,
+    "label": "Sdr. Vissingvej 1, Sdr Vissing, 8740 Brædstrup",
+    "source": "adressevaelger",
+    "query": "Søndre Vissingvej"
+  },
+  "bc777ca7c24c7d3fa39b2ddd345557c74271cba6": null,
+  "ba84cfc055feb763f454c32f05257dae2412bea6": null,
+  "97e1f7b47cb4163cd514435a473af731597fedea": null,
+  "b4d48d10677ee85ebc7bc563b41666a968040dc0": {
+    "lat": 55.707931,
+    "lon": 9.532942,
+    "label": "Vejle, Vejle Kommune, Region Syddanmark, 7100, Danmark",
+    "source": "nominatim",
+    "query": "Vejle"
+  },
+  "d8c1c6b96b774a4fc2b629eaf88a9cfc782e8235": {
+    "lat": 55.565268,
+    "lon": 9.756217,
+    "label": "Fredericia, Fredericia Kommune, Region Syddanmark, 7000, Danmark",
+    "source": "nominatim",
+    "query": "Fredericia"
+  },
+  "68aa611d7a112436650a93746ea007a6a8f6b878": {
+    "lat": 55.36751,
+    "lon": 9.601058,
+    "label": "Hejlsminde, Kolding Kommune, Region Syddanmark, 6094, Danmark",
+    "source": "nominatim",
+    "query": "Hejlsminde"
+  },
+  "65c8ed09c2e0024c6f5b957e7c568c01b019f392": null,
+  "702b7abe21461c447860ee02a655af3cf6b66c39": {
+    "lat": 55.796881,
+    "lon": 9.571392,
+    "label": "Tingparken, Lindved, Hedensted Kommune, Region Midtjylland, Danmark",
+    "source": "nominatim",
+    "query": "Tingparken"
+  },
+  "a618ab560d5c069bb8de3c5fc0ad3c788cc7c2ea": null,
+  "3ffe00983303ae612d8aa7214b121e7c6f5f3887": null,
+  "d6d4e9821411164de4ef4b0d3636e1df7e92a0b7": null,
+  "d70108013ca5ce8246f663a2aa4d1299b2577200": {
+    "lat": 55.475144,
+    "lon": 9.426968,
+    "label": "Sønderjyske Motorvej 7, 6000 Kolding",
+    "source": "adressevaelger",
+    "query": "Sønderjyske Motorvej M"
+  },
+  "5b4f50964ac05177af08c62287d3c32af183f464": {
+    "lat": 55.867854,
+    "lon": 9.844212,
+    "label": "Nørretorv 1, 8700 Horsens",
+    "source": "adressevaelger",
+    "query": "Nørretorv Vejle"
+  },
+  "d06594c582d1079824b0a27bb78d239885a41676": {
+    "lat": 56.137976,
+    "lon": 8.974662,
+    "label": "Herning, Herning Kommune, Region Midtjylland, 7400, Danmark",
+    "source": "nominatim",
+    "query": "Herning"
+  },
+  "911624b69a4519f83a31956bdfdf0548f25fb2af": {
+    "lat": 56.477809,
+    "lon": 9.416248,
+    "label": "Aalborgvej 129, 8800 Viborg",
+    "source": "adressevaelger",
+    "query": "Aalborgvej Kjellerup"
+  },
+  "8bd3fbad36288efd9293b96b16e93852eef50ad3": {
+    "lat": 55.734769,
+    "lon": 9.128475,
+    "label": "Tyskland, Travbyen, Billund, Billund Kommune, Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Tyskland"
+  },
+  "dc6c9659074cb925f5f41e309c8e2dc6b3c5dc9f": {
+    "lat": 56.750696,
+    "lon": 8.418164,
+    "label": "Hurup, Thisted Kommune, Region Nordjylland, 7760, Danmark",
+    "source": "nominatim",
+    "query": "Hurup"
+  },
+  "5cef2742d620df5d37ce2273ada9c525123b5152": {
+    "lat": 56.548746,
+    "lon": 8.624776,
+    "label": "Venø, Venø By, Struer Kommune, Region Midtjylland, Danmark",
+    "source": "nominatim",
+    "query": "Venø"
+  },
+  "80f0a68bf34137bc7ccd48cb0e86e2e8873c0491": null,
+  "5134027907a7aacdc8434a984b22daebbe004802": {
+    "lat": 56.089903,
+    "lon": 8.638879,
+    "label": "Midtgårdsvej 1, 6920 Videbæk",
+    "source": "adressevaelger",
+    "query": "Midt og Vestjylland"
+  },
+  "17a547aff98e60553aeee859bd3d441a813b7d57": {
+    "lat": 56.131442,
+    "lon": 10.139835,
+    "label": "Aarhus Syd Motorvejen, Høskov Mark, Alderslyst, Viby J., Aarhus, Aarhus Kommune, Region Midtjylland, 8260, Danmark",
+    "source": "nominatim",
+    "query": "Aarhus Syd Motorvejen Aarhus"
+  },
+  "285345ca9a07cd17f2cf6f99a0e08da2503adb96": {
+    "lat": 56.122019,
+    "lon": 10.159695,
+    "label": "Viby J, Sønderhøj, Lundshøj, Alderslyst, Viby J., Aarhus, Aarhus Kommune, Region Midtjylland, 8260, Danmark",
+    "source": "nominatim",
+    "query": "Viby J"
+  },
+  "1348345e8521cf59d5ff8fd18db53b7a9dd757bd": null,
+  "476adc4f810bd4531b552dd66d2009f8974ea7d6": null,
+  "39a1c91f27f25886dedab907d8cf123079354c6c": {
+    "lat": 56.301265,
+    "lon": 9.788786,
+    "label": "Thorsø, Favrskov Kommune, Region Midtjylland, 8881, Danmark",
+    "source": "nominatim",
+    "query": "Thorsø"
+  },
+  "82b94ff6a492581c6a379f3e4007791fc2cdcc45": {
+    "lat": 56.181072,
+    "lon": 10.191938,
+    "label": "Hasle Ringvej, Christiansbjerg, Risvang, Skejby, Aarhus, Aarhus Kommune, Region Midtjylland, 8200, Danmark",
+    "source": "nominatim",
+    "query": "Ringvejen"
+  },
+  "b4f271e4bce98b8590bae6afed37c87b288d2ff4": {
+    "lat": 56.384224,
+    "lon": 10.502085,
+    "label": "Ryomgård, Syddjurs Kommune, Region Midtjylland, 8550, Danmark",
+    "source": "nominatim",
+    "query": "Ryomgård"
+  },
+  "41bae0f7d4180ee03e761a8c74a15857b4101c8e": {
+    "lat": 56.170743,
+    "lon": 10.156417,
+    "label": "Åby Ringvej 100, Hasle, 8210 Aarhus V",
+    "source": "adressevaelger",
+    "query": "Åby Ringvej Ringvejen"
+  },
+  "c9870179cdc98a58e5d1dcdcebf6949f920025c3": null,
+  "5f0863a0c2a2b23effafd320f95b0fa8e815b41b": {
+    "lat": 56.236107,
+    "lon": 10.098652,
+    "label": "Omega, Søften, Favrskov Kommune, Region Midtjylland, 8382, Danmark",
+    "source": "nominatim",
+    "query": "Omega"
+  },
+  "1ef4ae3ad6afc42b590a51e6f60a02df085a4662": {
+    "lat": 56.129033,
+    "lon": 10.162433,
+    "label": "Viby J., Aarhus, Aarhus Kommune, Region Midtjylland, 8260, Danmark",
+    "source": "nominatim",
+    "query": "Viby"
+  },
+  "b9b630c413e7dbe4149d98a68f69609a02322175": {
+    "lat": 56.149628,
+    "lon": 10.213405,
+    "label": "Aarhus, Aarhus Kommune, Region Midtjylland, 8000, Danmark",
+    "source": "nominatim",
+    "query": "E45 Aarhus"
+  },
+  "6de5df05897ec5e477d18deeea5099807de27146": {
+    "lat": 57.271977,
+    "lon": 10.993205,
+    "label": "Læsø, Region Nordjylland, 9940, Danmark",
+    "source": "nominatim",
+    "query": "Læsø"
+  },
+  "a58d535d7410b2cf57248bb117ffb6da9260c4ce": {
+    "lat": 57.369188,
+    "lon": 10.108822,
+    "label": "Vendsyssel, Region Nordjylland, Danmark",
+    "source": "nominatim",
+    "query": "Vendsyssel"
+  },
+  "979f083f9262c6e3f948baef88aa642389e2d05a": {
+    "lat": 57.048754,
+    "lon": 9.925596,
+    "label": "Nyhavnsgade 2, 9000 Aalborg",
+    "source": "adressevaelger",
+    "query": "Nyhavnsgade Aalborg"
+  },
+  "c298b994ac9c4c9f14d7c025ddaea40f0d4f55e4": {
+    "lat": 57.72597,
+    "lon": 10.58446,
+    "label": "Skagen, Frederikshavn Kommune, Region Nordjylland, 9990, Danmark",
+    "source": "nominatim",
+    "query": "Skagen"
+  },
+  "ccec2ece29f74e404feb8662da5af1cd80d08b69": {
+    "lat": 57.110528,
+    "lon": 10.040865,
+    "label": "Gammel Vodskov, Mødholt, Vodskov, Aalborg Kommune, Region Nordjylland, 9310, Danmark",
+    "source": "nominatim",
+    "query": "E45 Vodskov Vodskov Nord"
+  },
+  "aed9259e124a7f0c8c41feee5c9fc0b4c7aeb567": {
+    "lat": 56.534962,
+    "lon": 8.936033,
+    "label": "Rønbjerg, Skive Kommune, Region Midtjylland, Danmark",
+    "source": "nominatim",
+    "query": "Rønbjerg"
+  },
+  "6b9ebe19624bbe775643c7e0e69ce8f7b886e956": {
+    "lat": 57.155529,
+    "lon": 9.804962,
+    "label": "Aabyvej, Kirkebakken, Biersted, Jammerbugt Kommune, Region Nordjylland, 9440, Danmark",
+    "source": "nominatim",
+    "query": "Aabyvej"
+  },
+  "501cbd371c6998ff6b1a649cb56e2cfa4283aa4c": null,
+  "5704148ce1a6a42da148862f473269c243de52cd": {
+    "lat": 57.46188,
+    "lon": 9.791636,
+    "label": "Aggersundvej 1, Lønstrup, 9800 Hjørring",
+    "source": "adressevaelger",
+    "query": "Aggersundvej"
+  },
+  "c1e591be58b3b3ade7756cb64fd0258495fa6ffc": {
+    "lat": 56.719352,
+    "lon": 10.115111,
+    "label": "Hadsund, Mariagerfjord Kommune, Region Nordjylland, Danmark",
+    "source": "nominatim",
+    "query": "Hadsund"
+  },
+  "be057980ac5bae5289b155722f71c4c56cb8a35a": {
+    "lat": 57.195294,
+    "lon": 9.951413,
+    "label": "Tylstrup, Aalborg Kommune, Region Nordjylland, 9382, Danmark",
+    "source": "nominatim",
+    "query": "Tylstrup"
+  },
+  "ae9dce5cf77095e58b7a4d157131380f164f37ae": {
+    "lat": 57.349431,
+    "lon": 10.457851,
+    "label": "Frederikshavnmotorvejen 122, 9300 Sæby",
+    "source": "adressevaelger",
+    "query": "Frederikshavn Aalborg"
+  },
+  "0e111ac4873769dc22e0d71b13344e284fcc92b0": null,
+  "4f7f7fb8c67105ef1db5f9d940f921753e93dda3": {
+    "lat": 55.019993,
+    "lon": 15.005465,
+    "label": "Søndre Landevej, Hullegård, Pedersker, Bornholms Regionskommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Søndre Landevej Pedersker"
+  },
+  "88bb7f8bd01190befa69cdeee90cfebcabb2bfdf": {
+    "lat": 55.09978,
+    "lon": 14.70826,
+    "label": "Åkirkebyvej 1, Rønne, 3700 Rønne",
+    "source": "adressevaelger",
+    "query": "Åkirkebyvej Rønne"
+  },
+  "e4b6313d34a2e39bab9ccc00a5bf88d7d20d356a": {
+    "lat": 55.093877,
+    "lon": 14.692717,
+    "label": "Rønne Havn, Rønne, Bornholms Regionskommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Rønne Havn Bornholm"
+  },
+  "c7e1aac426ecdfcdd20d50f0149f6beb925ba5d4": {
+    "lat": 55.099451,
+    "lon": 14.706091,
+    "label": "Rønne, Bornholms Regionskommune, Region Hovedstaden, 3700, Danmark",
+    "source": "nominatim",
+    "query": "Rønne"
+  },
+  "42c3a91f2e2e3ce9f0fb6243089fb532087b8664": {
+    "lat": 55.066056,
+    "lon": 15.135223,
+    "label": "Nexø-Nordre Strandvej, Nordre Strandvej, Nexø, Bornholms Regionskommune, Region Hovedstaden, 3730, Danmark",
+    "source": "nominatim",
+    "query": "Strandvej Nexø"
+  },
+  "f249ca65d8fce010e1c348780e638db834fc50fa": {
+    "lat": 55.065014,
+    "lon": 15.130727,
+    "label": "Nexø, Bornholms Regionskommune, Region Hovedstaden, 3730, Danmark",
+    "source": "nominatim",
+    "query": "Nexø"
+  },
+  "69235bf652cc9e126dbbf1592373396d98dbc117": {
+    "lat": 55.152211,
+    "lon": 14.890848,
+    "label": "Stavsdalvej 76, Østerlars, 3700 Rønne",
+    "source": "adressevaelger",
+    "query": "Stavsdalvej"
+  },
+  "6ab91958200de8a792f5cb9310f05517eade8116": {
+    "lat": 55.275975,
+    "lon": 14.801825,
+    "label": "Pilegade 1, Allinge, 3770 Allinge",
+    "source": "adressevaelger",
+    "query": "Pilegade Allinge"
+  },
+  "3a8e2b6d287f63cb5e72433c6464b7ad2da8bf55": null,
+  "f304682e21501aad8ab506afba0f1a4f5e688749": {
+    "lat": 55.274612,
+    "lon": 14.799119,
+    "label": "Allinge, Grønnedal, Allinge-Sandvig, Bornholms Regionskommune, Region Hovedstaden, 3770, Danmark",
+    "source": "nominatim",
+    "query": "Allinge"
+  },
+  "96d5d2273912a065e9cd484ce236956a92b6250b": null,
+  "7548809a5122cdb1a5cca647e329c6cc765ab071": null,
+  "6a385cd6d7a99b7489f9bc703489a85850b6162d": null,
+  "21c641d370c7fdde1595337a044c3a3a560561c8": {
+    "lat": 55.885925,
+    "lon": 11.570695,
+    "label": "Trundholm Mosevej 4, 4573 Højby",
+    "source": "adressevaelger",
+    "query": "Trundholm Mosevej"
+  },
+  "9616c46cacf39fabbc9adb9ce6bbe794ce1969fb": null,
+  "036f2a3d9ce601b6cb7371e7e55bc4ff42a333fd": {
+    "lat": 55.37341,
+    "lon": 12.076028,
+    "label": "Tureby, Turebyvej, Nyhuse, Sonnerup, Tureby, Køge Kommune, Region Sjælland, 4682, Danmark",
+    "source": "nominatim",
+    "query": "Tureby"
+  }
+}
