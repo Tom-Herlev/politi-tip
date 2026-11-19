@@ -2786,5 +2786,12 @@
     "label": "Falck Svendborg, Odensevej, Belvedere, Svendborg, Svendborg Kommune, Region Syddanmark, 5700, Danmark",
     "source": "nominatim",
     "query": "Svendborg brandstation"
+  },
+  "0ee6ffaee4abd1403f305a05cfb495922c614b87": {
+    "lat": 56.108325,
+    "lon": 10.153385,
+    "label": "Station Aarhus Syd, Søren Nymarks Vej, Holme Industriby, Rosenhøj, Tranbjerg, Aarhus Kommune, Region Midtjylland, 8260, Danmark",
+    "source": "nominatim",
+    "query": "Aarhus Syd brandstation"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T17:27:51Z",
-  "generated_at_copenhagen": "2026-11-19T18:27:51+01:00",
+  "generated_at": "2026-11-19T17:44:26Z",
+  "generated_at_copenhagen": "2026-11-19T18:44:26+01:00",
   "newest_rss": "2026-11-19T17:14:58Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 31
+      "count": 32
     },
     {
       "id": "vestegnen",
@@ -125,7 +125,7 @@
       "short": "Fyn",
       "handle": "FynsPoliti",
       "default_on": false,
-      "count": 19
+      "count": 18
     },
     {
       "id": "sydsonderjylland",
@@ -141,7 +141,7 @@
       "short": "Sydøstjylland",
       "handle": "SydOjylPoliti",
       "default_on": false,
-      "count": 19
+      "count": 18
     },
     {
       "id": "midtvestjylland",
@@ -157,7 +157,7 @@
       "short": "Østjylland",
       "handle": "OjylPoliti",
       "default_on": false,
-      "count": 18
+      "count": 19
     },
     {
       "id": "nordjylland",
@@ -189,19 +189,19 @@
       "redning": 5
     },
     "by_category": {
-      "politi": 173,
       "brand": 20,
+      "politi": 173,
       "trafik": 63,
       "strom": 8
     },
-    "elapsed_seconds": 21.5
+    "elapsed_seconds": 12.1
   },
   "sources_status": {
     "politiupdate": {
       "ok": true,
       "count": 173,
       "endpoint": "https://via.ritzau.dk/rss/short-messages/latest?publisherId={id}",
-      "reused": false
+      "reused": true
     },
     "odin": {
       "ok": true,
@@ -260,6 +260,90 @@
     }
   ],
   "incidents": [
+    {
+      "id": "odin-861a781712693bf6",
+      "category": "brand",
+      "type": "brand",
+      "title": "ISL-Forespørgsel – Aarhus Syd",
+      "text": "Beredskab: Østjyllands Brandvæsen. Station: Aarhus Syd. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: ISL-Forespørgsel.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-19T17:31:31Z",
+      "updated_at": "2026-11-19T17:31:31Z",
+      "lat": 56.108325,
+      "lon": 10.153385,
+      "location_text": "Aarhus Syd (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "ostjylland",
+      "district_name": "Østjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": true,
+      "station": "Aarhus Syd",
+      "beredskab": "Østjyllands Brandvæsen",
+      "first_message": "ISL-Forespørgsel",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
+      "id": "odin-2d06a85b2dbf8023",
+      "category": "brand",
+      "type": "brand",
+      "title": "Bygn.brand-Industribygning – St. Roskilde",
+      "text": "Beredskab: Roskilde Brandvæsen. Station: St. Roskilde. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Industribygning.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-19T17:19:52Z",
+      "updated_at": "2026-11-19T17:19:52Z",
+      "lat": 55.607152,
+      "lon": 12.621821,
+      "location_text": "St. Roskilde (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "koebenhavn",
+      "district_name": "Københavns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "St. Roskilde",
+      "beredskab": "Roskilde Brandvæsen",
+      "first_message": "Bygn.brand-Industribygning",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
+      "id": "odin-5c477d7e3cc7c42e",
+      "category": "brand",
+      "type": "brand",
+      "title": "Bygn.brand-Industribygning – St. Roskilde",
+      "text": "Beredskab: Roskilde Brandvæsen. Station: St. Roskilde. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Industribygning.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-19T17:16:54Z",
+      "updated_at": "2026-11-19T17:16:54Z",
+      "lat": 55.607152,
+      "lon": 12.621821,
+      "location_text": "St. Roskilde (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "koebenhavn",
+      "district_name": "Københavns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "St. Roskilde",
+      "beredskab": "Roskilde Brandvæsen",
+      "first_message": "Bygn.brand-Industribygning",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
     {
       "id": "pu-15300905",
       "source": "politiupdate",
@@ -1485,34 +1569,6 @@
       "layer": "current-other-traffic-announcements.point"
     },
     {
-      "id": "odin-0663623ac19b50c3",
-      "category": "brand",
-      "type": "brand",
-      "title": "Skraldespand i det fri-Brand – Åsum - Odense",
-      "text": "Beredskab: Beredskab Fyn. Station: Åsum - Odense. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Skraldespand i det fri-Brand.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-19T12:47:35Z",
-      "updated_at": "2026-11-19T12:47:35Z",
-      "lat": 55.40013,
-      "lon": 10.417761,
-      "location_text": "Åsum - Odense (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "fyn",
-      "district_name": "Fyns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Åsum - Odense",
-      "beredskab": "Beredskab Fyn",
-      "first_message": "Skraldespand i det fri-Brand",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
       "id": "gpd-194304",
       "category": "strom",
       "type": "andet",
@@ -1627,34 +1683,6 @@
       "layer": "current-other-traffic-announcements.point"
     },
     {
-      "id": "odin-3848008511f707ac",
-      "category": "brand",
-      "type": "brand",
-      "title": "Str.forurening-Gylleudslip – Egtved",
-      "text": "Beredskab: Vejle Brandvæsen. Station: Egtved. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Str.forurening-Gylleudslip.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-19T12:28:18Z",
-      "updated_at": "2026-11-19T12:28:18Z",
-      "lat": 55.621661,
-      "lon": 9.303935,
-      "location_text": "Egtved (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "sydostjylland",
-      "district_name": "Sydøstjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Egtved",
-      "beredskab": "Vejle Brandvæsen",
-      "first_message": "Str.forurening-Gylleudslip",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
       "id": "vd-3ef3fe563ef3501f",
       "category": "trafik",
       "type": "faerdsel",
@@ -1681,34 +1709,6 @@
       "reopening_at": "2026-11-19T13:30:00Z",
       "ongoing": true,
       "layer": "current-queue.point"
-    },
-    {
-      "id": "odin-bdf3760f91b40700",
-      "category": "brand",
-      "type": "brand",
-      "title": "Brandalarm – Tomsgården",
-      "text": "Beredskab: Hovedstadens Beredskab. Station: Tomsgården. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brandalarm.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-19T12:12:56Z",
-      "updated_at": "2026-11-19T12:12:56Z",
-      "lat": 55.607152,
-      "lon": 12.621821,
-      "location_text": "Tomsgården (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Tomsgården",
-      "beredskab": "Hovedstadens Beredskab",
-      "first_message": "Brandalarm",
-      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "vd-e27f6f323b56df92",
