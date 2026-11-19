@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T18:04:21Z",
-  "generated_at_copenhagen": "2026-11-19T19:04:21+01:00",
+  "generated_at": "2026-11-19T18:27:14Z",
+  "generated_at_copenhagen": "2026-11-19T19:27:14+01:00",
   "newest_rss": "2026-11-19T17:14:58Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 33
+      "count": 34
     },
     {
       "id": "vestegnen",
@@ -93,7 +93,7 @@
       "short": "Vestegnen",
       "handle": "VestegnsPoliti",
       "default_on": true,
-      "count": 29
+      "count": 28
     },
     {
       "id": "nordsjaelland",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 32
+      "count": 33
     },
     {
       "id": "sydsjaelland",
@@ -178,23 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 264,
-    "with_coordinates": 229,
+    "incidents": 265,
+    "with_coordinates": 230,
     "without_coordinates": 35,
     "by_type": {
       "brand": 37,
-      "andet": 49,
+      "andet": 50,
       "faerdsel": 107,
       "politi": 67,
       "redning": 4
     },
     "by_category": {
       "brand": 20,
+      "strom": 9,
       "politi": 173,
-      "strom": 8,
       "trafik": 63
     },
-    "elapsed_seconds": 19.5
+    "elapsed_seconds": 9.5
   },
   "sources_status": {
     "politiupdate": {
@@ -217,7 +217,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 8,
+      "count": 9,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -260,6 +260,34 @@
     }
   ],
   "incidents": [
+    {
+      "id": "odin-0a3a0c59e8700ba5",
+      "category": "brand",
+      "type": "brand",
+      "title": "Bygn.brand-Butik – Østerbro",
+      "text": "Beredskab: Hovedstadens Beredskab. Station: Østerbro. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Butik.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-19T17:57:04Z",
+      "updated_at": "2026-11-19T17:57:04Z",
+      "lat": 55.70155,
+      "lon": 12.590904,
+      "location_text": "Østerbro (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "koebenhavn",
+      "district_name": "Københavns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Østerbro",
+      "beredskab": "Hovedstadens Beredskab",
+      "first_message": "Bygn.brand-Butik",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
     {
       "id": "odin-c42f694c2e65cf12",
       "category": "brand",
@@ -399,6 +427,36 @@
       "beredskab": "Roskilde Brandvæsen",
       "first_message": "Bygn.brand-Industribygning",
       "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
+      "id": "gpd-194307",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud Bjæverskov",
+      "text": "10 kunder berørt. Elselskab: Cerius A/S. Type: Uvarslet. Årsag endnu ukendt",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-19T18:13:25Z",
+      "updated_at": "2026-11-19T17:15:14Z",
+      "lat": 55.462679,
+      "lon": 12.057862,
+      "location_text": "Bjæverskov",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "midtvestsjaelland",
+      "district_name": "Midt- og Vestsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 10,
+      "utility": "Cerius A/S",
+      "utility_phone": "(+45) 70 29 20 24",
+      "utility_web": "www.cerius.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-19T21:13:25.163",
+      "ongoing": true
     },
     {
       "id": "pu-15300905",
@@ -1511,34 +1569,6 @@
       "approximate": false,
       "routine": false,
       "nationwide": false
-    },
-    {
-      "id": "odin-54642a436ff25577",
-      "category": "brand",
-      "type": "brand",
-      "title": "Bygn.brand-Villa/Rækkehus – Glostrup",
-      "text": "Beredskab: Hovedstadens Beredskab. Station: Glostrup. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Villa/Rækkehus.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-19T13:06:59Z",
-      "updated_at": "2026-11-19T13:06:59Z",
-      "lat": 55.664859,
-      "lon": 12.39186,
-      "location_text": "Glostrup (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "vestegnen",
-      "district_name": "Københavns Vestegns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Glostrup",
-      "beredskab": "Hovedstadens Beredskab",
-      "first_message": "Bygn.brand-Villa/Rækkehus",
-      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "vd-af02cb4a9326cb0b",
@@ -3035,13 +3065,13 @@
       "category": "trafik",
       "type": "faerdsel",
       "title": "Advarsel - Rute 21 fra Roskilde mod København mellem <4> Roskildevej Ø og Vallensbæk",
-      "text": "Rute 21 fra Roskilde mod København mellem <4> Roskildevej Ø og Vallensbæk\n Havareret køretøj, Spor spærret",
+      "text": "Rute 21 fra Roskilde mod København mellem <4> Roskildevej Ø og Vallensbæk\n Havareret køretøj, Spor spærret\n Lastbil i 2. spor \nVejhjælp er på stedet",
       "source": "vejdirektoratet",
       "source_label": "Vejdirektoratet",
       "source_url": "https://trafikkort.vejdirektoratet.dk/",
       "url": "https://trafikkort.vejdirektoratet.dk/",
       "published_at": "2026-11-18T18:15:00Z",
-      "updated_at": "2026-11-18T18:15:52Z",
+      "updated_at": "2026-11-18T18:24:46Z",
       "lat": 55.654457,
       "lon": 12.323015,
       "location_text": "Advarsel - Rute 21 fra Roskilde mod København mellem <4> Roskildevej Ø og Vallensbæk",

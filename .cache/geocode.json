@@ -2807,5 +2807,12 @@
     "label": "Hovedbrandstationen, Bag Rådhuset, Vestervold, Kødbyen, København, Københavns Kommune, Region Hovedstaden, 1553, Danmark",
     "source": "nominatim",
     "query": "Hovedbrandstationen brandstation"
+  },
+  "06bbc0320ff37adbd40b4525d87a6e420ea65157": {
+    "lat": 55.70155,
+    "lon": 12.590904,
+    "label": "Østerbro Brandstation, Næstvedgade, Marmormolen, Østervold, Østerbro, København, Københavns Kommune, Region Hovedstaden, 2150, Danmark",
+    "source": "nominatim",
+    "query": "Østerbro brandstation"
   }
 }
