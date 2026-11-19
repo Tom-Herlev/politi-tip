@@ -2850,5 +2850,12 @@
     "label": "Station Aarhus Nord, Klokhøjen, Lisbjerg Erhvervspark, Skejby, Lisbjerg, Aarhus Kommune, Region Midtjylland, 8200, Danmark",
     "source": "nominatim",
     "query": "Aarhus Nord brandstation"
+  },
+  "8b792d6190e0ab71b9a47cba5e636f53c55c0825": {
+    "lat": 56.413389,
+    "lon": 10.887615,
+    "label": "Station Grenaa, N P Josiassens Vej, Åbyen, Grenaa, Norddjurs Kommune, Region Midtjylland, 8500, Danmark",
+    "source": "nominatim",
+    "query": "Grenaa brandstation"
   }
 }
