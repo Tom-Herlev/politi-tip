@@ -2764,5 +2764,27 @@
     "label": "Tårnby Brandstation, Amager Landevej, Tårnbylund, Kastrup, Tårnby Kommune, Region Hovedstaden, 2770, Danmark",
     "source": "nominatim",
     "query": "Tårnby brandstation"
+  },
+  "58b2c85afa72b01b6bb899691c1791cc0a70a012": {
+    "lat": 56.313704,
+    "lon": 10.315958,
+    "label": "Hornslet, Syddjurs Kommune, Region Midtjylland, 8543, Danmark",
+    "source": "nominatim",
+    "query": "Hornslet"
+  },
+  "61ffb03a89d950417d431c9a73385c5586b28635": null,
+  "9773ba2b8f47ac715f4ec47118a66dc21ba9f531": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation St. Roskilde"
+  },
+  "f47f967e7b6f57b0fdd8319fad2ad25ecbe8c227": {
+    "lat": 55.068921,
+    "lon": 10.585193,
+    "label": "Falck Svendborg, Odensevej, Belvedere, Svendborg, Svendborg Kommune, Region Syddanmark, 5700, Danmark",
+    "source": "nominatim",
+    "query": "Svendborg brandstation"
   }
 }
