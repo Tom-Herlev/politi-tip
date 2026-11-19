@@ -1,6 +1,6 @@
 /* Service worker for Politi Tip.
    App-skallen caches, data.json hentes altid fra nettet først. */
-const SHELL_CACHE = "polititip-shell-v3";
+const SHELL_CACHE = "polititip-shell-v4";
 const DATA_CACHE = "polititip-data-v2";
 
 const SHELL_ASSETS = [
@@ -20,7 +20,7 @@ const SHELL_ASSETS = [
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(SHELL_CACHE).then((cache) => cache.addAll(SHELL_ASSETS)).then(() => self.skipWaiting())
+    caches.open(SHELL_CACHE).then((cache) => cache.addAll(SHELL_ASSETS.map((u) => new Request(u, { cache: "reload" })))).then(() => self.skipWaiting())
   );
 });
 
@@ -60,7 +60,7 @@ self.addEventListener("fetch", (event) => {
   });
 
   if (isShell || url.origin === self.location.origin) {
-    event.respondWith(cacheFirst(event.request, SHELL_CACHE));
+    event.respondWith(networkFirst(event.request, SHELL_CACHE));
   }
 });
 
