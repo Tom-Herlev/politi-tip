@@ -27,10 +27,10 @@
     tip: "Uofficielt tip",
   };
   const TIME_OPTIONS = [
-    { hours: 1, label: "1 t" },
-    { hours: 6, label: "6 t" },
-    { hours: 24, label: "24 t" },
-    { hours: 48, label: "48 t" },
+    { hours: 0.5, label: "30 min" },
+    { hours: 1, label: "1 time" },
+    { hours: 5, label: "5 timer" },
+    { hours: 24, label: "Hele døgnet" },
   ];
   const STORAGE_DISTRICTS = "polititip.districts";
   const STORAGE_CATEGORIES = "polititip.categories";
@@ -145,7 +145,7 @@
   }
 
   function loadTimeHours() {
-    const n = parseInt(localStorage.getItem(STORAGE_TIME) || "24", 10);
+    const n = parseFloat(localStorage.getItem(STORAGE_TIME) || "24");
     return TIME_OPTIONS.some((o) => o.hours === n) ? n : 24;
   }
 
@@ -271,7 +271,7 @@
         } else if (item.district && !districts.has(item.district)) {
           return false;
         }
-        if (!item.ongoing && cat !== "helikopter") {
+        if (cat !== "helikopter") {
           if (itemAgeMs(item) > cutoff) return false;
         }
         if (state.near && item.lat != null && item.lon != null) {
@@ -547,7 +547,7 @@
     els.timeFilters.addEventListener("change", (e) => {
       const input = e.target.closest("input[data-hours]");
       if (!input) return;
-      state.timeHours = parseInt(input.dataset.hours, 10);
+      state.timeHours = parseFloat(input.dataset.hours);
       savePrefs();
       renderFilters();
       render();
