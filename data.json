@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T21:28:04Z",
-  "generated_at_copenhagen": "2026-11-20T22:28:04+01:00",
+  "generated_at": "2026-11-20T22:22:32Z",
+  "generated_at_copenhagen": "2026-11-20T23:22:32+01:00",
   "newest_rss": "2026-11-20T21:13:34Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -101,7 +101,7 @@
       "short": "Nordsjælland",
       "handle": "NSJPoliti",
       "default_on": true,
-      "count": 23
+      "count": 24
     },
     {
       "id": "midtvestsjaelland",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 29
+      "count": 28
     },
     {
       "id": "sydsjaelland",
@@ -149,7 +149,7 @@
       "short": "Midt- og Vestjylland",
       "handle": "MVJPoliti",
       "default_on": false,
-      "count": 15
+      "count": 14
     },
     {
       "id": "ostjylland",
@@ -178,31 +178,30 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 248,
-    "with_coordinates": 210,
+    "incidents": 247,
+    "with_coordinates": 209,
     "without_coordinates": 38,
     "by_type": {
-      "redning": 5,
+      "faerdsel": 93,
       "politi": 68,
       "brand": 39,
-      "faerdsel": 92,
-      "andet": 44
+      "andet": 43,
+      "redning": 4
     },
     "by_category": {
-      "helikopter": 1,
+      "trafik": 48,
       "politi": 174,
       "brand": 20,
-      "trafik": 47,
-      "strom": 6
+      "strom": 5
     },
-    "elapsed_seconds": 22.3
+    "elapsed_seconds": 10.4
   },
   "sources_status": {
     "politiupdate": {
       "ok": true,
       "count": 174,
       "endpoint": "https://via.ritzau.dk/rss/short-messages/latest?publisherId={id}",
-      "reused": false
+      "reused": true
     },
     "odin": {
       "ok": true,
@@ -212,13 +211,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 47,
+      "count": 48,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 6,
+      "count": 5,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -231,26 +230,13 @@
     },
     "adsb": {
       "ok": true,
-      "count": 1,
+      "count": 0,
       "endpoint": "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250",
       "error": null,
       "cors": false
     }
   },
-  "hems": [
-    {
-      "registration": "LN-OUN",
-      "callsign": "DOC04",
-      "lat": 56.373503,
-      "lon": 9.420691,
-      "track": 293.0,
-      "altitude_ft": 1775,
-      "speed_kt": 115.2,
-      "airborne": true,
-      "type": "EC35",
-      "updated_at": "2026-11-20T21:28:04Z"
-    }
-  ],
+  "hems": [],
   "hems_bases": [
     {
       "name": "Skive",
@@ -275,36 +261,32 @@
   ],
   "incidents": [
     {
-      "id": "hems-LN-OUN",
-      "category": "helikopter",
-      "type": "redning",
-      "title": "Akutlægehelikopter LN-OUN (DOC04)",
-      "text": "I luften. Type: EC35. Højde: 1775 ft. Fart: 115.2 kt. Kurs: 293.0°.",
-      "source": "adsb",
-      "source_label": "adsb.lol",
-      "source_url": "https://adsb.lol/",
-      "url": "https://adsb.lol/",
-      "published_at": "2026-11-20T21:28:04Z",
-      "updated_at": "2026-11-20T21:28:04Z",
-      "lat": 56.373503,
-      "lon": 9.420691,
-      "location_text": "Live position",
+      "id": "vd-42e9165f0067c682",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Redningsarbejde - Rute 16 fra Hillerød mod København mellem <11> Allerød og <10> Farum",
+      "text": "Rute 16 fra Hillerød mod København mellem <11> Allerød og <10> Farum\n Redningsarbejde, Oprydningsarbejde, Havareret køretøj\n Forventes at vare indtil 20. nov. 2026 kl. 23:30.",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-20T21:58:00Z",
+      "updated_at": "2026-11-20T21:58:14Z",
+      "lat": 55.840008,
+      "lon": 12.34751,
+      "location_text": "Redningsarbejde - Rute 16 fra Hillerød mod København mellem <11> Allerød og <10> Farum",
       "geometry": "point",
       "radius_m": null,
       "approximate": false,
-      "district": "midtvestjylland",
-      "district_name": "Midt- og Vestjyllands Politi",
+      "district": "nordsjaelland",
+      "district_name": "Nordsjællands Politi",
       "official": true,
       "nationwide": false,
-      "registration": "LN-OUN",
-      "callsign": "DOC04",
-      "aircraft_type": "EC35",
-      "track": 293.0,
-      "altitude_ft": 1775,
-      "speed_kt": 115.2,
-      "airborne": true,
-      "hex": "47bdea",
-      "ongoing": true
+      "subtype": "kø",
+      "reopening": "20-11-2026 kl. 23:30",
+      "reopening_at": "2026-11-20T22:30:00Z",
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
     },
     {
       "id": "pu-15303268",
@@ -2609,36 +2591,6 @@
       "approximate": false,
       "routine": false,
       "nationwide": false
-    },
-    {
-      "id": "gpd-194360",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud Holbæk",
-      "text": "45 kunder berørt. Elselskab: Cerius A/S. Type: Uvarslet. Årsag endnu ukendt",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-20T04:14:25Z",
-      "updated_at": "2026-11-20T03:15:01Z",
-      "lat": 55.717736,
-      "lon": 11.760438,
-      "location_text": "Holbæk",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "midtvestsjaelland",
-      "district_name": "Midt- og Vestsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 45,
-      "utility": "Cerius A/S",
-      "utility_phone": "(+45) 70 29 20 24",
-      "utility_web": "www.cerius.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-20T07:14:25.257",
-      "ongoing": true
     },
     {
       "id": "vd-1a17eaf437aadafe",
