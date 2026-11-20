@@ -3050,5 +3050,12 @@
     "label": "Hørsholm Brandstation, Kokkedal Industripark, Breelte, Hørsholm, Hørsholm Kommune, Region Hovedstaden, 2980, Danmark",
     "source": "nominatim",
     "query": "Hørsholm brandstation"
+  },
+  "b23a8e039ebc285c63ff5575265cc812692ed381": {
+    "lat": 55.708522,
+    "lon": 12.587481,
+    "label": "Holstebrogade 2, 2100 København Ø",
+    "source": "adressevaelger",
+    "query": "Holstebro brandstation"
   }
 }
