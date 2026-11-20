@@ -2871,5 +2871,19 @@
     "label": "Industrivej, Løkken, Mørke, Syddjurs Kommune, Region Midtjylland, 8544, Danmark",
     "source": "nominatim",
     "query": "Industrivej Mørke"
+  },
+  "9b36fe4f5df5e52e9ff165d9589341a7376cfb9b": {
+    "lat": 56.334562,
+    "lon": 10.377531,
+    "label": "Mørke, Syddjurs Kommune, Region Midtjylland, 8544, Danmark",
+    "source": "nominatim",
+    "query": "Mørke"
+  },
+  "2d47d119b3b5c058304d19fdb49c43b6ccce377e": {
+    "lat": 57.453305,
+    "lon": 10.51413,
+    "label": "Skivegade 1, 9900 Frederikshavn",
+    "source": "adressevaelger",
+    "query": "Skive brandstation"
   }
 }
