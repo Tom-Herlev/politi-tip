@@ -2964,5 +2964,42 @@
     "label": "Bolbro Sidevej 2A, 2960 Rungsted Kyst",
     "source": "adressevaelger",
     "query": "Bolbro - Odense brandstation"
+  },
+  "beab9035bba015c226c07c64c0fe57d7b2b5250e": {
+    "lat": 55.764412,
+    "lon": 12.176079,
+    "label": "Torvet, Barnekær, Ølstykke, Egedal Kommune, Region Hovedstaden, Danmark",
+    "source": "nominatim",
+    "query": "Torvet"
+  },
+  "afbcfe8b392634c8089c23ec5196bcd71378652e": null,
+  "b00fec8e8914995a511b5ce837ee1c4f3eede0f1": {
+    "lat": 55.76691,
+    "lon": 11.673151,
+    "label": "Kastrup, Holbæk Kommune, Region Sjælland, Danmark",
+    "source": "nominatim",
+    "query": "Kastrup"
+  },
+  "6026da3ad73f9f1f27ae0b83d9d0fa857ac5a04f": {
+    "lat": 55.031084,
+    "lon": 9.414499,
+    "label": "Aabenraa Friv. Brandværn, Pilemosen, Aabenraa, Aabenraa Kommune, Region Syddanmark, 6200, Danmark",
+    "source": "nominatim",
+    "query": "Aabenraa brandstation"
+  },
+  "b954032df0b122288fbb5c2f46f9bdd0cf09f6eb": {
+    "lat": 54.961875,
+    "lon": 8.696802,
+    "label": "Højer Friv. brandværn, Ved Gamle Dige, Højer, Tønder Kommune, Region Syddanmark, 6280, Danmark",
+    "source": "nominatim",
+    "query": "Højer brandstation"
+  },
+  "f50d5d9a74352f28bdc2695a84dfc2094ad2556c": null,
+  "b2c19f8e44c4805ca8d8a5fb757d3853e2752be6": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Falck-Hirtshals"
   }
 }

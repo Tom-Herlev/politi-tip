@@ -3,14 +3,24 @@
   "items": [
     {
       "id": "15302030",
-      "title": "Fremlysning: Ring fundet på flixbus",
-      "body_html": "<p>Vi fremlyser denne guldring, som blev fundet på en flixbus i februar 2026. Ringen er indleveret i Holstebro.  </p>\n<p>Ringen har inskriptionen \"Lilian\" samt en dato. </p>\n<p>Er du den retmæssige ejer, kan du henvende dig til lokalpolitiet i Holstebro via telefon 114. Oplys hittegodsnr. 202600119. </p><figure class=\"content-figure\"><div><img src=\"https://via.ritzau.dk/data/images/public/90687/15302030/0e8c9e1f-38c3-4c3f-90af-976e2901f449-w_720.jpg\" srcset=\"https://via.ritzau.dk/data/images/public/90687/15302030/0e8c9e1f-38c3-4c3f-90af-976e2901f449-w_360.jpg 360w, https://via.ritzau.dk/data/images/public/90687/15302030/0e8c9e1f-38c3-4c3f-90af-976e2901f449-w_720.jpg 720w, https://via.ritzau.dk/data/images/public/90687/15302030/0e8c9e1f-38c3-4c3f-90af-976e2901f449-w_960.jpg 960w\" alt=\"\" /></div><figcaption class=\"caption-wrapper\">Er du den retmæssige ejer af ringen, kan du henvnde sig på telefon 114 - oplys 202600119<strong></strong></figcaption></figure>",
-      "body": "Vi fremlyser denne guldring, som blev fundet på en flixbus i februar 2026. Ringen er indleveret i Holstebro.  \n\n Ringen har inskriptionen \"Lilian\" samt en dato. \n\n Er du den retmæssige ejer, kan du henvende dig til lokalpolitiet i Holstebro via telefon 114. Oplys hittegodsnr. 202600119. \n Er du den retmæssige ejer af ringen, kan du henvnde sig på telefon 114 - oplys 202600119",
+      "title": "Fremlysning: Ring fundet på flixbus - ejer fundet",
+      "body_html": "<p>Vi fremlyser denne guldring, som blev fundet på en flixbus i februar 2026. Ringen er indleveret i Holstebro.  </p>\n<p>(tekst fjernet)</p>",
+      "body": "Vi fremlyser denne guldring, som blev fundet på en flixbus i februar 2026. Ringen er indleveret i Holstebro.  \n\n (tekst fjernet)",
       "published_at": "2026-11-20T09:44:59.206Z",
       "publisher_id": "90687",
       "publisher_name": "Midt- og Vestjyllands Politi",
       "url": "https://via.ritzau.dk/pressemeddelelse/15302030?lang=da"
+    },
+    {
+      "id": "15302556",
+      "title": "Fremlysning: Ring fundet på flixbus - ejer fundet",
+      "body_html": "<p>Ejeren til ringen er fundet.</p>\n<p>Vi takker alle, som har delt fremlysningen, for hjælpen. </p>",
+      "body": "Ejeren til ringen er fundet.\n\n Vi takker alle, som har delt fremlysningen, for hjælpen.",
+      "published_at": "2026-11-20T12:21:35.297Z",
+      "publisher_id": "90687",
+      "publisher_name": "Midt- og Vestjyllands Politi",
+      "url": "https://via.ritzau.dk/pressemeddelelse/15302556?lang=da"
     }
   ],
-  "fetched_at": "2026-11-20T10:00:38.658289+00:00"
+  "fetched_at": "2026-11-20T13:16:13.692869+00:00"
 }
