@@ -2857,5 +2857,12 @@
     "label": "Station Grenaa, N P Josiassens Vej, Åbyen, Grenaa, Norddjurs Kommune, Region Midtjylland, 8500, Danmark",
     "source": "nominatim",
     "query": "Grenaa brandstation"
+  },
+  "091b9e67dbb99b5a813301d7ff4903fb847288fa": {
+    "lat": 55.439873,
+    "lon": 11.796841,
+    "label": "Midt- og Sydsjællands Brand & Redning - St. Ringsted, Haveforeningen Rønnedestien, Ringsted, Ringsted Kommune, Region Sjælland, 4100, Danmark",
+    "source": "nominatim",
+    "query": "Ringsted brandstation"
   }
 }
