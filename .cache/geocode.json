@@ -3022,5 +3022,19 @@
     "label": "Horsens Kommune Service og Beredskab - Brandvæsnet, Endelavevej, Bækkelund, Horsens, Horsens Kommune, Region Midtjylland, 8700, Danmark",
     "source": "nominatim",
     "query": "Horsens brandstation"
+  },
+  "cd0eba9e845e6c05851d44e6830e020985e7a2f0": {
+    "lat": 54.901561,
+    "lon": 8.753516,
+    "label": "Rudbøl, Tønder Kommune, Region Syddanmark, Danmark",
+    "source": "nominatim",
+    "query": "Rudbøl"
+  },
+  "86c51b143bd27ac64c91b858992d6746b9a7e72e": {
+    "lat": 55.071886,
+    "lon": 14.933881,
+    "label": "Nexøvej 1, Aakirkeby, 3720 Aakirkeby",
+    "source": "adressevaelger",
+    "query": "Nexø brandstation"
   }
 }
