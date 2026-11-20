@@ -2864,5 +2864,12 @@
     "label": "Midt- og Sydsjællands Brand & Redning - St. Ringsted, Haveforeningen Rønnedestien, Ringsted, Ringsted Kommune, Region Sjælland, 4100, Danmark",
     "source": "nominatim",
     "query": "Ringsted brandstation"
+  },
+  "dbe2ae7082d409755977480db56e121d2799df86": {
+    "lat": 56.338831,
+    "lon": 10.381064,
+    "label": "Industrivej, Løkken, Mørke, Syddjurs Kommune, Region Midtjylland, 8544, Danmark",
+    "source": "nominatim",
+    "query": "Industrivej Mørke"
   }
 }
