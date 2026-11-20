@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T00:02:43Z",
-  "generated_at_copenhagen": "2026-11-20T01:02:43+01:00",
+  "generated_at": "2026-11-20T01:08:58Z",
+  "generated_at_copenhagen": "2026-11-20T02:08:58+01:00",
   "newest_rss": "2026-11-19T21:56:36Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 33
+      "count": 31
     },
     {
       "id": "sydsjaelland",
@@ -178,23 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 258,
-    "with_coordinates": 224,
+    "incidents": 256,
+    "with_coordinates": 222,
     "without_coordinates": 34,
     "by_type": {
-      "faerdsel": 103,
       "brand": 38,
-      "andet": 48,
+      "faerdsel": 103,
+      "andet": 46,
       "politi": 66,
       "redning": 3
     },
     "by_category": {
-      "trafik": 59,
       "brand": 20,
-      "strom": 8,
-      "politi": 171
+      "trafik": 59,
+      "politi": 171,
+      "strom": 6
     },
-    "elapsed_seconds": 13.5
+    "elapsed_seconds": 14.3
   },
   "sources_status": {
     "politiupdate": {
@@ -217,7 +217,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 8,
+      "count": 6,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -260,6 +260,34 @@
     }
   ],
   "incidents": [
+    {
+      "id": "odin-cad0b9a2b8aae94d",
+      "category": "brand",
+      "type": "brand",
+      "title": "Brandalarm – Christianshavn",
+      "text": "Beredskab: Hovedstadens Beredskab. Station: Christianshavn. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brandalarm.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-19T23:59:21Z",
+      "updated_at": "2026-11-19T23:59:21Z",
+      "lat": 55.67543,
+      "lon": 12.592625,
+      "location_text": "Christianshavn (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "koebenhavn",
+      "district_name": "Københavns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Christianshavn",
+      "beredskab": "Hovedstadens Beredskab",
+      "first_message": "Brandalarm",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
     {
       "id": "vd-f3ae7b6b622eaf74",
       "category": "trafik",
@@ -371,36 +399,6 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "gpd-194313",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud Rødvig Stevns",
-      "text": "46 kunder berørt. Elselskab: Cerius A/S. Type: Uvarslet. Årsag endnu ukendt",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-19T23:43:56Z",
-      "updated_at": "2026-11-19T22:44:35Z",
-      "lat": 55.261654,
-      "lon": 12.378585,
-      "location_text": "Rødvig Stevns",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "midtvestsjaelland",
-      "district_name": "Midt- og Vestsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 46,
-      "utility": "Cerius A/S",
-      "utility_phone": "(+45) 70 29 20 24",
-      "utility_web": "www.cerius.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-20T02:43:56.57",
-      "ongoing": true
     },
     {
       "id": "odin-df2f95d8c5829467",
@@ -651,36 +649,6 @@
       "beredskab": "Hovedstadens Beredskab",
       "first_message": "Brandalarm",
       "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "gpd-194311",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud Roskilde",
-      "text": "31 kunder berørt. Elselskab: Cerius A/S. Type: Uvarslet. Årsag endnu ukendt",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-19T22:02:07Z",
-      "updated_at": "2026-11-19T21:02:48Z",
-      "lat": 55.643191,
-      "lon": 12.07735,
-      "location_text": "Roskilde",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "midtvestsjaelland",
-      "district_name": "Midt- og Vestsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 31,
-      "utility": "Cerius A/S",
-      "utility_phone": "(+45) 70 29 20 24",
-      "utility_web": "www.cerius.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-20T01:02:07.957",
-      "ongoing": true
     },
     {
       "id": "odin-1a2ed4d2df673306",
@@ -1100,34 +1068,6 @@
       "station": "Aarhus Syd",
       "beredskab": "Østjyllands Brandvæsen",
       "first_message": "ISL-Forespørgsel",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "odin-2d06a85b2dbf8023",
-      "category": "brand",
-      "type": "brand",
-      "title": "Bygn.brand-Industribygning – St. Roskilde",
-      "text": "Beredskab: Roskilde Brandvæsen. Station: St. Roskilde. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Industribygning.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-19T17:19:52Z",
-      "updated_at": "2026-11-19T17:19:52Z",
-      "lat": 55.607152,
-      "lon": 12.621821,
-      "location_text": "St. Roskilde (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "St. Roskilde",
-      "beredskab": "Roskilde Brandvæsen",
-      "first_message": "Bygn.brand-Industribygning",
       "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
