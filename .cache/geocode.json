@@ -2922,5 +2922,33 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation St. Lellinge"
+  },
+  "2561915e5f511184b396e8174149f66ed87ba1f1": {
+    "lat": 56.02319,
+    "lon": 12.596975,
+    "label": "Randersvej 2, 3000 Helsingør",
+    "source": "adressevaelger",
+    "query": "Randers"
+  },
+  "66adf5c37978f1d51d65c812d7378c5b42d7922d": {
+    "lat": 55.397828,
+    "lon": 10.15449,
+    "label": "Damsbovej 1, 5492 Vissenbjerg",
+    "source": "adressevaelger",
+    "query": "Damsbovej Vissenbjerg"
+  },
+  "707f48e847886cfea1f1c56835da22aab491d2d1": {
+    "lat": 55.733041,
+    "lon": 9.600019,
+    "label": "Aarhusvej 4, 7120 Vejle Øst",
+    "source": "adressevaelger",
+    "query": "Aarhus C brandstation"
+  },
+  "a18d8082145f99f4b31849b82dbde5d7a0cca4f2": {
+    "lat": 55.524282,
+    "lon": 10.405208,
+    "label": "Otterup Mose 2, Otterup, 5450 Otterup",
+    "source": "adressevaelger",
+    "query": "Otterup brandstation"
   }
 }
