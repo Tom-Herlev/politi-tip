@@ -3093,5 +3093,12 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Falck-Maribo"
+  },
+  "e80f7b04c675104d45d705fb9c7f98a43b8dd99d": {
+    "lat": 55.654317,
+    "lon": 12.456437,
+    "label": "FALCK Hvidovre, Avedøre Havnevej, Bavnebakken, Hvidovre Kommune, Region Hovedstaden, 2650, Danmark",
+    "source": "nominatim",
+    "query": "Hvidovre brandstation"
   }
 }
