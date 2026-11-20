@@ -3057,5 +3057,33 @@
     "label": "Holstebrogade 2, 2100 København Ø",
     "source": "adressevaelger",
     "query": "Holstebro brandstation"
+  },
+  "32dc8829f3b7659ddc9292d52a1462d1509418d8": {
+    "lat": 57.046263,
+    "lon": 9.921526,
+    "label": "Aalborg, Aalborg Kommune, Region Nordjylland, 9000, Danmark",
+    "source": "nominatim",
+    "query": "Aalborg"
+  },
+  "3c96fef872f765e7e51b62b95c9921637c064d4e": {
+    "lat": 55.732686,
+    "lon": 9.596111,
+    "label": "Haderslevvej 1, 7100 Vejle",
+    "source": "adressevaelger",
+    "query": "Haderslev brandstation"
+  },
+  "51d4f44e1cb8acde5a9ec55f792d8f08c0d7d0fe": {
+    "lat": 55.646981,
+    "lon": 12.278422,
+    "label": "Lemviggade 1, Høje Taastrup, 2630 Taastrup",
+    "source": "adressevaelger",
+    "query": "Lemvig brandstation"
+  },
+  "008a1e2021ba8c9e8d19e8eeedae61f52c5af137": {
+    "lat": 55.187881,
+    "lon": 9.066406,
+    "label": "Løkken 2, 6520 Toftlund",
+    "source": "adressevaelger",
+    "query": "Løkken brandstation"
   }
 }
