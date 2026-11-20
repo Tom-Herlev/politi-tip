@@ -2950,5 +2950,19 @@
     "label": "Otterup Mose 2, Otterup, 5450 Otterup",
     "source": "adressevaelger",
     "query": "Otterup brandstation"
+  },
+  "7c87753f678dc927562cc948d7501e28fc2d14d6": {
+    "lat": 55.948696,
+    "lon": 12.256258,
+    "label": "Tulstrupvej 1, 3400 Hillerød",
+    "source": "adressevaelger",
+    "query": "Tulstrupvej Isterødvejen"
+  },
+  "1ac7fb91aa1acb0b8f8d6f2b5bc10ed16554a5eb": {
+    "lat": 55.890934,
+    "lon": 12.527167,
+    "label": "Bolbro Sidevej 2A, 2960 Rungsted Kyst",
+    "source": "adressevaelger",
+    "query": "Bolbro - Odense brandstation"
   }
 }
