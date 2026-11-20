@@ -3043,5 +3043,12 @@
     "label": "Sindal Brandvæsen, Thorsvej, Oremose Huse, Sindal, Hjørring Kommune, Region Nordjylland, 9870, Danmark",
     "source": "nominatim",
     "query": "Sindal brandstation"
+  },
+  "398d82c4b21cb85e38cbab952fa9ba4fc8eda9b0": {
+    "lat": 55.901815,
+    "lon": 12.485331,
+    "label": "Hørsholm Brandstation, Kokkedal Industripark, Breelte, Hørsholm, Hørsholm Kommune, Region Hovedstaden, 2980, Danmark",
+    "source": "nominatim",
+    "query": "Hørsholm brandstation"
   }
 }
