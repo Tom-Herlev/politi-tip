@@ -3001,5 +3001,26 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Falck-Hirtshals"
+  },
+  "203fd8ef3a1a73e1f8e3c5ecc61081f74c32e897": {
+    "lat": 56.226418,
+    "lon": 9.739332,
+    "label": "Gjern, Silkeborg Kommune, Region Midtjylland, 8883, Danmark",
+    "source": "nominatim",
+    "query": "Gjern"
+  },
+  "4b133273e860fe20a07f4a011e07a08f99846ddf": {
+    "lat": 55.690079,
+    "lon": 12.561439,
+    "label": "Fælledvej Brandstation, Fælledvejens Passage, De Gamles By, Nørrebro, København, Københavns Kommune, Region Hovedstaden, 1371, Danmark",
+    "source": "nominatim",
+    "query": "Fælledvej brandstation"
+  },
+  "0079fa0ebbc07487f61de27e42228f5bca516a1d": {
+    "lat": 55.852979,
+    "lon": 9.854561,
+    "label": "Horsens Kommune Service og Beredskab - Brandvæsnet, Endelavevej, Bækkelund, Horsens, Horsens Kommune, Region Midtjylland, 8700, Danmark",
+    "source": "nominatim",
+    "query": "Horsens brandstation"
   }
 }
