@@ -3036,5 +3036,12 @@
     "label": "Nexøvej 1, Aakirkeby, 3720 Aakirkeby",
     "source": "adressevaelger",
     "query": "Nexø brandstation"
+  },
+  "258b1cd246aa46500738eba44bf7cfb04eff8658": {
+    "lat": 57.470627,
+    "lon": 10.190801,
+    "label": "Sindal Brandvæsen, Thorsvej, Oremose Huse, Sindal, Hjørring Kommune, Region Nordjylland, 9870, Danmark",
+    "source": "nominatim",
+    "query": "Sindal brandstation"
   }
 }
