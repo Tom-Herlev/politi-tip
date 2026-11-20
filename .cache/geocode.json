@@ -3085,5 +3085,13 @@
     "label": "Løkken 2, 6520 Toftlund",
     "source": "adressevaelger",
     "query": "Løkken brandstation"
+  },
+  "13c736b303acb5c88c71510655c46d813870e47a": null,
+  "40375e26facd9a33c796e6aa63c1e5079795e465": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Falck-Maribo"
   }
 }
