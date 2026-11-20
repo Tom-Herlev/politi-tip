@@ -2885,5 +2885,19 @@
     "label": "Skivegade 1, 9900 Frederikshavn",
     "source": "adressevaelger",
     "query": "Skive brandstation"
+  },
+  "63d93075aa8032caecf921b5535f074822a75580": {
+    "lat": 57.019837,
+    "lon": 10.00424,
+    "label": "Hadsund Landevej 2, 9220 Aalborg Øst",
+    "source": "adressevaelger",
+    "query": "Hadsund brandstation"
+  },
+  "4308df25efc682eb500a497adbe2c717600ed845": {
+    "lat": 55.700819,
+    "lon": 12.53756,
+    "label": "Frederikssundsvej 1, 2400 København NV",
+    "source": "adressevaelger",
+    "query": "Frederikssund brandstation"
   }
 }
