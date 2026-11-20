@@ -2899,5 +2899,28 @@
     "label": "Frederikssundsvej 1, 2400 København NV",
     "source": "adressevaelger",
     "query": "Frederikssund brandstation"
+  },
+  "4f48bcb7ff292216e6550e8ec76f88ded09a78d7": null,
+  "5b1faa4036939c962122f55c027681e926212260": {
+    "lat": 56.359032,
+    "lon": 8.615919,
+    "label": "Holstebro, Holstebro Kommune, Region Midtjylland, 7500, Danmark",
+    "source": "nominatim",
+    "query": "Holstebro"
+  },
+  "fb5f27b5f73a14ae7ab21823a9e487f4dd6a2de8": {
+    "lat": 57.08799,
+    "lon": 9.484778,
+    "label": "Aarupvej 1, Skovsgård, 9460 Brovst",
+    "source": "adressevaelger",
+    "query": "Aarup brandstation"
+  },
+  "122ae35a04b36079c70e0c034f9f512447fb0a48": null,
+  "925ec70ad3828994b0e800c4c6d87ea9b283585c": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation St. Lellinge"
   }
 }
