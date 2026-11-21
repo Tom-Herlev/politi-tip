@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T01:21:58Z",
-  "generated_at_copenhagen": "2026-11-21T02:21:58+01:00",
+  "generated_at": "2026-11-21T02:26:07Z",
+  "generated_at_copenhagen": "2026-11-21T03:26:07+01:00",
   "newest_rss": "2026-11-20T21:13:34Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 25
+      "count": 24
     },
     {
       "id": "sydsjaelland",
@@ -141,7 +141,7 @@
       "short": "Sydøstjylland",
       "handle": "SydOjylPoliti",
       "default_on": false,
-      "count": 20
+      "count": 19
     },
     {
       "id": "midtvestjylland",
@@ -157,7 +157,7 @@
       "short": "Østjylland",
       "handle": "OjylPoliti",
       "default_on": false,
-      "count": 15
+      "count": 14
     },
     {
       "id": "nordjylland",
@@ -178,23 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 242,
-    "with_coordinates": 204,
+    "incidents": 239,
+    "with_coordinates": 201,
     "without_coordinates": 38,
     "by_type": {
       "brand": 39,
-      "andet": 41,
-      "faerdsel": 90,
+      "faerdsel": 89,
       "politi": 68,
+      "andet": 39,
       "redning": 4
     },
     "by_category": {
       "brand": 20,
-      "strom": 3,
-      "trafik": 45,
-      "politi": 174
+      "trafik": 44,
+      "politi": 174,
+      "strom": 1
     },
-    "elapsed_seconds": 12.5
+    "elapsed_seconds": 8.9
   },
   "sources_status": {
     "politiupdate": {
@@ -211,13 +211,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 45,
+      "count": 44,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 3,
+      "count": 1,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -287,36 +287,6 @@
       "beredskab": "Sydøstjyllands Brandvæsen",
       "first_message": "Container i det fri-Brand",
       "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "gpd-194459",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Juelsminde",
-      "text": "31 kunder berørt. Elselskab: KONSTANT Net A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse i Juelsminde: Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksparken, Teglværksp",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-21T00:30:00Z",
-      "updated_at": "2026-11-21T00:11:22Z",
-      "lat": 55.707722,
-      "lon": 10.008121,
-      "location_text": "Juelsminde",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "sydostjylland",
-      "district_name": "Sydøstjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 31,
-      "utility": "KONSTANT Net A/S",
-      "utility_phone": "(+45) 70 11 45 09",
-      "utility_web": "www.konstant.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-21T03:00:00",
-      "ongoing": true
     },
     {
       "id": "odin-08168629d2618ba8",
@@ -2395,36 +2365,6 @@
       "layer": "current-other-traffic-announcements.point"
     },
     {
-      "id": "gpd-194384",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Knebel",
-      "text": "68 kunder berørt. Elselskab: KONSTANT Net A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse i Knebel: Apollovej, Apollovej, Apollovej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellavej, Capellave",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-20T08:00:00Z",
-      "updated_at": "2026-11-20T07:25:03Z",
-      "lat": 56.108227,
-      "lon": 10.509861,
-      "location_text": "Knebel",
-      "geometry": "circle",
-      "radius_m": 164.0,
-      "approximate": true,
-      "district": "ostjylland",
-      "district_name": "Østjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 68,
-      "utility": "KONSTANT Net A/S",
-      "utility_phone": "(+45) 70 11 45 09",
-      "utility_web": "www.konstant.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-20T13:00:00",
-      "ongoing": true
-    },
-    {
       "id": "vd-21b9f1bbb80a9dc0",
       "category": "trafik",
       "type": "faerdsel",
@@ -2531,34 +2471,6 @@
       "approximate": false,
       "routine": false,
       "nationwide": false
-    },
-    {
-      "id": "vd-1a17eaf437aadafe",
-      "category": "trafik",
-      "type": "faerdsel",
-      "title": "Redningsarbejde - E20 fra Avedøre mod Køge mellem Karlslunde og <30> Solrød N",
-      "text": "E20 fra Avedøre mod Køge mellem Karlslunde og <30> Solrød N\n Redningsarbejde, Havareret køretøj, Spor spærret\n Vejhjælp er på stedet, \nHøjre spor spærret",
-      "source": "vejdirektoratet",
-      "source_label": "Vejdirektoratet",
-      "source_url": "https://trafikkort.vejdirektoratet.dk/",
-      "url": "https://trafikkort.vejdirektoratet.dk/",
-      "published_at": "2026-11-20T01:49:00Z",
-      "updated_at": "2026-11-20T01:49:31Z",
-      "lat": 55.557053,
-      "lon": 12.22705,
-      "location_text": "Redningsarbejde - E20 fra Avedøre mod Køge mellem Karlslunde og <30> Solrød N",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "midtvestsjaelland",
-      "district_name": "Midt- og Vestsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "subtype": "kø",
-      "reopening": null,
-      "reopening_at": null,
-      "ongoing": true,
-      "layer": "current-other-traffic-announcements.point"
     },
     {
       "id": "pu-15300905",
