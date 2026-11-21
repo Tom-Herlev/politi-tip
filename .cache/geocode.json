@@ -3121,5 +3121,26 @@
     "label": "Falck Ringe, Bødkervej, Gluemose, Ringe, Faaborg-Midtfyn Kommune, Region Syddanmark, 5750, Danmark",
     "source": "nominatim",
     "query": "Ringe brandstation"
+  },
+  "5901a0fcfdfd277d9b9747d93ce3b54f70f02bf3": {
+    "lat": 55.340867,
+    "lon": 10.360387,
+    "label": "Stenløse Bygade 2, Stenløse, 5260 Odense S",
+    "source": "adressevaelger",
+    "query": "Stenløse brandstation"
+  },
+  "7187de5d233c0ab1ad420905e3db89090d63717c": {
+    "lat": 55.748515,
+    "lon": 12.556685,
+    "label": "Gentofte Brandstation, Emmasvej, Gentofte, Jægersborg, Gentofte Kommune, Region Hovedstaden, 2900, Danmark",
+    "source": "nominatim",
+    "query": "Gentofte brandstation"
+  },
+  "889e7a29264f9db45249392aa39e673178291ab3": {
+    "lat": 54.930124,
+    "lon": 9.78968,
+    "label": "Sønderborg Brand & Redning, Ingolf Nielsens Vej, Kær, Sønderborg Kommune, Region Syddanmark, 6400, Danmark",
+    "source": "nominatim",
+    "query": "Sønderborg brandstation"
   }
 }
