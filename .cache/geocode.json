@@ -3156,5 +3156,19 @@
     "label": "Viborg Brandvæsen, Industrivej, Nørremarken, Viborg, Viborg Kommune, Region Midtjylland, 8800, Danmark",
     "source": "nominatim",
     "query": "Viborg brandstation"
+  },
+  "8e9d842c607f623bdcef0a60df1c50618eb871f8": {
+    "lat": 55.486867,
+    "lon": 9.137318,
+    "label": "Vejen Brandstation Falck, Esbjergvej, Vejen, Vejen Kommune, Region Syddanmark, 6600, Danmark",
+    "source": "nominatim",
+    "query": "Falck Vejen brandstation"
+  },
+  "a8f25e869e557ca70ff2fb6e2aa0c00200b7e6d0": {
+    "lat": 55.486298,
+    "lon": 8.465046,
+    "label": "Falck Esbjerg, Spangsbjerg Møllevej, Boldesager, Esbjerg, Esbjerg Kommune, Region Syddanmark, 6700, Danmark",
+    "source": "nominatim",
+    "query": "Esbjerg brandstation"
   }
 }
