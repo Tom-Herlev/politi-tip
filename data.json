@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T21:25:10Z",
-  "generated_at_copenhagen": "2026-11-21T22:25:10+01:00",
+  "generated_at": "2026-11-21T22:13:32Z",
+  "generated_at_copenhagen": "2026-11-21T23:13:32+01:00",
   "newest_rss": "2026-11-21T19:27:53Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 24
+      "count": 23
     },
     {
       "id": "sydsjaelland",
@@ -178,24 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 211,
-    "with_coordinates": 177,
+    "incidents": 210,
+    "with_coordinates": 176,
     "without_coordinates": 34,
     "by_type": {
-      "redning": 8,
       "brand": 36,
+      "redning": 7,
       "faerdsel": 62,
       "politi": 68,
       "andet": 37
     },
     "by_category": {
-      "helikopter": 1,
       "brand": 20,
       "trafik": 21,
       "politi": 168,
       "strom": 1
     },
-    "elapsed_seconds": 9.4
+    "elapsed_seconds": 8.7
   },
   "sources_status": {
     "politiupdate": {
@@ -231,26 +230,13 @@
     },
     "adsb": {
       "ok": true,
-      "count": 1,
+      "count": 0,
       "endpoint": "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250",
       "error": null,
       "cors": false
     }
   },
-  "hems": [
-    {
-      "registration": "LN-OTS",
-      "callsign": "DOC03",
-      "lat": 55.919724,
-      "lon": 9.237504,
-      "track": 191.78,
-      "altitude_ft": 3000,
-      "speed_kt": 142.0,
-      "airborne": true,
-      "type": "EC45",
-      "updated_at": "2026-11-21T21:25:10Z"
-    }
-  ],
+  "hems": [],
   "hems_bases": [
     {
       "name": "Skive",
@@ -275,36 +261,32 @@
   ],
   "incidents": [
     {
-      "id": "hems-LN-OTS",
-      "category": "helikopter",
-      "type": "redning",
-      "title": "Akutlægehelikopter LN-OTS (DOC03)",
-      "text": "I luften. Type: EC45. Højde: 3000 ft. Fart: 142.0 kt. Kurs: 191.78°.",
-      "source": "adsb",
-      "source_label": "adsb.lol",
-      "source_url": "https://adsb.lol/",
-      "url": "https://adsb.lol/",
-      "published_at": "2026-11-21T21:25:10Z",
-      "updated_at": "2026-11-21T21:25:10Z",
-      "lat": 55.919724,
-      "lon": 9.237504,
-      "location_text": "Live position",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
+      "id": "odin-53eaf2595e28084f",
+      "category": "brand",
+      "type": "brand",
+      "title": "Brand-Bil i det fri – Horsens",
+      "text": "Beredskab: Sydøstjyllands Brandvæsen. Station: Horsens. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brand-Bil i det fri.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-21T21:22:28Z",
+      "updated_at": "2026-11-21T21:22:28Z",
+      "lat": 55.852979,
+      "lon": 9.854561,
+      "location_text": "Horsens (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
       "district": "sydostjylland",
       "district_name": "Sydøstjyllands Politi",
       "official": true,
       "nationwide": false,
-      "registration": "LN-OTS",
-      "callsign": "DOC03",
-      "aircraft_type": "EC45",
-      "track": 191.78,
-      "altitude_ft": 3000,
-      "speed_kt": 142.0,
-      "airborne": true,
-      "hex": "478cc8",
-      "ongoing": true
+      "routine": false,
+      "station": "Horsens",
+      "beredskab": "Sydøstjyllands Brandvæsen",
+      "first_message": "Brand-Bil i det fri",
+      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "odin-00c74ce354d93126",
@@ -1110,34 +1092,6 @@
       "station": "Nordby",
       "beredskab": "Sydvestjysk Brandvæsen",
       "first_message": "Bygn.brand-Villa/Rækkehus",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "odin-f8d0980cf324c98c",
-      "category": "brand",
-      "type": "brand",
-      "title": "Min. forurening-Mindre spild – Næstved RE BE",
-      "text": "Beredskab: Midt- og Sydsjællands Brand & Redning. Station: Næstved RE BE. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Min. forurening-Mindre spild.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-21T15:37:11Z",
-      "updated_at": "2026-11-21T15:37:11Z",
-      "lat": 55.32175,
-      "lon": 11.202068,
-      "location_text": "Næstved RE BE (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "midtvestsjaelland",
-      "district_name": "Midt- og Vestsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Næstved RE BE",
-      "beredskab": "Midt- og Sydsjællands Brand & Redning",
-      "first_message": "Min. forurening-Mindre spild",
       "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
