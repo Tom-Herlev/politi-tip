@@ -3223,5 +3223,19 @@
     "label": "Næstved Landevej 1, 4220 Korsør",
     "source": "adressevaelger",
     "query": "Næstved RE BE brandstation"
+  },
+  "551deb5852960ddcb0cea4710ec2b3506cadd544": {
+    "lat": 55.632516,
+    "lon": 12.634629,
+    "label": "Gammel Kirkevej, Kastrup, Tårnby Kommune, Region Hovedstaden, 2770, Danmark",
+    "source": "nominatim",
+    "query": "Gammel Kirkevej Kastrup"
+  },
+  "4b7efcdefe9e8b636db9ce9645dd1ea659673ad6": {
+    "lat": 55.732391,
+    "lon": 9.558754,
+    "label": "Station Vejle, Norgesvej, Nørremarken, Vejle, Vejle Kommune, Region Syddanmark, 7100, Danmark",
+    "source": "nominatim",
+    "query": "Vejle brandstation"
   }
 }
