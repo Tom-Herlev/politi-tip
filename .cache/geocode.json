@@ -3100,5 +3100,12 @@
     "label": "FALCK Hvidovre, Avedøre Havnevej, Bavnebakken, Hvidovre Kommune, Region Hovedstaden, 2650, Danmark",
     "source": "nominatim",
     "query": "Hvidovre brandstation"
+  },
+  "3b05cfb2d1e913c296dab61323aee361dcf9a6ed": {
+    "lat": 56.081825,
+    "lon": 8.619663,
+    "label": "Bakkevej 1, Herborg, 6920 Videbæk",
+    "source": "adressevaelger",
+    "query": "Bakkevej Højslev"
   }
 }
