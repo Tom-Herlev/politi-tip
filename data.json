@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T17:28:10Z",
-  "generated_at_copenhagen": "2026-11-21T18:28:10+01:00",
+  "generated_at": "2026-11-21T18:15:46Z",
+  "generated_at_copenhagen": "2026-11-21T19:15:46+01:00",
   "newest_rss": "2026-11-21T16:47:53Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 33
+      "count": 32
     },
     {
       "id": "vestegnen",
@@ -101,7 +101,7 @@
       "short": "Nordsjælland",
       "handle": "NSJPoliti",
       "default_on": true,
-      "count": 16
+      "count": 17
     },
     {
       "id": "midtvestsjaelland",
@@ -165,7 +165,7 @@
       "short": "Nordjylland",
       "handle": "NjylPoliti",
       "default_on": false,
-      "count": 18
+      "count": 19
     },
     {
       "id": "bornholm",
@@ -178,30 +178,31 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 217,
-    "with_coordinates": 183,
+    "incidents": 218,
+    "with_coordinates": 184,
     "without_coordinates": 34,
     "by_type": {
-      "redning": 5,
-      "brand": 38,
+      "redning": 7,
+      "brand": 37,
       "faerdsel": 68,
       "politi": 69,
       "andet": 37
     },
     "by_category": {
+      "helikopter": 1,
       "brand": 20,
       "trafik": 27,
       "politi": 169,
       "strom": 1
     },
-    "elapsed_seconds": 16.7
+    "elapsed_seconds": 10.5
   },
   "sources_status": {
     "politiupdate": {
       "ok": true,
       "count": 169,
       "endpoint": "https://via.ritzau.dk/rss/short-messages/latest?publisherId={id}",
-      "reused": false
+      "reused": true
     },
     "odin": {
       "ok": true,
@@ -230,13 +231,26 @@
     },
     "adsb": {
       "ok": true,
-      "count": 0,
+      "count": 1,
       "endpoint": "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250",
       "error": null,
       "cors": false
     }
   },
-  "hems": [],
+  "hems": [
+    {
+      "registration": "LN-OTQ",
+      "callsign": "DOC05",
+      "lat": 57.277771,
+      "lon": 9.683676,
+      "track": 239.58,
+      "altitude_ft": 1550,
+      "speed_kt": 126.4,
+      "airborne": true,
+      "type": "EC45",
+      "updated_at": "2026-11-21T18:15:46Z"
+    }
+  ],
   "hems_bases": [
     {
       "name": "Skive",
@@ -260,6 +274,94 @@
     }
   ],
   "incidents": [
+    {
+      "id": "hems-LN-OTQ",
+      "category": "helikopter",
+      "type": "redning",
+      "title": "Akutlægehelikopter LN-OTQ (DOC05)",
+      "text": "I luften. Type: EC45. Højde: 1550 ft. Fart: 126.4 kt. Kurs: 239.58°.",
+      "source": "adsb",
+      "source_label": "adsb.lol",
+      "source_url": "https://adsb.lol/",
+      "url": "https://adsb.lol/",
+      "published_at": "2026-11-21T18:15:46Z",
+      "updated_at": "2026-11-21T18:15:46Z",
+      "lat": 57.277771,
+      "lon": 9.683676,
+      "location_text": "Live position",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "nordjylland",
+      "district_name": "Nordjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "registration": "LN-OTQ",
+      "callsign": "DOC05",
+      "aircraft_type": "EC45",
+      "track": 239.58,
+      "altitude_ft": 1550,
+      "speed_kt": 126.4,
+      "airborne": true,
+      "hex": "478de3",
+      "ongoing": true
+    },
+    {
+      "id": "odin-4574c528d0c21dbf",
+      "category": "brand",
+      "type": "brand",
+      "title": "Elevator stop – Christianshavn",
+      "text": "Beredskab: Hovedstadens Beredskab. Station: Christianshavn. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Elevator stop.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-21T17:42:37Z",
+      "updated_at": "2026-11-21T17:42:37Z",
+      "lat": 55.67543,
+      "lon": 12.592625,
+      "location_text": "Christianshavn (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "koebenhavn",
+      "district_name": "Københavns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Christianshavn",
+      "beredskab": "Hovedstadens Beredskab",
+      "first_message": "Elevator stop",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
+      "id": "odin-fd4bf67e87800ef9",
+      "category": "brand",
+      "type": "redning",
+      "title": "FUH-Fastklemte – Gilleleje",
+      "text": "Beredskab: Gribskov Beredskab. Station: Gilleleje. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: FUH-Fastklemte.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-21T17:31:40Z",
+      "updated_at": "2026-11-21T17:31:40Z",
+      "lat": 56.115805,
+      "lon": 12.322302,
+      "location_text": "Gilleleje (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "nordsjaelland",
+      "district_name": "Nordsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Gilleleje",
+      "beredskab": "Gribskov Beredskab",
+      "first_message": "FUH-Fastklemte",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
     {
       "id": "odin-94baec71c769205c",
       "category": "brand",
@@ -869,7 +971,7 @@
       "utility_phone": "(+45) 70 23 00 43",
       "utility_web": "www.n1.dk",
       "outage_type": "Uvarslet",
-      "expected_back": "2026-11-21T18:30:00",
+      "expected_back": "2026-11-21T21:00:00",
       "ongoing": true
     },
     {
@@ -1011,62 +1113,6 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "odin-efa17c95a04c09bb",
-      "category": "brand",
-      "type": "brand",
-      "title": "Brandalarm – Fælledvej",
-      "text": "Beredskab: Hovedstadens Beredskab. Station: Fælledvej. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brandalarm.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-21T13:07:02Z",
-      "updated_at": "2026-11-21T13:07:02Z",
-      "lat": 55.690079,
-      "lon": 12.561439,
-      "location_text": "Fælledvej (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Fælledvej",
-      "beredskab": "Hovedstadens Beredskab",
-      "first_message": "Brandalarm",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "odin-a490cde84c3bd31e",
-      "category": "brand",
-      "type": "brand",
-      "title": "Bygn.brand-Lejlighed – Holstebro",
-      "text": "Beredskab: Nordvestjyllands Brandvæsen. Station: Holstebro. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Lejlighed.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-21T13:05:47Z",
-      "updated_at": "2026-11-21T13:05:47Z",
-      "lat": 55.708522,
-      "lon": 12.587481,
-      "location_text": "Holstebro (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Holstebro",
-      "beredskab": "Nordvestjyllands Brandvæsen",
-      "first_message": "Bygn.brand-Lejlighed",
-      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "pu-15303697",

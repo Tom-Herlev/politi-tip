@@ -3251,5 +3251,12 @@
     "label": "Station Give, Nørregade, Give, Vejle Kommune, Region Syddanmark, 7323, Danmark",
     "source": "nominatim",
     "query": "Give brandstation"
+  },
+  "acf2630dd9dc3a9e6d9f9246a783620509b78eaa": {
+    "lat": 56.115805,
+    "lon": 12.322302,
+    "label": "Gilleleje Brandstation, Oluf Petersensvej, Gilleleje, Gribskov Kommune, Region Hovedstaden, 3250, Danmark",
+    "source": "nominatim",
+    "query": "Gilleleje brandstation"
   }
 }
