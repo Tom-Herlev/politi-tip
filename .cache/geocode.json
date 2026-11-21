@@ -3237,5 +3237,19 @@
     "label": "Station Vejle, Norgesvej, Nørremarken, Vejle, Vejle Kommune, Region Syddanmark, 7100, Danmark",
     "source": "nominatim",
     "query": "Vejle brandstation"
+  },
+  "c4d58f32807bfb5db86991180cf0ee032466065a": {
+    "lat": 55.721283,
+    "lon": 9.42797,
+    "label": "Brugsen, Jennumvej, Stenager, Jennum, Bredsten, Vejle Kommune, Region Syddanmark, 7182, Danmark",
+    "source": "nominatim",
+    "query": "Brugsen"
+  },
+  "8e705c529f44581c8a0abb2c4a9465a9e0619243": {
+    "lat": 55.849103,
+    "lon": 9.239412,
+    "label": "Station Give, Nørregade, Give, Vejle Kommune, Region Syddanmark, 7323, Danmark",
+    "source": "nominatim",
+    "query": "Give brandstation"
   }
 }
