@@ -3170,5 +3170,37 @@
     "label": "Falck Esbjerg, Spangsbjerg Møllevej, Boldesager, Esbjerg, Esbjerg Kommune, Region Syddanmark, 6700, Danmark",
     "source": "nominatim",
     "query": "Esbjerg brandstation"
+  },
+  "2fc8f2ed409b64b8529ad92f9cb5bdc1a6446cbd": {
+    "lat": 56.009541,
+    "lon": 8.973945,
+    "label": "Hjøllundvej 1, Arnborg, 7400 Herning",
+    "source": "adressevaelger",
+    "query": "Hjøllund Bording"
+  },
+  "790aaf75746cfc95e3f9d0b95fbcd71f762306a6": null,
+  "a8462e5d8aab3a143b29c6174a25272d1f1c25ae": null,
+  "6cf87fe28165ac214d02ea5f09a416bfc64a8415": {
+    "lat": 56.470733,
+    "lon": 10.061548,
+    "label": "Lystrupvej 1, 8930 Randers NØ",
+    "source": "adressevaelger",
+    "query": "Lystrupvej"
+  },
+  "9180acb8652a810db07531e6f268608675cea45e": null,
+  "7be66dbf07b19fec566802dec4d66d9fbc8c6f65": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation St. Jyllinge"
+  },
+  "fbb866bbe6fab7ebcf713ac5fa97985962f7baab": null,
+  "171f12a9bdd7dbce64ae505b68f0b6a60ffe0ec4": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Falck Otterup"
   }
 }
