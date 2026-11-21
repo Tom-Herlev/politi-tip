@@ -3265,5 +3265,12 @@
     "label": "Gilleleje Brandstation, Oluf Petersensvej, Gilleleje, Gribskov Kommune, Region Hovedstaden, 3250, Danmark",
     "source": "nominatim",
     "query": "Gilleleje brandstation"
+  },
+  "3dffde58ed4db143b2db8f2dfca0eb17e9612ba3": {
+    "lat": 57.365512,
+    "lon": 10.353128,
+    "label": "Brønderslevvej 225, Hørby, 9300 Sæby",
+    "source": "adressevaelger",
+    "query": "Brønderslev brandstation"
   }
 }
