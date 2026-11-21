@@ -3101,11 +3101,25 @@
     "source": "nominatim",
     "query": "Hvidovre brandstation"
   },
-  "3b05cfb2d1e913c296dab61323aee361dcf9a6ed": {
-    "lat": 56.081825,
-    "lon": 8.619663,
-    "label": "Bakkevej 1, Herborg, 6920 Videbæk",
+  "0f91bb3fb5d86f44872b3b93c350b523a332e738": {
+    "lat": 56.009541,
+    "lon": 8.973945,
+    "label": "Hjøllundvej 1, Arnborg, 7400 Herning",
     "source": "adressevaelger",
-    "query": "Bakkevej Højslev"
+    "query": "Hjøllund"
+  },
+  "550c02f82aa612169a0b139f7d7576eeef44c799": {
+    "lat": 55.013171,
+    "lon": 11.918549,
+    "label": "Midt- Og Sydsjællands Brand & Redning - Station Vordingborg, Haminavej, Solvang, Vordingborg, Vordingborg Kommune, Region Sjælland, 4760, Danmark",
+    "source": "nominatim",
+    "query": "Vordingborg brandstation"
+  },
+  "3ecf9d49dd89a964d53e666d417d3754b467fd68": {
+    "lat": 55.237616,
+    "lon": 10.488793,
+    "label": "Falck Ringe, Bødkervej, Gluemose, Ringe, Faaborg-Midtfyn Kommune, Region Syddanmark, 5750, Danmark",
+    "source": "nominatim",
+    "query": "Ringe brandstation"
   }
 }
