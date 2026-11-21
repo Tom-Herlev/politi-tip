@@ -3142,5 +3142,19 @@
     "label": "Sønderborg Brand & Redning, Ingolf Nielsens Vej, Kær, Sønderborg Kommune, Region Syddanmark, 6400, Danmark",
     "source": "nominatim",
     "query": "Sønderborg brandstation"
+  },
+  "d8eeea47aa4e760c98a6544a504142161ce6d648": {
+    "lat": 56.814851,
+    "lon": 8.329171,
+    "label": "Ørum Kirkevej 1, 7755 Bedsted Thy",
+    "source": "adressevaelger",
+    "query": "Ørum brandstation"
+  },
+  "83a2203ff3acd21c8390215971ca8ee3508e4ae6": {
+    "lat": 56.467047,
+    "lon": 9.402949,
+    "label": "Viborg Brandvæsen, Industrivej, Nørremarken, Viborg, Viborg Kommune, Region Midtjylland, 8800, Danmark",
+    "source": "nominatim",
+    "query": "Viborg brandstation"
   }
 }
