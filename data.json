@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T03:21:09Z",
-  "generated_at_copenhagen": "2026-11-21T04:21:09+01:00",
+  "generated_at": "2026-11-21T04:22:05Z",
+  "generated_at_copenhagen": "2026-11-21T05:22:05+01:00",
   "newest_rss": "2026-11-20T21:13:34Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -133,7 +133,7 @@
       "short": "Syd- og Sønderjylland",
       "handle": "SjylPoliti",
       "default_on": false,
-      "count": 20
+      "count": 21
     },
     {
       "id": "sydostjylland",
@@ -157,7 +157,7 @@
       "short": "Østjylland",
       "handle": "OjylPoliti",
       "default_on": false,
-      "count": 14
+      "count": 15
     },
     {
       "id": "nordjylland",
@@ -178,23 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 239,
-    "with_coordinates": 202,
+    "incidents": 241,
+    "with_coordinates": 204,
     "without_coordinates": 37,
     "by_type": {
+      "faerdsel": 90,
+      "andet": 40,
       "redning": 5,
       "brand": 38,
-      "faerdsel": 89,
-      "politi": 68,
-      "andet": 39
+      "politi": 68
     },
     "by_category": {
+      "trafik": 45,
+      "strom": 2,
       "brand": 20,
-      "trafik": 44,
-      "politi": 174,
-      "strom": 1
+      "politi": 174
     },
-    "elapsed_seconds": 9.2
+    "elapsed_seconds": 8.3
   },
   "sources_status": {
     "politiupdate": {
@@ -211,13 +211,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 44,
+      "count": 45,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 1,
+      "count": 2,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -260,6 +260,64 @@
     }
   ],
   "incidents": [
+    {
+      "id": "vd-5f91ffd493f18962",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Tabt gods - Rute 47 fra Haderslev mod Gabøl mellem Haderslev og Hammelev (E45 Sønderjyske Motorvej)",
+      "text": "Rute 47 fra Haderslev mod Gabøl mellem Haderslev og Hammelev (E45 Sønderjyske Motorvej)\n Tabt gods, Spor blokeret, Pas på",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-21T04:15:00Z",
+      "updated_at": "2026-11-21T04:15:47Z",
+      "lat": 55.245052,
+      "lon": 9.448315,
+      "location_text": "Tabt gods - Rute 47 fra Haderslev mod Gabøl mellem Haderslev og Hammelev (E45 Sønderjyske Motorvej)",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "sydsonderjylland",
+      "district_name": "Syd- og Sønderjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "tabt gods",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "gpd-194469",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Odder",
+      "text": "1603 kunder berørt. Elselskab: Dinel A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse pga. kabelfejl i 10 kV forsyningsnettet. Vi er allerede i gang med at lokalisere/rette fejlen og håber snarest at kunne genetablere forsyningen.",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-21T03:20:00Z",
+      "updated_at": "2026-11-21T02:26:36Z",
+      "lat": 55.93806,
+      "lon": 10.210382,
+      "location_text": "Odder",
+      "geometry": "circle",
+      "radius_m": 5217.0,
+      "approximate": true,
+      "district": "ostjylland",
+      "district_name": "Østjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 1603,
+      "utility": "Dinel A/S",
+      "utility_phone": "(+45) 87 92 55 66",
+      "utility_web": "www.dinel.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-21T07:00:00",
+      "ongoing": true
+    },
     {
       "id": "odin-270d33aebad3bbc4",
       "category": "brand",
