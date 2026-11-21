@@ -3272,5 +3272,12 @@
     "label": "Brønderslevvej 225, Hørby, 9300 Sæby",
     "source": "adressevaelger",
     "query": "Brønderslev brandstation"
+  },
+  "53b217f5ac89dc1220f6b4f80f07d39c2f36cfde": {
+    "lat": 55.665185,
+    "lon": 12.47353,
+    "label": "Vojensvej 2, 2610 Rødovre",
+    "source": "adressevaelger",
+    "query": "Vojens brandstation"
   }
 }
