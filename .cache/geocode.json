@@ -3209,5 +3209,19 @@
     "label": "Aarhus, Aarhus Kommune, Region Midtjylland, 8000, Danmark",
     "source": "nominatim",
     "query": "Aarhus"
+  },
+  "54dab40977ff8eea5153ce2c0b73b3cc453c2d8c": {
+    "lat": 55.445091,
+    "lon": 8.396922,
+    "label": "Nordby brandstation, Vestervangen, Odden, Nordby, Fanø Kommune, Region Syddanmark, 6720, Danmark",
+    "source": "nominatim",
+    "query": "Nordby brandstation"
+  },
+  "f99c1e3c5b7a966b814ea12f3bf37e074546d71c": {
+    "lat": 55.32175,
+    "lon": 11.202068,
+    "label": "Næstved Landevej 1, 4220 Korsør",
+    "source": "adressevaelger",
+    "query": "Næstved RE BE brandstation"
   }
 }
