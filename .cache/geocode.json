@@ -3202,5 +3202,12 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Falck Otterup"
+  },
+  "4084f2ab858c85d2f6bb75128af87a86127373d6": {
+    "lat": 56.149628,
+    "lon": 10.213405,
+    "label": "Aarhus, Aarhus Kommune, Region Midtjylland, 8000, Danmark",
+    "source": "nominatim",
+    "query": "Aarhus"
   }
 }
