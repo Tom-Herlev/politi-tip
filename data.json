@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T04:22:05Z",
-  "generated_at_copenhagen": "2026-11-21T05:22:05+01:00",
+  "generated_at": "2026-11-21T05:25:24Z",
+  "generated_at_copenhagen": "2026-11-21T06:25:24+01:00",
   "newest_rss": "2026-11-20T21:13:34Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 33
+      "count": 32
     },
     {
       "id": "vestegnen",
@@ -117,7 +117,7 @@
       "short": "Sydsjælland og Lolland-Falster",
       "handle": "SSJ_LFPoliti",
       "default_on": false,
-      "count": 20
+      "count": 19
     },
     {
       "id": "fyn",
@@ -125,7 +125,7 @@
       "short": "Fyn",
       "handle": "FynsPoliti",
       "default_on": false,
-      "count": 14
+      "count": 15
     },
     {
       "id": "sydsonderjylland",
@@ -133,7 +133,7 @@
       "short": "Syd- og Sønderjylland",
       "handle": "SjylPoliti",
       "default_on": false,
-      "count": 21
+      "count": 22
     },
     {
       "id": "sydostjylland",
@@ -165,7 +165,7 @@
       "short": "Nordjylland",
       "handle": "NjylPoliti",
       "default_on": false,
-      "count": 18
+      "count": 19
     },
     {
       "id": "bornholm",
@@ -178,23 +178,24 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 241,
-    "with_coordinates": 204,
+    "incidents": 242,
+    "with_coordinates": 205,
     "without_coordinates": 37,
     "by_type": {
-      "faerdsel": 90,
-      "andet": 40,
-      "redning": 5,
+      "redning": 6,
       "brand": 38,
+      "faerdsel": 91,
+      "andet": 39,
       "politi": 68
     },
     "by_category": {
-      "trafik": 45,
-      "strom": 2,
+      "helikopter": 1,
       "brand": 20,
+      "trafik": 46,
+      "strom": 1,
       "politi": 174
     },
-    "elapsed_seconds": 8.3
+    "elapsed_seconds": 8.2
   },
   "sources_status": {
     "politiupdate": {
@@ -211,13 +212,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 45,
+      "count": 46,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 2,
+      "count": 1,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -230,13 +231,26 @@
     },
     "adsb": {
       "ok": true,
-      "count": 0,
+      "count": 1,
       "endpoint": "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250",
       "error": null,
       "cors": false
     }
   },
-  "hems": [],
+  "hems": [
+    {
+      "registration": "LN-OTS",
+      "callsign": "DOC03",
+      "lat": 55.501906,
+      "lon": 9.031363,
+      "track": 247.17,
+      "altitude_ft": 675,
+      "speed_kt": 20.6,
+      "airborne": true,
+      "type": "EC45",
+      "updated_at": "2026-11-21T05:25:24Z"
+    }
+  ],
   "hems_bases": [
     {
       "name": "Skive",
@@ -260,6 +274,94 @@
     }
   ],
   "incidents": [
+    {
+      "id": "hems-LN-OTS",
+      "category": "helikopter",
+      "type": "redning",
+      "title": "Akutlægehelikopter LN-OTS (DOC03)",
+      "text": "I luften. Type: EC45. Højde: 675 ft. Fart: 20.6 kt. Kurs: 247.17°.",
+      "source": "adsb",
+      "source_label": "adsb.lol",
+      "source_url": "https://adsb.lol/",
+      "url": "https://adsb.lol/",
+      "published_at": "2026-11-21T05:25:24Z",
+      "updated_at": "2026-11-21T05:25:24Z",
+      "lat": 55.501906,
+      "lon": 9.031363,
+      "location_text": "Live position",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "sydsonderjylland",
+      "district_name": "Syd- og Sønderjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "registration": "LN-OTS",
+      "callsign": "DOC03",
+      "aircraft_type": "EC45",
+      "track": 247.17,
+      "altitude_ft": 675,
+      "speed_kt": 20.6,
+      "airborne": true,
+      "hex": "478cc8",
+      "ongoing": true
+    },
+    {
+      "id": "odin-9b0c2b49c5420ef5",
+      "category": "brand",
+      "type": "brand",
+      "title": "Min. forurening-Mindre spild – Otterup",
+      "text": "Beredskab: Beredskab Fyn. Station: Otterup. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Min. forurening-Mindre spild.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-21T05:14:12Z",
+      "updated_at": "2026-11-21T05:14:12Z",
+      "lat": 55.524282,
+      "lon": 10.405208,
+      "location_text": "Otterup (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "fyn",
+      "district_name": "Fyns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Otterup",
+      "beredskab": "Beredskab Fyn",
+      "first_message": "Min. forurening-Mindre spild",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
+      "id": "vd-04648b0020eae81b",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Tabt gods - E45 Frederikshavnmotorvejen fra Sæby mod Nørresundby mellem <13> Sæby S og <14> Flauenskjold",
+      "text": "E45 Frederikshavnmotorvejen fra Sæby mod Nørresundby mellem <13> Sæby S og <14> Flauenskjold\n Tabt gods, Spor blokeret, Pas på\n Vejhjælp er på vej",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-21T05:06:00Z",
+      "updated_at": "2026-11-21T05:06:52Z",
+      "lat": 57.26612,
+      "lon": 10.371296,
+      "location_text": "Tabt gods - E45 Frederikshavnmotorvejen fra Sæby mod Nørresundby mellem <13> Sæby S og <14> Flauenskjold",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "nordjylland",
+      "district_name": "Nordjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "tabt gods",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
     {
       "id": "vd-5f91ffd493f18962",
       "category": "trafik",
@@ -1517,34 +1619,6 @@
       "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
-      "id": "odin-03c6283a331cf616",
-      "category": "brand",
-      "type": "brand",
-      "title": "Bygn.brand-Butik – Tårnby",
-      "text": "Beredskab: Tårnby Brandvæsen. Station: Tårnby. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Butik.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-20T13:37:26Z",
-      "updated_at": "2026-11-20T13:37:26Z",
-      "lat": 55.631588,
-      "lon": 12.621963,
-      "location_text": "Tårnby (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Tårnby",
-      "beredskab": "Tårnby Brandvæsen",
-      "first_message": "Bygn.brand-Butik",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
       "id": "pu-15301763",
       "source": "politiupdate",
       "source_label": "POLITI UPDATE",
@@ -2111,36 +2185,6 @@
       "approximate": false,
       "routine": false,
       "nationwide": false
-    },
-    {
-      "id": "gpd-194399",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud Stubbekøbing",
-      "text": "10 kunder berørt. Elselskab: Cerius A/S. Type: Uvarslet. Årsag endnu ukendt",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-20T10:54:10Z",
-      "updated_at": "2026-11-20T09:56:15Z",
-      "lat": 54.886191,
-      "lon": 12.035866,
-      "location_text": "Stubbekøbing",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "sydsjaelland",
-      "district_name": "Sydsjællands og Lolland-Falsters Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 10,
-      "utility": "Cerius A/S",
-      "utility_phone": "(+45) 70 29 20 24",
-      "utility_web": "www.cerius.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-20T13:54:10",
-      "ongoing": true
     },
     {
       "id": "vd-7ef3dd2ec6c99480",
