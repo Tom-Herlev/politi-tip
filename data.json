@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T22:13:32Z",
-  "generated_at_copenhagen": "2026-11-21T23:13:32+01:00",
+  "generated_at": "2026-11-21T22:59:02Z",
+  "generated_at_copenhagen": "2026-11-21T23:59:02+01:00",
   "newest_rss": "2026-11-21T19:27:53Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -93,7 +93,7 @@
       "short": "Vestegnen",
       "handle": "VestegnsPoliti",
       "default_on": true,
-      "count": 22
+      "count": 23
     },
     {
       "id": "nordsjaelland",
@@ -178,23 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 210,
-    "with_coordinates": 176,
+    "incidents": 211,
+    "with_coordinates": 177,
     "without_coordinates": 34,
     "by_type": {
+      "andet": 39,
       "brand": 36,
       "redning": 7,
-      "faerdsel": 62,
-      "politi": 68,
-      "andet": 37
+      "faerdsel": 61,
+      "politi": 68
     },
     "by_category": {
+      "strom": 3,
       "brand": 20,
-      "trafik": 21,
-      "politi": 168,
-      "strom": 1
+      "trafik": 20,
+      "politi": 168
     },
-    "elapsed_seconds": 8.7
+    "elapsed_seconds": 9.1
   },
   "sources_status": {
     "politiupdate": {
@@ -211,13 +211,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 21,
+      "count": 20,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 1,
+      "count": 3,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -260,6 +260,66 @@
     }
   ],
   "incidents": [
+    {
+      "id": "gpd-194488",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Ballerup",
+      "text": "3774 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-21T22:50:11Z",
+      "updated_at": "2026-11-21T21:51:01Z",
+      "lat": 55.722485,
+      "lon": 12.345093,
+      "location_text": "Ballerup",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "vestegnen",
+      "district_name": "Københavns Vestegns Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 3774,
+      "utility": "Radius Elnet A/S",
+      "utility_phone": "(+45) 70 20 58 00",
+      "utility_web": "www.radiuselnet.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-22T02:47:00",
+      "ongoing": true
+    },
+    {
+      "id": "gpd-194487",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Hillerød",
+      "text": "16 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-21T22:31:35Z",
+      "updated_at": "2026-11-21T21:32:01Z",
+      "lat": 55.924934,
+      "lon": 12.301732,
+      "location_text": "Hillerød",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "nordsjaelland",
+      "district_name": "Nordsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 16,
+      "utility": "Radius Elnet A/S",
+      "utility_phone": "(+45) 70 20 58 00",
+      "utility_web": "www.radiuselnet.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-22T03:30:00",
+      "ongoing": true
+    },
     {
       "id": "odin-53eaf2595e28084f",
       "category": "brand",
@@ -1563,34 +1623,6 @@
       "subtype": "tabt gods",
       "reopening": null,
       "reopening_at": null,
-      "ongoing": true,
-      "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "vd-42e9165f0067c682",
-      "category": "trafik",
-      "type": "faerdsel",
-      "title": "Redningsarbejde - Rute 16 fra Hillerød mod København mellem <11> Allerød og <10> Farum",
-      "text": "Rute 16 fra Hillerød mod København mellem <11> Allerød og <10> Farum\n Redningsarbejde, Oprydningsarbejde, Havareret køretøj\n Forventes at vare indtil 20. nov. 2026 kl. 23:30.",
-      "source": "vejdirektoratet",
-      "source_label": "Vejdirektoratet",
-      "source_url": "https://trafikkort.vejdirektoratet.dk/",
-      "url": "https://trafikkort.vejdirektoratet.dk/",
-      "published_at": "2026-11-20T21:58:00Z",
-      "updated_at": "2026-11-20T21:58:14Z",
-      "lat": 55.840008,
-      "lon": 12.34751,
-      "location_text": "Redningsarbejde - Rute 16 fra Hillerød mod København mellem <11> Allerød og <10> Farum",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "nordsjaelland",
-      "district_name": "Nordsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "subtype": "kø",
-      "reopening": "20-11-2026 kl. 23:30",
-      "reopening_at": "2026-11-20T22:30:00Z",
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
     },
