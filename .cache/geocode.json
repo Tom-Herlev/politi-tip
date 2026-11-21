@@ -3252,6 +3252,13 @@
     "source": "nominatim",
     "query": "Give brandstation"
   },
+  "05fa88c3e475254fcf09622f9e4bd1e94cca83f7": {
+    "lat": 55.337717,
+    "lon": 10.120133,
+    "label": "Augustenborg 1, Frøbjerg, 5560 Aarup",
+    "source": "adressevaelger",
+    "query": "Augustenborg brandstation"
+  },
   "acf2630dd9dc3a9e6d9f9246a783620509b78eaa": {
     "lat": 56.115805,
     "lon": 12.322302,
