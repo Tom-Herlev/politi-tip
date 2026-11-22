@@ -3316,6 +3316,28 @@
     "source": "adressevaelger",
     "query": "Hurup brandstation"
   },
+  "5d2144463a912c09f61ffb1dce6d010556fc0c2d": {
+    "lat": 55.82064,
+    "lon": 9.544798,
+    "label": "Ribevej 16, Laage, 7160 Tørring",
+    "source": "adressevaelger",
+    "query": "Ribevej"
+  },
+  "45a8703bb8fa4455143cc5300b7515cba1b75686": null,
+  "b1503d2860604a26f3f6a0ed5084d17a5f4fb43a": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Arden"
+  },
+  "9f2d243b763af4c84f272b929b45e4e9753baafc": {
+    "lat": 54.654362,
+    "lon": 11.347957,
+    "label": "Rødbyhavn Havn 1, 4970 Rødby",
+    "source": "adressevaelger",
+    "query": "Rødby brandstation"
+  },
   "17980979eac5a8c0c216b951eb027fe3a1ab253d": {
     "lat": 55.432352,
     "lon": 9.933305,
