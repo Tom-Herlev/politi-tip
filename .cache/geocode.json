@@ -3389,5 +3389,12 @@
     "label": "Middelfart Brandvæsen, Mandal Alle, Nytofte, Skrillinge, Middelfart, Middelfart Kommune, Region Syddanmark, 5500, Danmark",
     "source": "nominatim",
     "query": "Middelfart brandstation"
+  },
+  "46bb29e825173bde8b7874c1d152f2819519c78b": {
+    "lat": 57.066815,
+    "lon": 9.944717,
+    "label": "Gammel Kongevej, Nørre Uttrup Torv, Løvvang, Nørre Uttrup, Aalborg, Aalborg Kommune, Region Nordjylland, 9400, Danmark",
+    "source": "nominatim",
+    "query": "Gammel Kongevej Nørresundby"
   }
 }
