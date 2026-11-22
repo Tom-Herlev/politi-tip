@@ -3315,5 +3315,20 @@
     "label": "Hurupvej 1, 7760 Hurup Thy",
     "source": "adressevaelger",
     "query": "Hurup brandstation"
+  },
+  "17980979eac5a8c0c216b951eb027fe3a1ab253d": {
+    "lat": 55.432352,
+    "lon": 9.933305,
+    "label": "Station Ejby, Anlægsvej, Ejby, Middelfart Kommune, Region Syddanmark, 5592, Danmark",
+    "source": "nominatim",
+    "query": "Ejby brandstation"
+  },
+  "5d2497c5ac3a7453d13f563cb8c4e965a8f450cd": null,
+  "e980221827b4ed1206c380d0e8f1bf3d8ce692bd": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Falck Brørup"
   }
 }
