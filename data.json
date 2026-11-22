@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T02:39:24Z",
-  "generated_at_copenhagen": "2026-11-22T03:39:24+01:00",
+  "generated_at": "2026-11-22T03:36:12Z",
+  "generated_at_copenhagen": "2026-11-22T04:36:12+01:00",
   "newest_rss": "2026-11-21T19:27:53Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -157,7 +157,7 @@
       "short": "Østjylland",
       "handle": "OjylPoliti",
       "default_on": false,
-      "count": 12
+      "count": 13
     },
     {
       "id": "nordjylland",
@@ -178,23 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 211,
-    "with_coordinates": 176,
+    "incidents": 212,
+    "with_coordinates": 177,
     "without_coordinates": 35,
     "by_type": {
+      "andet": 38,
       "brand": 36,
       "faerdsel": 63,
       "redning": 7,
-      "andet": 37,
       "politi": 68
     },
     "by_category": {
+      "strom": 2,
       "brand": 20,
       "trafik": 22,
-      "strom": 1,
       "politi": 168
     },
-    "elapsed_seconds": 17.1
+    "elapsed_seconds": 10.5
   },
   "sources_status": {
     "politiupdate": {
@@ -217,7 +217,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 1,
+      "count": 2,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -260,6 +260,36 @@
     }
   ],
   "incidents": [
+    {
+      "id": "gpd-194489",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Risskov",
+      "text": "68 kunder berørt. Elselskab: KONSTANT Net A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse i Risskov: Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Birkevej, Elmevej, Elmevej, Elmevej, Elmevej, Elmevej, Elmevej, Elmevej, Elmevej, Elmevej, Elmevej, Elmevej, Elmevej, Elmev",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-22T02:40:00Z",
+      "updated_at": "2026-11-22T02:21:05Z",
+      "lat": 56.190743,
+      "lon": 10.242023,
+      "location_text": "Risskov",
+      "geometry": "circle",
+      "radius_m": 144.0,
+      "approximate": true,
+      "district": "ostjylland",
+      "district_name": "Østjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 68,
+      "utility": "KONSTANT Net A/S",
+      "utility_phone": "(+45) 70 11 45 09",
+      "utility_web": "www.konstant.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-22T05:40:00",
+      "ongoing": true
+    },
     {
       "id": "odin-5e8cf06d33b78ada",
       "category": "brand",
