@@ -3382,5 +3382,12 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation St. Asnæs"
+  },
+  "535f19f534104d2d824a2398d5f00810af7105d7": {
+    "lat": 55.504803,
+    "lon": 9.773852,
+    "label": "Middelfart Brandvæsen, Mandal Alle, Nytofte, Skrillinge, Middelfart, Middelfart Kommune, Region Syddanmark, 5500, Danmark",
+    "source": "nominatim",
+    "query": "Middelfart brandstation"
   }
 }
