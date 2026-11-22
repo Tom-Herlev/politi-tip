@@ -3396,5 +3396,19 @@
     "label": "Gammel Kongevej, Nørre Uttrup Torv, Løvvang, Nørre Uttrup, Aalborg, Aalborg Kommune, Region Nordjylland, 9400, Danmark",
     "source": "nominatim",
     "query": "Gammel Kongevej Nørresundby"
+  },
+  "2f9fbad8a0ee2456d139f286d684b207fde2e401": {
+    "lat": 56.024273,
+    "lon": 12.57295,
+    "label": "Helsingør Brandstation, Ellehammersvej, Lerbakken, Snekkersten, Helsingør Kommune, Region Hovedstaden, 3070, Danmark",
+    "source": "nominatim",
+    "query": "Helsingør brandstation"
+  },
+  "3337d2c7b987e9aeee3a546911db3b25c1848014": {
+    "lat": 55.268677,
+    "lon": 14.800314,
+    "label": "Allinge Brandstation, Rønnevej, Løsebækshuse, Grønnedal, Allinge-Sandvig, Bornholms Regionskommune, Region Hovedstaden, 3770, Danmark",
+    "source": "nominatim",
+    "query": "Allinge brandstation"
   }
 }
