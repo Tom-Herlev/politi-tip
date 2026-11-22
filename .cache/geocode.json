@@ -3279,5 +3279,12 @@
     "label": "Vojensvej 2, 2610 Rødovre",
     "source": "adressevaelger",
     "query": "Vojens brandstation"
+  },
+  "3e29d7d92b9d22da48a3ade51ca0ee8086941355": {
+    "lat": 55.349755,
+    "lon": 11.143342,
+    "label": "Korsør Brandstation, Reskavej, Blåbro, Korsør, Slagelse Kommune, Region Sjælland, 4220, Danmark",
+    "source": "nominatim",
+    "query": "Korsør brandstation"
   }
 }
