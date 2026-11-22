@@ -3301,5 +3301,12 @@
     "label": "Glamsbjergvej 1A, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "Glamsbjerg brandstation"
+  },
+  "8c7b357e563f982ef39f5f06af3d55c789a49fb5": {
+    "lat": 56.471787,
+    "lon": 10.042637,
+    "label": "Station Randers, Hadsundvej, Strømmen, Randers, Randers Kommune, Region Midtjylland, 8900, Danmark",
+    "source": "nominatim",
+    "query": "Randers brandstation"
   }
 }
