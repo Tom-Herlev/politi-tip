@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T05:41:52Z",
-  "generated_at_copenhagen": "2026-11-22T06:41:52+01:00",
+  "generated_at": "2026-11-22T06:43:07Z",
+  "generated_at_copenhagen": "2026-11-22T07:43:07+01:00",
   "newest_rss": "2026-11-21T19:27:53Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 30
+      "count": 29
     },
     {
       "id": "vestegnen",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 26
+      "count": 28
     },
     {
       "id": "sydsjaelland",
@@ -133,7 +133,7 @@
       "short": "Syd- og Sønderjylland",
       "handle": "SjylPoliti",
       "default_on": false,
-      "count": 14
+      "count": 15
     },
     {
       "id": "sydostjylland",
@@ -149,7 +149,7 @@
       "short": "Midt- og Vestjylland",
       "handle": "MVJPoliti",
       "default_on": false,
-      "count": 10
+      "count": 11
     },
     {
       "id": "ostjylland",
@@ -178,23 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 213,
-    "with_coordinates": 178,
+    "incidents": 216,
+    "with_coordinates": 181,
     "without_coordinates": 35,
     "by_type": {
-      "faerdsel": 63,
-      "andet": 39,
+      "faerdsel": 65,
+      "andet": 40,
       "brand": 37,
       "redning": 6,
       "politi": 68
     },
     "by_category": {
-      "trafik": 22,
-      "strom": 3,
+      "trafik": 24,
+      "strom": 4,
       "brand": 20,
       "politi": 168
     },
-    "elapsed_seconds": 7.7
+    "elapsed_seconds": 8.8
   },
   "sources_status": {
     "politiupdate": {
@@ -211,13 +211,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 22,
+      "count": 24,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 3,
+      "count": 4,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -261,6 +261,62 @@
   ],
   "incidents": [
     {
+      "id": "vd-555e97840267039a",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Advarsel - E20 fra Halsskov mod Ringsted mellem Tuelsø og <36> Ringsted N",
+      "text": "E20 fra Halsskov mod Ringsted mellem Tuelsø og <36> Ringsted N\n Havareret køretøj, Spor spærret, Kan passeres med forsigtighed\n Kan passeres via nødsporet",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-22T05:17:00Z",
+      "updated_at": "2026-11-22T05:43:18Z",
+      "lat": 55.447506,
+      "lon": 11.656333,
+      "location_text": "Advarsel - E20 fra Halsskov mod Ringsted mellem Tuelsø og <36> Ringsted N",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "midtvestsjaelland",
+      "district_name": "Midt- og Vestsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "kø",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "vd-998a4dd9e22079d3",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Tabt gods - E20 fra Halsskov mod Ringsted mellem Tuelsø og <36> Ringsted N",
+      "text": "E20 fra Halsskov mod Ringsted mellem Tuelsø og <36> Ringsted N\n Tabt gods",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-22T05:42:00Z",
+      "updated_at": "2026-11-22T05:42:55Z",
+      "lat": 55.447506,
+      "lon": 11.656333,
+      "location_text": "Tabt gods - E20 fra Halsskov mod Ringsted mellem Tuelsø og <36> Ringsted N",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "midtvestsjaelland",
+      "district_name": "Midt- og Vestsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "tabt gods",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
+    {
       "id": "vd-108eddae9c188924",
       "category": "trafik",
       "type": "faerdsel",
@@ -287,6 +343,36 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "gpd-194493",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Silkeborg",
+      "text": "5 kunder berørt. Elselskab: Elnetselskabet N1. Type: Uvarslet. Årsag endnu ukendt",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-22T06:21:00Z",
+      "updated_at": "2026-11-22T05:21:40Z",
+      "lat": 56.135561,
+      "lon": 9.611299,
+      "location_text": "Silkeborg",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "midtvestjylland",
+      "district_name": "Midt- og Vestjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 5,
+      "utility": "Elnetselskabet N1",
+      "utility_phone": "(+45) 70 23 00 43",
+      "utility_web": "www.n1.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-22T09:21:00",
+      "ongoing": true
     },
     {
       "id": "vd-3cadd355afbb89b3",
@@ -317,33 +403,33 @@
       "layer": "current-other-traffic-announcements.point"
     },
     {
-      "id": "gpd-194491",
+      "id": "gpd-194492",
       "category": "strom",
       "type": "andet",
-      "title": "Afbrud i Hellerup",
-      "text": "1711 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
+      "title": "Afbrud i Haderslev",
+      "text": "25 kunder berørt. Elselskab: Elnetselskabet N1. Type: Uvarslet. Årsag endnu ukendt",
       "source": "elnet",
       "source_label": "Green Power Denmark / Elnet",
       "source_url": "https://elnet.dk/",
       "url": "https://elnet.dk/",
-      "published_at": "2026-11-22T05:40:04Z",
-      "updated_at": "2026-11-22T04:41:01Z",
-      "lat": 55.73872,
-      "lon": 12.576072,
-      "location_text": "Hellerup",
+      "published_at": "2026-11-22T05:47:00Z",
+      "updated_at": "2026-11-22T04:48:04Z",
+      "lat": 55.25161,
+      "lon": 9.302834,
+      "location_text": "Haderslev",
       "geometry": "circle",
-      "radius_m": 100,
+      "radius_m": 200.0,
       "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
+      "district": "sydsonderjylland",
+      "district_name": "Syd- og Sønderjyllands Politi",
       "official": true,
       "nationwide": false,
-      "customers": 1711,
-      "utility": "Radius Elnet A/S",
-      "utility_phone": "(+45) 70 20 58 00",
-      "utility_web": "www.radiuselnet.dk",
+      "customers": 25,
+      "utility": "Elnetselskabet N1",
+      "utility_phone": "(+45) 70 23 00 43",
+      "utility_web": "www.n1.dk",
       "outage_type": "Uvarslet",
-      "expected_back": "2026-11-22T09:39:00",
+      "expected_back": "2026-11-22T08:47:00",
       "ongoing": true
     },
     {
