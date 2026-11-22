@@ -3308,5 +3308,12 @@
     "label": "Station Randers, Hadsundvej, Strømmen, Randers, Randers Kommune, Region Midtjylland, 8900, Danmark",
     "source": "nominatim",
     "query": "Randers brandstation"
+  },
+  "4cba582a33aab0e0335f4c6ce1c095915e64b902": {
+    "lat": 56.752055,
+    "lon": 8.393395,
+    "label": "Hurupvej 1, 7760 Hurup Thy",
+    "source": "adressevaelger",
+    "query": "Hurup brandstation"
   }
 }
