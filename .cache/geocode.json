@@ -3410,5 +3410,27 @@
     "label": "Allinge Brandstation, Rønnevej, Løsebækshuse, Grønnedal, Allinge-Sandvig, Bornholms Regionskommune, Region Hovedstaden, 3770, Danmark",
     "source": "nominatim",
     "query": "Allinge brandstation"
+  },
+  "6b352c8e6fa90fb29d661a445c8f852d8f38214b": {
+    "lat": 55.781742,
+    "lon": 9.699053,
+    "label": "Station Hedensted, Solkrogen, Hedensted, Hedensted Kommune, Region Midtjylland, 8722, Danmark",
+    "source": "nominatim",
+    "query": "Hedensted brandstation"
+  },
+  "8a8ce278401f0b617bd69682d2d49105e713a142": {
+    "lat": 54.946682,
+    "lon": 9.101498,
+    "label": "Bylderup Kirkevej 1A, 6372 Bylderup-Bov",
+    "source": "adressevaelger",
+    "query": "Bylderup Bov brandstation"
+  },
+  "78c0ce9e33cdb351dc2634097abf29c1b486b4c5": null,
+  "6cee429d59b1d646018e2560069b21d9c025add9": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Aalestrup"
   }
 }
