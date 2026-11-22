@@ -3294,5 +3294,12 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Aars"
+  },
+  "55f0577914b84a731d751bd8cb47a9b0f147fab8": {
+    "lat": 55.631532,
+    "lon": 12.59737,
+    "label": "Glamsbjergvej 1A, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "Glamsbjerg brandstation"
   }
 }
