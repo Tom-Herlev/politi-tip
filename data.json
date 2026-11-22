@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T07:58:00Z",
-  "generated_at_copenhagen": "2026-11-22T08:58:00+01:00",
+  "generated_at": "2026-11-22T08:51:39Z",
+  "generated_at_copenhagen": "2026-11-22T09:51:39+01:00",
   "newest_rss": "2026-11-21T19:27:53Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 29
+      "count": 28
     },
     {
       "id": "sydsjaelland",
@@ -141,7 +141,7 @@
       "short": "Sydøstjylland",
       "handle": "SydOjylPoliti",
       "default_on": false,
-      "count": 17
+      "count": 18
     },
     {
       "id": "midtvestjylland",
@@ -182,19 +182,19 @@
     "with_coordinates": 184,
     "without_coordinates": 35,
     "by_type": {
-      "faerdsel": 67,
-      "andet": 41,
+      "faerdsel": 66,
+      "andet": 42,
       "brand": 37,
       "redning": 6,
       "politi": 68
     },
     "by_category": {
-      "trafik": 26,
-      "strom": 5,
+      "trafik": 25,
+      "strom": 6,
       "brand": 20,
       "politi": 168
     },
-    "elapsed_seconds": 15.6
+    "elapsed_seconds": 16.2
   },
   "sources_status": {
     "politiupdate": {
@@ -211,13 +211,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 26,
+      "count": 25,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 5,
+      "count": 6,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -287,6 +287,36 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "gpd-194497",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Vejle",
+      "text": "29 kunder berørt. Elselskab: TREFOR El-net A/S. Type: Uvarslet. Strømafbrydelse 22/11/2026 09:07 Der er en uventet strømafbrydelse på elnettet Vi forventer, at der er strøm igen kl. 11:00 De berørte område er: Vejle: Ribe Landevej, Skovbakken, Skovbakken, Skovbakken, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej, Ømkulevej",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-22T08:00:00Z",
+      "updated_at": "2026-11-22T07:07:40Z",
+      "lat": 55.701284,
+      "lon": 9.519114,
+      "location_text": "Vejle",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "sydostjylland",
+      "district_name": "Sydøstjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 29,
+      "utility": "TREFOR El-net A/S",
+      "utility_phone": "(+45) 79 33 34 35",
+      "utility_web": "trefor.dk/elnet",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-22T11:00:00",
+      "ongoing": true
     },
     {
       "id": "vd-9c8a90d1176ec494",
@@ -381,7 +411,7 @@
       "category": "strom",
       "type": "andet",
       "title": "Afbrud i Glostrup",
-      "text": "34 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
+      "text": "14 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
       "source": "elnet",
       "source_label": "Green Power Denmark / Elnet",
       "source_url": "https://elnet.dk/",
@@ -398,7 +428,7 @@
       "district_name": "Københavns Vestegns Politi",
       "official": true,
       "nationwide": false,
-      "customers": 34,
+      "customers": 14,
       "utility": "Radius Elnet A/S",
       "utility_phone": "(+45) 70 20 58 00",
       "utility_web": "www.radiuselnet.dk",
@@ -517,7 +547,7 @@
       "utility_phone": "(+45) 70 23 00 43",
       "utility_web": "www.n1.dk",
       "outage_type": "Uvarslet",
-      "expected_back": "2026-11-22T09:21:00",
+      "expected_back": "2026-11-22T10:32:00",
       "ongoing": true
     },
     {
@@ -1777,15 +1807,15 @@
       "category": "trafik",
       "type": "faerdsel",
       "title": "Tabt gods - Rute 23 Holbækmotorvejen fra Tølløse mod Roskilde mellem <15> Gevninge og Kornerup",
-      "text": "Rute 23 Holbækmotorvejen fra Tølløse mod Roskilde mellem <15> Gevninge og Kornerup\n Tabt gods, Spor blokeret, Pas på\n Vejhjælp er på vej",
+      "text": "Rute 23 Holbækmotorvejen fra Tølløse mod Roskilde mellem <15> Gevninge og Kornerup\n Tabt gods, Spor spærret\n Højre spor, \nVejhjælp er på stedet",
       "source": "vejdirektoratet",
       "source_label": "Vejdirektoratet",
       "source_url": "https://trafikkort.vejdirektoratet.dk/",
       "url": "https://trafikkort.vejdirektoratet.dk/",
       "published_at": "2026-11-21T08:30:00Z",
-      "updated_at": "2026-11-21T08:30:24Z",
-      "lat": 55.646667,
-      "lon": 11.932587,
+      "updated_at": "2026-11-21T09:19:09Z",
+      "lat": 55.643387,
+      "lon": 11.940041,
       "location_text": "Tabt gods - Rute 23 Holbækmotorvejen fra Tølløse mod Roskilde mellem <15> Gevninge og Kornerup",
       "geometry": "point",
       "radius_m": null,
@@ -1825,34 +1855,6 @@
       "approximate": false,
       "routine": false,
       "nationwide": false
-    },
-    {
-      "id": "vd-9ea65a92eb27e397",
-      "category": "trafik",
-      "type": "faerdsel",
-      "title": "Kør forsigtigt - E20 Køge Bugt Motorvejen fra Avedøre mod Køge mellem <31b> Køge N og <32> Køge",
-      "text": "E20 Køge Bugt Motorvejen fra Avedøre mod Køge mellem <31b> Køge N og <32> Køge\n Havareret køretøj, Pas på\n Vejhjælp er på vej",
-      "source": "vejdirektoratet",
-      "source_label": "Vejdirektoratet",
-      "source_url": "https://trafikkort.vejdirektoratet.dk/",
-      "url": "https://trafikkort.vejdirektoratet.dk/",
-      "published_at": "2026-11-21T08:03:00Z",
-      "updated_at": "2026-11-21T08:03:51Z",
-      "lat": 55.49793,
-      "lon": 12.172923,
-      "location_text": "Kør forsigtigt - E20 Køge Bugt Motorvejen fra Avedøre mod Køge mellem <31b> Køge N og <32> Køge",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "midtvestsjaelland",
-      "district_name": "Midt- og Vestsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "subtype": "kø",
-      "reopening": null,
-      "reopening_at": null,
-      "ongoing": true,
-      "layer": "current-other-traffic-announcements.point"
     },
     {
       "id": "pu-15303268",
