@@ -3367,5 +3367,20 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Skagen"
+  },
+  "9a7e549b7c25b57f527016a18c417a912ba80e52": {
+    "lat": 55.438495,
+    "lon": 10.409899,
+    "label": "Stige, Odense, Odense Kommune, Region Syddanmark, 5000, Danmark",
+    "source": "nominatim",
+    "query": "Stige"
+  },
+  "79651674e8fd6adada47b17ecec2c5dc6dfe56ab": null,
+  "763067c69b8997e6508069ed4670894ac5c6d617": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation St. Asnæs"
   }
 }
