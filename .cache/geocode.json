@@ -3432,5 +3432,19 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Aalestrup"
+  },
+  "65bb6bc2e24bebd1fbffd50c0525393e29718ef3": {
+    "lat": 56.155315,
+    "lon": 10.165488,
+    "label": "Åbyhøj, Aarhus, Aarhus Kommune, Region Midtjylland, 8230, Danmark",
+    "source": "nominatim",
+    "query": "Åbyhøj"
+  },
+  "dcae5c213382f5b1d395ff6f7d8c6e4ff0269869": {
+    "lat": 55.374455,
+    "lon": 11.388269,
+    "label": "Slagelse Landevej 2, Rosted, 4200 Slagelse",
+    "source": "adressevaelger",
+    "query": "Slagelse BV brandstation"
   }
 }
