@@ -3352,5 +3352,20 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Falck Brørup"
+  },
+  "8a509d51f207784806a80c3b5fea95797dad79c8": {
+    "lat": 55.318991,
+    "lon": 11.55606,
+    "label": "Fuglebjerglundvej 1, 4250 Fuglebjerg",
+    "source": "adressevaelger",
+    "query": "Fuglebjerg brandstation"
+  },
+  "6d3f4c3c67d86e70250b795ab7abe3f2693f26f5": null,
+  "011161893090d1f869ddb1a85d5e3c52bb0e51e9": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Skagen"
   }
 }
