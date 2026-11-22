@@ -3286,5 +3286,13 @@
     "label": "Korsør Brandstation, Reskavej, Blåbro, Korsør, Slagelse Kommune, Region Sjælland, 4220, Danmark",
     "source": "nominatim",
     "query": "Korsør brandstation"
+  },
+  "4e85948177bfa56e8f051c14927f4d9384eff6ec": null,
+  "821fe18b516c57933801b333311824da0b0449db": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Aars"
   }
 }
