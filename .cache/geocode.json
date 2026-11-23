@@ -3483,5 +3483,34 @@
     "source": "adressevaelger",
     "query": "Kerteminde brandstation"
   },
-  "8b31b8fdf3a04feb07e2d5a7184573a6fdc17de3": null
+  "8b31b8fdf3a04feb07e2d5a7184573a6fdc17de3": null,
+  "43e1600e2bc1e76cc44e2f38c38ef5e5d85b90c6": {
+    "lat": 54.758226,
+    "lon": 11.873295,
+    "label": "Prinsholmvej 1, 4800 Nykøbing F",
+    "source": "adressevaelger",
+    "query": "Prinsholmsvej Nykøbing F"
+  },
+  "87f621d6ac3fc72fed7110c6bcdc7748bcaf7926": null,
+  "727b066f49ca4a601aeac35a4ee9549455ab3361": {
+    "lat": 55.870053,
+    "lon": 9.850719,
+    "label": "FGU Sydøstjylland, Ane Staunings Vej, Hammersholm, Horsens, Horsens Kommune, Region Midtjylland, 8700, Danmark",
+    "source": "nominatim",
+    "query": "Sydøstjylland"
+  },
+  "64e70b915b1c6f2f3a83a2dd409a8161459f3839": {
+    "lat": 55.724699,
+    "lon": 12.44115,
+    "label": "Herlev Bygade 1, 2730 Herlev",
+    "source": "adressevaelger",
+    "query": "Herlev brandstation"
+  },
+  "29673f4939e454981bb74dc402aaf46fbd7cdcd4": {
+    "lat": 54.947869,
+    "lon": 8.869344,
+    "label": "Tønder Friv. Brandværn, Nordre Landevej, Tønder, Tønder Kommune, Region Syddanmark, 6270, Danmark",
+    "source": "nominatim",
+    "query": "Tønder brandstation"
+  }
 }
