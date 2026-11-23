@@ -3446,5 +3446,12 @@
     "label": "Slagelse Landevej 2, Rosted, 4200 Slagelse",
     "source": "adressevaelger",
     "query": "Slagelse BV brandstation"
+  },
+  "a02fcd01e270d8aaaeb29444f1b7291093eaca8a": {
+    "lat": 55.962911,
+    "lon": 11.854034,
+    "label": "Hundested Brandstation, Gyvelvej, Torpmagle Overdrev, Hundested, Halsnæs Kommune, Region Hovedstaden, 3390, Danmark",
+    "source": "nominatim",
+    "query": "Hundested brandstation"
   }
 }
