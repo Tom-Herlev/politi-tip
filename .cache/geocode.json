@@ -3621,5 +3621,14 @@
     "label": "Frederiksværksgade 1A, 3400 Hillerød",
     "source": "adressevaelger",
     "query": "Frederiksværk brandstation"
+  },
+  "5c10ed147fbe8151c69bb737e6dc99a80479f789": null,
+  "31a855efd47734254209903a8124928df74f6347": null,
+  "ed03af6823a66e97c0b8a84e73ef86cd05141bf7": {
+    "lat": 55.605781,
+    "lon": 12.346077,
+    "label": "Ishøj Søvej 1A, 2635 Ishøj",
+    "source": "adressevaelger",
+    "query": "Ishøj Søvej"
   }
 }
