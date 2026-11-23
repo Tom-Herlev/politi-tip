@@ -3630,5 +3630,12 @@
     "label": "Ishøj Søvej 1A, 2635 Ishøj",
     "source": "adressevaelger",
     "query": "Ishøj Søvej"
+  },
+  "69e9c30f8f3fc29fd3bf7074e46e838106b12900": {
+    "lat": 56.441271,
+    "lon": 10.156617,
+    "label": "Falkevej 3, Assentoft, 8960 Randers SØ",
+    "source": "adressevaelger",
+    "query": "Falkevej Randers"
   }
 }
