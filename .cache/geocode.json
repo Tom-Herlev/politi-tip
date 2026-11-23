@@ -3460,5 +3460,27 @@
     "label": "Kongelundsvej 27, 2300 København S",
     "source": "adressevaelger",
     "query": "Kongelundsvej"
+  },
+  "766c7d0f56003f6d9999fec92338ac061ebb2bee": null,
+  "657a80a86ab9512b0612b622c98a9c4a710c8cf9": {
+    "lat": 56.269858,
+    "lon": 10.051727,
+    "label": "Motorvejen, Hinnerup, Favrskov Kommune, Region Midtjylland, 8382, Danmark",
+    "source": "nominatim",
+    "query": "motorvejen"
+  },
+  "66bb87ef6cb2d86b78c586253a26eea66d2a5a32": {
+    "lat": 55.099855,
+    "lon": 10.708665,
+    "label": "Nyborgvej 520, 5882 Vejstrup",
+    "source": "adressevaelger",
+    "query": "Nyborg brandstation"
+  },
+  "5d7d4c0db45b1d4b29eecc6ea3ff399851e6a7d5": {
+    "lat": 55.708146,
+    "lon": 12.578429,
+    "label": "Kertemindegade 1, 2100 København Ø",
+    "source": "adressevaelger",
+    "query": "Kerteminde brandstation"
   }
 }

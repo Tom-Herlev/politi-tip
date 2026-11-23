@@ -3,14 +3,24 @@
   "items": [
     {
       "id": "15304918",
-      "title": "Undersøgelse af mistænkeligt forhold",
+      "title": "Trafikken genåbnet på Kongelundsvej",
       "body_html": "<p>Der er pt. opsat politiafspærring på Kongelundsvej på strækningen Studsbøl Alle til Pilegård Alle i forbindelse med undersøgelse af et mistænkeligt forhold anmeldt kl. 0317. </p>\n<p>Vi beder trafikanter finde andre veje og generelt respektere afspærringen.</p>\n<p>Vi har ikke yderligere oplysninger for nuværende.</p>\n<p>/Vagtchef Anders Frederiksen </p>",
       "body": "Der er pt. opsat politiafspærring på Kongelundsvej på strækningen Studsbøl Alle til Pilegård Alle i forbindelse med undersøgelse af et mistænkeligt forhold anmeldt kl. 0317. \n\n Vi beder trafikanter finde andre veje og generelt respektere afspærringen.\n\n Vi har ikke yderligere oplysninger for nuværende.\n\n /Vagtchef Anders Frederiksen",
       "published_at": "2026-11-23T05:36:03.455Z",
       "publisher_id": "90685",
       "publisher_name": "Københavns Politi",
       "url": "https://via.ritzau.dk/pressemeddelelse/15304918?lang=da"
+    },
+    {
+      "id": "15304953",
+      "title": "Trafikken genåbnet på Kongelundsvej",
+      "body_html": "<p>Vi har indsnævret afspærringen på Kongelundsvej til at omfatte en enkelt ejendom. Kongelundsvej er dermed genåbnet for trafik. </p>\n<p>Vi har fortsat ingen yderligere oplysninger for nuværende.</p>\n<p>/Vagtchef Anders Frederiksen</p>",
+      "body": "Vi har indsnævret afspærringen på Kongelundsvej til at omfatte en enkelt ejendom. Kongelundsvej er dermed genåbnet for trafik. \n\n Vi har fortsat ingen yderligere oplysninger for nuværende.\n\n /Vagtchef Anders Frederiksen",
+      "published_at": "2026-11-23T05:58:18.665Z",
+      "publisher_id": "90685",
+      "publisher_name": "Københavns Politi",
+      "url": "https://via.ritzau.dk/pressemeddelelse/15304953?lang=da"
     }
   ],
-  "fetched_at": "2026-11-23T05:54:39.493177+00:00"
+  "fetched_at": "2026-11-23T07:26:37.221909+00:00"
 }
