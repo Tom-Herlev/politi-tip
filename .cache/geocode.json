@@ -3600,5 +3600,26 @@
     "label": "Randersvej, Christiansbjerg, Risvang, Skolevangen, Aarhus, Aarhus Kommune, Region Midtjylland, 8200, Danmark",
     "source": "nominatim",
     "query": "Randersvej"
+  },
+  "32149e441292de4a3743b69afb6673c406053f66": {
+    "lat": 55.554102,
+    "lon": 12.118839,
+    "label": "Salbjergvej 1, 4622 Havdrup",
+    "source": "adressevaelger",
+    "query": "Salbjergvej Havdrup"
+  },
+  "7fe09f48cec4e27315d1d776e95fb3c670937375": {
+    "lat": 55.253556,
+    "lon": 11.289095,
+    "label": "Skælskør Falckstation, Kajgade, Spegerborg Huse, Haveforeningen Fælles Flid, Magleby Ravnemark, Skælskør, Slagelse Kommune, Region Sjælland, 4230, Danmark",
+    "source": "nominatim",
+    "query": "Skælskør brandstation"
+  },
+  "eb40c8400426dbb5fb6e3198dccb9ca04576d0a3": {
+    "lat": 55.934009,
+    "lon": 12.296614,
+    "label": "Frederiksværksgade 1A, 3400 Hillerød",
+    "source": "adressevaelger",
+    "query": "Frederiksværk brandstation"
   }
 }
