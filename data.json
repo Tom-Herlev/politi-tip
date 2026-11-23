@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23T02:26:50Z",
-  "generated_at_copenhagen": "2026-11-23T03:26:50+01:00",
+  "generated_at": "2026-11-23T03:32:05Z",
+  "generated_at_copenhagen": "2026-11-23T04:32:05+01:00",
   "newest_rss": "2026-11-23T00:21:48Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -157,7 +157,7 @@
       "short": "Østjylland",
       "handle": "OjylPoliti",
       "default_on": false,
-      "count": 18
+      "count": 17
     },
     {
       "id": "nordjylland",
@@ -165,7 +165,7 @@
       "short": "Nordjylland",
       "handle": "NjylPoliti",
       "default_on": false,
-      "count": 17
+      "count": 18
     },
     {
       "id": "bornholm",
@@ -182,19 +182,19 @@
     "with_coordinates": 194,
     "without_coordinates": 34,
     "by_type": {
+      "faerdsel": 78,
       "brand": 42,
-      "faerdsel": 77,
       "redning": 4,
-      "andet": 38,
+      "andet": 37,
       "politi": 67
     },
     "by_category": {
+      "trafik": 37,
       "brand": 20,
-      "trafik": 36,
-      "strom": 2,
-      "politi": 170
+      "politi": 170,
+      "strom": 1
     },
-    "elapsed_seconds": 9.7
+    "elapsed_seconds": 12.5
   },
   "sources_status": {
     "politiupdate": {
@@ -211,13 +211,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 36,
+      "count": 37,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 2,
+      "count": 1,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -260,6 +260,34 @@
     }
   ],
   "incidents": [
+    {
+      "id": "vd-cbff469ce443225c",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Dødt dyr på vejen - E45 fra Sæby mod Nørresundby mellem <17> Lyngdrup og <18> Vodskov N",
+      "text": "E45 fra Sæby mod Nørresundby mellem <17> Lyngdrup og <18> Vodskov N\n Dødt dyr på vejen, Pas på, Spor spærret\n Venstre spor spærret, \nVejhjælp er på stedet",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-23T02:35:00Z",
+      "updated_at": "2026-11-23T03:25:48Z",
+      "lat": 57.120453,
+      "lon": 10.068308,
+      "location_text": "Dødt dyr på vejen - E45 fra Sæby mod Nørresundby mellem <17> Lyngdrup og <18> Vodskov N",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "nordjylland",
+      "district_name": "Nordjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "spærring",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
     {
       "id": "odin-376774f1f039524b",
       "category": "brand",
@@ -427,36 +455,6 @@
       "beredskab": "Roskilde Brandvæsen",
       "first_message": "FUH-Fastklemte",
       "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "gpd-194532",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Skødstrup",
-      "text": "21 kunder berørt. Elselskab: KONSTANT Net A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse i Skødstrup: Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgårdsvej, Tronkærgård",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-23T01:10:00Z",
-      "updated_at": "2026-11-23T00:43:17Z",
-      "lat": 56.264823,
-      "lon": 10.294032,
-      "location_text": "Skødstrup",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "ostjylland",
-      "district_name": "Østjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 21,
-      "utility": "KONSTANT Net A/S",
-      "utility_phone": "(+45) 70 11 45 09",
-      "utility_web": "www.konstant.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-23T03:30:00",
-      "ongoing": true
     },
     {
       "id": "vd-be75a9b289d17625",
