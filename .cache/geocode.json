@@ -3592,5 +3592,13 @@
     "label": "Vamdrup Brand og Redning, Nørregade, Bastrup, Vamdrup, Kolding Kommune, Region Syddanmark, 6580, Danmark",
     "source": "nominatim",
     "query": "Vamdrup brandstation"
+  },
+  "98228a87e653032db174323f6835bdc426013e56": null,
+  "047fc264f18e68f797569563b46559898f1b41fa": {
+    "lat": 56.17526,
+    "lon": 10.202403,
+    "label": "Randersvej, Christiansbjerg, Risvang, Skolevangen, Aarhus, Aarhus Kommune, Region Midtjylland, 8200, Danmark",
+    "source": "nominatim",
+    "query": "Randersvej"
   }
 }
