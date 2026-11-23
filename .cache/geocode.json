@@ -3571,5 +3571,26 @@
     "label": "Jægerspris Brandstation, Kastanievej, Neder Dråby, Jægerspris, Frederikssund Kommune, Region Hovedstaden, 3630, Danmark",
     "source": "nominatim",
     "query": "Jægerspris brandstation"
+  },
+  "33218e41bd3dd6b33944aaaaae6fd920fc5c3c7b": {
+    "lat": 55.545769,
+    "lon": 12.116364,
+    "label": "Sallevvej 1, 4622 Havdrup",
+    "source": "adressevaelger",
+    "query": "Sallevvej ind mod Salbjergvej Havdrup"
+  },
+  "fce6afe417ffb6e16f442b50c5915efff31180a8": {
+    "lat": 57.009972,
+    "lon": 9.911858,
+    "label": "Hobrovej 341, 9210 Aalborg SØ",
+    "source": "adressevaelger",
+    "query": "Hobro"
+  },
+  "1c8cb6b1e8fe0b234fd4e0feb1fa6db28f1e2855": {
+    "lat": 55.426837,
+    "lon": 9.283297,
+    "label": "Vamdrup Brand og Redning, Nørregade, Bastrup, Vamdrup, Kolding Kommune, Region Syddanmark, 6580, Danmark",
+    "source": "nominatim",
+    "query": "Vamdrup brandstation"
   }
 }
