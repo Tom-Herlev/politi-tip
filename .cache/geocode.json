@@ -3519,5 +3519,12 @@
     "label": "Lolland, Region Sjælland, Danmark",
     "source": "nominatim",
     "query": "Lolland"
+  },
+  "3b5f3a4777c65f72719badcae934186d0af1968f": {
+    "lat": 55.696631,
+    "lon": 12.586441,
+    "label": "Nordborggade 1, 2100 København Ø",
+    "source": "adressevaelger",
+    "query": "Nordborg brandstation"
   }
 }
