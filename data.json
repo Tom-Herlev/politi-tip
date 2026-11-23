@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23T22:17:56Z",
-  "generated_at_copenhagen": "2026-11-23T23:17:56+01:00",
+  "generated_at": "2026-11-23T23:16:17Z",
+  "generated_at_copenhagen": "2026-11-24T00:16:17+01:00",
   "newest_rss": "2026-11-23T22:02:20Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -194,14 +194,14 @@
       "strom": 3,
       "trafik": 25
     },
-    "elapsed_seconds": 20.2
+    "elapsed_seconds": 8.0
   },
   "sources_status": {
     "politiupdate": {
       "ok": true,
       "count": 174,
       "endpoint": "https://via.ritzau.dk/rss/short-messages/latest?publisherId={id}",
-      "reused": false
+      "reused": true
     },
     "odin": {
       "ok": true,
