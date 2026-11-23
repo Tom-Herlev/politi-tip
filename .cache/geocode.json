@@ -3526,5 +3526,28 @@
     "label": "Nordborggade 1, 2100 København Ø",
     "source": "adressevaelger",
     "query": "Nordborg brandstation"
+  },
+  "ad34091986d0ba7876c03c76bc3b39e3e76c805c": null,
+  "965e74c0a3214fbadb3d76454a879baf85b4e5c9": null,
+  "01489c438ebdf339db8ab7826c3acd8a83e8a18d": {
+    "lat": 55.483082,
+    "lon": 8.772062,
+    "label": "Brammingborgvej 15, Aike, 6690 Gørding",
+    "source": "adressevaelger",
+    "query": "Bramming brandstation"
+  },
+  "a1cde55dc4a6f651090f79f995d60d5642106c6c": {
+    "lat": 55.814507,
+    "lon": 12.37881,
+    "label": "Farum Bytorv 1, 3520 Farum",
+    "source": "adressevaelger",
+    "query": "Farum brandstation"
+  },
+  "387d9e3e4618a55a5bcc9659eb05bf088d2c93fc": {
+    "lat": 55.328808,
+    "lon": 11.942063,
+    "label": "Midt- og Sydsjællands Brand & Redning - St. Haslev, Lysholm Alle, Hestehave, Haslev, Faxe Kommune, Region Sjælland, 4690, Danmark",
+    "source": "nominatim",
+    "query": "Haslev brandstation"
   }
 }
