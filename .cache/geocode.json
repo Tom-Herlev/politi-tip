@@ -3512,5 +3512,12 @@
     "label": "Tønder Friv. Brandværn, Nordre Landevej, Tønder, Tønder Kommune, Region Syddanmark, 6270, Danmark",
     "source": "nominatim",
     "query": "Tønder brandstation"
+  },
+  "55df67880f16e99221cab7b9974eb186dd30668d": {
+    "lat": 54.777254,
+    "lon": 11.415689,
+    "label": "Lolland, Region Sjælland, Danmark",
+    "source": "nominatim",
+    "query": "Lolland"
   }
 }
