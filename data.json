@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T23:16:54Z",
-  "generated_at_copenhagen": "2026-11-23T00:16:54+01:00",
+  "generated_at": "2026-11-23T00:00:52Z",
+  "generated_at_copenhagen": "2026-11-23T01:00:52+01:00",
   "newest_rss": "2026-11-22T22:23:38Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -101,7 +101,7 @@
       "short": "Nordsjælland",
       "handle": "NSJPoliti",
       "default_on": true,
-      "count": 19
+      "count": 18
     },
     {
       "id": "midtvestsjaelland",
@@ -125,7 +125,7 @@
       "short": "Fyn",
       "handle": "FynsPoliti",
       "default_on": false,
-      "count": 15
+      "count": 16
     },
     {
       "id": "sydsonderjylland",
@@ -182,19 +182,19 @@
     "with_coordinates": 195,
     "without_coordinates": 34,
     "by_type": {
+      "faerdsel": 73,
       "politi": 69,
       "brand": 42,
-      "faerdsel": 73,
       "andet": 42,
       "redning": 3
     },
     "by_category": {
+      "trafik": 32,
       "politi": 171,
       "brand": 20,
-      "trafik": 32,
       "strom": 6
     },
-    "elapsed_seconds": 10.5
+    "elapsed_seconds": 17.9
   },
   "sources_status": {
     "politiupdate": {
@@ -260,6 +260,34 @@
     }
   ],
   "incidents": [
+    {
+      "id": "vd-98e5570a0724dbbc",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Advarsel - E20 fra Middelfart mod Odense mellem Kildebjerg og <53> Odense V",
+      "text": "E20 fra Middelfart mod Odense mellem Kildebjerg og <53> Odense V\n Havareret køretøj, Spor spærret\n Vejhjælp er på stedet",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-22T23:17:00Z",
+      "updated_at": "2026-11-22T23:17:06Z",
+      "lat": 55.38836,
+      "lon": 10.209416,
+      "location_text": "Advarsel - E20 fra Middelfart mod Odense mellem Kildebjerg og <53> Odense V",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "fyn",
+      "district_name": "Fyns Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "kø",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
     {
       "id": "pu-15304786",
       "source": "politiupdate",
@@ -1967,34 +1995,6 @@
       "official": true,
       "nationwide": false,
       "subtype": "tabt gods",
-      "reopening": null,
-      "reopening_at": null,
-      "ongoing": true,
-      "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "vd-6758b0438333113b",
-      "category": "trafik",
-      "type": "faerdsel",
-      "title": "Uheld - E47 fra Helsingør mod Hørsholm mellem <4> Kvistgård og <5> Humlebæk",
-      "text": "E47 fra Helsingør mod Hørsholm mellem <4> Kvistgård og <5> Humlebæk\n Uheld, Uheldsstedet er ikke sikret",
-      "source": "vejdirektoratet",
-      "source_label": "Vejdirektoratet",
-      "source_url": "https://trafikkort.vejdirektoratet.dk/",
-      "url": "https://trafikkort.vejdirektoratet.dk/",
-      "published_at": "2026-11-21T23:06:00Z",
-      "updated_at": "2026-11-21T23:06:02Z",
-      "lat": 55.980686,
-      "lon": 12.509758,
-      "location_text": "Uheld - E47 fra Helsingør mod Hørsholm mellem <4> Kvistgård og <5> Humlebæk",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "nordsjaelland",
-      "district_name": "Nordsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "subtype": "uheld",
       "reopening": null,
       "reopening_at": null,
       "ongoing": true,
