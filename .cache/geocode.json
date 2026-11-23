@@ -3453,5 +3453,12 @@
     "label": "Hundested Brandstation, Gyvelvej, Torpmagle Overdrev, Hundested, Halsnæs Kommune, Region Hovedstaden, 3390, Danmark",
     "source": "nominatim",
     "query": "Hundested brandstation"
+  },
+  "a6276ab0e55c91339970052458840a4da08445af": {
+    "lat": 55.641841,
+    "lon": 12.589524,
+    "label": "Kongelundsvej 27, 2300 København S",
+    "source": "adressevaelger",
+    "query": "Kongelundsvej"
   }
 }
