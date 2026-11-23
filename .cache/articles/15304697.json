@@ -3,14 +3,24 @@
   "items": [
     {
       "id": "15304697",
-      "title": "Mistænkeligt forhold i Nørresundby",
+      "title": "Opdatering: Eksplosion i bil efterforskes",
       "body_html": "<p>Nordjyllands Politi er pt til stede på Gammel Kongevej i Nørresundby hvor vi undersøger et mistænkeligt forhold. Anmeldelsen modtog vi kl. 1839. Der er ikke tilskadekomne pt. Vi har ikke yderligere oplysninger. Vagtchefen Nordjyllands Politi</p>",
       "body": "Nordjyllands Politi er pt til stede på Gammel Kongevej i Nørresundby hvor vi undersøger et mistænkeligt forhold. Anmeldelsen modtog vi kl. 1839. Der er ikke tilskadekomne pt. Vi har ikke yderligere oplysninger. Vagtchefen Nordjyllands Politi",
       "published_at": "2026-11-22T18:28:22.873Z",
       "publisher_id": "13562880",
       "publisher_name": "Nordjyllands Politi",
       "url": "https://via.ritzau.dk/pressemeddelelse/15304697?lang=da"
+    },
+    {
+      "id": "15305241",
+      "title": "Opdatering: Eksplosion i bil efterforskes",
+      "body_html": "<p>Nordjyllands Politi var søndag aften til stede på Gammel Kongevej i Nørresundby, hvor der var sket en eksplosion i en bil. Ingen personer kom til skade i forbindelse med hændelsen. <br /><br />De nærmere omstændigheder efterforskes fortsat. Politiet vurderer på nuværende tidspunkt ikke, at episoden har forbindelse til bandemiljøet eller en konflikt i det kriminelle miljø. <br /><br />Politiet har ikke oplysninger, der giver anledning til bekymring for borgerne i området.</p>",
+      "body": "Nordjyllands Politi var søndag aften til stede på Gammel Kongevej i Nørresundby, hvor der var sket en eksplosion i en bil. Ingen personer kom til skade i forbindelse med hændelsen. \n\nDe nærmere omstændigheder efterforskes fortsat. Politiet vurderer på nuværende tidspunkt ikke, at episoden har forbindelse til bandemiljøet eller en konflikt i det kriminelle miljø. \n\nPolitiet har ikke oplysninger, der giver anledning til bekymring for borgerne i området.",
+      "published_at": "2026-11-23T08:20:12.375Z",
+      "publisher_id": "13562880",
+      "publisher_name": "Nordjyllands Politi",
+      "url": "https://via.ritzau.dk/pressemeddelelse/15305241?lang=da"
     }
   ],
-  "fetched_at": "2026-11-22T19:15:14.208084+00:00"
+  "fetched_at": "2026-11-23T08:57:34.742863+00:00"
 }

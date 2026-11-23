@@ -3,7 +3,7 @@
   "items": [
     {
       "id": "15304918",
-      "title": "Trafikken genåbnet på Kongelundsvej",
+      "title": "Afsluttet indsats på Kongelundsvej",
       "body_html": "<p>Der er pt. opsat politiafspærring på Kongelundsvej på strækningen Studsbøl Alle til Pilegård Alle i forbindelse med undersøgelse af et mistænkeligt forhold anmeldt kl. 0317. </p>\n<p>Vi beder trafikanter finde andre veje og generelt respektere afspærringen.</p>\n<p>Vi har ikke yderligere oplysninger for nuværende.</p>\n<p>/Vagtchef Anders Frederiksen </p>",
       "body": "Der er pt. opsat politiafspærring på Kongelundsvej på strækningen Studsbøl Alle til Pilegård Alle i forbindelse med undersøgelse af et mistænkeligt forhold anmeldt kl. 0317. \n\n Vi beder trafikanter finde andre veje og generelt respektere afspærringen.\n\n Vi har ikke yderligere oplysninger for nuværende.\n\n /Vagtchef Anders Frederiksen",
       "published_at": "2026-11-23T05:36:03.455Z",
@@ -13,14 +13,24 @@
     },
     {
       "id": "15304953",
-      "title": "Trafikken genåbnet på Kongelundsvej",
+      "title": "Afsluttet indsats på Kongelundsvej",
       "body_html": "<p>Vi har indsnævret afspærringen på Kongelundsvej til at omfatte en enkelt ejendom. Kongelundsvej er dermed genåbnet for trafik. </p>\n<p>Vi har fortsat ingen yderligere oplysninger for nuværende.</p>\n<p>/Vagtchef Anders Frederiksen</p>",
       "body": "Vi har indsnævret afspærringen på Kongelundsvej til at omfatte en enkelt ejendom. Kongelundsvej er dermed genåbnet for trafik. \n\n Vi har fortsat ingen yderligere oplysninger for nuværende.\n\n /Vagtchef Anders Frederiksen",
       "published_at": "2026-11-23T05:58:18.665Z",
       "publisher_id": "90685",
       "publisher_name": "Københavns Politi",
       "url": "https://via.ritzau.dk/pressemeddelelse/15304953?lang=da"
+    },
+    {
+      "id": "15305282",
+      "title": "Afsluttet indsats på Kongelundsvej",
+      "body_html": "<p>Vi er færdige på stedet, og al afspærring er nu fjernet.</p>\n<p>Baggrunden for vores tilstedeværelse var en anmeldelse om vold. Omstændigheder på stedet førte til, at Forsvarets ammunitionsryddere (EOD) blev tilkaldt for at undersøge ejendommen.</p>\n<p>Der er ved undersøgelsen ikke fundet sprængstoffer eller lignende, og der har på intet tidspunkt været fare for beboer eller andre i området. </p>\n<p>En person er anholdt til voldsforholdet.</p>\n<p>VC/Anders Frederiksen</p>",
+      "body": "Vi er færdige på stedet, og al afspærring er nu fjernet.\n\n Baggrunden for vores tilstedeværelse var en anmeldelse om vold. Omstændigheder på stedet førte til, at Forsvarets ammunitionsryddere (EOD) blev tilkaldt for at undersøge ejendommen.\n\n Der er ved undersøgelsen ikke fundet sprængstoffer eller lignende, og der har på intet tidspunkt været fare for beboer eller andre i området. \n\n En person er anholdt til voldsforholdet.\n\n VC/Anders Frederiksen",
+      "published_at": "2026-11-23T08:46:29.841Z",
+      "publisher_id": "90685",
+      "publisher_name": "Københavns Politi",
+      "url": "https://via.ritzau.dk/pressemeddelelse/15305282?lang=da"
     }
   ],
-  "fetched_at": "2026-11-23T07:26:37.221909+00:00"
+  "fetched_at": "2026-11-23T08:57:34.978014+00:00"
 }
