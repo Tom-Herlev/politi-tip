@@ -3549,5 +3549,27 @@
     "label": "Midt- og Sydsjællands Brand & Redning - St. Haslev, Lysholm Alle, Hestehave, Haslev, Faxe Kommune, Region Sjælland, 4690, Danmark",
     "source": "nominatim",
     "query": "Haslev brandstation"
+  },
+  "a33c6f5707a16f957efc6d561b4c38300f8a013a": {
+    "lat": 55.099593,
+    "lon": 14.715032,
+    "label": "Rønne Brandstation, Fabriksvej, Rønne, Bornholms Regionskommune, Region Hovedstaden, 3700, Danmark",
+    "source": "nominatim",
+    "query": "Rønne brandstation"
+  },
+  "a77a0dca8a9900e6bc5eac31e8e51afb4a7af2a8": {
+    "lat": 55.84987,
+    "lon": 11.987959,
+    "label": "Jægerspris Brandstation, Kastanievej, Neder Dråby, Jægerspris, Frederikssund Kommune, Region Hovedstaden, 3630, Danmark",
+    "source": "nominatim",
+    "query": "Jægerspris brandstation"
+  },
+  "761d69dbe823da9d5b5eec4535592b4e50a906c2": null,
+  "9aa9cf4bbc2949d4e08b7946c2eda9d4a08b5dc9": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation St. Solrød"
   }
 }
