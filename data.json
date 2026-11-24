@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T01:30:19Z",
-  "generated_at_copenhagen": "2026-11-24T02:30:19+01:00",
+  "generated_at": "2026-11-24T02:36:50Z",
+  "generated_at_copenhagen": "2026-11-24T03:36:50+01:00",
   "newest_rss": "2026-11-23T23:19:06Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -157,7 +157,7 @@
       "short": "Østjylland",
       "handle": "OjylPoliti",
       "default_on": false,
-      "count": 16
+      "count": 15
     },
     {
       "id": "nordjylland",
@@ -178,23 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 215,
-    "with_coordinates": 176,
+    "incidents": 214,
+    "with_coordinates": 175,
     "without_coordinates": 39,
     "by_type": {
       "brand": 45,
       "politi": 64,
       "faerdsel": 59,
-      "andet": 44,
+      "andet": 43,
       "redning": 3
     },
     "by_category": {
       "brand": 20,
       "politi": 174,
-      "strom": 4,
+      "strom": 3,
       "trafik": 17
     },
-    "elapsed_seconds": 13.9
+    "elapsed_seconds": 12.1
   },
   "sources_status": {
     "politiupdate": {
@@ -217,7 +217,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 4,
+      "count": 3,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -1082,36 +1082,6 @@
       "utility_web": "www.cerius.dk",
       "outage_type": "Uvarslet",
       "expected_back": "2026-11-23T15:12:26.25",
-      "ongoing": true
-    },
-    {
-      "id": "gpd-194585",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Grenaa",
-      "text": "4 kunder berørt. Elselskab: KONSTANT Net A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse i Grenaa Vi arbejder på at lokalisere og udbedre fejlen og forventer normal forsyning kl 14:00",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-23T12:30:00Z",
-      "updated_at": "2026-11-23T11:06:59Z",
-      "lat": 56.509588,
-      "lon": 10.782085,
-      "location_text": "Grenaa",
-      "geometry": "circle",
-      "radius_m": 836.0,
-      "approximate": true,
-      "district": "ostjylland",
-      "district_name": "Østjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 4,
-      "utility": "KONSTANT Net A/S",
-      "utility_phone": "(+45) 70 11 45 09",
-      "utility_web": "www.konstant.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-23T14:00:00",
       "ongoing": true
     },
     {
