@@ -3782,5 +3782,12 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Sdr. Felding"
+  },
+  "23e884100276aeaf2f24bc0532e98cd8786eae93": {
+    "lat": 54.831481,
+    "lon": 11.135519,
+    "label": "Bredgade 1, 4900 Nakskov",
+    "source": "adressevaelger",
+    "query": "Bredgade Nakskov"
   }
 }
