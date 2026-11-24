@@ -3637,5 +3637,12 @@
     "label": "Randers, Randers Kommune, Region Midtjylland, 8900, Danmark",
     "source": "nominatim",
     "query": "Randers"
+  },
+  "82605073467d522866d043fe5ce28aec5835be99": {
+    "lat": 55.735368,
+    "lon": 9.109233,
+    "label": "Billund Brandstation, Granvej, Billund, Billund Kommune, Region Syddanmark, 7190, Danmark",
+    "source": "nominatim",
+    "query": "Billund brandstation"
   }
 }
