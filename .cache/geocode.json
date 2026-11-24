@@ -3812,5 +3812,12 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Fuglebjerg/Herlufmag"
+  },
+  "98a14fcd7720460aee9bc20da430d8261a508c04": {
+    "lat": 55.865751,
+    "lon": 12.324319,
+    "label": "Allerød Brandstation, Kollerødvej, Lynge Overdrev, Lillerød, Allerød Kommune, Region Hovedstaden, 3450, Danmark",
+    "source": "nominatim",
+    "query": "Allerød brandstation"
   }
 }
