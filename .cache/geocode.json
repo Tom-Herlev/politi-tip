@@ -3760,5 +3760,12 @@
     "label": "Hobrovej 341, 9210 Aalborg SØ",
     "source": "adressevaelger",
     "query": "Hobro brandstation"
+  },
+  "8ada48859ebcf740d1ce17188cd19d7837540a0e": {
+    "lat": 54.831248,
+    "lon": 11.130689,
+    "label": "Nakskov Havn 2, 4900 Nakskov",
+    "source": "adressevaelger",
+    "query": "Nakskov brandstation"
   }
 }
