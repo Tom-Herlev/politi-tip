@@ -3667,5 +3667,41 @@
     "label": "Padborg St 2, 6330 Padborg",
     "source": "adressevaelger",
     "query": "Padborg brandstation"
+  },
+  "6d5c081c0a455f789ea45a0bc4a8aba92315e0d3": {
+    "lat": 55.424607,
+    "lon": 10.008503,
+    "label": "Fynske Motorvej 554, 5560 Aarup",
+    "source": "adressevaelger",
+    "query": "Fynske Motorvej"
+  },
+  "c75db527d7fce755dc1a217b3a3acf9f00596604": {
+    "lat": 56.446913,
+    "lon": 9.405935,
+    "label": "Viborg, Viborg Kommune, Region Midtjylland, 8800, Danmark",
+    "source": "nominatim",
+    "query": "Viborg"
+  },
+  "83f9665a41930596f7cad62a6eb78d533d0eab08": {
+    "lat": 56.079501,
+    "lon": 10.029622,
+    "label": "Station Hørning, Sønderskovvej, Skovsgårde, Hørning, Skanderborg Kommune, Region Midtjylland, 8362, Danmark",
+    "source": "nominatim",
+    "query": "Hørning brandstation"
+  },
+  "338715da485d9fa468b86dd6c85f1513d9bcf931": null,
+  "9d24dad3ffdb361c45c1867f0651acb08f722178": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Rudkøbing"
+  },
+  "560cdafc0d27af38ef1fdb033dd2949fa8450b6e": {
+    "lat": 55.665136,
+    "lon": 12.485603,
+    "label": "Sakskøbingvej 1, 2500 Valby",
+    "source": "adressevaelger",
+    "query": "Sakskøbing brandstation"
   }
 }
