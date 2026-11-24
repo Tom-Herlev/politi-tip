@@ -24,7 +24,7 @@ jobs:
     timeout-minutes: 12
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -72,6 +72,21 @@ jobs:
         with:
           path: _site
 
+      # GitHub kan et øjeblik være om at registrere artifactet; vent lidt
+      # og prøv igen, så en forbigående fejl ikke giver en fejlmail.
+      - name: Vent på artifact
+        run: sleep 15
+
       - name: Udgiv til GitHub Pages
-        id: deployment
+        id: deploy1
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Vent før nyt forsøg
+        if: steps.deploy1.outcome == 'failure'
+        run: sleep 45
+
+      - name: Udgiv til GitHub Pages (nyt forsøg)
+        id: deploy2
+        if: steps.deploy1.outcome == 'failure'
         uses: actions/deploy-pages@v4
