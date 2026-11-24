@@ -3767,5 +3767,20 @@
     "label": "Nakskov Havn 2, 4900 Nakskov",
     "source": "adressevaelger",
     "query": "Nakskov brandstation"
+  },
+  "f94e426c320ddfdcd5f04b33573c186f8d37b11e": {
+    "lat": 55.962496,
+    "lon": 12.365947,
+    "label": "Hillerødvejen, Lille Sørup, Sørup, Fredensborg Kommune, Region Hovedstaden, 3480, Danmark",
+    "source": "nominatim",
+    "query": "Hillerødvejen"
+  },
+  "2c5bb18fb7bd552a1e9272ae2448dbf306d64705": null,
+  "e483fe99fd7cc9d3101145d5a01d55597ba8a81a": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Sdr. Felding"
   }
 }
