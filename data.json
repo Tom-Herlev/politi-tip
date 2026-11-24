@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T00:10:20Z",
-  "generated_at_copenhagen": "2026-11-24T01:10:20+01:00",
+  "generated_at": "2026-11-24T01:30:19Z",
+  "generated_at_copenhagen": "2026-11-24T02:30:19+01:00",
   "newest_rss": "2026-11-23T23:19:06Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -165,7 +165,7 @@
       "short": "Nordjylland",
       "handle": "NjylPoliti",
       "default_on": false,
-      "count": 17
+      "count": 18
     },
     {
       "id": "bornholm",
@@ -178,30 +178,30 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 214,
-    "with_coordinates": 175,
+    "incidents": 215,
+    "with_coordinates": 176,
     "without_coordinates": 39,
     "by_type": {
       "brand": 45,
       "politi": 64,
       "faerdsel": 59,
-      "andet": 43,
+      "andet": 44,
       "redning": 3
     },
     "by_category": {
       "brand": 20,
       "politi": 174,
-      "strom": 3,
+      "strom": 4,
       "trafik": 17
     },
-    "elapsed_seconds": 31.1
+    "elapsed_seconds": 13.9
   },
   "sources_status": {
     "politiupdate": {
       "ok": true,
       "count": 174,
       "endpoint": "https://via.ritzau.dk/rss/short-messages/latest?publisherId={id}",
-      "reused": false
+      "reused": true
     },
     "odin": {
       "ok": true,
@@ -217,7 +217,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 3,
+      "count": 4,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -4115,6 +4115,36 @@
       "approximate": false,
       "routine": false,
       "nationwide": false
+    },
+    {
+      "id": "gpd-193250",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Hadsund",
+      "text": "109 kunder berørt. Elselskab: Elnetselskabet N1. Type: Varslet. ID 4960",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-24T01:00:00Z",
+      "updated_at": "2026-11-06T23:38:58Z",
+      "lat": 56.71619,
+      "lon": 10.115219,
+      "location_text": "Hadsund",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "nordjylland",
+      "district_name": "Nordjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 109,
+      "utility": "Elnetselskabet N1",
+      "utility_phone": "(+45) 70 23 00 43",
+      "utility_web": "www.n1.dk",
+      "outage_type": "Varslet",
+      "expected_back": "2026-11-24T06:00:00",
+      "ongoing": true
     },
     {
       "id": "pu-15274782",
