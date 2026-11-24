@@ -3789,5 +3789,12 @@
     "label": "Bredgade 1, 4900 Nakskov",
     "source": "adressevaelger",
     "query": "Bredgade Nakskov"
+  },
+  "9ada51b1a9b070139223151ebd4cae45a88daed6": {
+    "lat": 55.976429,
+    "lon": 10.150865,
+    "label": "Station Odder, Rådhusgade, Odder, Odder Kommune, Region Midtjylland, 8300, Danmark",
+    "source": "nominatim",
+    "query": "Odder brandstation"
   }
 }
