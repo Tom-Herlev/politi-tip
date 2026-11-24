@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T03:38:09Z",
-  "generated_at_copenhagen": "2026-11-24T04:38:09+01:00",
+  "generated_at": "2026-11-24T04:46:50Z",
+  "generated_at_copenhagen": "2026-11-24T05:46:50+01:00",
   "newest_rss": "2026-11-23T23:19:06Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 22
+      "count": 23
     },
     {
       "id": "sydsjaelland",
@@ -149,7 +149,7 @@
       "short": "Midt- og Vestjylland",
       "handle": "MVJPoliti",
       "default_on": false,
-      "count": 10
+      "count": 12
     },
     {
       "id": "ostjylland",
@@ -178,23 +178,24 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 214,
-    "with_coordinates": 175,
+    "incidents": 217,
+    "with_coordinates": 178,
     "without_coordinates": 39,
     "by_type": {
+      "redning": 4,
+      "andet": 45,
       "brand": 45,
       "politi": 64,
-      "faerdsel": 59,
-      "andet": 43,
-      "redning": 3
+      "faerdsel": 59
     },
     "by_category": {
+      "helikopter": 1,
+      "strom": 5,
       "brand": 20,
       "politi": 174,
-      "strom": 3,
       "trafik": 17
     },
-    "elapsed_seconds": 10.4
+    "elapsed_seconds": 14.9
   },
   "sources_status": {
     "politiupdate": {
@@ -217,7 +218,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 3,
+      "count": 5,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -230,13 +231,26 @@
     },
     "adsb": {
       "ok": true,
-      "count": 0,
+      "count": 1,
       "endpoint": "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250",
       "error": null,
       "cors": false
     }
   },
-  "hems": [],
+  "hems": [
+    {
+      "registration": "LN-OTQ",
+      "callsign": "DOC05",
+      "lat": 57.122269,
+      "lon": 9.629517,
+      "track": 333.43,
+      "altitude_ft": -300,
+      "speed_kt": 11.2,
+      "airborne": true,
+      "type": "EC45",
+      "updated_at": "2026-11-24T04:46:50Z"
+    }
+  ],
   "hems_bases": [
     {
       "name": "Skive",
@@ -260,6 +274,68 @@
     }
   ],
   "incidents": [
+    {
+      "id": "hems-LN-OTQ",
+      "category": "helikopter",
+      "type": "redning",
+      "title": "Akutlægehelikopter LN-OTQ (DOC05)",
+      "text": "I luften. Type: EC45. Højde: -300 ft. Fart: 11.2 kt. Kurs: 333.43°.",
+      "source": "adsb",
+      "source_label": "adsb.lol",
+      "source_url": "https://adsb.lol/",
+      "url": "https://adsb.lol/",
+      "published_at": "2026-11-24T04:46:50Z",
+      "updated_at": "2026-11-24T04:46:50Z",
+      "lat": 57.122269,
+      "lon": 9.629517,
+      "location_text": "Live position",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "midtvestjylland",
+      "district_name": "Midt- og Vestjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "registration": "LN-OTQ",
+      "callsign": "DOC05",
+      "aircraft_type": "EC45",
+      "track": 333.43,
+      "altitude_ft": -300,
+      "speed_kt": 11.2,
+      "airborne": true,
+      "hex": "478de3",
+      "ongoing": true
+    },
+    {
+      "id": "gpd-194608",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud Lille Skensved",
+      "text": "21 kunder berørt. Elselskab: Cerius A/S. Type: Uvarslet. Årsag endnu ukendt",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-24T04:37:23Z",
+      "updated_at": "2026-11-24T03:37:52Z",
+      "lat": 55.490688,
+      "lon": 12.081673,
+      "location_text": "Lille Skensved",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "midtvestsjaelland",
+      "district_name": "Midt- og Vestsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 21,
+      "utility": "Cerius A/S",
+      "utility_phone": "(+45) 70 29 20 24",
+      "utility_web": "www.cerius.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-24T07:37:23.75",
+      "ongoing": true
+    },
     {
       "id": "odin-ff649a81fea8c30f",
       "category": "brand",
@@ -2629,6 +2705,36 @@
       "approximate": false,
       "routine": false,
       "nationwide": false
+    },
+    {
+      "id": "gpd-194300",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Brovst",
+      "text": "10 kunder berørt. Elselskab: Elnetselskabet N1. Type: Varslet. ID 6226",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-24T04:00:00Z",
+      "updated_at": "2026-11-19T11:46:07Z",
+      "lat": 57.097392,
+      "lon": 9.52465,
+      "location_text": "Brovst",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "midtvestjylland",
+      "district_name": "Midt- og Vestjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 10,
+      "utility": "Elnetselskabet N1",
+      "utility_phone": "(+45) 70 23 00 43",
+      "utility_web": "www.n1.dk",
+      "outage_type": "Varslet",
+      "expected_back": "2026-11-24T07:30:00",
+      "ongoing": true
     },
     {
       "id": "pu-15298825",
