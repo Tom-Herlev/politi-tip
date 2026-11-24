@@ -3725,5 +3725,19 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Skjern/Lem"
+  },
+  "ec2c66d111cc8d38091ea3f26c484e24ff93c3e9": {
+    "lat": 55.854076,
+    "lon": 12.17229,
+    "label": "Hillerødvej 1A, 3550 Slangerup",
+    "source": "adressevaelger",
+    "query": "Hillerødvej Hillerød"
+  },
+  "8e171e26ea3fb5443fb098d6a2f61bdb4e0e95a3": {
+    "lat": 55.720116,
+    "lon": 12.457815,
+    "label": "Durup Alle 73, 2860 Søborg",
+    "source": "adressevaelger",
+    "query": "Durup brandstation"
   }
 }
