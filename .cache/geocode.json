@@ -3652,5 +3652,20 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Kirke Hyllinge"
+  },
+  "61609f54d72ec24d318f6540c18f1c409ca36605": null,
+  "f60c04cbacf70df482188dc579504684d4e677a0": {
+    "lat": 55.631806,
+    "lon": 8.483389,
+    "label": "Brandstation, Nordre Boulevard, Østermarken, Varde, Varde Kommune, Region Syddanmark, 6800, Danmark",
+    "source": "nominatim",
+    "query": "brandstation Varde"
+  },
+  "92c24d37f79523415c77d77c0323ae6223d424bc": {
+    "lat": 54.823479,
+    "lon": 9.358978,
+    "label": "Padborg St 2, 6330 Padborg",
+    "source": "adressevaelger",
+    "query": "Padborg brandstation"
   }
 }
