@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T05:46:36Z",
-  "generated_at_copenhagen": "2026-11-24T06:46:36+01:00",
+  "generated_at": "2026-11-24T06:18:13Z",
+  "generated_at_copenhagen": "2026-11-24T07:18:13+01:00",
   "newest_rss": "2026-11-23T23:19:06Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -165,7 +165,7 @@
       "short": "Nordjylland",
       "handle": "NjylPoliti",
       "default_on": false,
-      "count": 16
+      "count": 15
     },
     {
       "id": "bornholm",
@@ -178,24 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 209,
-    "with_coordinates": 170,
+    "incidents": 208,
+    "with_coordinates": 169,
     "without_coordinates": 39,
     "by_type": {
-      "redning": 4,
       "brand": 45,
       "andet": 43,
       "politi": 64,
-      "faerdsel": 53
+      "faerdsel": 53,
+      "redning": 3
     },
     "by_category": {
-      "helikopter": 1,
       "brand": 20,
       "strom": 3,
       "politi": 174,
       "trafik": 11
     },
-    "elapsed_seconds": 10.9
+    "elapsed_seconds": 10.3
   },
   "sources_status": {
     "politiupdate": {
@@ -231,26 +230,13 @@
     },
     "adsb": {
       "ok": true,
-      "count": 1,
+      "count": 0,
       "endpoint": "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250",
       "error": null,
       "cors": false
     }
   },
-  "hems": [
-    {
-      "registration": "LN-OTQ",
-      "callsign": "DOC05",
-      "lat": 57.375916,
-      "lon": 9.880915,
-      "track": 41.24,
-      "altitude_ft": 800,
-      "speed_kt": 107.7,
-      "airborne": true,
-      "type": "EC45",
-      "updated_at": "2026-11-24T05:46:36Z"
-    }
-  ],
+  "hems": [],
   "hems_bases": [
     {
       "name": "Skive",
@@ -275,36 +261,32 @@
   ],
   "incidents": [
     {
-      "id": "hems-LN-OTQ",
-      "category": "helikopter",
-      "type": "redning",
-      "title": "Akutlægehelikopter LN-OTQ (DOC05)",
-      "text": "I luften. Type: EC45. Højde: 800 ft. Fart: 107.7 kt. Kurs: 41.24°.",
-      "source": "adsb",
-      "source_label": "adsb.lol",
-      "source_url": "https://adsb.lol/",
-      "url": "https://adsb.lol/",
-      "published_at": "2026-11-24T05:46:36Z",
-      "updated_at": "2026-11-24T05:46:36Z",
-      "lat": 57.375916,
-      "lon": 9.880915,
-      "location_text": "Live position",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "nordjylland",
-      "district_name": "Nordjyllands Politi",
+      "id": "odin-cac1a313af206d54",
+      "category": "brand",
+      "type": "brand",
+      "title": "Brand-Lastbil/Bus – Kirke Hyllinge",
+      "text": "Beredskab: Lejre Brandvæsen. Station: Kirke Hyllinge. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brand-Lastbil/Bus.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-24T05:45:09Z",
+      "updated_at": "2026-11-24T05:45:09Z",
+      "lat": 55.607152,
+      "lon": 12.621821,
+      "location_text": "Kirke Hyllinge (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "koebenhavn",
+      "district_name": "Københavns Politi",
       "official": true,
       "nationwide": false,
-      "registration": "LN-OTQ",
-      "callsign": "DOC05",
-      "aircraft_type": "EC45",
-      "track": 41.24,
-      "altitude_ft": 800,
-      "speed_kt": 107.7,
-      "airborne": true,
-      "hex": "478de3",
-      "ongoing": true
+      "routine": false,
+      "station": "Kirke Hyllinge",
+      "beredskab": "Lejre Brandvæsen",
+      "first_message": "Brand-Lastbil/Bus",
+      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "odin-9a293e4ac3ee96a6",
@@ -1000,34 +982,6 @@
       "station": "Frederiksværk",
       "beredskab": "Frederiksborg Brand og Redning",
       "first_message": "ISL-Forespørgsel",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "odin-4ba11498cd15ab1c",
-      "category": "brand",
-      "type": "brand",
-      "title": "Brandalarm – Christianshavn",
-      "text": "Beredskab: Hovedstadens Beredskab. Station: Christianshavn. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brandalarm.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-23T18:37:34Z",
-      "updated_at": "2026-11-23T18:37:34Z",
-      "lat": 55.67543,
-      "lon": 12.592625,
-      "location_text": "Christianshavn (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Christianshavn",
-      "beredskab": "Hovedstadens Beredskab",
-      "first_message": "Brandalarm",
       "attribution": "Kilde: www.odin.dk/112puls"
     },
     {

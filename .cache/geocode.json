@@ -3644,5 +3644,13 @@
     "label": "Billund Brandstation, Granvej, Billund, Billund Kommune, Region Syddanmark, 7190, Danmark",
     "source": "nominatim",
     "query": "Billund brandstation"
+  },
+  "afa56fc35acca9d2c39616c09620bd1e23934895": null,
+  "5bf75826b71eb651ec3e4d957d5450eea9e6819d": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Kirke Hyllinge"
   }
 }
