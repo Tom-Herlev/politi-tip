@@ -3739,5 +3739,26 @@
     "label": "Durup Alle 73, 2860 Søborg",
     "source": "adressevaelger",
     "query": "Durup brandstation"
+  },
+  "8feebb03ee328449cb8bdb4a78275da8ce1e0df4": {
+    "lat": 55.854076,
+    "lon": 12.17229,
+    "label": "Hillerødvej 1A, 3550 Slangerup",
+    "source": "adressevaelger",
+    "query": "Hillerødvej"
+  },
+  "283d63f0a5dca01b293dee028ddecebfd507fbbc": {
+    "lat": 55.469977,
+    "lon": 9.483551,
+    "label": "Beredskab Kolding, Smedegade, S2, Søndervang, Kolding, Kolding Kommune, Region Syddanmark, 6000, Danmark",
+    "source": "nominatim",
+    "query": "Kolding brandstation"
+  },
+  "06945a0f7ea031cda9db5815bb02bb6ddf2895bf": {
+    "lat": 57.009972,
+    "lon": 9.911858,
+    "label": "Hobrovej 341, 9210 Aalborg SØ",
+    "source": "adressevaelger",
+    "query": "Hobro brandstation"
   }
 }
