@@ -3630,5 +3630,12 @@
     "label": "Ishøj Søvej 1A, 2635 Ishøj",
     "source": "adressevaelger",
     "query": "Ishøj Søvej"
+  },
+  "e85f40067efc6af50148a37316d2dea90c34555b": {
+    "lat": 56.461754,
+    "lon": 10.037148,
+    "label": "Randers, Randers Kommune, Region Midtjylland, 8900, Danmark",
+    "source": "nominatim",
+    "query": "Randers"
   }
 }
