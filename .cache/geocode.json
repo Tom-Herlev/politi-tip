@@ -3796,5 +3796,13 @@
     "label": "Station Odder, Rådhusgade, Odder, Odder Kommune, Region Midtjylland, 8300, Danmark",
     "source": "nominatim",
     "query": "Odder brandstation"
+  },
+  "04f586c3a16f3c3f3b2c9f20cd5b490e74ded324": null,
+  "138ebd34ffeb7ba6220b52577bbb6f3e9bb8c6b5": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Nørre Snede"
   }
 }
