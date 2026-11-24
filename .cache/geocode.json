@@ -3703,5 +3703,27 @@
     "label": "Sakskøbingvej 1, 2500 Valby",
     "source": "adressevaelger",
     "query": "Sakskøbing brandstation"
+  },
+  "cc2f924c440afe5c1f36ea48ea263f525064a26b": {
+    "lat": 57.009599,
+    "lon": 10.265825,
+    "label": "Lyngby 1, 9370 Hals",
+    "source": "adressevaelger",
+    "query": "Lyngby brandstation"
+  },
+  "3f6e4066e53f8d35ff8d9d7e8f87ee60a6f67876": {
+    "lat": 56.211946,
+    "lon": 10.484351,
+    "label": "Station Knebel, Havbovej, Skellerup, Knebel, Syddjurs Kommune, Region Midtjylland, 8420, Danmark",
+    "source": "nominatim",
+    "query": "Knebel brandstation"
+  },
+  "93ac5b0248c5ce788deaef8a98b9ad6465087275": null,
+  "2a4f15497904cb3ae04bd6bd875a598ef0c1278c": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Skjern/Lem"
   }
 }
