@@ -3804,5 +3804,13 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Nørre Snede"
+  },
+  "a38cd27015d79f13bf084116b77e5a14f4aec3e5": null,
+  "ac01985bd9557c3d89bfe9beccab12398469f100": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Fuglebjerg/Herlufmag"
   }
 }
