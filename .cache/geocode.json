@@ -3842,5 +3842,19 @@
     "label": "Ryhavevej 1A, Hasle, 8210 Aarhus V",
     "source": "adressevaelger",
     "query": "Ryhavevej og Klokkerbakken Aarhus V"
+  },
+  "0891e612b4bc76f88e3847c4fe2c6670c7735f52": {
+    "lat": 55.662269,
+    "lon": 12.560183,
+    "label": "Kalvebod Brygge, Den Gule By, Kødbyen, København, Københavns Kommune, Region Hovedstaden, 1561, Danmark",
+    "source": "nominatim",
+    "query": "Kalvebod Brygge"
+  },
+  "1f61667e294a4684c796ba048456e6de629eead9": {
+    "lat": 55.377095,
+    "lon": 10.370411,
+    "label": "Faaborgvej 1, Dalum, 5250 Odense SV",
+    "source": "adressevaelger",
+    "query": "Faaborg brandstation"
   }
 }
