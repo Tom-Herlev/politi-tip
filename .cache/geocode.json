@@ -3827,5 +3827,13 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation ØsterTørslev"
+  },
+  "db7e86dbdad4b30fc685f026fdd03eb9cc438d0c": null,
+  "eea6b9f9ef1c8309ddd123bc3a1156f71289b370": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Durup/Fur"
   }
 }
