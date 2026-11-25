@@ -3835,5 +3835,12 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Durup/Fur"
+  },
+  "e5e9d3cff8c708fba08c23afd41896655ca2e1f3": {
+    "lat": 56.166919,
+    "lon": 10.163636,
+    "label": "Ryhavevej 1A, Hasle, 8210 Aarhus V",
+    "source": "adressevaelger",
+    "query": "Ryhavevej og Klokkerbakken Aarhus V"
   }
 }
