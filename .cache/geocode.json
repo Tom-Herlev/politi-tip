@@ -3895,5 +3895,14 @@
     "label": "Midtjysk Brand & Redning, Vesterled, Bjerring Nedermark, Bjerringbro, Viborg Kommune, Region Midtjylland, 8850, Danmark",
     "source": "nominatim",
     "query": "Bjerringbro brandstation"
+  },
+  "3c2b5c8de473b007d7003922b7d27f859c0a7280": null,
+  "2d6570b8e359b4a3467190e9320f66e21afb4ff9": null,
+  "df71a411d96e8c66c6ec76d544cc42f8e3c390e0": {
+    "lat": 56.37362,
+    "lon": 10.233846,
+    "label": "Lynghøjvej 30, Mellem Mølle, 8370 Hadsten",
+    "source": "adressevaelger",
+    "query": "Lynghøjvej"
   }
 }
