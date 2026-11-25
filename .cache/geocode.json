@@ -3878,5 +3878,22 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation St. Store Heddinge"
+  },
+  "f88dfa9dfee1f4d20322af3d3db3c2b41ae147d5": null,
+  "a1f4ff1df56d8b3415dd9e5b292954ab934c7320": null,
+  "80179fd292c248721efe86abfeea7688c24a8aac": null,
+  "4471150b0b3127c140d9da7f76baa1b6b7ec66bd": {
+    "lat": 55.113898,
+    "lon": 14.705041,
+    "label": "Haslevej, Rønne, Bornholms Regionskommune, Region Hovedstaden, 3700, Danmark",
+    "source": "nominatim",
+    "query": "Haslevej"
+  },
+  "b1816ff7d705c0d49a93598edb5e22c96c4969bf": {
+    "lat": 56.370869,
+    "lon": 9.630254,
+    "label": "Midtjysk Brand & Redning, Vesterled, Bjerring Nedermark, Bjerringbro, Viborg Kommune, Region Midtjylland, 8850, Danmark",
+    "source": "nominatim",
+    "query": "Bjerringbro brandstation"
   }
 }
