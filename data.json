@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T02:50:46Z",
-  "generated_at_copenhagen": "2026-11-25T03:50:46+01:00",
+  "generated_at": "2026-11-25T03:52:47Z",
+  "generated_at_copenhagen": "2026-11-25T04:52:47+01:00",
   "newest_rss": "2026-11-24T21:52:37Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 36
+      "count": 37
     },
     {
       "id": "vestegnen",
@@ -101,7 +101,7 @@
       "short": "Nordsjælland",
       "handle": "NSJPoliti",
       "default_on": true,
-      "count": 19
+      "count": 20
     },
     {
       "id": "midtvestsjaelland",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 26
+      "count": 25
     },
     {
       "id": "sydsjaelland",
@@ -149,7 +149,7 @@
       "short": "Midt- og Vestjylland",
       "handle": "MVJPoliti",
       "default_on": false,
-      "count": 12
+      "count": 11
     },
     {
       "id": "ostjylland",
@@ -182,19 +182,19 @@
     "with_coordinates": 206,
     "without_coordinates": 40,
     "by_type": {
-      "faerdsel": 93,
       "brand": 45,
+      "faerdsel": 93,
       "andet": 43,
       "politi": 62,
       "redning": 3
     },
     "by_category": {
-      "trafik": 50,
       "brand": 20,
+      "trafik": 50,
       "strom": 4,
       "politi": 172
     },
-    "elapsed_seconds": 13.4
+    "elapsed_seconds": 8.4
   },
   "sources_status": {
     "politiupdate": {
@@ -261,6 +261,34 @@
   ],
   "incidents": [
     {
+      "id": "odin-aa215f1f0cefd93b",
+      "category": "brand",
+      "type": "brand",
+      "title": "Bygn.brand-Villa/Rækkehus – Durup",
+      "text": "Beredskab: Nordvestjyllands Brandvæsen. Station: Durup. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Villa/Rækkehus.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-25T03:24:58Z",
+      "updated_at": "2026-11-25T03:24:58Z",
+      "lat": 55.720116,
+      "lon": 12.457815,
+      "location_text": "Durup (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "koebenhavn",
+      "district_name": "Københavns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Durup",
+      "beredskab": "Nordvestjyllands Brandvæsen",
+      "first_message": "Bygn.brand-Villa/Rækkehus",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
       "id": "vd-2ad0e7c490aeee4c",
       "category": "trafik",
       "type": "faerdsel",
@@ -315,6 +343,36 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "gpd-194671",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Snekkersten",
+      "text": "56 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-25T02:53:36Z",
+      "updated_at": "2026-11-25T01:54:02Z",
+      "lat": 56.014159,
+      "lon": 12.559134,
+      "location_text": "Snekkersten",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "nordsjaelland",
+      "district_name": "Nordsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 56,
+      "utility": "Radius Elnet A/S",
+      "utility_phone": "(+45) 70 20 58 00",
+      "utility_web": "www.radiuselnet.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-25T06:52:00",
+      "ongoing": true
     },
     {
       "id": "odin-2f4e74211836c8b4",
@@ -430,36 +488,6 @@
       "utility_web": "www.nordenerginet.dk",
       "outage_type": "Uvarslet",
       "expected_back": "2026-11-25T05:20:00",
-      "ongoing": true
-    },
-    {
-      "id": "gpd-194668",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud Havdrup",
-      "text": "43 kunder berørt. Elselskab: Cerius A/S. Type: Uvarslet. Årsag endnu ukendt",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-25T02:03:13Z",
-      "updated_at": "2026-11-25T01:03:42Z",
-      "lat": 55.540293,
-      "lon": 12.133496,
-      "location_text": "Havdrup",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "midtvestsjaelland",
-      "district_name": "Midt- og Vestsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 43,
-      "utility": "Cerius A/S",
-      "utility_phone": "(+45) 70 29 20 24",
-      "utility_web": "www.cerius.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-25T05:03:13.38",
       "ongoing": true
     },
     {
@@ -1272,34 +1300,6 @@
       "station": "Brønderslev",
       "beredskab": "Nordjyllands Beredskab",
       "first_message": "Bygn.brand-Villa/Rækkehus",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "odin-d74ed0088c9f9a53",
-      "category": "brand",
-      "type": "brand",
-      "title": "Redn.-Silo/Brønd – Ørum",
-      "text": "Beredskab: Midtjysk Brand & Redning. Station: Ørum. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Redn.-Silo/Brønd.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-24T18:41:07Z",
-      "updated_at": "2026-11-24T18:41:07Z",
-      "lat": 56.814851,
-      "lon": 8.329171,
-      "location_text": "Ørum (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "midtvestjylland",
-      "district_name": "Midt- og Vestjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Ørum",
-      "beredskab": "Midtjysk Brand & Redning",
-      "first_message": "Redn.-Silo/Brønd",
       "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
