@@ -3819,5 +3819,13 @@
     "label": "Allerød Brandstation, Kollerødvej, Lynge Overdrev, Lillerød, Allerød Kommune, Region Hovedstaden, 3450, Danmark",
     "source": "nominatim",
     "query": "Allerød brandstation"
+  },
+  "79e9f80f77b5d0bc34c84ee80e69aa7bd3200c09": null,
+  "09491551d2ecd7af76435470e5cf1024be1663d7": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation ØsterTørslev"
   }
 }
