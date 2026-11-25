@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T00:22:37Z",
-  "generated_at_copenhagen": "2026-11-25T01:22:37+01:00",
+  "generated_at": "2026-11-25T01:52:32Z",
+  "generated_at_copenhagen": "2026-11-25T02:52:32+01:00",
   "newest_rss": "2026-11-24T21:52:37Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 37
+      "count": 36
     },
     {
       "id": "vestegnen",
@@ -125,7 +125,7 @@
       "short": "Fyn",
       "handle": "FynsPoliti",
       "default_on": false,
-      "count": 12
+      "count": 13
     },
     {
       "id": "sydsonderjylland",
@@ -157,7 +157,7 @@
       "short": "Østjylland",
       "handle": "OjylPoliti",
       "default_on": false,
-      "count": 13
+      "count": 14
     },
     {
       "id": "nordjylland",
@@ -178,23 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 241,
-    "with_coordinates": 201,
+    "incidents": 242,
+    "with_coordinates": 202,
     "without_coordinates": 40,
     "by_type": {
       "brand": 45,
-      "faerdsel": 90,
+      "faerdsel": 91,
       "politi": 62,
       "andet": 41,
       "redning": 3
     },
     "by_category": {
       "brand": 20,
-      "trafik": 47,
+      "trafik": 48,
       "politi": 172,
       "strom": 2
     },
-    "elapsed_seconds": 9.5
+    "elapsed_seconds": 10.5
   },
   "sources_status": {
     "politiupdate": {
@@ -211,7 +211,7 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 47,
+      "count": 48,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
@@ -260,6 +260,62 @@
     }
   ],
   "incidents": [
+    {
+      "id": "odin-f8cb50ae33c60410",
+      "category": "brand",
+      "type": "brand",
+      "title": "Bygn.brand-Etageejendom-Kælder – Åsum - Odense",
+      "text": "Beredskab: Beredskab Fyn. Station: Åsum - Odense. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Etageejendom-Kælder.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-25T01:26:31Z",
+      "updated_at": "2026-11-25T01:26:31Z",
+      "lat": 55.40013,
+      "lon": 10.417761,
+      "location_text": "Åsum - Odense (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "fyn",
+      "district_name": "Fyns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Åsum - Odense",
+      "beredskab": "Beredskab Fyn",
+      "first_message": "Bygn.brand-Etageejendom-Kælder",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
+      "id": "vd-b9a124a91122f9f2",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Dødt dyr på vejen - Rute 501 Aarhus Syd Motorvejen fra Østjyske Motorvej (E45) mod Aarhus C mellem <2> Hasselager Ø og <3> Viby",
+      "text": "Rute 501 Aarhus Syd Motorvejen fra Østjyske Motorvej (E45) mod Aarhus C mellem <2> Hasselager Ø og <3> Viby\n Dødt dyr på vejen, Spor spærret\n Venstre spor spærret, \nVejhjælp er på stedet",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-25T00:36:00Z",
+      "updated_at": "2026-11-25T00:58:29Z",
+      "lat": 56.12976,
+      "lon": 10.136783,
+      "location_text": "Dødt dyr på vejen - Rute 501 Aarhus Syd Motorvejen fra Østjyske Motorvej (E45) mod Aarhus C mellem <2> Hasselager Ø og <3> Viby",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "ostjylland",
+      "district_name": "Østjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "spærring",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
     {
       "id": "odin-cb0f3483e9043e1d",
       "category": "brand",
@@ -1099,34 +1155,6 @@
       "reopening_at": "2026-11-24T19:15:00Z",
       "ongoing": true,
       "layer": "current-queue.point"
-    },
-    {
-      "id": "odin-5d38a3dc8b6cd155",
-      "category": "brand",
-      "type": "brand",
-      "title": "ISL-Eftersyn – Gentofte",
-      "text": "Beredskab: Beredskab Øst. Station: Gentofte. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: ISL-Eftersyn.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-24T18:00:55Z",
-      "updated_at": "2026-11-24T18:00:55Z",
-      "lat": 55.748515,
-      "lon": 12.556685,
-      "location_text": "Gentofte (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": true,
-      "station": "Gentofte",
-      "beredskab": "Beredskab Øst",
-      "first_message": "ISL-Eftersyn",
-      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "odin-bcba540834fb60c8",
