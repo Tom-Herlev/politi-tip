@@ -3863,5 +3863,20 @@
     "label": "Station Grindsted, Vestergade, Åglimt, Grindsted, Billund Kommune, Region Syddanmark, 7200, Danmark",
     "source": "nominatim",
     "query": "Grindsted brandstation"
+  },
+  "e93b5f48f2399676eccfec7132735d7ab8b7b668": {
+    "lat": 55.547628,
+    "lon": 11.220725,
+    "label": "Gørlev Brandstation, Agertoften, Slibestenen, Gørlev Mose, Gørlev, Kalundborg Kommune, Region Sjælland, 4281, Danmark",
+    "source": "nominatim",
+    "query": "Gørlev brandstation"
+  },
+  "1bcc2216310aeb373d06123158d55b3f4bf1e88d": null,
+  "04765213c8946467f0debce7346390e4e67ff490": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation St. Store Heddinge"
   }
 }
