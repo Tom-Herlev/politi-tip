@@ -3919,5 +3919,13 @@
     "label": "Fredericia Brandvæsen, Prangervej, Solbakken, Fredericia, Fredericia Kommune, Region Syddanmark, 7000, Danmark",
     "source": "nominatim",
     "query": "Fredericia brandstation"
+  },
+  "63ef7627243d5e60e2684379cd9f6652755ed588": null,
+  "f8d22bdcd1796bae5648cdd0a979cf286120bc72": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Hals"
   }
 }
