@@ -3904,5 +3904,20 @@
     "label": "Lynghøjvej 30, Mellem Mølle, 8370 Hadsten",
     "source": "adressevaelger",
     "query": "Lynghøjvej"
+  },
+  "54de77cfbaf964c904724b5f656bd3194d004d25": {
+    "lat": 56.153869,
+    "lon": 10.212518,
+    "label": "Europaplads 2, 8000 Aarhus C",
+    "source": "adressevaelger",
+    "query": "Europaplads Aarhus"
+  },
+  "67138d8c5ab3d789e4276e4b14730c5aa590f71e": null,
+  "3476478bc6a757e4819089107b67a7299738b565": {
+    "lat": 55.563436,
+    "lon": 9.74501,
+    "label": "Fredericia Brandvæsen, Prangervej, Solbakken, Fredericia, Fredericia Kommune, Region Syddanmark, 7000, Danmark",
+    "source": "nominatim",
+    "query": "Fredericia brandstation"
   }
 }
