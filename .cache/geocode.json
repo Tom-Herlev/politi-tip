@@ -3934,5 +3934,20 @@
     "label": "Rødding Brandstation, Rødding Nygade, Rødding, Vejen Kommune, Region Syddanmark, 6630, Danmark",
     "source": "nominatim",
     "query": "Rødding brandstation"
+  },
+  "98e0d3369aab9b52c073e6327555af31c8f58966": {
+    "lat": 55.704111,
+    "lon": 12.498549,
+    "label": "Brønshøj, København, Københavns Kommune, Region Hovedstaden, 2700, Danmark",
+    "source": "nominatim",
+    "query": "Brønshøj"
+  },
+  "670d19c4bbad0abc15ddbb4987d00480bada65d9": null,
+  "309ec272bf41063d7fcc4368cb2fdc329ba9c07f": {
+    "lat": 55.034944,
+    "lon": 9.81626,
+    "label": "Danfoss E20, Nordborgvej, Gildbro, Svenstrup, Sønderborg Kommune, Region Syddanmark, 6430, Danmark",
+    "source": "nominatim",
+    "query": "E20"
   }
 }
