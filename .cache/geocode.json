@@ -4005,5 +4005,12 @@
     "label": "Gudme Brandstation, Poppelvej, Gudme, Svendborg Kommune, Region Syddanmark, 5884, Danmark",
     "source": "nominatim",
     "query": "Gudme brandstation"
+  },
+  "cfe81dfd0e844f92a298a4cdfdab5ddb5304bc4f": {
+    "lat": 56.317827,
+    "lon": 10.044206,
+    "label": "Station Hadsten, Ginneruplundvej, Over Hadsten, Hadsten, Favrskov Kommune, Region Midtjylland, 8370, Danmark",
+    "source": "nominatim",
+    "query": "Hadsten brandstation"
   }
 }
