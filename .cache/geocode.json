@@ -4012,5 +4012,12 @@
     "label": "Station Hadsten, Ginneruplundvej, Over Hadsten, Hadsten, Favrskov Kommune, Region Midtjylland, 8370, Danmark",
     "source": "nominatim",
     "query": "Hadsten brandstation"
+  },
+  "a79f3c70d7d83c27fa2a5c14df2d279831b572d7": {
+    "lat": 55.666464,
+    "lon": 12.517452,
+    "label": "Toftegårds Allé 1, 2500 Valby",
+    "source": "adressevaelger",
+    "query": "Toftegårds All"
   }
 }
