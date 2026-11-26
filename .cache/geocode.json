@@ -3927,5 +3927,12 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Hals"
+  },
+  "cb1a3b34cc9d41e9911b3af20030b8aa2fa821e1": {
+    "lat": 55.368772,
+    "lon": 9.059859,
+    "label": "Rødding Brandstation, Rødding Nygade, Rødding, Vejen Kommune, Region Syddanmark, 6630, Danmark",
+    "source": "nominatim",
+    "query": "Rødding brandstation"
   }
 }
