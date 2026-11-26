@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T03:58:29Z",
-  "generated_at_copenhagen": "2026-11-26T04:58:29+01:00",
+  "generated_at": "2026-11-26T05:10:22Z",
+  "generated_at_copenhagen": "2026-11-26T06:10:22+01:00",
   "newest_rss": "2026-11-25T21:19:54Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -101,7 +101,7 @@
       "short": "Nordsjælland",
       "handle": "NSJPoliti",
       "default_on": true,
-      "count": 25
+      "count": 26
     },
     {
       "id": "midtvestsjaelland",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 34
+      "count": 35
     },
     {
       "id": "sydsjaelland",
@@ -141,7 +141,7 @@
       "short": "Sydøstjylland",
       "handle": "SydOjylPoliti",
       "default_on": false,
-      "count": 29
+      "count": 31
     },
     {
       "id": "midtvestjylland",
@@ -149,7 +149,7 @@
       "short": "Midt- og Vestjylland",
       "handle": "MVJPoliti",
       "default_on": false,
-      "count": 11
+      "count": 10
     },
     {
       "id": "ostjylland",
@@ -178,24 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 261,
-    "with_coordinates": 220,
+    "incidents": 264,
+    "with_coordinates": 223,
     "without_coordinates": 41,
     "by_type": {
-      "redning": 4,
+      "andet": 51,
       "brand": 42,
       "faerdsel": 107,
-      "andet": 47,
+      "redning": 3,
       "politi": 61
     },
     "by_category": {
-      "helikopter": 1,
+      "strom": 10,
       "brand": 20,
       "trafik": 64,
-      "strom": 6,
       "politi": 170
     },
-    "elapsed_seconds": 14.3
+    "elapsed_seconds": 7.6
   },
   "sources_status": {
     "politiupdate": {
@@ -218,7 +217,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 6,
+      "count": 10,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -231,26 +230,13 @@
     },
     "adsb": {
       "ok": true,
-      "count": 1,
+      "count": 0,
       "endpoint": "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250",
       "error": null,
       "cors": false
     }
   },
-  "hems": [
-    {
-      "registration": "LN-OUN",
-      "callsign": "DOC04",
-      "lat": 57.012339,
-      "lon": 9.834004,
-      "track": 90.51,
-      "altitude_ft": 800,
-      "speed_kt": 112.0,
-      "airborne": true,
-      "type": "EC35",
-      "updated_at": "2026-11-26T03:58:29Z"
-    }
-  ],
+  "hems": [],
   "hems_bases": [
     {
       "name": "Skive",
@@ -275,35 +261,93 @@
   ],
   "incidents": [
     {
-      "id": "hems-LN-OUN",
-      "category": "helikopter",
-      "type": "redning",
-      "title": "Akutlægehelikopter LN-OUN (DOC04)",
-      "text": "I luften. Type: EC35. Højde: 800 ft. Fart: 112.0 kt. Kurs: 90.51°.",
-      "source": "adsb",
-      "source_label": "adsb.lol",
-      "source_url": "https://adsb.lol/",
-      "url": "https://adsb.lol/",
-      "published_at": "2026-11-26T03:58:29Z",
-      "updated_at": "2026-11-26T03:58:29Z",
-      "lat": 57.012339,
-      "lon": 9.834004,
-      "location_text": "Live position",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "midtvestjylland",
-      "district_name": "Midt- og Vestjyllands Politi",
+      "id": "gpd-194799",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Kirke Hyllinge",
+      "text": "60 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-26T04:58:43Z",
+      "updated_at": "2026-11-26T03:59:01Z",
+      "lat": 55.699015,
+      "lon": 11.902981,
+      "location_text": "Kirke Hyllinge",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "midtvestsjaelland",
+      "district_name": "Midt- og Vestsjællands Politi",
       "official": true,
       "nationwide": false,
-      "registration": "LN-OUN",
-      "callsign": "DOC04",
-      "aircraft_type": "EC35",
-      "track": 90.51,
-      "altitude_ft": 800,
-      "speed_kt": 112.0,
-      "airborne": true,
-      "hex": "47bdea",
+      "customers": 60,
+      "utility": "Radius Elnet A/S",
+      "utility_phone": "(+45) 70 20 58 00",
+      "utility_web": "www.radiuselnet.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-26T09:00:00",
+      "ongoing": true
+    },
+    {
+      "id": "gpd-194798",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Slangerup",
+      "text": "59 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-26T04:51:52Z",
+      "updated_at": "2026-11-26T03:52:02Z",
+      "lat": 55.850954,
+      "lon": 12.170525,
+      "location_text": "Slangerup",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "nordsjaelland",
+      "district_name": "Nordsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 59,
+      "utility": "Radius Elnet A/S",
+      "utility_phone": "(+45) 70 20 58 00",
+      "utility_web": "www.radiuselnet.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-26T09:00:00",
+      "ongoing": true
+    },
+    {
+      "id": "gpd-194797",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Vejle Øst",
+      "text": "44 kunder berørt. Elselskab: KONSTANT Net A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse i Vejle Øst: Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, Hindbærhaven, H",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-26T04:00:00Z",
+      "updated_at": "2026-11-26T03:30:00Z",
+      "lat": 55.726798,
+      "lon": 9.606144,
+      "location_text": "Vejle Øst",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "sydostjylland",
+      "district_name": "Sydøstjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 44,
+      "utility": "KONSTANT Net A/S",
+      "utility_phone": "(+45) 70 11 45 09",
+      "utility_web": "www.konstant.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-26T07:00:00",
       "ongoing": true
     },
     {
@@ -5827,6 +5871,36 @@
       "approximate": false,
       "routine": false,
       "nationwide": false
+    },
+    {
+      "id": "gpd-193164",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Endelave",
+      "text": "5 kunder berørt. Elselskab: KONSTANT Net A/S. Type: Varslet. På grund af kabel/ledningsarbejde vil der være afbrudt for strømforsyningen på Kongevejen torsdag d. 26. november fra kl. 06:00 til ca. kl. 08:00.",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-26T05:00:00Z",
+      "updated_at": "2026-11-05T12:39:56Z",
+      "lat": 55.7586,
+      "lon": 10.277259,
+      "location_text": "Endelave",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "sydostjylland",
+      "district_name": "Sydøstjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 5,
+      "utility": "KONSTANT Net A/S",
+      "utility_phone": "(+45) 70 11 45 09",
+      "utility_web": "www.konstant.dk",
+      "outage_type": "Varslet",
+      "expected_back": "2026-11-26T08:00:00",
+      "ongoing": true
     },
     {
       "id": "pu-15271538",
