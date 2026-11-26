@@ -3984,5 +3984,26 @@
     "label": "Ringkøbinggade 1, 2100 København Ø",
     "source": "adressevaelger",
     "query": "Ringkøbing brandstation"
+  },
+  "600c9a66866c2ec9e986f377ca5fa6a17a30d5e0": {
+    "lat": 57.168875,
+    "lon": 10.189996,
+    "label": "Frederikshavnmotorvejen, Sudergårde, Brønderslev Kommune, Region Nordjylland, 9320, Danmark",
+    "source": "nominatim",
+    "query": "E 45"
+  },
+  "c09808018bedc72a10305fb9d1bdce01253fbe63": {
+    "lat": 55.943231,
+    "lon": 11.512118,
+    "label": "Lumsås Brandstation, Oddenvej, Lumsås, Odsherred Kommune, Region Sjælland, 4573, Danmark",
+    "source": "nominatim",
+    "query": "Lumsås brandstation"
+  },
+  "ee9268aa033224907c8f38069463c0bdaa709e05": {
+    "lat": 55.148118,
+    "lon": 10.707188,
+    "label": "Gudme Brandstation, Poppelvej, Gudme, Svendborg Kommune, Region Syddanmark, 5884, Danmark",
+    "source": "nominatim",
+    "query": "Gudme brandstation"
   }
 }
