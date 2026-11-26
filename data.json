@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T21:38:23Z",
-  "generated_at_copenhagen": "2026-11-26T22:38:23+01:00",
+  "generated_at": "2026-11-26T22:38:25Z",
+  "generated_at_copenhagen": "2026-11-26T23:38:25+01:00",
   "newest_rss": "2026-11-26T20:58:49Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 37
+      "count": 36
     },
     {
       "id": "vestegnen",
@@ -101,7 +101,7 @@
       "short": "Nordsjælland",
       "handle": "NSJPoliti",
       "default_on": true,
-      "count": 24
+      "count": 23
     },
     {
       "id": "midtvestsjaelland",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 29
+      "count": 30
     },
     {
       "id": "sydsjaelland",
@@ -133,7 +133,7 @@
       "short": "Syd- og Sønderjylland",
       "handle": "SjylPoliti",
       "default_on": false,
-      "count": 18
+      "count": 17
     },
     {
       "id": "sydostjylland",
@@ -141,7 +141,7 @@
       "short": "Sydøstjylland",
       "handle": "SydOjylPoliti",
       "default_on": false,
-      "count": 22
+      "count": 23
     },
     {
       "id": "midtvestjylland",
@@ -178,30 +178,30 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 253,
-    "with_coordinates": 212,
+    "incidents": 252,
+    "with_coordinates": 211,
     "without_coordinates": 41,
     "by_type": {
       "faerdsel": 98,
-      "brand": 38,
+      "brand": 39,
       "politi": 66,
-      "redning": 5,
-      "andet": 46
+      "redning": 4,
+      "andet": 45
     },
     "by_category": {
-      "politi": 175,
       "trafik": 54,
       "brand": 20,
-      "strom": 4
+      "politi": 175,
+      "strom": 3
     },
-    "elapsed_seconds": 11.8
+    "elapsed_seconds": 10.6
   },
   "sources_status": {
     "politiupdate": {
       "ok": true,
       "count": 175,
       "endpoint": "https://via.ritzau.dk/rss/short-messages/latest?publisherId={id}",
-      "reused": false
+      "reused": true
     },
     "odin": {
       "ok": true,
@@ -217,7 +217,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 4,
+      "count": 3,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -260,6 +260,62 @@
     }
   ],
   "incidents": [
+    {
+      "id": "vd-68282cc4ef43c225",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Tabt gods - E20 fra Odense mod Middelfart mellem <53> Odense V og <54> Vissenbjerg",
+      "text": "E20 fra Odense mod Middelfart mellem <53> Odense V og <54> Vissenbjerg\n Tabt gods, Pas på\n Vejhjælp er på vej",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-26T21:57:00Z",
+      "updated_at": "2026-11-26T21:57:51Z",
+      "lat": 55.39276,
+      "lon": 10.194578,
+      "location_text": "Tabt gods - E20 fra Odense mod Middelfart mellem <53> Odense V og <54> Vissenbjerg",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "sydostjylland",
+      "district_name": "Sydøstjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "tabt gods",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "odin-4ff0ded47df0e5e9",
+      "category": "brand",
+      "type": "brand",
+      "title": "Bygn.brand-Mindre brand – Slagelse BV",
+      "text": "Beredskab: Slagelse Brand og Redning. Station: Slagelse BV. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Mindre brand.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-26T21:53:41Z",
+      "updated_at": "2026-11-26T21:53:41Z",
+      "lat": 55.374455,
+      "lon": 11.388269,
+      "location_text": "Slagelse BV (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "midtvestsjaelland",
+      "district_name": "Midt- og Vestsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Slagelse BV",
+      "beredskab": "Slagelse Brand og Redning",
+      "first_message": "Bygn.brand-Mindre brand",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
     {
       "id": "pu-15315368",
       "source": "politiupdate",
@@ -1147,36 +1203,6 @@
       "layer": "current-other-traffic-announcements.point"
     },
     {
-      "id": "gpd-194874",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Vedbæk",
-      "text": "9 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-26T18:08:04Z",
-      "updated_at": "2026-11-26T17:09:01Z",
-      "lat": 55.86238,
-      "lon": 12.546,
-      "location_text": "Vedbæk",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "nordsjaelland",
-      "district_name": "Nordsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 9,
-      "utility": "Radius Elnet A/S",
-      "utility_phone": "(+45) 70 20 58 00",
-      "utility_web": "www.radiuselnet.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-26T23:00:00",
-      "ongoing": true
-    },
-    {
       "id": "vd-59102bb3d7d56d1e",
       "category": "trafik",
       "type": "faerdsel",
@@ -1315,34 +1341,6 @@
       "reopening_at": "2026-11-26T17:00:00Z",
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "odin-1793be56811374eb",
-      "category": "brand",
-      "type": "redning",
-      "title": "Min. forurening-v/FUH – Gladsaxe",
-      "text": "Beredskab: Beredskab Øst. Station: Gladsaxe. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Min. forurening-v/FUH.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-26T16:20:59Z",
-      "updated_at": "2026-11-26T16:20:59Z",
-      "lat": 55.735351,
-      "lon": 12.493668,
-      "location_text": "Gladsaxe (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Gladsaxe",
-      "beredskab": "Beredskab Øst",
-      "first_message": "Min. forurening-v/FUH",
-      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "vd-7e203aa83204540b",
@@ -2709,34 +2707,6 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "vd-025f872e860215e5",
-      "category": "trafik",
-      "type": "faerdsel",
-      "title": "Spærret vej/område - E45 Sønderjyske Motorvej fra Frøslev mod Haderslev mellem Øster Løgum og <69> Haderslev S",
-      "text": "E45 Sønderjyske Motorvej fra Frøslev mod Haderslev mellem Øster Løgum og <69> Haderslev S\n Politiindsats, Vejen er spærret\n Vejen er spærret \nVejhjælp er på stedet\n Forventes at vare indtil 25. nov. 2026 kl. 23:40.",
-      "source": "vejdirektoratet",
-      "source_label": "Vejdirektoratet",
-      "source_url": "https://trafikkort.vejdirektoratet.dk/",
-      "url": "https://trafikkort.vejdirektoratet.dk/",
-      "published_at": "2026-11-25T21:47:00Z",
-      "updated_at": "2026-11-25T21:47:16Z",
-      "lat": 55.1411,
-      "lon": 9.375226,
-      "location_text": "Spærret vej/område - E45 Sønderjyske Motorvej fra Frøslev mod Haderslev mellem Øster Løgum og <69> Haderslev S",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "sydsonderjylland",
-      "district_name": "Syd- og Sønderjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "subtype": "spærring",
-      "reopening": "25-11-2026 kl. 23:40",
-      "reopening_at": "2026-11-25T22:40:00Z",
-      "ongoing": true,
-      "layer": "current-roadblocks.point"
     },
     {
       "id": "pu-15313198",
