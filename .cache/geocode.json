@@ -3977,5 +3977,12 @@
     "label": "Kirkegårdsvej 1, 8400 Ebeltoft",
     "source": "adressevaelger",
     "query": "Kirkegårdsvej Aarhus C"
+  },
+  "7a87b5e5b3101d92b50ea08ba401b6907d36b175": {
+    "lat": 55.708769,
+    "lon": 12.586473,
+    "label": "Ringkøbinggade 1, 2100 København Ø",
+    "source": "adressevaelger",
+    "query": "Ringkøbing brandstation"
   }
 }
