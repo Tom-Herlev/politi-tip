@@ -3956,5 +3956,19 @@
     "label": "Balling Brandstation, Vestergade, Sønder Balling, Balling, Skive Kommune, Region Midtjylland, 7860, Danmark",
     "source": "nominatim",
     "query": "Balling brandstation"
+  },
+  "7d64e1f46c59d9c217f5da10e0fb0546af7e7b94": {
+    "lat": 55.772515,
+    "lon": 12.505042,
+    "label": "Lyngby Storcenter 1, 2800 Kongens Lyngby",
+    "source": "adressevaelger",
+    "query": "Lyngby Storcenter Allerød"
+  },
+  "b3e9acbe9502d4aa2c1afb224c3638224e46fbf5": {
+    "lat": 55.711189,
+    "lon": 9.968386,
+    "label": "Station Klakring, Gammelgårdsvej, Klakring, Hedensted Kommune, Region Midtjylland, 7130, Danmark",
+    "source": "nominatim",
+    "query": "Klakring brandstation"
   }
 }
