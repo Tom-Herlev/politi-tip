@@ -4019,5 +4019,21 @@
     "label": "Toftegårds Allé 1, 2500 Valby",
     "source": "adressevaelger",
     "query": "Toftegårds All"
+  },
+  "42dfd946c5d0eda8895efa5a7c3ad8c751409ae7": {
+    "lat": 54.925959,
+    "lon": 9.597742,
+    "label": "Slotsbakken 1, 6300 Gråsten",
+    "source": "adressevaelger",
+    "query": "Slotsbakken Gråsten"
+  },
+  "d25671abb806aa210a80f637bdd6b0d4bcd78e46": null,
+  "0269e484bd5e2e8d5597389c803a02d121837be0": null,
+  "a02a54b82358bcdd0c6c48950b70ddc073101a98": {
+    "lat": 56.139246,
+    "lon": 10.154339,
+    "label": "Viby Ringvej 101, 8230 Åbyhøj",
+    "source": "adressevaelger",
+    "query": "Viby Ringvej"
   }
 }
