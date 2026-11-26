@@ -3949,5 +3949,12 @@
     "label": "Danfoss E20, Nordborgvej, Gildbro, Svenstrup, Sønderborg Kommune, Region Syddanmark, 6430, Danmark",
     "source": "nominatim",
     "query": "E20"
+  },
+  "b5ed57b50dde06398ae4d6c032ee6ea173690a30": {
+    "lat": 56.614564,
+    "lon": 8.871757,
+    "label": "Balling Brandstation, Vestergade, Sønder Balling, Balling, Skive Kommune, Region Midtjylland, 7860, Danmark",
+    "source": "nominatim",
+    "query": "Balling brandstation"
   }
 }
