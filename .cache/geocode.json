@@ -3970,5 +3970,12 @@
     "label": "Station Klakring, Gammelgårdsvej, Klakring, Hedensted Kommune, Region Midtjylland, 7130, Danmark",
     "source": "nominatim",
     "query": "Klakring brandstation"
+  },
+  "b5e84ba821921ebf7dc13bd3b4370ca645cd79ec": {
+    "lat": 56.196302,
+    "lon": 10.678797,
+    "label": "Kirkegårdsvej 1, 8400 Ebeltoft",
+    "source": "adressevaelger",
+    "query": "Kirkegårdsvej Aarhus C"
   }
 }
