@@ -4126,5 +4126,12 @@
     "label": "Norevej 1, 8850 Bjerringbro",
     "source": "adressevaelger",
     "query": "Norevej i Bjerringbro"
+  },
+  "0d04069ba104351a78a1099914d887ee928f35f0": {
+    "lat": 55.529698,
+    "lon": 9.575415,
+    "label": "Kolding Landevej 213, 6000 Kolding",
+    "source": "adressevaelger",
+    "query": "Kolding Sygehus Vejle"
   }
 }
