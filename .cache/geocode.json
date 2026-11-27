@@ -4111,5 +4111,12 @@
     "label": "Kliplev Erhvervspark 1, Kliplev, 6200 Aabenraa",
     "source": "adressevaelger",
     "query": "Kliplev brandstation"
+  },
+  "c4bd0d03d742fb86f7153fe8c7ba1605ac226da0": {
+    "lat": 55.742256,
+    "lon": 12.533626,
+    "label": "Fuglegårdsvænget 1, 2820 Gentofte",
+    "source": "adressevaelger",
+    "query": "Fuglegårdsvænget Gentofte"
   }
 }
