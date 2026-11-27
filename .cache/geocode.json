@@ -4090,5 +4090,12 @@
     "label": "Brandstation Vestvej 50, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "brandstation Nr Al+Nyk F"
+  },
+  "35749e9333ecb1887e04e43cfeb26930311cd8dc": {
+    "lat": 55.495485,
+    "lon": 11.983252,
+    "label": "Borup, Køge Kommune, Region Sjælland, 4140, Danmark",
+    "source": "nominatim",
+    "query": "Borup"
   }
 }
