@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T23:38:42Z",
-  "generated_at_copenhagen": "2026-11-27T00:38:42+01:00",
+  "generated_at": "2026-11-27T00:40:13Z",
+  "generated_at_copenhagen": "2026-11-27T01:40:13+01:00",
   "newest_rss": "2026-11-26T20:58:49Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 35
+      "count": 34
     },
     {
       "id": "vestegnen",
@@ -125,7 +125,7 @@
       "short": "Fyn",
       "handle": "FynsPoliti",
       "default_on": false,
-      "count": 20
+      "count": 21
     },
     {
       "id": "sydsonderjylland",
@@ -183,18 +183,18 @@
     "without_coordinates": 41,
     "by_type": {
       "brand": 39,
-      "faerdsel": 98,
+      "faerdsel": 97,
+      "andet": 45,
       "politi": 66,
-      "redning": 4,
-      "andet": 44
+      "redning": 4
     },
     "by_category": {
       "brand": 20,
-      "trafik": 54,
-      "politi": 175,
-      "strom": 2
+      "trafik": 53,
+      "strom": 3,
+      "politi": 175
     },
-    "elapsed_seconds": 14.0
+    "elapsed_seconds": 8.5
   },
   "sources_status": {
     "politiupdate": {
@@ -211,13 +211,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 54,
+      "count": 53,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 2,
+      "count": 3,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -260,6 +260,34 @@
     }
   ],
   "incidents": [
+    {
+      "id": "odin-481ddfc223a7a1b2",
+      "category": "brand",
+      "type": "brand",
+      "title": "Bygn.brand-Villa/Rækkehus – Ringe",
+      "text": "Beredskab: Beredskab Fyn. Station: Ringe. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Villa/Rækkehus.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-26T23:37:08Z",
+      "updated_at": "2026-11-26T23:37:08Z",
+      "lat": 55.237616,
+      "lon": 10.488793,
+      "location_text": "Ringe (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "fyn",
+      "district_name": "Fyns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Ringe",
+      "beredskab": "Beredskab Fyn",
+      "first_message": "Bygn.brand-Villa/Rækkehus",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
     {
       "id": "odin-f509f44cde95544e",
       "category": "brand",
@@ -315,6 +343,36 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "gpd-194876",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud i Glostrup",
+      "text": "2 kunder berørt. Elselskab: Radius Elnet A/S. Type: Varslet. Vedligeholdelse",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-27T00:15:01Z",
+      "updated_at": "2026-11-26T23:16:00Z",
+      "lat": 55.661113,
+      "lon": 12.375726,
+      "location_text": "Glostrup",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "vestegnen",
+      "district_name": "Københavns Vestegns Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 2,
+      "utility": "Radius Elnet A/S",
+      "utility_phone": "(+45) 70 20 58 00",
+      "utility_web": "www.radiuselnet.dk",
+      "outage_type": "Varslet",
+      "expected_back": "2026-11-27T04:00:00",
+      "ongoing": true
     },
     {
       "id": "odin-b8751904aa318dc2",
@@ -1203,34 +1261,6 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "odin-f4422935059580ea",
-      "category": "brand",
-      "type": "brand",
-      "title": "Brandalarm – Tomsgården",
-      "text": "Beredskab: Hovedstadens Beredskab. Station: Tomsgården. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brandalarm.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-26T17:28:18Z",
-      "updated_at": "2026-11-26T17:28:18Z",
-      "lat": 55.607152,
-      "lon": 12.621821,
-      "location_text": "Tomsgården (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Tomsgården",
-      "beredskab": "Hovedstadens Beredskab",
-      "first_message": "Brandalarm",
-      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "pu-15315280",
@@ -2649,34 +2679,6 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "vd-c76d6fc70847e5a5",
-      "category": "trafik",
-      "type": "faerdsel",
-      "title": "Spærret vej/område - E20 Køge Bugt Motorvejen mod Køge, tilkørsel Greve S",
-      "text": "E20 Køge Bugt Motorvejen mod Køge, tilkørsel Greve S\n Vejen er spærret, Grundet vejarbejde\n Vejhjælp er på stedet",
-      "source": "vejdirektoratet",
-      "source_label": "Vejdirektoratet",
-      "source_url": "https://trafikkort.vejdirektoratet.dk/",
-      "url": "https://trafikkort.vejdirektoratet.dk/",
-      "published_at": "2026-11-25T18:09:00Z",
-      "updated_at": "2026-11-25T23:31:32Z",
-      "lat": 55.58069,
-      "lon": 12.256958,
-      "location_text": "Spærret vej/område - E20 Køge Bugt Motorvejen mod Køge, tilkørsel Greve S",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "vestegnen",
-      "district_name": "Københavns Vestegns Politi",
-      "official": true,
-      "nationwide": false,
-      "subtype": "kø",
-      "reopening": null,
-      "reopening_at": null,
-      "ongoing": true,
-      "layer": "current-roadblocks.point"
     },
     {
       "id": "pu-15313198",
