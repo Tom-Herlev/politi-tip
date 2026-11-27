@@ -4035,5 +4035,12 @@
     "label": "Viby Ringvej 101, 8230 Åbyhøj",
     "source": "adressevaelger",
     "query": "Viby Ringvej"
+  },
+  "7071d949ae2171e3524dafe2e6592f80d382c94c": {
+    "lat": 55.132401,
+    "lon": 8.9981,
+    "label": "Gråstenvej 2, Roost, 6520 Toftlund",
+    "source": "adressevaelger",
+    "query": "Gråsten brandstation"
   }
 }
