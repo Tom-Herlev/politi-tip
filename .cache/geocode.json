@@ -4042,5 +4042,20 @@
     "label": "Gråstenvej 2, Roost, 6520 Toftlund",
     "source": "adressevaelger",
     "query": "Gråsten brandstation"
+  },
+  "4487acfa058890d68f743aa849e00b0f79cf0f4f": null,
+  "f3a258a86e4b6af19779d5be8d17052fb7f1e818": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Næstved+St. Herlufma"
+  },
+  "00b4cd1d773417d8266112b2c18e14562d2ab2bc": {
+    "lat": 55.995921,
+    "lon": 12.532863,
+    "label": "Espergærde Brandstation, Bybjergvej, Hyrdebakken, Mørdrup, Tibberup, Helsingør Kommune, Region Hovedstaden, 3060, Danmark",
+    "source": "nominatim",
+    "query": "Espergærde brandstation"
   }
 }
