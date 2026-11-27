@@ -4097,5 +4097,19 @@
     "label": "Borup, Køge Kommune, Region Sjælland, 4140, Danmark",
     "source": "nominatim",
     "query": "Borup"
+  },
+  "2c064af9b2116223cba253ed648c6253ed0811bf": {
+    "lat": 55.613723,
+    "lon": 8.475681,
+    "label": "Engdraget, Kongsgård, Varde, Varde Kommune, Region Syddanmark, 6800, Danmark",
+    "source": "nominatim",
+    "query": "Engdraget"
+  },
+  "a791dc9f47524532763b67b628bd7f54cae77f95": {
+    "lat": 54.936985,
+    "lon": 9.374857,
+    "label": "Kliplev Erhvervspark 1, Kliplev, 6200 Aabenraa",
+    "source": "adressevaelger",
+    "query": "Kliplev brandstation"
   }
 }
