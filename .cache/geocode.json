@@ -4064,5 +4064,12 @@
     "label": "Rødekro Midt 1, 6230 Rødekro",
     "source": "adressevaelger",
     "query": "Rødekro brandstation"
+  },
+  "ca0e9b17b603b2b8ebb2dbdef1d54bce45480dab": {
+    "lat": 55.678409,
+    "lon": 11.110623,
+    "label": "Kalundborg Brandstation, Rynkevangen, Nyvang, Kalundborg, Kalundborg Kommune, Region Sjælland, 4400, Danmark",
+    "source": "nominatim",
+    "query": "Kalundborg brandstation"
   }
 }
