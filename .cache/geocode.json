@@ -4078,5 +4078,17 @@
     "label": "Præstø Landevej 1, Næstelsø, 4700 Næstved",
     "source": "adressevaelger",
     "query": "Præstø brandstation"
+  },
+  "36b907ae59f392d6c9aa6e0cf7c1c6f90d8fc97c": null,
+  "c8b2b5b07f916d24a38255fed998d5f7e3360291": null,
+  "036e1dcefd4f00a59e3f5828c5468fd7049491f6": null,
+  "cd0e0808bf1ec02199f09e6fea4f0890cd51fcd5": null,
+  "923989f287a7e5f48a273a931572ba5aca47a992": null,
+  "eca8f0565bb501e284655189b0c5d7dd3fc98d44": {
+    "lat": 55.607152,
+    "lon": 12.621821,
+    "label": "Brandstation Vestvej 50, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "brandstation Nr Al+Nyk F"
   }
 }
