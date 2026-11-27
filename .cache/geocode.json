@@ -4057,5 +4057,12 @@
     "label": "Espergærde Brandstation, Bybjergvej, Hyrdebakken, Mørdrup, Tibberup, Helsingør Kommune, Region Hovedstaden, 3060, Danmark",
     "source": "nominatim",
     "query": "Espergærde brandstation"
+  },
+  "13aa00b66b167a95ce94ac9e3244798a0b800e1d": {
+    "lat": 55.070959,
+    "lon": 9.334603,
+    "label": "Rødekro Midt 1, 6230 Rødekro",
+    "source": "adressevaelger",
+    "query": "Rødekro brandstation"
   }
 }
