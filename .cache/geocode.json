@@ -4071,5 +4071,12 @@
     "label": "Kalundborg Brandstation, Rynkevangen, Nyvang, Kalundborg, Kalundborg Kommune, Region Sjælland, 4400, Danmark",
     "source": "nominatim",
     "query": "Kalundborg brandstation"
+  },
+  "534a8543bedd797592331c72d2d4e79b6f144886": {
+    "lat": 55.20275,
+    "lon": 11.828609,
+    "label": "Præstø Landevej 1, Næstelsø, 4700 Næstved",
+    "source": "adressevaelger",
+    "query": "Præstø brandstation"
   }
 }
