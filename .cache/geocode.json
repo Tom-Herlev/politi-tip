@@ -4118,5 +4118,13 @@
     "label": "Fuglegårdsvænget 1, 2820 Gentofte",
     "source": "adressevaelger",
     "query": "Fuglegårdsvænget Gentofte"
+  },
+  "293ef8be609f11b4e3ca2eef2e60e2f602d4156b": null,
+  "0602182ac69c5d62f82bfa7d3423e433160cb33c": {
+    "lat": 56.380372,
+    "lon": 9.657054,
+    "label": "Norevej 1, 8850 Bjerringbro",
+    "source": "adressevaelger",
+    "query": "Norevej i Bjerringbro"
   }
 }
