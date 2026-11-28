@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-28T05:30:27Z",
-  "generated_at_copenhagen": "2026-11-28T06:30:27+01:00",
+  "generated_at": "2026-11-28T06:34:18Z",
+  "generated_at_copenhagen": "2026-11-28T07:34:18+01:00",
   "newest_rss": "2026-11-27T23:32:34Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 35
+      "count": 34
     },
     {
       "id": "vestegnen",
@@ -93,7 +93,7 @@
       "short": "Vestegnen",
       "handle": "VestegnsPoliti",
       "default_on": true,
-      "count": 28
+      "count": 26
     },
     {
       "id": "nordsjaelland",
@@ -101,7 +101,7 @@
       "short": "Nordsjælland",
       "handle": "NSJPoliti",
       "default_on": true,
-      "count": 18
+      "count": 17
     },
     {
       "id": "midtvestsjaelland",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 29
+      "count": 28
     },
     {
       "id": "sydsjaelland",
@@ -117,7 +117,7 @@
       "short": "Sydsjælland og Lolland-Falster",
       "handle": "SSJ_LFPoliti",
       "default_on": false,
-      "count": 17
+      "count": 18
     },
     {
       "id": "fyn",
@@ -141,7 +141,7 @@
       "short": "Sydøstjylland",
       "handle": "SydOjylPoliti",
       "default_on": false,
-      "count": 27
+      "count": 28
     },
     {
       "id": "midtvestjylland",
@@ -149,7 +149,7 @@
       "short": "Midt- og Vestjylland",
       "handle": "MVJPoliti",
       "default_on": false,
-      "count": 11
+      "count": 12
     },
     {
       "id": "ostjylland",
@@ -178,24 +178,23 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 258,
-    "with_coordinates": 218,
+    "incidents": 256,
+    "with_coordinates": 216,
     "without_coordinates": 40,
     "by_type": {
-      "redning": 4,
       "faerdsel": 104,
       "brand": 39,
-      "andet": 45,
-      "politi": 66
+      "politi": 66,
+      "redning": 3,
+      "andet": 44
     },
     "by_category": {
-      "helikopter": 1,
       "trafik": 57,
       "brand": 20,
-      "strom": 3,
-      "politi": 177
+      "politi": 177,
+      "strom": 2
     },
-    "elapsed_seconds": 11.2
+    "elapsed_seconds": 16.4
   },
   "sources_status": {
     "politiupdate": {
@@ -218,7 +217,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 3,
+      "count": 2,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -231,26 +230,13 @@
     },
     "adsb": {
       "ok": true,
-      "count": 1,
+      "count": 0,
       "endpoint": "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250",
       "error": null,
       "cors": false
     }
   },
-  "hems": [
-    {
-      "registration": "LN-OUM",
-      "callsign": "DOC02",
-      "lat": 55.375749,
-      "lon": 11.845925,
-      "track": 154.49,
-      "altitude_ft": 850,
-      "speed_kt": 97.5,
-      "airborne": true,
-      "type": "EC35",
-      "updated_at": "2026-11-28T05:30:27Z"
-    }
-  ],
+  "hems": [],
   "hems_bases": [
     {
       "name": "Skive",
@@ -275,36 +261,88 @@
   ],
   "incidents": [
     {
-      "id": "hems-LN-OUM",
-      "category": "helikopter",
-      "type": "redning",
-      "title": "Akutlægehelikopter LN-OUM (DOC02)",
-      "text": "I luften. Type: EC35. Højde: 850 ft. Fart: 97.5 kt. Kurs: 154.49°.",
-      "source": "adsb",
-      "source_label": "adsb.lol",
-      "source_url": "https://adsb.lol/",
-      "url": "https://adsb.lol/",
-      "published_at": "2026-11-28T05:30:27Z",
-      "updated_at": "2026-11-28T05:30:27Z",
-      "lat": 55.375749,
-      "lon": 11.845925,
-      "location_text": "Live position",
+      "id": "vd-9427cb26f93a40a3",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Tabt gods - E47 Sydmotorvejen mellem Studehave og <46> Sakskøbing",
+      "text": "E47 Sydmotorvejen mellem Studehave og <46> Sakskøbing\n Tabt gods, Spor blokeret, Pas på\n Vejhjælp er på vej",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-28T06:23:00Z",
+      "updated_at": "2026-11-28T06:23:53Z",
+      "lat": 54.80268,
+      "lon": 11.676328,
+      "location_text": "Tabt gods - E47 Sydmotorvejen mellem Studehave og <46> Sakskøbing",
       "geometry": "point",
       "radius_m": null,
       "approximate": false,
-      "district": "midtvestsjaelland",
-      "district_name": "Midt- og Vestsjællands Politi",
+      "district": "sydsjaelland",
+      "district_name": "Sydsjællands og Lolland-Falsters Politi",
       "official": true,
       "nationwide": false,
-      "registration": "LN-OUM",
-      "callsign": "DOC02",
-      "aircraft_type": "EC35",
-      "track": 154.49,
-      "altitude_ft": 850,
-      "speed_kt": 97.5,
-      "airborne": true,
-      "hex": "47be9c",
-      "ongoing": true
+      "subtype": "tabt gods",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "vd-b2cebab371e40410",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Tabt gods - E45 Østjyske Motorvej mellem <60> Vejle N og Vejlefjordbroen",
+      "text": "E45 Østjyske Motorvej mellem <60> Vejle N og Vejlefjordbroen\n Tabt gods, Spor blokeret, Pas på",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-28T06:22:00Z",
+      "updated_at": "2026-11-28T06:22:43Z",
+      "lat": 55.70041,
+      "lon": 9.573092,
+      "location_text": "Tabt gods - E45 Østjyske Motorvej mellem <60> Vejle N og Vejlefjordbroen",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "sydostjylland",
+      "district_name": "Sydøstjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "tabt gods",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "odin-deb34d646d9464de",
+      "category": "brand",
+      "type": "brand",
+      "title": "Container i det fri-Brand – Thisted BV",
+      "text": "Beredskab: Nordjyllands Beredskab. Station: Thisted BV. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Container i det fri-Brand.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-28T06:21:47Z",
+      "updated_at": "2026-11-28T06:21:47Z",
+      "lat": 56.953083,
+      "lon": 8.692301,
+      "location_text": "Thisted BV (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "midtvestjylland",
+      "district_name": "Midt- og Vestjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Thisted BV",
+      "beredskab": "Nordjyllands Beredskab",
+      "first_message": "Container i det fri-Brand",
+      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "vd-40d3004d49d854f8",
@@ -417,36 +455,6 @@
       "beredskab": "Nordjyllands Beredskab",
       "first_message": "Bygn.brand-Lejlighed",
       "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
-      "id": "gpd-194961",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Frederikssund",
-      "text": "105 kunder berørt. Elselskab: Radius Elnet A/S. Type: Uvarslet. Driftsfejl",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-28T04:17:37Z",
-      "updated_at": "2026-11-28T03:18:01Z",
-      "lat": 55.845936,
-      "lon": 12.056847,
-      "location_text": "Frederikssund",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "nordsjaelland",
-      "district_name": "Nordsjællands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 105,
-      "utility": "Radius Elnet A/S",
-      "utility_phone": "(+45) 70 20 58 00",
-      "utility_web": "www.radiuselnet.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-28T08:00:00",
-      "ongoing": true
     },
     {
       "id": "vd-53a2f667b81004e2",
@@ -1361,34 +1369,6 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "odin-7caf862bbf71e109",
-      "category": "brand",
-      "type": "brand",
-      "title": "Brandalarm – Hovedbrandstationen",
-      "text": "Beredskab: Hovedstadens Beredskab. Station: Hovedbrandstationen. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brandalarm.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-27T17:54:27Z",
-      "updated_at": "2026-11-27T17:54:27Z",
-      "lat": 55.674664,
-      "lon": 12.571536,
-      "location_text": "Hovedbrandstationen (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Hovedbrandstationen",
-      "beredskab": "Hovedstadens Beredskab",
-      "first_message": "Brandalarm",
-      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "vd-55efbfa54d328cf3",
@@ -2725,62 +2705,6 @@
       "official": true,
       "nationwide": false,
       "subtype": "kø",
-      "reopening": null,
-      "reopening_at": null,
-      "ongoing": true,
-      "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "vd-9851df259a79935a",
-      "category": "trafik",
-      "type": "faerdsel",
-      "title": "Spærret vej/område - O4-KBH fra Ishøj mod Ballerup, frakørsel <2> Ballerup S",
-      "text": "O4-KBH fra Ishøj mod Ballerup, frakørsel <2> Ballerup S\n Vejen er spærret, Grundet uheld\n Forventes at vare indtil 27. nov. 2026 kl. 07:00.",
-      "source": "vejdirektoratet",
-      "source_label": "Vejdirektoratet",
-      "source_url": "https://trafikkort.vejdirektoratet.dk/",
-      "url": "https://trafikkort.vejdirektoratet.dk/",
-      "published_at": "2026-11-27T05:22:00Z",
-      "updated_at": "2026-11-27T05:22:59Z",
-      "lat": 55.7129,
-      "lon": 12.366443,
-      "location_text": "Spærret vej/område - O4-KBH fra Ishøj mod Ballerup, frakørsel <2> Ballerup S",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "vestegnen",
-      "district_name": "Københavns Vestegns Politi",
-      "official": true,
-      "nationwide": false,
-      "subtype": "kø",
-      "reopening": "27-11-2026 kl. 07:00",
-      "reopening_at": "2026-11-27T06:00:00Z",
-      "ongoing": true,
-      "layer": "current-roadblocks.point"
-    },
-    {
-      "id": "vd-149f58748cb7640d",
-      "category": "trafik",
-      "type": "faerdsel",
-      "title": "Uheld - O4-KBH fra Ishøj mod Ballerup mellem Ballerup og <2> Ballerup S",
-      "text": "O4-KBH fra Ishøj mod Ballerup mellem Ballerup og <2> Ballerup S\n Uheld, Uheldsstedet er ikke sikret, Pas på\n Vejhjælp er på vej",
-      "source": "vejdirektoratet",
-      "source_label": "Vejdirektoratet",
-      "source_url": "https://trafikkort.vejdirektoratet.dk/",
-      "url": "https://trafikkort.vejdirektoratet.dk/",
-      "published_at": "2026-11-27T05:05:00Z",
-      "updated_at": "2026-11-27T05:05:52Z",
-      "lat": 55.712345,
-      "lon": 12.366534,
-      "location_text": "Uheld - O4-KBH fra Ishøj mod Ballerup mellem Ballerup og <2> Ballerup S",
-      "geometry": "point",
-      "radius_m": null,
-      "approximate": false,
-      "district": "vestegnen",
-      "district_name": "Københavns Vestegns Politi",
-      "official": true,
-      "nationwide": false,
-      "subtype": "uheld",
       "reopening": null,
       "reopening_at": null,
       "ongoing": true,

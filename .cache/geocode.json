@@ -4140,5 +4140,12 @@
     "label": "Møldrupsvej 1, Dalby Strand, 4281 Gørlev",
     "source": "adressevaelger",
     "query": "Møldrup + Aalestrup brandstation"
+  },
+  "af5025e780083c29ac80b0b81296ff3be7a97208": {
+    "lat": 56.953083,
+    "lon": 8.692301,
+    "label": "Thisted Kystvej 2, 7700 Thisted",
+    "source": "adressevaelger",
+    "query": "Thisted BV brandstation"
   }
 }
