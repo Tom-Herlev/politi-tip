@@ -4204,5 +4204,20 @@
     "label": "Fjerritslevvej 1, 9670 Løgstør",
     "source": "adressevaelger",
     "query": "Fjerritslev brandstation"
+  },
+  "00d9575c5d3e6fce9c75b7a66a40e27430e4b62e": null,
+  "6fad09cae9d1ce26b04163af5e291a6952daa7fe": {
+    "lat": 55.669731,
+    "lon": 12.443027,
+    "label": "Roskildevej 403, 2605 Brøndby",
+    "source": "adressevaelger",
+    "query": "Roskildevej Albertslund"
+  },
+  "7465b2dbb4d3bd9d9e75f47037bb662146342f1b": {
+    "lat": 55.978863,
+    "lon": 9.60859,
+    "label": "Station Brædstrup, Nørregade, Brædstrup, Horsens Kommune, Region Midtjylland, 8740, Danmark",
+    "source": "nominatim",
+    "query": "Brædstrup brandstation"
   }
 }
