@@ -4175,5 +4175,12 @@
     "label": "Farsøvej 3, 2770 Kastrup",
     "source": "adressevaelger",
     "query": "Farsø brandstation"
+  },
+  "d85a79455bcbdd3e4ae5668037b10ce49c45259e": {
+    "lat": 55.284622,
+    "lon": 11.712155,
+    "label": "Sorøvej 528, Rislev, 4160 Herlufmagle",
+    "source": "adressevaelger",
+    "query": "Sorø BV brandstation"
   }
 }
