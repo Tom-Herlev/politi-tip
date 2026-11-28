@@ -4182,5 +4182,13 @@
     "label": "Sorøvej 528, Rislev, 4160 Herlufmagle",
     "source": "adressevaelger",
     "query": "Sorø BV brandstation"
+  },
+  "f1421595b94b43471d44e432fdcc7f756c282724": null,
+  "94563521c57501b7c47fceb2d46099c30086e24b": {
+    "lat": 55.686388,
+    "lon": 12.522605,
+    "label": "Frederiksberg Hospital, Vej 8, Frederiksberg, Frederiksberg Kommune, Region Hovedstaden, 2000, Danmark",
+    "source": "nominatim",
+    "query": "Frederiksberg Hospital"
   }
 }
