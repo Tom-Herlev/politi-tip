@@ -4168,5 +4168,12 @@
     "label": "Nykøbingvej 134A, Falkerslev, 4863 Eskilstrup",
     "source": "adressevaelger",
     "query": "Nykøbing Mors brandstation"
+  },
+  "3d0fe1d52b1b786bf16ded5998f136c6b0533313": {
+    "lat": 55.616039,
+    "lon": 12.59705,
+    "label": "Farsøvej 3, 2770 Kastrup",
+    "source": "adressevaelger",
+    "query": "Farsø brandstation"
   }
 }
