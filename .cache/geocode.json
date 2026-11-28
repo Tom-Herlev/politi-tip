@@ -4161,5 +4161,12 @@
     "label": "Fuglegårdsvænget 1, 2820 Gentofte",
     "source": "adressevaelger",
     "query": "Fuglegårdsvænget Hillerød"
+  },
+  "f326af1249fa0f44feb4604664dc45e7553abc00": {
+    "lat": 54.832706,
+    "lon": 11.984753,
+    "label": "Nykøbingvej 134A, Falkerslev, 4863 Eskilstrup",
+    "source": "adressevaelger",
+    "query": "Nykøbing Mors brandstation"
   }
 }
