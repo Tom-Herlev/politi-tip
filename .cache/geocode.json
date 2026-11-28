@@ -4147,5 +4147,12 @@
     "label": "Thisted Kystvej 2, 7700 Thisted",
     "source": "adressevaelger",
     "query": "Thisted BV brandstation"
+  },
+  "197e3b4d9869c849ec1248b82ae6204a939b98c7": {
+    "lat": 55.753595,
+    "lon": 12.541436,
+    "label": "Gentofte, Smakkedalen, Gentofte, Jægersborg, Gentofte Kommune, Region Hovedstaden, 2820, Danmark",
+    "source": "nominatim",
+    "query": "Gentofte"
   }
 }
