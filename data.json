@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T23:53:36Z",
-  "generated_at_copenhagen": "2026-11-28T00:53:36+01:00",
+  "generated_at": "2026-11-28T00:59:09Z",
+  "generated_at_copenhagen": "2026-11-28T01:59:09+01:00",
   "newest_rss": "2026-11-27T23:32:34Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 27
+      "count": 29
     },
     {
       "id": "sydsjaelland",
@@ -117,7 +117,7 @@
       "short": "Sydsjælland og Lolland-Falster",
       "handle": "SSJ_LFPoliti",
       "default_on": false,
-      "count": 15
+      "count": 16
     },
     {
       "id": "fyn",
@@ -157,7 +157,7 @@
       "short": "Østjylland",
       "handle": "OjylPoliti",
       "default_on": false,
-      "count": 20
+      "count": 21
     },
     {
       "id": "nordjylland",
@@ -178,30 +178,30 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 255,
-    "with_coordinates": 215,
+    "incidents": 259,
+    "with_coordinates": 219,
     "without_coordinates": 40,
     "by_type": {
-      "faerdsel": 100,
+      "faerdsel": 103,
+      "andet": 48,
       "politi": 66,
       "brand": 39,
-      "andet": 47,
       "redning": 3
     },
     "by_category": {
-      "trafik": 53,
+      "trafik": 56,
+      "strom": 6,
       "politi": 177,
-      "brand": 20,
-      "strom": 5
+      "brand": 20
     },
-    "elapsed_seconds": 15.2
+    "elapsed_seconds": 11.7
   },
   "sources_status": {
     "politiupdate": {
       "ok": true,
       "count": 177,
       "endpoint": "https://via.ritzau.dk/rss/short-messages/latest?publisherId={id}",
-      "reused": false
+      "reused": true
     },
     "odin": {
       "ok": true,
@@ -211,13 +211,13 @@
     },
     "vejdirektoratet": {
       "ok": true,
-      "count": 53,
+      "count": 56,
       "endpoint": "https://storage.googleapis.com/trafikkort-data/geojson/big-screen-events.json",
       "error": null
     },
     "elnet": {
       "ok": true,
-      "count": 5,
+      "count": 6,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -261,6 +261,90 @@
   ],
   "incidents": [
     {
+      "id": "vd-18b1f1eeedc0954e",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Tabt gods - Storebæltsbroen (Vestbroen), retning mod Fyn",
+      "text": "Storebæltsbroen (Vestbroen), retning mod Fyn\n Tabt gods\n Vejhjælp er på vej",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-28T00:52:00Z",
+      "updated_at": "2026-11-28T00:52:26Z",
+      "lat": 55.332617,
+      "lon": 10.96839,
+      "location_text": "Tabt gods - Storebæltsbroen (Vestbroen), retning mod Fyn",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "midtvestsjaelland",
+      "district_name": "Midt- og Vestsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "tabt gods",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "vd-abaeafc75d63543a",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Advarsel - E45 fra Aarhus mod Randers mellem <46> Aarhus Nord og <44> Hadsten",
+      "text": "E45 fra Aarhus mod Randers mellem <46> Aarhus Nord og <44> Hadsten\n Pas på! Der kommer en spøgelsesbilist imod dig, Hold til højre",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-28T00:39:00Z",
+      "updated_at": "2026-11-28T00:39:57Z",
+      "lat": 56.258736,
+      "lon": 10.126108,
+      "location_text": "Advarsel - E45 fra Aarhus mod Randers mellem <46> Aarhus Nord og <44> Hadsten",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "ostjylland",
+      "district_name": "Østjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "trafik",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "vd-c0065f41ea70a719",
+      "category": "trafik",
+      "type": "faerdsel",
+      "title": "Dødt dyr på vejen - E47 fra Køge mod Farø mellem <38> Tappernøje og <39> Bårse",
+      "text": "E47 fra Køge mod Farø mellem <38> Tappernøje og <39> Bårse\n Dødt dyr på vejen, Pas på, Spor spærret\n Venstre spor, \nVejhjælp er på stedet",
+      "source": "vejdirektoratet",
+      "source_label": "Vejdirektoratet",
+      "source_url": "https://trafikkort.vejdirektoratet.dk/",
+      "url": "https://trafikkort.vejdirektoratet.dk/",
+      "published_at": "2026-11-27T22:57:00Z",
+      "updated_at": "2026-11-27T23:57:07Z",
+      "lat": 55.131367,
+      "lon": 11.934425,
+      "location_text": "Dødt dyr på vejen - E47 fra Køge mod Farø mellem <38> Tappernøje og <39> Bårse",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "sydsjaelland",
+      "district_name": "Sydsjællands og Lolland-Falsters Politi",
+      "official": true,
+      "nationwide": false,
+      "subtype": "kø",
+      "reopening": null,
+      "reopening_at": null,
+      "ongoing": true,
+      "layer": "current-other-traffic-announcements.point"
+    },
+    {
       "id": "vd-f208c41af33c39a2",
       "category": "trafik",
       "type": "faerdsel",
@@ -287,6 +371,36 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
+    },
+    {
+      "id": "gpd-194960",
+      "category": "strom",
+      "type": "andet",
+      "title": "Afbrud Lille Skensved",
+      "text": "21 kunder berørt. Elselskab: Cerius A/S. Type: Uvarslet. Årsag endnu ukendt",
+      "source": "elnet",
+      "source_label": "Green Power Denmark / Elnet",
+      "source_url": "https://elnet.dk/",
+      "url": "https://elnet.dk/",
+      "published_at": "2026-11-28T00:33:50Z",
+      "updated_at": "2026-11-27T23:34:31Z",
+      "lat": 55.490688,
+      "lon": 12.081673,
+      "location_text": "Lille Skensved",
+      "geometry": "circle",
+      "radius_m": 100,
+      "approximate": true,
+      "district": "midtvestsjaelland",
+      "district_name": "Midt- og Vestsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "customers": 21,
+      "utility": "Cerius A/S",
+      "utility_phone": "(+45) 70 29 20 24",
+      "utility_web": "www.cerius.dk",
+      "outage_type": "Uvarslet",
+      "expected_back": "2026-11-28T03:33:50.673",
+      "ongoing": true
     },
     {
       "id": "pu-15317392",
