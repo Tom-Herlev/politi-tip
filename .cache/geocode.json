@@ -4133,5 +4133,12 @@
     "label": "Kolding Landevej 213, 6000 Kolding",
     "source": "adressevaelger",
     "query": "Kolding Sygehus Vejle"
+  },
+  "9d1c80175b968a1264e5bebade518374978864ba": {
+    "lat": 55.519113,
+    "lon": 11.144404,
+    "label": "Møldrupsvej 1, Dalby Strand, 4281 Gørlev",
+    "source": "adressevaelger",
+    "query": "Møldrup + Aalestrup brandstation"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-28T00:59:09Z",
-  "generated_at_copenhagen": "2026-11-28T01:59:09+01:00",
+  "generated_at": "2026-11-28T02:19:47Z",
+  "generated_at_copenhagen": "2026-11-28T03:19:47+01:00",
   "newest_rss": "2026-11-27T23:32:34Z",
   "source": "POLITI UPDATE, ODIN 112-puls, Vejdirektoratet, Green Power Denmark, DMI/MeteoAlarm, adsb.lol",
   "note": "De 12 politikredses officielle X-konti er ikke længere aktive og er sat til beskyttet. Operative politimeddelelser hentes fra POLITI UPDATE. Brand- og redningsalarmer kommer fra ODIN (kun station, ikke præcis adresse). Facebook og Instagram skrames ikke.",
@@ -85,7 +85,7 @@
       "short": "Storkøbenhavn",
       "handle": "KobenhavnPoliti",
       "default_on": true,
-      "count": 37
+      "count": 36
     },
     {
       "id": "vestegnen",
@@ -93,7 +93,7 @@
       "short": "Vestegnen",
       "handle": "VestegnsPoliti",
       "default_on": true,
-      "count": 26
+      "count": 27
     },
     {
       "id": "nordsjaelland",
@@ -109,7 +109,7 @@
       "short": "Midt- og Vestsjælland",
       "handle": "MVSJPoliti",
       "default_on": false,
-      "count": 29
+      "count": 30
     },
     {
       "id": "sydsjaelland",
@@ -141,7 +141,7 @@
       "short": "Sydøstjylland",
       "handle": "SydOjylPoliti",
       "default_on": false,
-      "count": 29
+      "count": 28
     },
     {
       "id": "midtvestjylland",
@@ -157,7 +157,7 @@
       "short": "Østjylland",
       "handle": "OjylPoliti",
       "default_on": false,
-      "count": 21
+      "count": 19
     },
     {
       "id": "nordjylland",
@@ -178,23 +178,24 @@
   ],
   "stats": {
     "rss_items": 300,
-    "incidents": 259,
-    "with_coordinates": 219,
+    "incidents": 257,
+    "with_coordinates": 217,
     "without_coordinates": 40,
     "by_type": {
-      "faerdsel": 103,
-      "andet": 48,
-      "politi": 66,
+      "redning": 4,
       "brand": 39,
-      "redning": 3
+      "faerdsel": 103,
+      "andet": 45,
+      "politi": 66
     },
     "by_category": {
+      "helikopter": 1,
+      "brand": 20,
       "trafik": 56,
-      "strom": 6,
-      "politi": 177,
-      "brand": 20
+      "strom": 3,
+      "politi": 177
     },
-    "elapsed_seconds": 11.7
+    "elapsed_seconds": 12.8
   },
   "sources_status": {
     "politiupdate": {
@@ -217,7 +218,7 @@
     },
     "elnet": {
       "ok": true,
-      "count": 6,
+      "count": 3,
       "endpoint": "https://api.elnet.greenpowerdenmark.dk/api/incidents",
       "error": null
     },
@@ -230,13 +231,26 @@
     },
     "adsb": {
       "ok": true,
-      "count": 0,
+      "count": 1,
       "endpoint": "https://api.adsb.lol/v2/lat/56.0/lon/10.0/dist/250",
       "error": null,
       "cors": false
     }
   },
-  "hems": [],
+  "hems": [
+    {
+      "registration": "LN-OTS",
+      "callsign": "DOC03",
+      "lat": 55.700777,
+      "lon": 9.294519,
+      "track": 296.57,
+      "altitude_ft": 750,
+      "speed_kt": 138.6,
+      "airborne": true,
+      "type": "EC45",
+      "updated_at": "2026-11-28T02:19:47Z"
+    }
+  ],
   "hems_bases": [
     {
       "name": "Skive",
@@ -260,6 +274,94 @@
     }
   ],
   "incidents": [
+    {
+      "id": "hems-LN-OTS",
+      "category": "helikopter",
+      "type": "redning",
+      "title": "Akutlægehelikopter LN-OTS (DOC03)",
+      "text": "I luften. Type: EC45. Højde: 750 ft. Fart: 138.6 kt. Kurs: 296.57°.",
+      "source": "adsb",
+      "source_label": "adsb.lol",
+      "source_url": "https://adsb.lol/",
+      "url": "https://adsb.lol/",
+      "published_at": "2026-11-28T02:19:47Z",
+      "updated_at": "2026-11-28T02:19:47Z",
+      "lat": 55.700777,
+      "lon": 9.294519,
+      "location_text": "Live position",
+      "geometry": "point",
+      "radius_m": null,
+      "approximate": false,
+      "district": "sydostjylland",
+      "district_name": "Sydøstjyllands Politi",
+      "official": true,
+      "nationwide": false,
+      "registration": "LN-OTS",
+      "callsign": "DOC03",
+      "aircraft_type": "EC45",
+      "track": 296.57,
+      "altitude_ft": 750,
+      "speed_kt": 138.6,
+      "airborne": true,
+      "hex": "478cc8",
+      "ongoing": true
+    },
+    {
+      "id": "odin-663fafb031d0cada",
+      "category": "brand",
+      "type": "brand",
+      "title": "Brand-Bil i det fri – Møldrup + Aalestrup",
+      "text": "Beredskab: Midtjysk Brand & Redning. Station: Møldrup + Aalestrup. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brand-Bil i det fri.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-28T01:52:32Z",
+      "updated_at": "2026-11-28T01:52:32Z",
+      "lat": 55.519113,
+      "lon": 11.144404,
+      "location_text": "Møldrup + Aalestrup (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "midtvestsjaelland",
+      "district_name": "Midt- og Vestsjællands Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Møldrup + Aalestrup",
+      "beredskab": "Midtjysk Brand & Redning",
+      "first_message": "Brand-Bil i det fri",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
+    {
+      "id": "odin-ccd4b7196526a3cc",
+      "category": "brand",
+      "type": "brand",
+      "title": "Brandalarm – Glostrup",
+      "text": "Beredskab: Hovedstadens Beredskab. Station: Glostrup. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Brandalarm.",
+      "source": "odin",
+      "source_label": "ODIN 112-puls",
+      "source_url": "http://www.odin.dk/112puls/",
+      "url": "http://www.odin.dk/112puls/",
+      "published_at": "2026-11-28T01:32:16Z",
+      "updated_at": "2026-11-28T01:32:16Z",
+      "lat": 55.664859,
+      "lon": 12.39186,
+      "location_text": "Glostrup (omtrentligt område omkring stationen)",
+      "geometry": "circle",
+      "radius_m": 2000,
+      "approximate": true,
+      "district": "vestegnen",
+      "district_name": "Københavns Vestegns Politi",
+      "official": true,
+      "nationwide": false,
+      "routine": false,
+      "station": "Glostrup",
+      "beredskab": "Hovedstadens Beredskab",
+      "first_message": "Brandalarm",
+      "attribution": "Kilde: www.odin.dk/112puls"
+    },
     {
       "id": "vd-18b1f1eeedc0954e",
       "category": "trafik",
@@ -621,66 +723,6 @@
       "approximate": false,
       "routine": false,
       "nationwide": false
-    },
-    {
-      "id": "gpd-194959",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Aarhus C",
-      "text": "464 kunder berørt. Elselskab: KONSTANT Net A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse i Aarhus C Vi arbejder på at lokalisere og udbedre fejlen og forventer normal forsyning kl 00:10",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-27T23:00:00Z",
-      "updated_at": "2026-11-27T22:07:41Z",
-      "lat": 56.156967,
-      "lon": 10.210113,
-      "location_text": "Aarhus C",
-      "geometry": "circle",
-      "radius_m": 506.0,
-      "approximate": true,
-      "district": "ostjylland",
-      "district_name": "Østjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 464,
-      "utility": "KONSTANT Net A/S",
-      "utility_phone": "(+45) 70 11 45 09",
-      "utility_web": "www.konstant.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-28T00:10:00",
-      "ongoing": true
-    },
-    {
-      "id": "gpd-194958",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Aarhus C",
-      "text": "760 kunder berørt. Elselskab: KONSTANT Net A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse i Aarhus C Vi arbejder på at lokalisere og udbedre fejlen og forventer normal forsyning kl 01:00",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-27T23:00:00Z",
-      "updated_at": "2026-11-27T22:04:55Z",
-      "lat": 56.152667,
-      "lon": 10.208065,
-      "location_text": "Aarhus C",
-      "geometry": "circle",
-      "radius_m": 220.0,
-      "approximate": true,
-      "district": "ostjylland",
-      "district_name": "Østjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 760,
-      "utility": "KONSTANT Net A/S",
-      "utility_phone": "(+45) 70 11 45 09",
-      "utility_web": "www.konstant.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-28T01:00:00",
-      "ongoing": true
     },
     {
       "id": "odin-57e63475e6edef9e",
@@ -1461,34 +1503,6 @@
       "layer": "current-other-traffic-announcements.point"
     },
     {
-      "id": "odin-75627d9cfe4669f1",
-      "category": "brand",
-      "type": "brand",
-      "title": "Bygn.brand-Villa/Rækkehus – Ejby",
-      "text": "Beredskab: TrekantBrand. Station: Ejby. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Bygn.brand-Villa/Rækkehus.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-27T16:20:21Z",
-      "updated_at": "2026-11-27T16:20:21Z",
-      "lat": 55.432352,
-      "lon": 9.933305,
-      "location_text": "Ejby (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "sydostjylland",
-      "district_name": "Sydøstjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Ejby",
-      "beredskab": "TrekantBrand",
-      "first_message": "Bygn.brand-Villa/Rækkehus",
-      "attribution": "Kilde: www.odin.dk/112puls"
-    },
-    {
       "id": "vd-37dc1bf705d2a535",
       "category": "trafik",
       "type": "faerdsel",
@@ -1543,34 +1557,6 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "odin-2e2c22e172f3984d",
-      "category": "brand",
-      "type": "brand",
-      "title": "Skraldespand i det fri-Brand – Nr Al+Nyk F",
-      "text": "Beredskab: Lolland-Falster Brandvæsen. Station: Nr Al+Nyk F. ODIN angiver kun brandstationen, ikke en præcis adresse. Første melding: Skraldespand i det fri-Brand.",
-      "source": "odin",
-      "source_label": "ODIN 112-puls",
-      "source_url": "http://www.odin.dk/112puls/",
-      "url": "http://www.odin.dk/112puls/",
-      "published_at": "2026-11-27T16:12:25Z",
-      "updated_at": "2026-11-27T16:12:25Z",
-      "lat": 55.607152,
-      "lon": 12.621821,
-      "location_text": "Nr Al+Nyk F (omtrentligt område omkring stationen)",
-      "geometry": "circle",
-      "radius_m": 2000,
-      "approximate": true,
-      "district": "koebenhavn",
-      "district_name": "Københavns Politi",
-      "official": true,
-      "nationwide": false,
-      "routine": false,
-      "station": "Nr Al+Nyk F",
-      "beredskab": "Lolland-Falster Brandvæsen",
-      "first_message": "Skraldespand i det fri-Brand",
-      "attribution": "Kilde: www.odin.dk/112puls"
     },
     {
       "id": "pu-15317065",
@@ -2659,36 +2645,6 @@
       "reopening_at": null,
       "ongoing": true,
       "layer": "current-other-traffic-announcements.point"
-    },
-    {
-      "id": "gpd-194895",
-      "category": "strom",
-      "type": "andet",
-      "title": "Afbrud i Give",
-      "text": "37 kunder berørt. Elselskab: RAH Net A/S. Type: Uvarslet. Der er i øjeblikket strømafbrydelse pga. fejl i forsyningsnettet. Omkring Bredsten Landevej Vi er allerede i gang med at lokalisere/rette fejlen og håber snarest at kunne genetablere forsyningen.",
-      "source": "elnet",
-      "source_label": "Green Power Denmark / Elnet",
-      "source_url": "https://elnet.dk/",
-      "url": "https://elnet.dk/",
-      "published_at": "2026-11-27T07:30:00Z",
-      "updated_at": "2026-11-27T06:30:32Z",
-      "lat": 55.787573,
-      "lon": 9.188457,
-      "location_text": "Give",
-      "geometry": "circle",
-      "radius_m": 100,
-      "approximate": true,
-      "district": "sydostjylland",
-      "district_name": "Sydøstjyllands Politi",
-      "official": true,
-      "nationwide": false,
-      "customers": 37,
-      "utility": "RAH Net A/S",
-      "utility_phone": "(+45) 44 22 77 77",
-      "utility_web": "www.rahnet.dk",
-      "outage_type": "Uvarslet",
-      "expected_back": "2026-11-27T09:30:00",
-      "ongoing": true
     },
     {
       "id": "vd-9bce501f4a4ea8bc",
