@@ -4154,5 +4154,12 @@
     "label": "Gentofte, Smakkedalen, Gentofte, Jægersborg, Gentofte Kommune, Region Hovedstaden, 2820, Danmark",
     "source": "nominatim",
     "query": "Gentofte"
+  },
+  "a6f76fbc96f8d13759df829461ed350063509eb9": {
+    "lat": 55.742256,
+    "lon": 12.533626,
+    "label": "Fuglegårdsvænget 1, 2820 Gentofte",
+    "source": "adressevaelger",
+    "query": "Fuglegårdsvænget Hillerød"
   }
 }
