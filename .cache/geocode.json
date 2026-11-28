@@ -4219,5 +4219,12 @@
     "label": "Station Brædstrup, Nørregade, Brædstrup, Horsens Kommune, Region Midtjylland, 8740, Danmark",
     "source": "nominatim",
     "query": "Brædstrup brandstation"
+  },
+  "03d9fd8a2ed601d27e0d38deab46202bbe609dd0": {
+    "lat": 55.705559,
+    "lon": 12.581312,
+    "label": "Løgstørgade 1, 2100 København Ø",
+    "source": "adressevaelger",
+    "query": "Løgstør brandstation"
   }
 }
