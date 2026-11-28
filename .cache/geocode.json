@@ -4190,5 +4190,19 @@
     "label": "Frederiksberg Hospital, Vej 8, Frederiksberg, Frederiksberg Kommune, Region Hovedstaden, 2000, Danmark",
     "source": "nominatim",
     "query": "Frederiksberg Hospital"
+  },
+  "a87cc678c043075197f5a4cab1eb34a26d81b819": {
+    "lat": 55.399359,
+    "lon": 10.377149,
+    "label": "Rugårdsvej 1, 5000 Odense C",
+    "source": "adressevaelger",
+    "query": "Rugårdsvej"
+  },
+  "ba5226d948e606a40830783b01a0331112316d2c": {
+    "lat": 56.99953,
+    "lon": 9.293711,
+    "label": "Fjerritslevvej 1, 9670 Løgstør",
+    "source": "adressevaelger",
+    "query": "Fjerritslev brandstation"
   }
 }
